@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-Hant" data-lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>偽裝 PIN 碼 — Kadu 使用指南</title>
+  <meta name="description" content="Kadu 的偽裝 PIN 碼：開啟 App 時不顯示私人分類的第二個密碼。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>偽裝 PIN 碼 <span class="premium">Premium</span></h1>
+        <p class="lead">偽裝 PIN 碼是 Kadu 的第二個密碼。它像平常一樣開啟 App，只是沒有私人分類。在旁人看來，這些分類好像從未存在過。</p>
+
+        <h2 id="why">它有什麼用</h2>
+        <p>有時別人要看你的日記，而拒絕又很尷尬。這時輸入偽裝密碼：對方只會看到普通記錄，私人內容依然隱藏。螢幕上不會出現任何「模式」或提示。</p>
+
+        <h2 id="what-hidden">輸入偽裝密碼後會怎樣</h2>
+        <ul>
+          <li>私人分類從主頁消失；</li>
+          <li>其中的記錄不會出現在時間線、篩選、投影片、書或匯出中；</li>
+          <li>其他一切照常執行。</li>
+        </ul>
+        <p>不會刪除任何資料。輸入真正的 PIN 碼後，一切都會回來。</p>
+
+        <h2 id="set">如何設定</h2>
+        <ol class="steps">
+          <li>先設定主 PIN 碼：<span class="path">設定 → PIN 碼 → 設定 PIN 碼</span>。沒有主密碼，App 啟動時不會要求輸入，偽裝密碼也就沒有用。</li>
+          <li>點按 <kbd>設定假 PIN</kbd>。</li>
+          <li>輸入 4 位數字並再輸入一次。</li>
+        </ol>
+        <div class="note warning">
+          <span class="note-title">兩個密碼必須不同</span>
+          <p>如果偽裝密碼與主密碼相同，Kadu 將總是以正常模式開啟，偽裝密碼不起作用。</p>
+        </div>
+
+        <h2 id="reset">如何關閉</h2>
+        <p>開啟 <span class="path">設定 → PIN 碼 → 重置假 PIN</span>，輸入<strong>主</strong> PIN 碼。偽裝密碼不能關閉它自己——否則知道它的人就能關掉保護。</p>
+
+        <h2 id="faq">常見問題</h2>
+        <details>
+          <summary>用了偽裝密碼後，如何回到完整的日記？</summary>
+          <div><p>完全關閉 App，重新開啟，然後輸入主 PIN 碼。</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

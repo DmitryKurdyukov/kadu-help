@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pl" data-lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokaz slajdów — Przewodnik po Kadu</title>
+  <meta name="description" content="Jak uruchomić pokaz slajdów w Kadu, ustawić szybkość, muzykę i efekty oraz zapisać go jako film.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Pokaz slajdów</h1>
+        <p class="lead">Pokaz slajdów zamienia zdjęcia i filmy z Twoich wpisów w film z muzyką i łagodnymi efektami.</p>
+
+        <h2 id="start">Jak uruchomić</h2>
+        <p>Otwórz kartę <kbd>Oś czasu</kbd> i stuknij <kbd>Pokaz slajdów</kbd>.</p>
+        <div class="note">
+          <span class="note-title">Ważne: pokaz slajdów powstaje z tego, co jest teraz na osi czasu</span>
+          <p>Jeśli na osi czasu włączone są <a href="filters.html">filtry</a> — kategoria, tag, okres lub wyszukiwanie — do pokazu trafią tylko te wpisy. Tak zrobisz film o jednej podróży albo o jednym roku. Chcesz zobaczyć wszystko? Najpierw zresetuj filtry.</p>
+        </div>
+        <p>Jeśli przefiltrowane wpisy nie mają zdjęć ani filmów, Kadu poinformuje, że nie ma czego odtworzyć.</p>
+
+        <h2 id="settings">Ustawienia</h2>
+        <p>Podczas oglądania otwórz <kbd>Ustawienia pokazu slajdów</kbd>. Zmiany działają od razu, a film zaczyna się od nowa.</p>
+        <table>
+          <thead>
+            <tr><th>Ustawienie</th><th>Co robi</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>Prędkość</kbd></td><td>Jak długo każde zdjęcie jest na ekranie: <em>Wolno</em> — 5 s, <em>Normalnie</em> — 3 s, <em>Szybko</em> — 1,2 s, <em>Bardzo szybko</em> — 0,6 s.</td></tr>
+            <tr><td><kbd>Dźwięk wideo</kbd></td><td>Filmy odtwarzają się z oryginalnym dźwiękiem.</td></tr>
+            <tr><td><kbd>Przyspieszaj filmy</kbd></td><td>Tempo filmu dopasowuje się do szybkości pokazu: trochę wolniej przy wolnej, bez zmian przy normalnej, szybciej przy szybkich. Film zawsze odtwarza się do końca.</td></tr>
+            <tr><td><kbd>Pokazuj daty</kbd></td><td>Pokazuje na ekranie datę wspomnienia.</td></tr>
+            <tr><td><kbd>Efekty ruchu</kbd></td><td>Płynne przybliżanie i przesuwanie zdjęć. Działa przy szybkości <em>Wolno</em> i <em>Normalnie</em>: przy szybszych zdjęcie zmienia się, zanim efekt zdąży się pokazać.</td></tr>
+            <tr><td><kbd>Odwrotna kolejność</kbd></td><td>Pokazuje najpierw najstarsze wspomnienia zamiast najnowszych.</td></tr>
+            <tr><td><kbd>Muzyka w tle</kbd></td><td>Podczas pokazu gra muzyka. W <kbd>Utwór</kbd> zostaw <em>Auto</em>, a Kadu dobierze utwór, albo wybierz sam: <em>Zima</em>, <em>Spokojna</em> lub <em>Energiczna</em>.</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="free-limit">Limit wersji darmowej</h2>
+        <p>Bez subskrypcji możesz oglądać pokazy slajdów przez <strong>3 minuty dziennie</strong>. Gdy czas się skończy, Kadu zaproponuje Premium. Limit odnawia się następnego dnia.</p>
+        <p>Z <span class="premium">Premium</span> pokazy slajdów są bez ograniczeń.</p>
+
+        <h2 id="export">Zapisz jako film <span class="premium">Premium</span></h2>
+        <p>Pokaz slajdów można zamienić w zwykły film i podzielić się nim z bliskimi.</p>
+        <ol class="steps">
+          <li>Ustaw pokaz tak, jak ma wyglądać film.</li>
+          <li>Otwórz <kbd>Ustawienia pokazu slajdów</kbd> i stuknij <kbd>Udostępnij jako wideo</kbd>.</li>
+          <li>Poczekaj na koniec tworzenia (<em>„Tworzenie wideo…”</em>).</li>
+          <li>Wybierz <kbd>Zapisz w Zdjęciach</kbd> lub <kbd>Udostępnij</kbd>.</li>
+        </ol>
+        <div class="note warning">
+          <span class="note-title">Film może trwać do 15 minut</span>
+          <p>Jeśli pokaz jest dłuższy, eksport się nie rozpocznie. Zwiększ szybkość albo zawęź wybór filtrami — na przykład do jednego miesiąca.</p>
+        </div>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

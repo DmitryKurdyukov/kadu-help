@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="th" data-lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>แท็ก — คู่มือ Kadu</title>
+  <meta name="description" content="วิธีเพิ่มแท็กให้บันทึกใน Kadu และค้นหาบันทึกด้วยแท็ก">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>แท็ก</h1>
+        <p class="lead">แท็กเชื่อมบันทึกเข้าด้วยกันด้วยหัวข้อเดียวกัน เช่น ทริปเดินทาง บุคคล หรือโปรเจกต์ Kadu ไม่มีช่องสำหรับแท็กแยกต่างหาก แท็กเขียนลงในข้อความของบันทึกโดยตรง</p>
+
+        <h2 id="add">วิธีเพิ่มแท็ก</h2>
+        <ol class="steps">
+          <li>พิมพ์ <code>#</code> ในข้อความ แล้วตามด้วยคำทันทีโดยไม่เว้นวรรค: <code>#เที่ยว</code></li>
+          <li><strong>เว้นวรรคหลังคำนั้น</strong> แท็กจะกลายเป็นแท็กจริงก็ต่อเมื่อมีการเว้นวรรค</li>
+          <li>ตรวจดูว่าแท็ก <span class="tag-demo">#เที่ยว</span> <strong>ถูกไฮไลต์ด้วยสีเน้น</strong></li>
+          <li>บันทึก</li>
+        </ol>
+        <blockquote>ในที่สุดก็ถึงทะเล <span class="tag-demo">#เที่ยว</span> <span class="tag-demo">#ทะเล2025</span> นั่งจิบกาแฟ</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">กฎสำคัญที่สุด: แท็กต้องถูกไฮไลต์</span>
+          <p>หากคำที่มี <code>#</code> ยังเป็นข้อความธรรมดาและไม่เปลี่ยนสี แสดงว่าไม่ใช่แท็ก จะไม่ปรากฏในตัวกรองและค้นหาบันทึกด้วยแท็กนั้นไม่ได้ ส่วนใหญ่เกิดจากไม่ได้เว้นวรรคหลังแท็ก เช่น เมื่อแท็กเป็นคำสุดท้ายของข้อความ</p>
+        </div>
+        <p>บันทึกหนึ่งมีแท็กได้ไม่จำกัด และวางไว้ตรงไหนของข้อความก็ได้ ทั้งต้น กลาง หรือท้าย ขอแค่เว้นวรรคหลังแต่ละแท็ก</p>
+
+        <h3 id="not-highlighted">แท็กไม่ถูกไฮไลต์ ควรทำอย่างไร</h3>
+        <p>วางเคอร์เซอร์ไว้หลังคำทันทีแล้วกดเว้นวรรค หากยังไม่ได้ ให้ลบแท็กแล้วพิมพ์ใหม่: <code>#</code> ตามด้วยคำ แล้วเว้นวรรค</p>
+
+        <h2 id="rules">กฎการเขียน</h2>
+        <table>
+          <thead>
+            <tr><th>ตัวอย่าง</th><th>ผลลัพธ์</th><th>เหตุผล</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Travel</code> และ <code>#travel</code></td><td>แท็กเดียวกัน <code>travel</code></td><td>ตัวพิมพ์ใหญ่หรือเล็กไม่มีผล</td></tr>
+            <tr><td><code>#วันเกิด แม่</code></td><td>เฉพาะ <code>วันเกิด</code></td><td>การเว้นวรรคทำให้แท็กสิ้นสุด</td></tr>
+            <tr><td><code>#約會</code>, <code>#ความทรงจำ</code></td><td>ใช้ได้</td><td>ใช้ตัวอักษรภาษาใดก็ได้</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">เคล็ดลับ</span>
+          <p>แท็กที่มีหลายคำ ให้เชื่อมด้วยขีดล่างหรือขีดกลาง: <code>#วันเกิด_แม่</code>, <code>#หิมะ-แรก</code></p>
+        </div>
+
+        <h2 id="find">วิธีค้นหาบันทึกด้วยแท็ก</h2>
+        <ol class="steps">
+          <li>เปิดแท็บ <kbd>ไทม์ไลน์</kbd></li>
+          <li>แตะ <kbd>ตัวกรอง</kbd> ด้านบนของหน้าจอ</li>
+          <li>ในส่วน <kbd>แท็ก</kbd> เลือกแท็กที่ต้องการ หากมีหลายแท็ก ให้เริ่มพิมพ์ในช่อง <kbd>ค้นหาแท็ก…</kbd></li>
+          <li>ใช้ตัวกรอง</li>
+        </ol>
+        <p>แท็กที่ใช้บ่อยที่สุดจะอยู่ด้านบน</p>
+
+        <h3 id="several">ถ้าเลือกหลายแท็ก</h3>
+        <p>ไทม์ไลน์จะแสดงบันทึกที่มีแท็กที่เลือก<strong>อย่างน้อยหนึ่งแท็ก</strong> เช่น เลือก <code>#ทะเล</code> และ <code>#ภูเขา</code> จะเห็นทั้งทริปทะเลและทริปภูเขา</p>
+        <p>หากต้องการยกเลิกการเลือกทั้งหมด แตะ <kbd>ล้าง</kbd> ข้างหัวข้อของส่วนนั้น</p>
+        <p>ตัวกรองแท็กใช้กับ<a href="slideshow.html">สไลด์โชว์</a>และหนังสือด้วย เช่น เลือก <code>#เที่ยว</code> แล้วดูภาพยนตร์เฉพาะทริปนั้น ดูเพิ่มเติมที่<a href="filters.html">ตัวกรองและการค้นหา</a></p>
+
+        <h2 id="edit">วิธีแก้ไขหรือลบแท็ก</h2>
+        <p>เปิดบันทึก แก้ไขหรือลบคำที่มี <code>#</code> แล้วบันทึก รายการแท็กจะอัปเดตเอง แท็กจะหายจากตัวกรองเมื่อไม่มีบันทึกใดใช้อีก</p>
+
+        <h2 id="faq">คำถามที่พบบ่อย</h2>
+        <details>
+          <summary>ตัวกรองแจ้งว่ายังไม่มีแท็ก</summary>
+          <div><p>แท็กจะปรากฏก็ต่อเมื่อคุณใช้แท็กนั้นในบันทึกที่บันทึกแล้วอย่างน้อยหนึ่งรายการ ตรวจดูให้แน่ใจว่าแท็กถูกไฮไลต์เป็นสี ข้อความธรรมดาที่มี <code>#</code> ไม่นับเป็นแท็ก</p></div>
+        </details>
+        <details>
+          <summary>แท็กจาก Day One หรือ Apple Journal ยังอยู่ไหม?</summary>
+          <div><p>ยังอยู่ ระหว่าง<a href="export-import.html">การนำเข้า</a> Kadu จะค้นหาแฮชแท็กในข้อความของบันทึกที่นำเข้าแล้วเพิ่มลงในรายการ</p></div>
+        </details>
+        <details>
+          <summary>บันทึกมีอยู่ แต่ค้นหาด้วยแท็กไม่เจอ</summary>
+          <div>
+            <p>ตรวจสอบสามอย่าง:</p>
+            <ul>
+              <li>แท็กในบันทึก<strong>ถูกไฮไลต์ด้วยสีเน้น</strong>หรือไม่ ถ้าไม่ ให้เว้นวรรคหลังแท็กแล้วบันทึกอีกครั้ง</li>
+              <li>ตัวกรองค้นหาคำหลัง <code>#</code> ตรงตัว การเว้นวรรคตรงกลางทำให้แท็กสิ้นสุด</li>
+              <li>บันทึกไม่ได้อยู่ใน<a href="private-pin.html">หมวดหมู่ส่วนตัว</a> ไทม์ไลน์รวมจะไม่แสดงบันทึกเหล่านั้น</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

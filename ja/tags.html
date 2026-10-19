@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja" data-lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>タグ — Kadu ガイド</title>
+  <meta name="description" content="Kadu の記録にタグを付け、タグで記録を探す方法。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>タグ</h1>
+        <p class="lead">タグは、旅行・人・プロジェクトなど共通のテーマで記録をつなげます。Kadu には専用の入力欄はなく、タグは記録の本文に直接書きます。</p>
+
+        <h2 id="add">タグの付け方</h2>
+        <ol class="steps">
+          <li>本文に <code>#</code> を入力し、スペースを空けずに続けて単語を書きます：<code>#旅行</code></li>
+          <li><strong>単語のあとにスペースを入力します。</strong>ここで初めて本物のタグになります。</li>
+          <li>タグ <span class="tag-demo">#旅行</span> が<strong>アクセントカラーで強調表示</strong>されたことを確認します。</li>
+          <li>記録を保存します。</li>
+        </ol>
+        <blockquote>やっと海に着いた <span class="tag-demo">#旅行</span> <span class="tag-demo">#海2025</span> コーヒーで一息</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">いちばん大事なルール：タグは色が付いていること</span>
+          <p><code>#</code> の付いた単語が色付きにならず普通の文字のままなら、それはタグではありません。フィルターに表示されず、そのタグで記録を探すこともできません。たいていはタグのあとにスペースがないことが原因です（たとえば本文の最後の単語になっている場合）。</p>
+        </div>
+        <p>1 つの記録にいくつでもタグを付けられ、本文の最初・途中・最後のどこに置いてもかまいません。それぞれのあとにスペースを入れるだけです。</p>
+
+        <h3 id="not-highlighted">タグに色が付かないときは</h3>
+        <p>単語のすぐ後ろにカーソルを置き、スペースを押してください。それでもだめなら、タグを消して <code>#</code>、単語、スペースの順に入力し直します。</p>
+
+        <h2 id="rules">書き方のルール</h2>
+        <table>
+          <thead>
+            <tr><th>例</th><th>結果</th><th>理由</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Travel</code> と <code>#travel</code></td><td>1 つのタグ <code>travel</code></td><td>大文字・小文字は区別しません</td></tr>
+            <tr><td><code>#初雪 の日</code></td><td><code>初雪</code> のみ</td><td>スペースでタグが終わります</td></tr>
+            <tr><td><code>#約會</code>、<code>#ความทรงจำ</code></td><td>使えます</td><td>どの言語の文字でも OK です</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">ヒント</span>
+          <p>複数の単語からなるタグは、アンダースコアやハイフンでつなげましょう：<code>#誕生日_パーティー</code>、<code>#first-snow</code></p>
+        </div>
+
+        <h2 id="find">タグで記録を探す</h2>
+        <ol class="steps">
+          <li><kbd>タイムライン</kbd> タブを開きます。</li>
+          <li>画面上部の <kbd>フィルター</kbd> をタップします。</li>
+          <li><kbd>タグ</kbd> ブロックで目的のタグを選びます。数が多いときは <kbd>タグを検索…</kbd> 欄に名前を入力します。</li>
+          <li>フィルターを適用します。</li>
+        </ol>
+        <p>よく使うタグほど上に表示されます。</p>
+
+        <h3 id="several">複数のタグを選んだ場合</h3>
+        <p>選んだタグの<strong>どれか 1 つでも</strong>含む記録が表示されます。たとえば <code>#海</code> と <code>#山</code> を選ぶと、海の旅行も山の旅行も表示されます。</p>
+        <p>すべての選択を外すには、ブロック見出しの横にある <kbd>クリア</kbd> をタップします。</p>
+        <p>タグのフィルターは<a href="slideshow.html">スライドショー</a>とブックにも反映されます。たとえば <code>#旅行</code> を選べば、その旅行だけのムービーを見られます。詳しくは<a href="filters.html">フィルターと検索</a>をご覧ください。</p>
+
+        <h2 id="edit">タグの変更・削除</h2>
+        <p>記録を開き、<code>#</code> の付いた単語を書き換えるか消して保存します。タグの一覧は自動で更新されます。どの記録にも使われなくなったタグはフィルターから消えます。</p>
+
+        <h2 id="faq">よくある質問</h2>
+        <details>
+          <summary>フィルターに「タグがまだない」と表示される</summary>
+          <div><p>タグは、保存済みの記録で 1 回以上使ってはじめて表示されます。タグに色が付いているか確認してください。<code>#</code> の付いた普通の文字はタグとして扱われません。</p></div>
+        </details>
+        <details>
+          <summary>Day One や Apple Journal のタグは引き継がれますか？</summary>
+          <div><p>はい。<a href="export-import.html">読み込み</a>の際、Kadu は読み込んだ記録の本文からハッシュタグを見つけて一覧に追加します。</p></div>
+        </details>
+        <details>
+          <summary>記録はあるのにタグで見つからない</summary>
+          <div>
+            <p>次の 3 点を確認してください：</p>
+            <ul>
+              <li>記録の中のタグが<strong>アクセントカラーで強調表示</strong>されているか。されていなければ、後ろにスペースを入れて記録を保存し直します。</li>
+              <li>フィルターは <code>#</code> の後ろの単語そのものを探します。途中のスペースでタグは終わります。</li>
+              <li>記録が<a href="private-pin.html">プライベートカテゴリ</a>に入っていないか。全体のタイムラインには表示されません。</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

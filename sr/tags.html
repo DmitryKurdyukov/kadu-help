@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="sr" data-lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ознаке — Kadu водич</title>
+  <meta name="description" content="Како додати ознаке уносима у Kadu и пронаћи уносе по ознаци.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Ознаке</h1>
+        <p class="lead">Ознаке повезују уносе заједничком темом: путовањем, особом, пројектом. Kadu нема посебно поље за њих — ознаке се пишу директно у тексту уноса.</p>
+
+        <h2 id="add">Како додати ознаку</h2>
+        <ol class="steps">
+          <li>Унесите <code>#</code> у текст и одмах, без размака, напишите реч: <code>#одмор</code>.</li>
+          <li><strong>Откуцајте размак после речи.</strong> Тек тада она постаје права ознака.</li>
+          <li>Проверите да је ознака <span class="tag-demo">#одмор</span> <strong>истакнута акцентном бојом</strong>.</li>
+          <li>Сачувајте унос.</li>
+        </ol>
+        <blockquote>Коначно смо стигли на море <span class="tag-demo">#одмор</span> <span class="tag-demo">#море2025</span> и пијемо кафу</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">Најважније правило: ознака мора бити истакнута</span>
+          <p>Ако реч са <code>#</code> остане обичан текст уместо да се обоји, то није ознака. Неће се појавити у филтерима и унос се неће пронаћи по њој. Најчешће недостаје размак после ознаке — на пример, кад је то последња реч у тексту.</p>
+        </div>
+        <p>Унос може имати колико год желите ознака, било где у тексту: на почетку, у средини или на крају. Само ставите размак после сваке.</p>
+
+        <h3 id="not-highlighted">Ознака није истакнута — шта урадити</h3>
+        <p>Поставите курсор одмах иза речи и притисните размак. Ако не помогне, обришите ознаку и откуцајте је поново: <code>#</code>, реч, размак.</p>
+
+        <h2 id="rules">Правила писања</h2>
+        <table>
+          <thead>
+            <tr><th>Пример</th><th>Резултат</th><th>Зашто</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Одмор</code> и <code>#одмор</code></td><td>једна ознака <code>одмор</code></td><td>велика и мала слова нису битна</td></tr>
+            <tr><td><code>#први снег</code></td><td>само <code>први</code></td><td>размак завршава ознаку</td></tr>
+            <tr><td><code>#約會</code>, <code>#ความทรงจำ</code></td><td>раде</td><td>слова било ког језика су у реду</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">Савет</span>
+          <p>Ознаке од више речи спојите доњом цртом или цртицом: <code>#први_снег</code>, <code>#рођендан-мама</code>.</p>
+        </div>
+
+        <h2 id="find">Како пронаћи уносе по ознаци</h2>
+        <ol class="steps">
+          <li>Отворите картицу <kbd>Хроника</kbd>.</li>
+          <li>Додирните <kbd>Филтери</kbd> на врху екрана.</li>
+          <li>У блоку <kbd>Ознаке</kbd> означите жељене ознаке. Ако их има много, почните да куцате у поље <kbd>Претражи ознаке…</kbd>.</li>
+          <li>Примените филтер.</li>
+        </ol>
+        <p>Најкоришћеније ознаке стоје на почетку листе.</p>
+
+        <h3 id="several">Ако изаберете више ознака</h3>
+        <p>Хроника приказује уносе који имају <strong>бар једну</strong> од изабраних ознака. На пример, уз <code>#море</code> и <code>#планине</code> видећете и путовања на море и у планине.</p>
+        <p>Да поништите све, додирните <kbd>Обриши</kbd> поред наслова блока.</p>
+        <p>Филтер по ознаци важи и за <a href="slideshow.html">пројекцију</a> и књигу. На пример, означите <code>#одмор</code> и погледајте филм само о том одмору. Више у одељку <a href="filters.html">Филтери и претрага</a>.</p>
+
+        <h2 id="edit">Како изменити или уклонити ознаку</h2>
+        <p>Отворите унос, измените или обришите реч са <code>#</code> и сачувајте. Листа ознака се сама ажурира. Ознака нестаје из филтера кад је више ниједан унос не користи.</p>
+
+        <h2 id="faq">Честа питања</h2>
+        <details>
+          <summary>Филтери кажу да још нема ознака</summary>
+          <div><p>Ознаке се појављују тек кад их употребите у бар једном сачуваном уносу. Проверите да је ознака обојена — обичан текст са <code>#</code> се не рачуна као ознака.</p></div>
+        </details>
+        <details>
+          <summary>Да ли се чувају ознаке из Day One или Apple Journal?</summary>
+          <div><p>Да. Током <a href="export-import.html">увоза</a> Kadu проналази хештегове у тексту увезених уноса и додаје их на листу.</p></div>
+        </details>
+        <details>
+          <summary>Ознака се не проналази иако унос постоји</summary>
+          <div>
+            <p>Проверите три ствари:</p>
+            <ul>
+              <li>ознака у уносу је <strong>истакнута акцентном бојом</strong>. Ако није, додајте размак после ње и поново сачувајте унос;</li>
+              <li>филтери траже тачно реч после <code>#</code>: размак унутра завршава ознаку;</li>
+              <li>унос није у <a href="private-pin.html">приватној категорији</a>: општа хроника их не приказује.</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="de" data-lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filter &amp; Suche — Kadu-Anleitung</title>
+  <meta name="description" content="So suchst und filterst du Einträge in der Kadu-Zeitleiste: Text, Kategorien, Favoriten, Tags, Daten und Reihenfolge.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Filter & Suche</h1>
+        <p class="lead">Die Zeitleiste zeigt alle Einträge vom neuesten zum ältesten. Filter lassen nur übrig, was du brauchst: bestimmte Tage, eine Kategorie, einen Tag oder ein Wort im Text.</p>
+
+        <h2 id="filters">Filterbereich</h2>
+        <p>Öffne den Tab <kbd>Zeitleiste</kbd> und tippe oben auf <kbd>Filter</kbd>. Wähle die Bedingungen und wende sie an.</p>
+        <table>
+          <thead>
+            <tr><th>Filter</th><th>Was er tut</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>Text</kbd></td><td>Behält Einträge, deren Text diese Wörter enthält. Groß- und Kleinschreibung spielen keine Rolle.</td></tr>
+            <tr><td><kbd>Kategorie</kbd></td><td>Zeigt nur Einträge einer Kategorie. <kbd>Alle</kbd> hebt die Einschränkung auf.</td></tr>
+            <tr><td><kbd>Favoriten</kbd></td><td>Der Schalter <kbd>Nur Favoriten</kbd> behält Einträge mit Stern.</td></tr>
+            <tr><td><kbd>Reihenfolge</kbd></td><td><kbd>Reihenfolge umkehren</kbd> zeigt die ältesten Einträge zuerst.</td></tr>
+            <tr><td><kbd>Tags</kbd></td><td>Einträge mit mindestens einem der gewählten Tags. Mehr unter <a href="tags.html">Tags</a>.</td></tr>
+          </tbody>
+        </table>
+        <p>Filter lassen sich kombinieren. Wählst du die Kategorie „Reisen“ und den Tag <code>#meer</code>, bleiben nur Meer-Einträge aus dieser Kategorie.</p>
+
+        <h2 id="calendar">Kalender: ein Tag oder ein Zeitraum</h2>
+        <p>Neben den Filtern oben in der Zeitleiste gibt es eine Kalender-Taste. Solange kein Datum gewählt ist, steht dort <kbd>Gesamte Zeit</kbd>.</p>
+        <ul>
+          <li><kbd>Datum</kbd>: Wähle einen Tag, um nur dessen Einträge zu sehen.</li>
+          <li><kbd>Zeitraum</kbd>: Markiere den ersten und letzten Tag eines Zeitraums.</li>
+        </ul>
+        <p>Tippe auf <kbd>Anwenden</kbd>, um die Auswahl zu übernehmen, oder auf <kbd>Zurücksetzen</kbd>, um wieder alles zu sehen.</p>
+
+        <h2 id="shortcuts">Abkürzungen vom Startbildschirm</h2>
+        <p>Manche Filter schaltest du direkt vom Startbildschirm ein:</p>
+        <ul>
+          <li><strong>Die Karten <kbd>Woche</kbd>, <kbd>Monat</kbd>, <kbd>Jahr</kbd></strong> zeigen, wie viele Einträge du diese Woche (Montag bis Sonntag), diesen Monat und dieses Jahr gemacht hast. Ein Tipp auf eine Karte öffnet die Zeitleiste bereits nach diesem Zeitraum gefiltert.</li>
+          <li><strong>Eine Kategoriekarte</strong> öffnet die Zeitleiste nur mit den Einträgen dieser Kategorie.</li>
+          <li><strong><kbd>An diesem Tag</kbd></strong>: Die Taste erscheint, wenn du Einträge vom selben Tag aus früheren Jahren hast. Sie öffnet die Zeitleiste mit den Einträgen dieses Tages.</li>
+        </ul>
+
+        <h2 id="views">Diashow, Buch und Mediathek hängen von den Filtern ab</h2>
+        <p>Das ist am wenigsten offensichtlich. Die Tasten <kbd>Diashow</kbd>, <kbd>Buch</kbd> und <kbd>Mediathek</kbd> in der Zeitleiste verwenden <strong>genau das, was die Zeitleiste gerade zeigt</strong> – inklusive Filter, Suche, Datum und Reihenfolge.</p>
+        <div class="note">
+          <span class="note-title">Beispiel</span>
+          <p>Du willst eine Diashow vom Sommerurlaub? Wähle im Kalender Juni bis August, markiere den Tag <code>#urlaub</code> und tippe auf <kbd>Diashow</kbd>. Nur diese Einträge kommen in den Film.</p>
+        </div>
+        <p>Zeigen Diashow oder Buch scheinbar „nicht alles“, prüfe, ob noch ein Filter aktiv ist.</p>
+
+        <h2 id="faq">Häufige Fragen</h2>
+        <details>
+          <summary>Einträge sind aus der Zeitleiste verschwunden</summary>
+          <div>
+            <p>Wahrscheinlich liegt es an einem dieser Punkte:</p>
+            <ul>
+              <li>ein Filter ist aktiv oder im Kalender ist ein Zeitraum gewählt;</li>
+              <li>die Einträge liegen in einer <a href="private-pin.html">privaten Kategorie</a>: Die allgemeine Zeitleiste zeigt sie nie;</li>
+              <li>die App wurde mit einer <a href="fake-pin.html">falschen PIN</a> geöffnet.</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>Warum fehlt meine private Kategorie im Kategoriefilter?</summary>
+          <div><p>Private Kategorien erscheinen weder in Filtern noch in der allgemeinen Zeitleiste. Öffne eine solche Kategorie über ihre Karte auf dem Startbildschirm. Ist eine PIN gesetzt, fragt die App zuerst danach.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

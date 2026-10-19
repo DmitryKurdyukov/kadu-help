@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fake PIN — Kadu Guide</title>
+  <meta name="description" content="Fake PIN in Kadu: a second code that opens the app without private categories.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Fake PIN <span class="premium">Premium</span></h1>
+        <p class="lead">A fake PIN is a second code for Kadu. It opens the app as usual, just without private categories. To anyone watching, it looks as if they never existed.</p>
+
+        <h2 id="why">Why you'd need it</h2>
+        <p>Sometimes you're asked to show your journal and it's awkward to refuse. Enter the fake code: the other person sees ordinary entries while your personal ones stay hidden. There's no “mode” or hint on screen.</p>
+
+        <h2 id="what-hidden">What happens after entering the fake code</h2>
+        <ul>
+          <li>private categories disappear from the home screen;</li>
+          <li>their entries don't show in the timeline, filters, slideshow, book or export;</li>
+          <li>everything else works as usual.</li>
+        </ul>
+        <p>No data is deleted. When you enter your real PIN, everything is back in place.</p>
+
+        <h2 id="set">How to set it</h2>
+        <ol class="steps">
+          <li>First set your main PIN: <span class="path">Settings → PIN code → Set PIN code</span>. Without it the app doesn't ask for a code at launch, so a fake one is useless.</li>
+          <li>Tap <kbd>Set fake PIN code</kbd>.</li>
+          <li>Enter 4 digits and repeat them.</li>
+        </ol>
+        <div class="note warning">
+          <span class="note-title">The codes must be different</span>
+          <p>If the fake code matches the main one, Kadu will always open in normal mode and the fake code won't work.</p>
+        </div>
+
+        <h2 id="reset">How to turn it off</h2>
+        <p>Open <span class="path">Settings → PIN code → Reset fake PIN code</span> and enter your <strong>main</strong> PIN. The fake code can't reset itself — otherwise anyone who knows it could turn off the protection.</p>
+
+        <h2 id="faq">FAQ</h2>
+        <details>
+          <summary>How do I get back to the full journal after using the fake code?</summary>
+          <div><p>Close the app completely, open it again and enter your main PIN.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

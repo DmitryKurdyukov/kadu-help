@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="sv" data-lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taggar — Kadu-guide</title>
+  <meta name="description" content="Så lägger du till taggar i Kadu-anteckningar och hittar anteckningar efter tagg.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Taggar</h1>
+        <p class="lead">Taggar knyter ihop anteckningar med ett gemensamt tema: en resa, en person, ett projekt. Kadu har inget separat fält för dem – taggar skrivs direkt i anteckningens text.</p>
+
+        <h2 id="add">Så lägger du till en tagg</h2>
+        <ol class="steps">
+          <li>Skriv <code>#</code> i texten och direkt efter, utan mellanslag, ett ord: <code>#semester</code>.</li>
+          <li><strong>Skriv ett mellanslag efter ordet.</strong> Först då blir det en riktig tagg.</li>
+          <li>Kontrollera att taggen <span class="tag-demo">#semester</span> är <strong>markerad i accentfärgen</strong>.</li>
+          <li>Spara anteckningen.</li>
+        </ol>
+        <blockquote>Äntligen framme vid havet <span class="tag-demo">#semester</span> <span class="tag-demo">#hav2025</span> och dricker kaffe</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">Den viktigaste regeln: taggen måste vara markerad</span>
+          <p>Om ett ord med <code>#</code> förblir vanlig text i stället för att få färg är det ingen tagg. Den syns inte i filtren och anteckningen hittas inte med den. Det händer oftast när mellanslaget efter taggen saknas – till exempel när den är textens sista ord.</p>
+        </div>
+        <p>En anteckning kan ha hur många taggar som helst, var som helst i texten: i början, mitten eller slutet. Sätt bara ett mellanslag efter varje.</p>
+
+        <h3 id="not-highlighted">Taggen är inte markerad – vad gör jag</h3>
+        <p>Placera markören direkt efter ordet och tryck på mellanslag. Hjälper det inte, radera taggen och skriv den igen: <code>#</code>, ordet, ett mellanslag.</p>
+
+        <h2 id="rules">Skrivregler</h2>
+        <table>
+          <thead>
+            <tr><th>Exempel</th><th>Resultat</th><th>Varför</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Semester</code> och <code>#semester</code></td><td>en tagg <code>semester</code></td><td>versaler och gemener spelar ingen roll</td></tr>
+            <tr><td><code>#första snön</code></td><td>bara <code>första</code></td><td>ett mellanslag avslutar taggen</td></tr>
+            <tr><td><code>#約會</code>, <code>#ความทรงจำ</code></td><td>fungerar</td><td>bokstäver från alla språk går bra</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">Tips</span>
+          <p>Binda ihop flera ord med understreck eller bindestreck: <code>#första_snön</code>, <code>#födelsedags-fest</code>.</p>
+        </div>
+
+        <h2 id="find">Så hittar du anteckningar efter tagg</h2>
+        <ol class="steps">
+          <li>Öppna fliken <kbd>Tidslinje</kbd>.</li>
+          <li>Tryck på <kbd>Filter</kbd> högst upp.</li>
+          <li>Markera önskade taggar i blocket <kbd>Taggar</kbd>. Om de är många, skriv i fältet <kbd>Sök taggar…</kbd>.</li>
+          <li>Använd filtret.</li>
+        </ol>
+        <p>De mest använda taggarna står först.</p>
+
+        <h3 id="several">Om flera taggar är valda</h3>
+        <p>Tidslinjen visar anteckningar med <strong>minst en</strong> av de valda taggarna. Med <code>#hav</code> och <code>#fjäll</code> ser du alltså både havs- och fjällresor.</p>
+        <p>Avmarkera alla genom att trycka på <kbd>Rensa</kbd> bredvid blockets rubrik.</p>
+        <p>Taggfiltret gäller även <a href="slideshow.html">bildspelet</a> och boken. Markera till exempel <code>#semester</code> och se en film om just den semestern. Mer i <a href="filters.html">Filter och sökning</a>.</p>
+
+        <h2 id="edit">Ändra eller ta bort en tagg</h2>
+        <p>Öppna anteckningen, ändra eller radera ordet med <code>#</code> och spara. Tagglistan uppdateras automatiskt. En tagg försvinner från filtren när ingen anteckning längre använder den.</p>
+
+        <h2 id="faq">Vanliga frågor</h2>
+        <details>
+          <summary>Filtren säger att det inte finns några taggar än</summary>
+          <div><p>Taggar visas först när du har använt dem i minst en sparad anteckning. Kontrollera att taggen är färgmarkerad – vanlig text med <code>#</code> räknas inte som tagg.</p></div>
+        </details>
+        <details>
+          <summary>Behålls taggar från Day One eller Apple Journal?</summary>
+          <div><p>Ja. Vid <a href="export-import.html">import</a> hittar Kadu hashtaggar i texten i importerade anteckningar och lägger till dem i listan.</p></div>
+        </details>
+        <details>
+          <summary>En tagg hittas inte trots att anteckningen finns</summary>
+          <div>
+            <p>Kontrollera tre saker:</p>
+            <ul>
+              <li>taggen i anteckningen är <strong>markerad i accentfärgen</strong>. Om inte, lägg till ett mellanslag efter den och spara anteckningen igen;</li>
+              <li>filtren söker exakt ordet efter <code>#</code>: ett mellanslag inuti avslutar taggen;</li>
+              <li>anteckningen ligger inte i en <a href="private-pin.html">privat kategori</a>: den allmänna tidslinjen visar inte sådana.</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

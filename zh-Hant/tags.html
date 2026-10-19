@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-Hant" data-lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>標籤 — Kadu 使用指南</title>
+  <meta name="description" content="如何給 Kadu 記錄新增標籤，以及按標籤查詢記錄。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>標籤</h1>
+        <p class="lead">標籤用一個共同主題把記錄串起來：一次旅行、一個人、一個專案。Kadu 沒有單獨的標籤輸入框——標籤直接寫在記錄正文裡。</p>
+
+        <h2 id="add">如何新增標籤</h2>
+        <ol class="steps">
+          <li>在正文中輸入 <code>#</code>，緊接著輸入一個詞，中間不要空格：<code>#旅行</code>。</li>
+          <li><strong>在詞後面輸入一個空格。</strong>只有這樣它才會變成真正的標籤。</li>
+          <li>確認標籤 <span class="tag-demo">#旅行</span> <strong>以強調色高亮顯示</strong>。</li>
+          <li>儲存記錄。</li>
+        </ol>
+        <blockquote>終於到海邊了 <span class="tag-demo">#旅行</span> <span class="tag-demo">#海邊2025</span> 喝杯咖啡</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">最重要的規則：標籤必須高亮</span>
+          <p>如果帶 <code>#</code> 的詞仍是普通文字、沒有變色，它就不是標籤。它不會出現在篩選裡，也無法透過它找到記錄。最常見的原因是標籤後面少了空格——比如它是正文的最後一個詞。</p>
+        </div>
+        <p>一條記錄可以有任意多個標籤，放在正文的開頭、中間或結尾都可以。只要每個標籤後面都有空格。</p>
+
+        <h3 id="not-highlighted">標籤沒有高亮怎麼辦</h3>
+        <p>把游標放在詞的後面，按一下空格。如果還不行，刪掉標籤重新輸入：<code>#</code>、詞、空格。</p>
+
+        <h2 id="rules">書寫規則</h2>
+        <table>
+          <thead>
+            <tr><th>示例</th><th>結果</th><th>原因</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Travel</code> 和 <code>#travel</code></td><td>同一個標籤 <code>travel</code></td><td>不區分大小寫</td></tr>
+            <tr><td><code>#初雪 那天</code></td><td>只有 <code>初雪</code></td><td>空格會結束標籤</td></tr>
+            <tr><td><code>#約會</code>、<code>#ความทรงจำ</code></td><td>可以使用</td><td>任何語言的文字都行</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">提示</span>
+          <p>由多個片語成的標籤，可以用下劃線或連字元連線：<code>#生日_派對</code>、<code>#first-snow</code>。</p>
+        </div>
+
+        <h2 id="find">按標籤查詢記錄</h2>
+        <ol class="steps">
+          <li>開啟 <kbd>時間線</kbd> 標籤頁。</li>
+          <li>點按螢幕頂部的 <kbd>篩選</kbd>。</li>
+          <li>在 <kbd>標籤</kbd> 區域勾選需要的標籤。標籤很多時，在 <kbd>搜尋標籤…</kbd> 框中輸入名稱。</li>
+          <li>應用篩選。</li>
+        </ol>
+        <p>最常用的標籤排在最前面。</p>
+
+        <h3 id="several">選擇了多個標籤時</h3>
+        <p>時間線會顯示包含所選標籤中<strong>至少一個</strong>的記錄。例如選擇 <code>#海邊</code> 和 <code>#山</code>，海邊和山裡的旅行都會顯示。</p>
+        <p>要取消全部選擇，點按區域標題旁的 <kbd>清除</kbd>。</p>
+        <p>標籤篩選同樣作用於<a href="slideshow.html">投影片</a>和書。例如勾選 <code>#旅行</code>，就能看一部只關於這次旅行的影片。詳見<a href="filters.html">篩選與搜尋</a>。</p>
+
+        <h2 id="edit">修改或刪除標籤</h2>
+        <p>開啟記錄，修改或刪除帶 <code>#</code> 的詞並儲存。標籤列表會自動更新。當沒有任何記錄再使用某個標籤時，它會從篩選中消失。</p>
+
+        <h2 id="faq">常見問題</h2>
+        <details>
+          <summary>篩選裡顯示還沒有標籤</summary>
+          <div><p>標籤只有在至少一條已儲存的記錄中使用過之後才會出現。請確認標籤已高亮——帶 <code>#</code> 的普通文字不算標籤。</p></div>
+        </details>
+        <details>
+          <summary>Day One 或 Apple Journal 的標籤會保留嗎？</summary>
+          <div><p>會。<a href="export-import.html">匯入</a>時，Kadu 會在匯入記錄的正文中找出話題標籤並加入列表。</p></div>
+        </details>
+        <details>
+          <summary>記錄明明存在，卻按標籤找不到</summary>
+          <div>
+            <p>檢查三點：</p>
+            <ul>
+              <li>記錄中的標籤是否<strong>以強調色高亮</strong>。如果沒有，在它後面加一個空格並重新儲存記錄；</li>
+              <li>篩選會精確查詢 <code>#</code> 後面的詞：中間有空格會結束標籤；</li>
+              <li>記錄不在<a href="private-pin.html">私人分類</a>中：總時間線不會顯示它們。</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

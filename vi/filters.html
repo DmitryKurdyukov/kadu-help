@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="vi" data-lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bộ lọc và tìm kiếm — Hướng dẫn Kadu</title>
+  <meta name="description" content="Cách tìm và lọc ghi chép trên dòng thời gian Kadu: chữ, danh mục, yêu thích, thẻ, ngày và thứ tự.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Bộ lọc và tìm kiếm</h1>
+        <p class="lead">Dòng thời gian hiển thị tất cả ghi chép từ mới nhất đến cũ nhất. Bộ lọc chỉ giữ lại thứ bạn cần: vài ngày nhất định, một danh mục, một thẻ hay một từ trong nội dung.</p>
+
+        <h2 id="filters">Bảng bộ lọc</h2>
+        <p>Mở tab <kbd>Dòng thời gian</kbd> và chạm <kbd>Bộ lọc</kbd> ở phía trên. Chọn điều kiện rồi áp dụng.</p>
+        <table>
+          <thead>
+            <tr><th>Bộ lọc</th><th>Tác dụng</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>Văn bản</kbd></td><td>Giữ lại ghi chép có chứa các từ này. Chữ hoa hay thường đều như nhau.</td></tr>
+            <tr><td><kbd>Danh mục</kbd></td><td>Chỉ hiển thị ghi chép của một danh mục. <kbd>Tất cả</kbd> bỏ giới hạn.</td></tr>
+            <tr><td><kbd>Yêu thích</kbd></td><td>Công tắc <kbd>Chỉ mục yêu thích</kbd> giữ lại ghi chép được gắn sao.</td></tr>
+            <tr><td><kbd>Thứ tự</kbd></td><td><kbd>Đảo ngược thứ tự</kbd> hiển thị ghi chép cũ nhất trước.</td></tr>
+            <tr><td><kbd>Thẻ</kbd></td><td>Ghi chép có ít nhất một trong các thẻ đã chọn. Xem thêm ở <a href="tags.html">Thẻ</a>.</td></tr>
+          </tbody>
+        </table>
+        <p>Các bộ lọc kết hợp với nhau. Nếu chọn danh mục "Du lịch" và thẻ <code>#bien</code>, chỉ còn các ghi chép về biển trong danh mục đó.</p>
+
+        <h2 id="calendar">Lịch: một ngày hoặc một khoảng thời gian</h2>
+        <p>Cạnh bộ lọc ở phía trên dòng thời gian có nút lịch. Khi chưa chọn ngày, nút hiển thị <kbd>Mọi lúc</kbd>.</p>
+        <ul>
+          <li><kbd>Ngày</kbd>: chọn một ngày để chỉ xem ghi chép của ngày đó.</li>
+          <li><kbd>Khoảng thời gian</kbd>: đánh dấu ngày đầu và ngày cuối của một khoảng.</li>
+        </ul>
+        <p>Chạm <kbd>Áp dụng</kbd> để dùng lựa chọn, hoặc <kbd>Đặt lại</kbd> để xem lại toàn bộ thời gian.</p>
+
+        <h2 id="shortcuts">Lối tắt từ màn hình chính</h2>
+        <p>Một số bộ lọc được bật ngay từ màn hình chính:</p>
+        <ul>
+          <li><strong>Các thẻ <kbd>Tuần</kbd>, <kbd>Tháng</kbd>, <kbd>Năm</kbd></strong> cho biết bạn đã viết bao nhiêu ghi chép trong tuần này (thứ Hai đến Chủ nhật), tháng này và năm nay. Chạm vào một thẻ sẽ mở dòng thời gian đã lọc theo khoảng đó.</li>
+          <li><strong>Thẻ danh mục</strong> mở dòng thời gian chỉ gồm ghi chép của danh mục đó.</li>
+          <li><strong><kbd>Ngày này năm xưa</kbd></strong>: nút này xuất hiện nếu bạn có ghi chép vào cùng ngày này ở những năm trước. Nút mở dòng thời gian với ghi chép của ngày đó.</li>
+        </ul>
+
+        <h2 id="views">Trình chiếu, Sách và Thư viện phụ thuộc vào bộ lọc</h2>
+        <p>Đây là điều khó nhận ra nhất. Các nút <kbd>Trình chiếu</kbd>, <kbd>Sách</kbd> và <kbd>Thư viện phương tiện</kbd> trên dòng thời gian dùng <strong>chính xác những gì dòng thời gian đang hiển thị</strong> — gồm cả bộ lọc, tìm kiếm, ngày và thứ tự.</p>
+        <div class="note">
+          <span class="note-title">Ví dụ</span>
+          <p>Muốn trình chiếu kỳ nghỉ hè? Chọn từ tháng Sáu đến tháng Tám trong lịch, chọn thẻ <code>#dulich</code> rồi chạm <kbd>Trình chiếu</kbd>. Chỉ những ghi chép đó được đưa vào phim.</p>
+        </div>
+        <p>Nếu trình chiếu hoặc sách dường như không hiển thị "tất cả", hãy kiểm tra xem còn bộ lọc nào đang bật không.</p>
+
+        <h2 id="faq">Câu hỏi thường gặp</h2>
+        <details>
+          <summary>Ghi chép biến mất khỏi dòng thời gian</summary>
+          <div>
+            <p>Nhiều khả năng là một trong các lý do sau:</p>
+            <ul>
+              <li>đang bật bộ lọc hoặc đã chọn khoảng thời gian trong lịch;</li>
+              <li>ghi chép nằm trong <a href="private-pin.html">danh mục riêng tư</a>: dòng thời gian chung không bao giờ hiển thị chúng;</li>
+              <li>ứng dụng được mở bằng <a href="fake-pin.html">PIN giả</a>.</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>Vì sao danh mục riêng tư của tôi không có trong bộ lọc danh mục?</summary>
+          <div><p>Danh mục riêng tư không xuất hiện trong bộ lọc lẫn dòng thời gian chung. Hãy mở danh mục đó từ màn hình chính bằng cách chạm vào thẻ của nó. Nếu đã đặt PIN, ứng dụng sẽ yêu cầu nhập trước.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

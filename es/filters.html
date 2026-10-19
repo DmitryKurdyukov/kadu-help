@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filtros y búsqueda — Guía de Kadu</title>
+  <meta name="description" content="Cómo buscar y filtrar entradas en la línea de tiempo de Kadu: texto, categorías, favoritos, etiquetas, fechas y orden.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Filtros y búsqueda</h1>
+        <p class="lead">La línea de tiempo muestra todas las entradas de la más nueva a la más antigua. Los filtros dejan solo lo que necesitas: ciertos días, una categoría, una etiqueta o una palabra del texto.</p>
+
+        <h2 id="filters">Panel de filtros</h2>
+        <p>Abre la pestaña <kbd>Línea de tiempo</kbd> y toca <kbd>Filtros</kbd> arriba. Elige las condiciones y aplícalas.</p>
+        <table>
+          <thead>
+            <tr><th>Filtro</th><th>Qué hace</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>Texto</kbd></td><td>Deja las entradas cuyo texto contiene esas palabras. No importan mayúsculas ni minúsculas.</td></tr>
+            <tr><td><kbd>Categoría</kbd></td><td>Muestra entradas de una sola categoría. <kbd>Todo</kbd> quita el límite.</td></tr>
+            <tr><td><kbd>Favoritos</kbd></td><td>El interruptor <kbd>Solo favoritos</kbd> deja las entradas marcadas con estrella.</td></tr>
+            <tr><td><kbd>Orden</kbd></td><td><kbd>Orden inverso</kbd> muestra primero las entradas más antiguas.</td></tr>
+            <tr><td><kbd>Etiquetas</kbd></td><td>Entradas con al menos una de las etiquetas elegidas. Más en <a href="tags.html">Etiquetas</a>.</td></tr>
+          </tbody>
+        </table>
+        <p>Los filtros se combinan. Si eliges la categoría «Viajes» y la etiqueta <code>#mar</code>, solo quedan las entradas del mar de esa categoría.</p>
+
+        <h2 id="calendar">Calendario: un día o un periodo</h2>
+        <p>Junto a los filtros, arriba en la línea de tiempo, hay un botón de calendario. Mientras no elijas fechas, muestra <kbd>Todo el tiempo</kbd>.</p>
+        <ul>
+          <li><kbd>Fecha</kbd>: elige un día para ver solo las entradas de ese día.</li>
+          <li><kbd>Período</kbd>: marca el primer y el último día de un rango.</li>
+        </ul>
+        <p>Toca <kbd>Aplicar</kbd> para usar la selección o <kbd>Restablecer</kbd> para volver a ver todo.</p>
+
+        <h2 id="shortcuts">Atajos desde la pantalla de inicio</h2>
+        <p>Algunos filtros se activan directamente desde la pantalla de inicio:</p>
+        <ul>
+          <li><strong>Las tarjetas <kbd>Semana</kbd>, <kbd>Mes</kbd>, <kbd>Año</kbd></strong> muestran cuántas entradas hiciste esta semana (de lunes a domingo), este mes y este año. Al tocar una, se abre la línea de tiempo ya filtrada por ese periodo.</li>
+          <li><strong>Una tarjeta de categoría</strong> abre la línea de tiempo solo con las entradas de esa categoría.</li>
+          <li><strong><kbd>En este día</kbd></strong>: el botón aparece si tienes entradas de este mismo día en años anteriores. Abre la línea de tiempo con las entradas de ese día.</li>
+        </ul>
+
+        <h2 id="views">La presentación, el libro y la mediateca dependen de los filtros</h2>
+        <p>Es lo menos obvio. Los botones <kbd>Presentación</kbd>, <kbd>Libro</kbd> y <kbd>Mediateca</kbd> de la línea de tiempo usan <strong>exactamente lo que la línea de tiempo muestra ahora</strong>: con filtros, búsqueda, fechas y orden.</p>
+        <div class="note">
+          <span class="note-title">Ejemplo</span>
+          <p>¿Quieres una presentación de tus vacaciones de verano? Elige de junio a agosto en el calendario, marca la etiqueta <code>#vacaciones</code> y toca <kbd>Presentación</kbd>. Solo esas entradas entrarán en la película.</p>
+        </div>
+        <p>Si la presentación o el libro parecen mostrar «no todo», comprueba si queda algún filtro activo.</p>
+
+        <h2 id="faq">Preguntas frecuentes</h2>
+        <details>
+          <summary>Han desaparecido entradas de la línea de tiempo</summary>
+          <div>
+            <p>Lo más probable es una de estas causas:</p>
+            <ul>
+              <li>hay un filtro activo o un periodo elegido en el calendario;</li>
+              <li>las entradas están en una <a href="private-pin.html">categoría privada</a>: la línea de tiempo general nunca las muestra;</li>
+              <li>la app se abrió con un <a href="fake-pin.html">PIN falso</a>.</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>¿Por qué mi categoría privada no está en el filtro de categorías?</summary>
+          <div><p>Las categorías privadas no aparecen en los filtros ni en la línea de tiempo general. Abre esa categoría desde la pantalla de inicio tocando su tarjeta. Si hay un PIN, la app lo pedirá primero.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

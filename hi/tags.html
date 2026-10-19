@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="hi" data-lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>टैग — Kadu गाइड</title>
+  <meta name="description" content="Kadu की एंट्री में टैग कैसे जोड़ें और टैग से एंट्री कैसे ढूँढें।">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>टैग</h1>
+        <p class="lead">टैग एंट्री को किसी साझा विषय से जोड़ते हैं: कोई यात्रा, कोई व्यक्ति, कोई प्रोजेक्ट। Kadu में टैग के लिए अलग फ़ील्ड नहीं है — टैग सीधे एंट्री के टेक्स्ट में लिखे जाते हैं।</p>
+
+        <h2 id="add">टैग कैसे जोड़ें</h2>
+        <ol class="steps">
+          <li>टेक्स्ट में <code>#</code> लिखें और तुरंत, बिना स्पेस के, एक शब्द लिखें: <code>#छुट्टी</code>।</li>
+          <li><strong>शब्द के बाद एक स्पेस दें।</strong> तभी यह असली टैग बनता है।</li>
+          <li>देखें कि टैग <span class="tag-demo">#छुट्टी</span> <strong>एक्सेंट रंग में हाइलाइट</strong> हुआ है।</li>
+          <li>एंट्री सहेजें।</li>
+        </ol>
+        <blockquote>आख़िरकार समुद्र तक पहुँच गए <span class="tag-demo">#छुट्टी</span> <span class="tag-demo">#समुद्र2025</span> और कॉफ़ी पी रहे हैं</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">सबसे ज़रूरी नियम: टैग हाइलाइट होना चाहिए</span>
+          <p>अगर <code>#</code> वाला शब्द रंगीन होने के बजाय सामान्य टेक्स्ट ही रहता है, तो वह टैग नहीं है। वह फ़िल्टर में नहीं दिखेगा और उससे एंट्री नहीं मिलेगी। अक्सर ऐसा तब होता है जब टैग के बाद स्पेस नहीं होता — जैसे जब वह टेक्स्ट का आख़िरी शब्द हो।</p>
+        </div>
+        <p>एक एंट्री में जितने चाहें उतने टैग हो सकते हैं, टेक्स्ट में कहीं भी: शुरुआत, बीच या आख़िर में। बस हर टैग के बाद स्पेस दें।</p>
+
+        <h3 id="not-highlighted">टैग हाइलाइट नहीं हुआ — क्या करें</h3>
+        <p>कर्सर को शब्द के ठीक बाद रखें और स्पेस दबाएँ। अगर इससे काम न बने, तो टैग मिटाकर दोबारा लिखें: <code>#</code>, शब्द, स्पेस।</p>
+
+        <h2 id="rules">लिखने के नियम</h2>
+        <table>
+          <thead>
+            <tr><th>उदाहरण</th><th>नतीजा</th><th>क्यों</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Travel</code> और <code>#travel</code></td><td>एक ही टैग <code>travel</code></td><td>बड़े-छोटे अक्षरों से फ़र्क़ नहीं पड़ता</td></tr>
+            <tr><td><code>#पहली बर्फ़</code></td><td>सिर्फ़ <code>पहली</code></td><td>स्पेस टैग को ख़त्म कर देता है</td></tr>
+            <tr><td><code>#約會</code>, <code>#ความทรงจำ</code></td><td>काम करते हैं</td><td>किसी भी भाषा के अक्षर चलते हैं</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">सुझाव</span>
+          <p>कई शब्दों वाले टैग को अंडरस्कोर या हाइफ़न से जोड़ें: <code>#पहली_बर्फ़</code>, <code>#जन्मदिन-पार्टी</code>।</p>
+        </div>
+
+        <h2 id="find">टैग से एंट्री कैसे ढूँढें</h2>
+        <ol class="steps">
+          <li><kbd>टाइमलाइन</kbd> टैब खोलें।</li>
+          <li>स्क्रीन के ऊपर <kbd>फ़िल्टर</kbd> पर टैप करें।</li>
+          <li><kbd>टैग</kbd> ब्लॉक में ज़रूरी टैग चुनें। अगर बहुत सारे हों, तो <kbd>टैग खोजें…</kbd> फ़ील्ड में लिखना शुरू करें।</li>
+          <li>फ़िल्टर लागू करें।</li>
+        </ol>
+        <p>सबसे ज़्यादा इस्तेमाल होने वाले टैग सबसे ऊपर होते हैं।</p>
+
+        <h3 id="several">अगर कई टैग चुने हों</h3>
+        <p>टाइमलाइन उन एंट्री को दिखाती है जिनमें चुने गए टैग में से <strong>कम से कम एक</strong> हो। जैसे <code>#समुद्र</code> और <code>#पहाड़</code> चुनने पर समुद्र और पहाड़ दोनों की यात्राएँ दिखेंगी।</p>
+        <p>सारे टैग हटाने के लिए ब्लॉक के शीर्षक के पास <kbd>साफ़ करें</kbd> पर टैप करें।</p>
+        <p>टैग फ़िल्टर <a href="slideshow.html">स्लाइडशो</a> और किताब पर भी लागू होता है। जैसे <code>#छुट्टी</code> चुनें और सिर्फ़ उसी छुट्टी की फ़िल्म देखें। ज़्यादा जानकारी <a href="filters.html">फ़िल्टर और खोज</a> में।</p>
+
+        <h2 id="edit">टैग कैसे बदलें या हटाएँ</h2>
+        <p>एंट्री खोलें, <code>#</code> वाला शब्द बदलें या मिटाएँ और सहेजें। टैग सूची अपने आप अपडेट हो जाती है। जब कोई एंट्री किसी टैग का इस्तेमाल नहीं करती, तो वह फ़िल्टर से गायब हो जाता है।</p>
+
+        <h2 id="faq">अक्सर पूछे जाने वाले सवाल</h2>
+        <details>
+          <summary>फ़िल्टर में लिखा है कि अभी कोई टैग नहीं है</summary>
+          <div><p>टैग तभी दिखते हैं जब आप उन्हें कम से कम एक सहेजी गई एंट्री में इस्तेमाल करते हैं। देखें कि टैग रंग में हाइलाइट है — <code>#</code> वाला सामान्य टेक्स्ट टैग नहीं गिना जाता।</p></div>
+        </details>
+        <details>
+          <summary>क्या Day One या Apple Journal के टैग बने रहते हैं?</summary>
+          <div><p>हाँ। <a href="export-import.html">इंपोर्ट</a> के दौरान Kadu इंपोर्ट की गई एंट्री के टेक्स्ट में हैशटैग ढूँढकर उन्हें सूची में जोड़ देता है।</p></div>
+        </details>
+        <details>
+          <summary>एंट्री मौजूद है, फिर भी टैग से नहीं मिल रही</summary>
+          <div>
+            <p>तीन बातें जाँचें:</p>
+            <ul>
+              <li>एंट्री में टैग <strong>एक्सेंट रंग में हाइलाइट</strong> है। अगर नहीं, तो उसके बाद स्पेस दें और एंट्री फिर से सहेजें;</li>
+              <li>फ़िल्टर <code>#</code> के बाद वाला शब्द ही ढूँढते हैं: बीच में स्पेस टैग को ख़त्म कर देता है;</li>
+              <li>एंट्री किसी <a href="private-pin.html">निजी श्रेणी</a> में नहीं है: सामान्य टाइमलाइन उन्हें नहीं दिखाती।</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

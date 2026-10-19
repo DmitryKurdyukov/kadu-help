@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pl" data-lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wspomnienia z galerii — Przewodnik po Kadu</title>
+  <meta name="description" content="Jak Kadu znajduje wspomnienia wśród zdjęć w galerii, co do nich trafia i jak je zapisać.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Wspomnienia z galerii</h1>
+        <p class="lead">W galerii masz tysiące zdjęć, ale historia składa się z chwil. Kadu sama znajduje te chwile, grupuje zdjęcia we wspomnienia i proponuje zapisanie ich na osi czasu. Co zostawić, decydujesz Ty.</p>
+
+        <h2 id="how">Jak Kadu znajduje wspomnienia</h2>
+        <p>Wszystko dzieje się na Twoim urządzeniu. Zdjęcia nigdy nie są wysyłane — Kadu patrzy tylko na to, kiedy i gdzie zrobiono każde z nich:</p>
+        <ol class="steps">
+          <li><strong>Czas.</strong> Zdjęcia są sortowane według czasu wykonania. Jeśli między dwoma minie ponad 2 godziny, zaczyna się nowe wspomnienie.</li>
+          <li><strong>Miejsce.</strong> Jeśli zdjęcia mają lokalizację, a sąsiednie dzieli ponad kilometr, wspomnienie dzieli się na dwa.</li>
+          <li><strong>Duplikaty.</strong> Z serii zdjęć zrobionych w odstępie poniżej 5 sekund zostaje jedno. Pierwszeństwo ma zdjęcie oznaczone w galerii jako ulubione, potem film.</li>
+          <li><strong>Zrzuty ekranu</strong> są zawsze pomijane.</li>
+        </ol>
+        <p>Wspomnienie wymaga <strong>co najmniej 2</strong> zdjęć. Pojedyncze zdjęcie zrobione z dala od innych nie pojawi się w pełnym skanowaniu.</p>
+
+        <h2 id="run">Jak uruchomić skanowanie</h2>
+        <p>Kadu proponuje to przy pierwszym uruchomieniu aplikacji. Później możesz je uruchomić w dowolnej chwili:</p>
+        <ol class="steps">
+          <li>Otwórz <span class="path">Ustawienia → Import / Eksport</span>.</li>
+          <li>Wybierz <kbd>Utwórz wspomnienia z galerii</kbd>.</li>
+          <li>Stuknij <kbd>Przeanalizuj galerię</kbd> i zezwól na dostęp do zdjęć, jeśli pojawi się prośba.</li>
+        </ol>
+
+        <h2 id="choose">Wybieranie i zapisywanie</h2>
+        <p>Znalezione wspomnienia pojawią się na liście. Stuknij kartę, by zaznaczyć lub odznaczyć wspomnienie.</p>
+        <p>Przed zapisaniem możesz otworzyć wspomnienie w edytorze przyciskiem edycji na karcie — dodać tekst, usunąć zbędne zdjęcia albo zmienić datę.</p>
+        <p>Stuknij <kbd>Zapisz</kbd>. Każde wspomnienie stanie się osobnym wpisem w kategorii domyślnej, z datą pierwszego zdjęcia. Podczas zapisywania <strong>nie zamykaj aplikacji</strong>.</p>
+
+        <div class="note">
+          <span class="note-title">Zdjęcia są kopiowane do Kadu</span>
+          <p>Zapisane zdjęcia i filmy są kopiowane do aplikacji. Możesz śmiało usunąć je z galerii — w Kadu zostaną. Więcej w sekcji <a href="storage.html">Gdzie są dane</a>.</p>
+        </div>
+
+        <h2 id="suggestions">Propozycje nowych wspomnień</h2>
+        <p>Gdy wracasz do Kadu, aplikacja po cichu sprawdza, czy od ostatniego razu w galerii pojawiły się nowe zdjęcia. Jeśli tworzą wspomnienie, ekran główny proponuje dodanie go jednym stuknięciem. Wystarczy nawet jedno nowe zdjęcie.</p>
+        <ul>
+          <li>Sprawdzanie działa tylko wtedy, gdy masz już przyznany dostęp do zdjęć. Samo nigdy nie prosi o uprawnienia.</li>
+          <li>Wspomnienie, które zamknąłeś lub już zapisałeś, nie zostanie zaproponowane ponownie.</li>
+        </ul>
+
+        <h2 id="faq">Częste pytania</h2>
+        <details>
+          <summary>„Nie znaleziono wyjątkowych chwil. Dotknij Dalej, aby kontynuować.”</summary>
+          <div><p>Kadu szuka dwóch lub więcej zdjęć zrobionych mniej więcej w tym samym czasie i miejscu. Jeśli galeria to głównie pojedyncze zdjęcia lub zrzuty ekranu, wspomnień może nie być. Wpisy zawsze możesz dodać ręcznie.</p></div>
+        </details>
+        <details>
+          <summary>Kadu nie widzi wszystkich moich zdjęć</summary>
+          <div><p>Najpewniej dałeś Kadu dostęp tylko do wybranych zdjęć. Zezwól na dostęp do całej biblioteki w ustawieniach telefonu (<span class="path">Ustawienia → Kadu → Zdjęcia</span>) i uruchom skanowanie ponownie.</p></div>
+        </details>
+        <details>
+          <summary>Część plików się nie skopiowała</summary>
+          <div><p>Dzieje się tak ze zdjęciami, których oryginały są tylko w iCloud i nie zostały pobrane na telefon. Zostają w galerii. Otwórz je w aplikacji Zdjęcia, żeby się pobrały, i uruchom skanowanie ponownie.</p></div>
+        </details>
+        <details>
+          <summary>Odmówiłem dostępu do zdjęć</summary>
+          <div><p>Nic nie szkodzi — wpisy możesz dodawać ręcznie. Zezwól na dostęp później w ustawieniach telefonu i uruchom skanowanie w <span class="path">Ustawienia → Import / Eksport</span>.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

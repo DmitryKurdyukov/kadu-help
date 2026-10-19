@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja" data-lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>書き出しと読み込み — Kadu ガイド</title>
+  <meta name="description" content="Kadu のバックアップ、機種変更、Day One と Apple Journal からの読み込み。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>書き出しと読み込み</h1>
+        <p class="lead">書き出しは日記のバックアップを 1 つの zip ファイルにします。読み込みはそれを復元したり、Day One や Apple Journal の記録を取り込んだりします。すべて <span class="path">設定 → インポート / エクスポート</span> にあります。</p>
+
+        <h2 id="export">書き出し：バックアップ</h2>
+        <ol class="steps">
+          <li><span class="path">設定 → インポート / エクスポート → エクスポート</span> を開きます。</li>
+          <li><kbd>全データをエクスポート</kbd> をタップします。<a href="private-pin.html">PIN</a> を設定している場合は、先に入力を求められます。</li>
+          <li>完了まで待ちます。写真やビデオが多いと数分かかることがあります。</li>
+          <li>表示された画面で保存先を選びます：<kbd>"ファイル"に保存</kbd>（例：iCloud Drive）、パソコンやクラウドストレージに送るなど。</li>
+        </ol>
+        <p>ファイル名は <code>kadu-export-10-19-2026.zip</code> のようになります。すべての記録、カテゴリ、タグ、写真、ビデオ、ボイスメモが含まれます。</p>
+
+        <h3 id="export-category">1 つのカテゴリを書き出す <span class="premium">Premium</span></h3>
+        <p>同じ画面の <kbd>カテゴリ別にエクスポート</kbd> ブロックで、1 つのカテゴリの記録だけを書き出せます。旅日記を共有したいときなどに便利です。</p>
+
+        <h2 id="import">Kadu のバックアップを読み込む</h2>
+        <ol class="steps">
+          <li><span class="path">設定 → インポート / エクスポート</span> を開きます。</li>
+          <li><kbd>インポート</kbd> をタップし、Kadu の書き出しで作った zip を選びます。</li>
+          <li>「インポート完了」というメッセージが出るまで待ちます。</li>
+        </ol>
+        <div class="note">
+          <span class="note-title">読み込みで何かが消えることはありません</span>
+          <p>バックアップの記録は、すでにアプリにある記録に<strong>追加</strong>されます。Kadu にすでにある記録は重複しないため、同じファイルを何度読み込んでも安心です。</p>
+        </div>
+
+        <h2 id="new-phone">新しい端末への移行</h2>
+        <ol class="steps">
+          <li>古い端末で<a href="#export">書き出し</a>を行い、新しい端末からアクセスできる場所（iCloud Drive、Google ドライブ、ファイル）に保存します。</li>
+          <li>新しい端末に Kadu をインストールします。</li>
+          <li>そのファイルを<a href="#import">読み込み</a>ます。</li>
+        </ol>
+        <p>PIN はバックアップに含まれません。新しい端末で設定し直してください。</p>
+
+        <h2 id="day-one">Day One からの読み込み</h2>
+        <ol class="steps">
+          <li>Day One でジャーナルを <strong>JSON</strong> 形式で書き出します。zip アーカイブができます。</li>
+          <li>Kadu で <span class="path">設定 → インポート / エクスポート</span> を開き、<kbd>Day Oneからインポート（zip）</kbd> をタップします。</li>
+          <li>アーカイブを選びます。</li>
+        </ol>
+        <p>データの移り方：</p>
+        <ul>
+          <li>Day One のメインジャーナル（「Journal」）はデフォルトのカテゴリに入ります。</li>
+          <li>ほかのジャーナルには同じ名前のカテゴリが作られます。すでにあれば、そこに記録が追加されます。</li>
+          <li>写真とハッシュタグも記録と一緒に移ります。</li>
+        </ul>
+
+        <h2 id="apple-journal">Apple Journal からの読み込み</h2>
+        <ol class="steps">
+          <li>「ジャーナル」アプリから記録を書き出します。<code>index.html</code> ファイルと <code>Entries</code>・<code>Resources</code> フォルダが入ったフォルダができます。</li>
+          <li>そのフォルダを zip に圧縮します。「ファイル」アプリでフォルダを長押しし、<kbd>圧縮</kbd> を選びます。</li>
+          <li>Kadu で <kbd>Apple Journalからインポート（zip）</kbd> をタップし、アーカイブを選びます。</li>
+        </ol>
+        <p>日付を認識できなかった記録には今日の日付が付きます。Kadu がその件数を知らせます。日付はエディタで手動で直せます。</p>
+
+        <h2 id="faq">よくある質問</h2>
+        <details>
+          <summary>読み込み時に「別のアプリの書き出しのようです」と表示される</summary>
+          <div><p>Day One や Apple Journal のアーカイブを通常の <kbd>インポート</kbd> で選んでいます。これらには専用のボタンがあります：<kbd>Day Oneからインポート（zip）</kbd> と <kbd>Apple Journalからインポート（zip）</kbd>。どれを使えばよいかは Kadu が案内します。</p></div>
+        </details>
+        <details>
+          <summary>「アーカイブにdata.jsonが見つかりません。」</summary>
+          <div><p>ファイルが Kadu のバックアップではないか、書き出し後に変更されています。<kbd>全データをエクスポート</kbd> で作った元の zip を選んでください。</p></div>
+        </details>
+        <details>
+          <summary>書き出しにとても時間がかかる</summary>
+          <div><p>Kadu はすべての写真とビデオをアーカイブにコピーするため、日記が大きいと数分かかります。終わるまでアプリを開いたままにしてください。</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

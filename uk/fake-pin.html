@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="uk" data-lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Підробний PIN — Посібник Kadu</title>
+  <meta name="description" content="Підробний PIN-код у Kadu: другий код, який відкриває застосунок без приватних категорій.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Підробний PIN <span class="premium">Premium</span></h1>
+        <p class="lead">Підробний PIN — це другий код до Kadu. Він відкриває застосунок як зазвичай, тільки без приватних категорій. Збоку все виглядає так, ніби їх ніколи не було.</p>
+
+        <h2 id="why">Навіщо він потрібен</h2>
+        <p>Буває, що вас просять показати щоденник, і відмовити незручно. Введіть підробний код: людина побачить звичайні записи, а особисте лишиться прихованим. Жодного «режиму» чи підказки на екрані при цьому немає.</p>
+
+        <h2 id="what-hidden">Що відбувається після введення підробного коду</h2>
+        <ul>
+          <li>приватні категорії зникають з головного екрана;</li>
+          <li>їхні записи не показуються ні в стрічці, ні у фільтрах, ні в слайд-шоу, ні в книзі, ні в експорті;</li>
+          <li>усе інше працює як зазвичай.</li>
+        </ul>
+        <p>Дані при цьому не видаляються. Коли ви введете основний PIN, усе знову буде на місці.</p>
+
+        <h2 id="set">Як встановити</h2>
+        <ol class="steps">
+          <li>Спершу задайте основний PIN-код: <span class="path">Налаштування → PIN-код → Установити PIN-код</span>. Без нього застосунок не запитує код під час входу, і підробний не знадобиться.</li>
+          <li>Натисніть <kbd>Установити фальшивий PIN-код</kbd>.</li>
+          <li>Введіть 4 цифри й повторіть їх.</li>
+        </ol>
+        <div class="note warning">
+          <span class="note-title">Коди мають відрізнятися</span>
+          <p>Якщо підробний код збігається з основним, Kadu завжди відкриватиметься у звичайному режимі, і підробний код не працюватиме.</p>
+        </div>
+
+        <h2 id="reset">Як вимкнути</h2>
+        <p>Відкрийте <span class="path">Налаштування → PIN-код → Скинути фальшивий PIN-код</span> і введіть <strong>основний</strong> PIN. Скинути підробний код самим підробним кодом не можна, інакше будь-хто, хто його знає, зміг би вимкнути захист.</p>
+
+        <h2 id="faq">Часті запитання</h2>
+        <details>
+          <summary>Як повернутися до повного щоденника після підробного коду?</summary>
+          <div><p>Повністю закрийте застосунок, відкрийте його знову й введіть основний PIN.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru" data-lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Скрытые жесты и кнопки — Руководство Kadu</title>
+  <meta name="description" content="Долгие нажатия, кнопки на карточках и другие действия в Kadu, которые легко пропустить.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+      <article class="article">
+        <h1>Скрытые жесты и кнопки</h1>
+        <p class="lead">Некоторые действия в Kadu спрятаны за долгим нажатием или маленькой кнопкой на карточке. Вот полный список.</p>
+
+        <h2 id="home">Главный экран</h2>
+        <table>
+          <thead>
+            <tr><th>Действие</th><th>Результат</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Нажать на карточку категории</td><td>Открывается лента с записями этой категории.</td></tr>
+            <tr><td><strong>Долгое нажатие</strong> на карточку категории</td><td>Открывается редактирование категории: название, иконка, приватность, удаление.</td></tr>
+            <tr><td>Кнопка <kbd>+</kbd> на карточке категории</td><td>Создаётся новая запись сразу в этой категории.</td></tr>
+            <tr><td><kbd>Добавить категорию</kbd> под списком</td><td>Создаётся новая категория. Без Premium можно завести до 6 категорий.</td></tr>
+            <tr><td>Карточки <kbd>Неделя</kbd>, <kbd>Месяц</kbd>, <kbd>Год</kbd></td><td>Лента открывается с фильтром по этому периоду.</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="timeline">Карточка записи в ленте</h2>
+        <table>
+          <thead>
+            <tr><th>Действие</th><th>Результат</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Нажать на карточку</td><td>Запись открывается для просмотра.</td></tr>
+            <tr><td>Нажать на фото или видео</td><td>Медиа открывается на весь экран, соседние файлы листаются свайпом.</td></tr>
+            <tr><td>Звёздочка</td><td>Запись добавляется в избранное. Такие записи можно показать отдельно через <a href="filters.html">фильтр «Избранное»</a>.</td></tr>
+            <tr><td>Кнопка <kbd>⋯</kbd></td><td>Меню: <kbd>Посмотреть</kbd>, <kbd>Редактировать</kbd>, <kbd>Удалить</kbd>.</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="media-library">Медиатека</h2>
+        <p><kbd>Медиатека</kbd> в ленте собирает все фото и видео из записей в одну сетку. Здесь их можно отфильтровать по типу: <kbd>Фото</kbd> или <kbd>Видео</kbd>.</p>
+        <p><strong>Долгое нажатие</strong> на снимок открывает меню:</p>
+        <ul>
+          <li><kbd>Редактировать запись</kbd> открывает запись, к которой прикреплён снимок;</li>
+          <li><kbd>Показать в Ленте</kbd> переходит к этой записи в ленте.</li>
+        </ul>
+
+        <h2 id="book">Книга</h2>
+        <p><kbd>Книга</kbd> в ленте показывает записи в виде журнала. Листайте страницы свайпом влево и вправо. Без Premium доступны первые 20 страниц.</p>
+
+        <h2 id="sheets">Всплывающие панели</h2>
+        <p>Фильтры, календарь, настройки слайдшоу и другие панели, которые выезжают снизу, закрываются свайпом вниз или нажатием на затемнённую область над ними.</p>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

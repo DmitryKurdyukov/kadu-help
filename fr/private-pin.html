@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr" data-lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catégories privées et PIN — Guide Kadu</title>
+  <meta name="description" content="Fonctionnement des catégories privées dans Kadu et protection de l'app par code PIN.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Catégories privées et PIN</h1>
+        <p class="lead">Kadu offre deux niveaux de protection. Une catégorie privée cache les entrées de la frise générale, et un code PIN verrouille l'app elle-même et les catégories privées.</p>
+
+        <h2 id="private">Catégorie privée</h2>
+        <p>Les entrées d'une catégorie privée <strong>n'apparaissent jamais dans la frise générale</strong>, les filtres ni les diaporamas généraux. Le seul moyen de les voir est d'ouvrir la catégorie elle-même depuis l'écran d'accueil.</p>
+        <h3 id="make-private">Rendre une catégorie privée</h3>
+        <ol class="steps">
+          <li>Sur l'écran d'accueil, <strong>maintenez appuyée</strong> la carte d'une catégorie. Pour une nouvelle catégorie, touchez <kbd>Ajouter une catégorie</kbd>.</li>
+          <li>Activez l'interrupteur <kbd>Privée</kbd> (légende : « Cachée dans la frise générale »).</li>
+          <li>Touchez <kbd>Enregistrer</kbd> (pour une nouvelle catégorie : <kbd>Créer</kbd>).</li>
+        </ol>
+        <p>Au premier lancement, Kadu crée déjà une catégorie « Privé ».</p>
+        <div class="note warning">
+          <span class="note-title">Sans PIN, la confidentialité n'est que visuelle</span>
+          <p>Tant qu'aucun PIN n'est défini, une catégorie privée est seulement masquée de la frise. Quiconque tient votre téléphone peut l'ouvrir depuis l'écran d'accueil. Pour vraiment la verrouiller, définissez un PIN.</p>
+        </div>
+
+        <h2 id="pin">Code PIN</h2>
+        <h3 id="set-pin">Le définir</h3>
+        <ol class="steps">
+          <li>Ouvrez <span class="path">Réglages → Code PIN</span>.</li>
+          <li>Touchez <kbd>Définir le code PIN</kbd>.</li>
+          <li>Saisissez 4 chiffres et répétez-les pour confirmer.</li>
+        </ol>
+
+        <h3 id="when-asked">Quand Kadu demande le PIN</h3>
+        <ul>
+          <li>à chaque ouverture de l'app ;</li>
+          <li>à l'ouverture d'une catégorie privée depuis l'écran d'accueil ;</li>
+          <li>avant l'<a href="export-import.html">export des données</a>, car la sauvegarde contient aussi les entrées privées.</li>
+        </ul>
+
+        <h3 id="reset-pin">Le changer ou le désactiver</h3>
+        <p>Ouvrez <span class="path">Réglages → Code PIN → Réinitialiser le code PIN</span> et saisissez le code actuel. L'app cesse alors de le demander. Pour en définir un nouveau, touchez de nouveau <kbd>Définir le code PIN</kbd>.</p>
+
+        <h2 id="fake">Faux PIN</h2>
+        <p>Si quelqu'un risque de vous demander de déverrouiller votre journal, définissez un second code, factice. Il ouvre l'app mais masque toutes les catégories privées. Plus d'infos dans <a href="fake-pin.html">Faux PIN</a>.</p>
+
+        <h2 id="faq">Questions fréquentes</h2>
+        <details>
+          <summary>J'ai oublié mon PIN</summary>
+          <div>
+            <p>Le PIN est stocké uniquement sur votre appareil, sous forme chiffrée : il ne peut être ni récupéré ni consulté, pas même par nous. Essayez de vous en souvenir. Sinon, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOXHvjs9uuML3YGRTeUfUd7fSP4M1xSJOZY02tCTL1_VHlbA/viewform" target="_blank" rel="noopener">écrivez-nous</a>.</p>
+            <p>Pour éviter cela, choisissez un code que vous n'oublierez pas et <a href="export-import.html">faites des sauvegardes</a> régulièrement.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Puis-je ouvrir Kadu avec Face ID ?</summary>
+          <div><p>Pas encore : Kadu est protégé uniquement par un PIN.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="vi" data-lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xuất và nhập — Hướng dẫn Kadu</title>
+  <meta name="description" content="Sao lưu Kadu, chuyển sang điện thoại mới và nhập ghi chép từ Day One và Apple Journal.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Xuất và nhập</h1>
+        <p class="lead">Xuất tạo bản sao lưu nhật ký thành một tệp zip duy nhất. Nhập khôi phục bản sao lưu đó hoặc đưa ghi chép từ Day One và Apple Journal sang. Tất cả nằm trong <span class="path">Cài đặt → Nhập / Xuất</span>.</p>
+
+        <h2 id="export">Xuất: sao lưu</h2>
+        <ol class="steps">
+          <li>Mở <span class="path">Cài đặt → Nhập / Xuất → Xuất</span>.</li>
+          <li>Chạm <kbd>Xuất toàn bộ dữ liệu</kbd>. Nếu đã đặt <a href="private-pin.html">PIN</a>, Kadu sẽ hỏi trước.</li>
+          <li>Đợi hoàn tất. Với nhiều ảnh và video, việc này có thể mất vài phút.</li>
+          <li>Trong cửa sổ mở ra, chọn nơi lưu tệp: <kbd>Lưu vào Tệp</kbd> (ví dụ iCloud Drive), gửi sang máy tính hoặc lưu trữ đám mây.</li>
+        </ol>
+        <p>Tệp có tên kiểu <code>kadu-export-10-19-2026.zip</code>. Bên trong có mọi ghi chép, danh mục, thẻ, ảnh, video và ghi âm.</p>
+
+        <h3 id="export-category">Xuất một danh mục <span class="premium">Premium</span></h3>
+        <p>Trên cùng màn hình, khối <kbd>Xuất theo danh mục</kbd> cho phép xuất ghi chép của chỉ một danh mục — ví dụ để chia sẻ nhật ký du lịch.</p>
+
+        <h2 id="import">Nhập bản sao lưu Kadu</h2>
+        <ol class="steps">
+          <li>Mở <span class="path">Cài đặt → Nhập / Xuất</span>.</li>
+          <li>Chạm <kbd>Nhập</kbd> và chọn tệp zip được tạo bằng chức năng xuất của Kadu.</li>
+          <li>Đợi thông báo "Nhập thành công".</li>
+        </ol>
+        <div class="note">
+          <span class="note-title">Nhập không xóa gì cả</span>
+          <p>Ghi chép trong bản sao lưu được <strong>thêm vào</strong> những ghi chép đã có trong ứng dụng. Ghi chép đã có trong Kadu sẽ không bị nhân đôi, nên bạn có thể yên tâm nhập lại cùng một tệp.</p>
+        </div>
+
+        <h2 id="new-phone">Chuyển sang điện thoại mới</h2>
+        <ol class="steps">
+          <li>Trên điện thoại cũ, hãy <a href="#export">xuất</a> và lưu tệp ở nơi điện thoại mới truy cập được: iCloud Drive, Google Drive hoặc Tệp.</li>
+          <li>Cài Kadu trên điện thoại mới.</li>
+          <li><a href="#import">Nhập</a> tệp đó.</li>
+        </ol>
+        <p>PIN không nằm trong bản sao lưu. Hãy đặt lại PIN trên điện thoại mới.</p>
+
+        <h2 id="day-one">Nhập từ Day One</h2>
+        <ol class="steps">
+          <li>Trong Day One, xuất nhật ký ở định dạng <strong>JSON</strong>. Bạn sẽ có một tệp zip.</li>
+          <li>Trong Kadu, mở <span class="path">Cài đặt → Nhập / Xuất</span> và chạm <kbd>Nhập từ Day One (zip)</kbd>.</li>
+          <li>Chọn tệp nén.</li>
+        </ol>
+        <p>Dữ liệu được chuyển như sau:</p>
+        <ul>
+          <li>nhật ký chính của Day One ("Journal") vào danh mục mặc định;</li>
+          <li>mỗi nhật ký khác có một danh mục cùng tên. Nếu đã có, ghi chép được thêm vào đó;</li>
+          <li>ảnh và hashtag được chuyển cùng ghi chép.</li>
+        </ul>
+
+        <h2 id="apple-journal">Nhập từ Apple Journal</h2>
+        <ol class="steps">
+          <li>Xuất ghi chép từ ứng dụng Nhật ký (Journal). Bạn sẽ có một thư mục chứa tệp <code>index.html</code> và các thư mục <code>Entries</code>, <code>Resources</code>.</li>
+          <li>Nén thư mục đó thành zip. Trong app Tệp, nhấn giữ thư mục và chọn <kbd>Nén</kbd>.</li>
+          <li>Trong Kadu, chạm <kbd>Nhập từ Apple Journal (zip)</kbd> và chọn tệp nén.</li>
+        </ol>
+        <p>Nếu không nhận ra ngày của một ghi chép, ghi chép đó nhận ngày hôm nay. Kadu sẽ cho biết có bao nhiêu ghi chép như vậy. Bạn có thể sửa ngày thủ công trong trình soạn thảo.</p>
+
+        <h2 id="faq">Câu hỏi thường gặp</h2>
+        <details>
+          <summary>Khi nhập, ứng dụng báo tệp có vẻ là bản xuất từ ứng dụng khác</summary>
+          <div><p>Bạn đã chọn tệp nén Day One hoặc Apple Journal ở mục <kbd>Nhập</kbd> thông thường. Các tệp này có nút riêng: <kbd>Nhập từ Day One (zip)</kbd> và <kbd>Nhập từ Apple Journal (zip)</kbd>. Kadu sẽ cho biết nên dùng nút nào.</p></div>
+        </details>
+        <details>
+          <summary>"Không tìm thấy data.json trong tệp nén."</summary>
+          <div><p>Tệp không phải bản sao lưu Kadu hoặc đã bị thay đổi sau khi xuất. Hãy chọn tệp zip gốc được tạo bằng <kbd>Xuất toàn bộ dữ liệu</kbd>.</p></div>
+        </details>
+        <details>
+          <summary>Xuất mất rất nhiều thời gian</summary>
+          <div><p>Kadu sao chép mọi ảnh và video vào tệp nén, với nhật ký lớn việc này mất vài phút. Hãy để ứng dụng mở cho đến khi xong.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja" data-lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ギャラリーからの思い出 — Kadu ガイド</title>
+  <meta name="description" content="Kadu がギャラリーの写真から思い出を見つける仕組み、含まれるもの、保存方法。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>ギャラリーからの思い出</h1>
+        <p class="lead">ギャラリーには何千枚もの写真がありますが、ストーリーは瞬間でできています。Kadu はそうした瞬間を自分で見つけ、写真を思い出としてまとめ、タイムラインへの保存を提案します。何を残すかはあなたが決めます。</p>
+
+        <h2 id="how">Kadu が思い出を見つける仕組み</h2>
+        <p>処理はすべて端末内で行われます。写真がアップロードされることはなく、Kadu が見るのは撮影の日時と場所だけです：</p>
+        <ol class="steps">
+          <li><strong>時間。</strong>写真を撮影時刻順に並べます。2 枚の間が 2 時間以上空くと、新しい思い出になります。</li>
+          <li><strong>場所。</strong>写真に位置情報があり、隣り合う写真が 1 km 以上離れていると、思い出は 2 つに分かれます。</li>
+          <li><strong>重複。</strong>5 秒未満の間隔で撮った連写からは 1 枚だけを残します。ギャラリーでお気に入りにした写真、次にビデオが優先されます。</li>
+          <li><strong>スクリーンショット</strong>は常に除外されます。</li>
+        </ol>
+        <p>思い出には <strong>2 枚以上</strong>の写真が必要です。ほかと離れて撮った 1 枚だけの写真は、全体スキャンには出てきません。</p>
+
+        <h2 id="run">スキャンの始め方</h2>
+        <p>初めてアプリを開いたときに Kadu から提案されます。その後はいつでも実行できます：</p>
+        <ol class="steps">
+          <li><span class="path">設定 → インポート / エクスポート</span> を開きます。</li>
+          <li><kbd>ギャラリーから思い出を生成</kbd> を選びます。</li>
+          <li><kbd>ギャラリーを分析</kbd> をタップし、求められたら写真へのアクセスを許可します。</li>
+        </ol>
+
+        <h2 id="choose">選んで保存する</h2>
+        <p>見つかった思い出が一覧で表示されます。カードをタップすると、選択・選択解除できます。</p>
+        <p>保存する前に、カードの編集ボタンで思い出をエディタで開けます。テキストを足したり、不要な写真を外したり、日付を変えたりできます。</p>
+        <p><kbd>保存</kbd> をタップします。それぞれの思い出が、デフォルトのカテゴリに、最初の写真の日付で別々の記録として保存されます。保存中は<strong>アプリを閉じないでください</strong>。</p>
+
+        <div class="note">
+          <span class="note-title">写真は Kadu にコピーされます</span>
+          <p>保存した写真とビデオはアプリ内にコピーされます。ギャラリーから削除しても Kadu には残ります。詳しくは<a href="storage.html">データの保存場所</a>をご覧ください。</p>
+        </div>
+
+        <h2 id="suggestions">新しい思い出の提案</h2>
+        <p>Kadu に戻ってくると、前回以降にギャラリーへ新しい写真が増えていないかを静かに確認します。思い出にまとまる写真があれば、ホーム画面でワンタップ追加を提案します。新しい写真が 1 枚だけでも提案されます。</p>
+        <ul>
+          <li>この確認は、すでに写真へのアクセスを許可している場合にだけ動きます。自分から許可を求めることはありません。</li>
+          <li>閉じた思い出や保存済みの思い出が再び提案されることはありません。</li>
+        </ul>
+
+        <h2 id="faq">よくある質問</h2>
+        <details>
+          <summary>「思い出深い瞬間が見つかりませんでした。「次へ」をタップして続けてください。」</summary>
+          <div><p>Kadu はほぼ同じ時間・同じ場所で撮った 2 枚以上の写真を探します。ギャラリーが単発の写真やスクリーンショットばかりだと、思い出が見つからないことがあります。記録はいつでも手動で追加できます。</p></div>
+        </details>
+        <details>
+          <summary>Kadu にすべての写真が表示されない</summary>
+          <div><p>Kadu に選択した写真だけへのアクセスを許可している可能性があります。端末の設定（<span class="path">設定 → Kadu → 写真</span>）でライブラリ全体へのアクセスを許可し、もう一度スキャンしてください。</p></div>
+        </details>
+        <details>
+          <summary>一部のファイルがコピーされなかった</summary>
+          <div><p>オリジナルが iCloud にしかなく、端末にダウンロードされていない写真で起こります。それらはギャラリーに残っています。「写真」アプリで開いてダウンロードしてから、もう一度スキャンしてください。</p></div>
+        </details>
+        <details>
+          <summary>写真へのアクセスを拒否してしまった</summary>
+          <div><p>問題ありません。記録は手動で追加できます。あとで端末の設定からアクセスを許可し、<span class="path">設定 → インポート / エクスポート</span> からスキャンしてください。</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="it" data-lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tag — Guida di Kadu</title>
+  <meta name="description" content="Come aggiungere tag alle voci di Kadu e trovare le voci per tag.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Tag</h1>
+        <p class="lead">I tag collegano le voci con un tema comune: un viaggio, una persona, un progetto. Kadu non ha un campo apposito: i tag si scrivono direttamente nel testo della voce.</p>
+
+        <h2 id="add">Come aggiungere un tag</h2>
+        <ol class="steps">
+          <li>Scrivi <code>#</code> nel testo seguito subito da una parola, senza spazi: <code>#vacanze</code>.</li>
+          <li><strong>Scrivi uno spazio dopo la parola.</strong> Solo allora diventa un vero tag.</li>
+          <li>Controlla che il tag <span class="tag-demo">#vacanze</span> sia <strong>evidenziato nel colore d'accento</strong>.</li>
+          <li>Salva la voce.</li>
+        </ol>
+        <blockquote>Finalmente arrivati al mare <span class="tag-demo">#vacanze</span> <span class="tag-demo">#mare2025</span> e beviamo un caffè</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">La regola chiave: il tag deve essere evidenziato</span>
+          <p>Se una parola con <code>#</code> resta testo normale invece di colorarsi, non è un tag. Non comparirà nei filtri e la voce non verrà trovata tramite esso. Di solito succede quando manca lo spazio dopo il tag, per esempio se è l'ultima parola del testo.</p>
+        </div>
+        <p>Una voce può avere quanti tag vuoi, in qualsiasi punto del testo: all'inizio, in mezzo o alla fine. Basta mettere uno spazio dopo ciascuno.</p>
+
+        <h3 id="not-highlighted">Il tag non è evidenziato: cosa fare</h3>
+        <p>Posiziona il cursore subito dopo la parola e premi spazio. Se non basta, cancella il tag e riscrivilo: <code>#</code>, la parola, uno spazio.</p>
+
+        <h2 id="rules">Regole di scrittura</h2>
+        <table>
+          <thead>
+            <tr><th>Esempio</th><th>Risultato</th><th>Perché</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Vacanze</code> e <code>#vacanze</code></td><td>un solo tag <code>vacanze</code></td><td>maiuscole e minuscole non contano</td></tr>
+            <tr><td><code>#prima neve</code></td><td>solo <code>prima</code></td><td>lo spazio chiude il tag</td></tr>
+            <tr><td><code>#約會</code>, <code>#ความทรงจำ</code></td><td>funzionano</td><td>vanno bene lettere di qualsiasi lingua</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">Consiglio</span>
+          <p>Per tag di più parole, uniscile con un trattino basso o un trattino: <code>#prima_neve</code>, <code>#festa-compleanno</code>.</p>
+        </div>
+
+        <h2 id="find">Come trovare le voci per tag</h2>
+        <ol class="steps">
+          <li>Apri la scheda <kbd>Timeline</kbd>.</li>
+          <li>Tocca <kbd>Filtri</kbd> in alto.</li>
+          <li>Nel blocco <kbd>Tag</kbd>, seleziona i tag che ti servono. Se sono tanti, inizia a scrivere nel campo <kbd>Cerca tag…</kbd>.</li>
+          <li>Applica il filtro.</li>
+        </ol>
+        <p>I tag più usati sono in cima.</p>
+
+        <h3 id="several">Se selezioni più tag</h3>
+        <p>La timeline mostra le voci che hanno <strong>almeno uno</strong> dei tag selezionati. Per esempio, con <code>#mare</code> e <code>#montagna</code> vedrai sia i viaggi al mare sia in montagna.</p>
+        <p>Per deselezionarli tutti, tocca <kbd>Cancella</kbd> accanto al titolo del blocco.</p>
+        <p>Il filtro per tag vale anche per la <a href="slideshow.html">presentazione</a> e il libro. Per esempio, seleziona <code>#vacanze</code> e guarda un film solo su quelle vacanze. Di più in <a href="filters.html">Filtri e ricerca</a>.</p>
+
+        <h2 id="edit">Come modificare o rimuovere un tag</h2>
+        <p>Apri la voce, modifica o cancella la parola con <code>#</code> e salva. L'elenco dei tag si aggiorna da solo. Un tag sparisce dai filtri quando nessuna voce lo usa più.</p>
+
+        <h2 id="faq">Domande frequenti</h2>
+        <details>
+          <summary>I filtri dicono che non ci sono ancora tag</summary>
+          <div><p>I tag compaiono solo dopo averli usati in almeno una voce salvata. Assicurati che il tag sia evidenziato a colori: il testo normale con <code>#</code> non conta come tag.</p></div>
+        </details>
+        <details>
+          <summary>I tag di Day One o Apple Journal vengono conservati?</summary>
+          <div><p>Sì. Durante l'<a href="export-import.html">importazione</a> Kadu trova gli hashtag nel testo delle voci importate e li aggiunge all'elenco.</p></div>
+        </details>
+        <details>
+          <summary>Un tag non si trova anche se la voce esiste</summary>
+          <div>
+            <p>Controlla tre cose:</p>
+            <ul>
+              <li>il tag nella voce è <strong>evidenziato nel colore d'accento</strong>. Se no, aggiungi uno spazio dopo e salva di nuovo la voce;</li>
+              <li>i filtri cercano esattamente la parola dopo <code>#</code>: uno spazio all'interno chiude il tag;</li>
+              <li>la voce non è in una <a href="private-pin.html">categoria privata</a>: la timeline generale non le mostra.</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

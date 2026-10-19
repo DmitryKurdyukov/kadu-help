@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="el" data-lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Εξαγωγή και εισαγωγή — Οδηγός Kadu</title>
+  <meta name="description" content="Αντίγραφα ασφαλείας Kadu, μεταφορά σε νέο κινητό και εισαγωγή καταχωρίσεων από Day One και Apple Journal.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Εξαγωγή και εισαγωγή</h1>
+        <p class="lead">Η εξαγωγή δημιουργεί αντίγραφο ασφαλείας του ημερολογίου σε ένα αρχείο zip. Η εισαγωγή το επαναφέρει ή μεταφέρει καταχωρίσεις από Day One και Apple Journal. Όλα βρίσκονται στο <span class="path">Ρυθμίσεις → Εισαγωγή / Εξαγωγή</span>.</p>
+
+        <h2 id="export">Εξαγωγή: αντίγραφο ασφαλείας</h2>
+        <ol class="steps">
+          <li>Ανοίξτε <span class="path">Ρυθμίσεις → Εισαγωγή / Εξαγωγή → Εξαγωγή</span>.</li>
+          <li>Πατήστε <kbd>Εξαγωγή όλων των δεδομένων</kbd>. Αν έχει οριστεί <a href="private-pin.html">PIN</a>, το Kadu θα το ζητήσει πρώτα.</li>
+          <li>Περιμένετε να ολοκληρωθεί. Με πολλές φωτογραφίες και βίντεο μπορεί να διαρκέσει μερικά λεπτά.</li>
+          <li>Στο παράθυρο που ανοίγει, επιλέξτε πού θα αποθηκευτεί το αρχείο: <kbd>Αποθήκευση στα Αρχεία</kbd> (π.χ. iCloud Drive), αποστολή σε υπολογιστή ή σε cloud.</li>
+        </ol>
+        <p>Το αρχείο ονομάζεται περίπου <code>kadu-export-10-19-2026.zip</code>. Περιέχει όλες τις καταχωρίσεις, κατηγορίες, ετικέτες, φωτογραφίες, βίντεο και φωνητικές σημειώσεις.</p>
+
+        <h3 id="export-category">Εξαγωγή μίας κατηγορίας <span class="premium">Premium</span></h3>
+        <p>Στην ίδια οθόνη, στο μπλοκ <kbd>Εξαγωγή ανά κατηγορία</kbd>, μπορείτε να εξαγάγετε καταχωρίσεις μόνο από μία κατηγορία — για παράδειγμα για να μοιραστείτε ένα ταξιδιωτικό ημερολόγιο.</p>
+
+        <h2 id="import">Εισαγωγή αντιγράφου Kadu</h2>
+        <ol class="steps">
+          <li>Ανοίξτε <span class="path">Ρυθμίσεις → Εισαγωγή / Εξαγωγή</span>.</li>
+          <li>Πατήστε <kbd>Εισαγωγή</kbd> και επιλέξτε το zip που δημιούργησε η εξαγωγή του Kadu.</li>
+          <li>Περιμένετε το μήνυμα «Η εισαγωγή ολοκληρώθηκε».</li>
+        </ol>
+        <div class="note">
+          <span class="note-title">Η εισαγωγή δεν σβήνει τίποτα</span>
+          <p>Οι καταχωρίσεις του αντιγράφου <strong>προστίθενται</strong> σε όσες υπάρχουν ήδη στην εφαρμογή. Όσες υπάρχουν ήδη στο Kadu δεν διπλασιάζονται, οπότε μπορείτε με ασφάλεια να εισαγάγετε ξανά το ίδιο αρχείο.</p>
+        </div>
+
+        <h2 id="new-phone">Μεταφορά σε νέο κινητό</h2>
+        <ol class="steps">
+          <li>Στο παλιό κινητό κάντε <a href="#export">εξαγωγή</a> και αποθηκεύστε το αρχείο κάπου όπου έχει πρόσβαση το νέο: iCloud Drive, Google Drive ή Αρχεία.</li>
+          <li>Εγκαταστήστε το Kadu στο νέο κινητό.</li>
+          <li>Κάντε <a href="#import">εισαγωγή</a> του αρχείου.</li>
+        </ol>
+        <p>Το PIN δεν περιλαμβάνεται στο αντίγραφο ασφαλείας. Ορίστε το ξανά στο νέο κινητό.</p>
+
+        <h2 id="day-one">Εισαγωγή από Day One</h2>
+        <ol class="steps">
+          <li>Στο Day One, εξαγάγετε το ημερολόγιό σας σε μορφή <strong>JSON</strong>. Θα πάρετε ένα αρχείο zip.</li>
+          <li>Στο Kadu ανοίξτε <span class="path">Ρυθμίσεις → Εισαγωγή / Εξαγωγή</span> και πατήστε <kbd>Εισαγωγή από Day One (zip)</kbd>.</li>
+          <li>Επιλέξτε το αρχείο.</li>
+        </ol>
+        <p>Πώς μεταφέρονται τα δεδομένα:</p>
+        <ul>
+          <li>το κύριο ημερολόγιο του Day One («Journal») μπαίνει στην προεπιλεγμένη κατηγορία·</li>
+          <li>κάθε άλλο ημερολόγιο παίρνει κατηγορία με το ίδιο όνομα. Αν υπάρχει ήδη, οι καταχωρίσεις προστίθενται εκεί·</li>
+          <li>οι φωτογραφίες και τα hashtag μεταφέρονται μαζί με τις καταχωρίσεις.</li>
+        </ul>
+
+        <h2 id="apple-journal">Εισαγωγή από Apple Journal</h2>
+        <ol class="steps">
+          <li>Εξαγάγετε τις καταχωρίσεις από την εφαρμογή Ημερολόγιο (Journal). Θα πάρετε έναν φάκελο με το αρχείο <code>index.html</code> και τους φακέλους <code>Entries</code> και <code>Resources</code>.</li>
+          <li>Συμπιέστε τον φάκελο σε zip. Στην εφαρμογή Αρχεία, πατήστε παρατεταμένα τον φάκελο και επιλέξτε <kbd>Συμπίεση</kbd>.</li>
+          <li>Στο Kadu πατήστε <kbd>Εισαγωγή από Apple Journal (zip)</kbd> και επιλέξτε το αρχείο.</li>
+        </ol>
+        <p>Αν η ημερομηνία μιας καταχώρισης δεν αναγνωριστεί, παίρνει τη σημερινή. Το Kadu σας λέει πόσες είναι. Μπορείτε να διορθώσετε την ημερομηνία χειροκίνητα στον επεξεργαστή.</p>
+
+        <h2 id="faq">Συχνές ερωτήσεις</h2>
+        <details>
+          <summary>Η εισαγωγή λέει ότι το αρχείο μοιάζει με εξαγωγή άλλης εφαρμογής</summary>
+          <div><p>Επιλέξατε αρχείο Day One ή Apple Journal στο κανονικό <kbd>Εισαγωγή</kbd>. Αυτά τα αρχεία έχουν δικά τους κουμπιά: <kbd>Εισαγωγή από Day One (zip)</kbd> και <kbd>Εισαγωγή από Apple Journal (zip)</kbd>. Το Kadu θα σας πει ποιο να χρησιμοποιήσετε.</p></div>
+        </details>
+        <details>
+          <summary>«Δεν βρέθηκε data.json στο αρχείο.»</summary>
+          <div><p>Το αρχείο δεν είναι αντίγραφο ασφαλείας του Kadu ή άλλαξε μετά την εξαγωγή. Επιλέξτε το αρχικό zip που δημιουργήθηκε με το <kbd>Εξαγωγή όλων των δεδομένων</kbd>.</p></div>
+        </details>
+        <details>
+          <summary>Η εξαγωγή διαρκεί πολύ</summary>
+          <div><p>Το Kadu αντιγράφει όλες τις φωτογραφίες και τα βίντεο στο αρχείο, και για μεγάλο ημερολόγιο αυτό παίρνει μερικά λεπτά. Κρατήστε την εφαρμογή ανοιχτή ως το τέλος.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

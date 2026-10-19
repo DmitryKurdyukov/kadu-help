@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Etiketler — Kadu Kılavuzu</title>
+  <meta name="description" content="Kadu kayıtlarına nasıl etiket eklenir ve kayıtlar etikete göre nasıl bulunur.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Etiketler</h1>
+        <p class="lead">Etiketler kayıtları ortak bir konuyla bağlar: bir gezi, bir kişi, bir proje. Kadu'da etiketler için ayrı bir alan yoktur — doğrudan kayıt metnine yazılırlar.</p>
+
+        <h2 id="add">Etiket nasıl eklenir</h2>
+        <ol class="steps">
+          <li>Metne <code>#</code> yazın ve hemen ardından, boşluk bırakmadan bir kelime yazın: <code>#tatil</code>.</li>
+          <li><strong>Kelimeden sonra bir boşluk bırakın.</strong> Ancak o zaman gerçek bir etiket olur.</li>
+          <li><span class="tag-demo">#tatil</span> etiketinin <strong>vurgu rengiyle işaretlendiğini</strong> kontrol edin.</li>
+          <li>Kaydı kaydedin.</li>
+        </ol>
+        <blockquote>Sonunda denize vardık <span class="tag-demo">#tatil</span> <span class="tag-demo">#deniz2025</span> ve kahve içiyoruz</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">En önemli kural: etiket vurgulanmalı</span>
+          <p><code>#</code> içeren bir kelime renklenmeyip düz metin olarak kalıyorsa etiket değildir. Filtrelerde görünmez ve kayıt onunla bulunamaz. Bu genellikle etiketten sonra boşluk olmadığında olur — örneğin metnin son kelimesiyse.</p>
+        </div>
+        <p>Bir kayıtta istediğiniz kadar etiket olabilir; metnin başında, ortasında ya da sonunda olabilirler. Her birinden sonra bir boşluk bırakmanız yeterli.</p>
+
+        <h3 id="not-highlighted">Etiket vurgulanmadı — ne yapmalı</h3>
+        <p>İmleci kelimenin hemen arkasına getirip boşluk tuşuna basın. İşe yaramazsa etiketi silip yeniden yazın: <code>#</code>, kelime, boşluk.</p>
+
+        <h2 id="rules">Yazım kuralları</h2>
+        <table>
+          <thead>
+            <tr><th>Örnek</th><th>Sonuç</th><th>Neden</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Tatil</code> ve <code>#tatil</code></td><td>tek etiket: <code>tatil</code></td><td>büyük/küçük harf fark etmez</td></tr>
+            <tr><td><code>#ilk kar</code></td><td>yalnızca <code>ilk</code></td><td>boşluk etiketi bitirir</td></tr>
+            <tr><td><code>#約會</code>, <code>#ความทรงจำ</code></td><td>çalışır</td><td>her dilin harfleri kullanılabilir</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">İpucu</span>
+          <p>Birden çok kelimeden oluşan etiketleri alt çizgi ya da kısa çizgiyle birleştirin: <code>#ilk_kar</code>, <code>#doğum-günü</code>.</p>
+        </div>
+
+        <h2 id="find">Kayıtlar etikete göre nasıl bulunur</h2>
+        <ol class="steps">
+          <li><kbd>Zaman tüneli</kbd> sekmesini açın.</li>
+          <li>Ekranın üstündeki <kbd>Filtreler</kbd> düğmesine dokunun.</li>
+          <li><kbd>Etiketler</kbd> bölümünde istediğiniz etiketleri seçin. Çok fazlaysa <kbd>Etiket ara…</kbd> alanına yazmaya başlayın.</li>
+          <li>Filtreyi uygulayın.</li>
+        </ol>
+        <p>En çok kullanılan etiketler listenin başındadır.</p>
+
+        <h3 id="several">Birden çok etiket seçerseniz</h3>
+        <p>Zaman tüneli, seçilen etiketlerden <strong>en az birini</strong> içeren kayıtları gösterir. Örneğin <code>#deniz</code> ve <code>#dağ</code> seçerseniz hem deniz hem dağ gezilerini görürsünüz.</p>
+        <p>Tüm seçimleri kaldırmak için bölüm başlığının yanındaki <kbd>Temizle</kbd> düğmesine dokunun.</p>
+        <p>Etiket filtresi <a href="slideshow.html">slayt gösterisine</a> ve kitaba da uygulanır. Örneğin <code>#tatil</code> etiketini seçip yalnızca o tatille ilgili bir film izleyebilirsiniz. Ayrıntılar: <a href="filters.html">Filtreler ve arama</a>.</p>
+
+        <h2 id="edit">Etiket nasıl değiştirilir veya kaldırılır</h2>
+        <p>Kaydı açın, <code>#</code> içeren kelimeyi düzeltin ya da silin ve kaydedin. Etiket listesi kendiliğinden güncellenir. Hiçbir kayıt kullanmadığında etiket filtrelerden kaybolur.</p>
+
+        <h2 id="faq">Sık sorulan sorular</h2>
+        <details>
+          <summary>Filtreler henüz etiket olmadığını söylüyor</summary>
+          <div><p>Etiketler ancak kaydedilmiş en az bir kayıtta kullanıldıktan sonra görünür. Etiketin renkli olduğundan emin olun — <code>#</code> içeren düz metin etiket sayılmaz.</p></div>
+        </details>
+        <details>
+          <summary>Day One veya Apple Journal etiketleri korunuyor mu?</summary>
+          <div><p>Evet. <a href="export-import.html">İçe aktarma</a> sırasında Kadu, aktarılan kayıtların metnindeki hashtag'leri bulup listeye ekler.</p></div>
+        </details>
+        <details>
+          <summary>Kayıt var ama etiketle bulunamıyor</summary>
+          <div>
+            <p>Üç şeyi kontrol edin:</p>
+            <ul>
+              <li>kayıttaki etiket <strong>vurgu rengiyle işaretli</strong> mi? Değilse ardından bir boşluk ekleyip kaydı yeniden kaydedin;</li>
+              <li>filtreler <code>#</code> işaretinden sonraki kelimeyi aynen arar: aradaki boşluk etiketi bitirir;</li>
+              <li>kayıt bir <a href="private-pin.html">özel kategoride</a> değil mi? Genel zaman tüneli bunları göstermez.</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

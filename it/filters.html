@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="it" data-lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filtri e ricerca — Guida di Kadu</title>
+  <meta name="description" content="Come cercare e filtrare le voci nella timeline di Kadu: testo, categorie, preferiti, tag, date e ordine.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Filtri e ricerca</h1>
+        <p class="lead">La timeline mostra tutte le voci dalla più recente alla più vecchia. I filtri lasciano solo ciò che ti serve: certi giorni, una categoria, un tag o una parola nel testo.</p>
+
+        <h2 id="filters">Pannello dei filtri</h2>
+        <p>Apri la scheda <kbd>Timeline</kbd> e tocca <kbd>Filtri</kbd> in alto. Scegli le condizioni e applicale.</p>
+        <table>
+          <thead>
+            <tr><th>Filtro</th><th>Cosa fa</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>Testo</kbd></td><td>Mantiene le voci il cui testo contiene queste parole. Maiuscole e minuscole non contano.</td></tr>
+            <tr><td><kbd>Categoria</kbd></td><td>Mostra le voci di una sola categoria. <kbd>Tutto</kbd> toglie il limite.</td></tr>
+            <tr><td><kbd>Preferiti</kbd></td><td>L'interruttore <kbd>Solo preferiti</kbd> mantiene le voci con la stella.</td></tr>
+            <tr><td><kbd>Ordine</kbd></td><td><kbd>Ordine inverso</kbd> mostra prima le voci più vecchie.</td></tr>
+            <tr><td><kbd>Tag</kbd></td><td>Voci con almeno uno dei tag selezionati. Di più in <a href="tags.html">Tag</a>.</td></tr>
+          </tbody>
+        </table>
+        <p>I filtri si combinano. Se scegli la categoria «Viaggi» e il tag <code>#mare</code>, restano solo le voci sul mare di quella categoria.</p>
+
+        <h2 id="calendar">Calendario: un giorno o un periodo</h2>
+        <p>Accanto ai filtri, in cima alla timeline, c'è un pulsante calendario. Finché non scegli date, mostra <kbd>Sempre</kbd>.</p>
+        <ul>
+          <li><kbd>Data</kbd>: scegli un giorno per vedere solo le sue voci.</li>
+          <li><kbd>Periodo</kbd>: segna il primo e l'ultimo giorno di un intervallo.</li>
+        </ul>
+        <p>Tocca <kbd>Applica</kbd> per usare la selezione, oppure <kbd>Reimposta</kbd> per rivedere tutto.</p>
+
+        <h2 id="shortcuts">Scorciatoie dalla schermata Home</h2>
+        <p>Alcuni filtri si attivano direttamente dalla schermata Home:</p>
+        <ul>
+          <li><strong>Le schede <kbd>Settimana</kbd>, <kbd>Mese</kbd>, <kbd>Anno</kbd></strong> mostrano quante voci hai scritto questa settimana (da lunedì a domenica), questo mese e quest'anno. Toccandone una si apre la timeline già filtrata su quel periodo.</li>
+          <li><strong>Una scheda categoria</strong> apre la timeline solo con le voci di quella categoria.</li>
+          <li><strong><kbd>In questo giorno</kbd></strong>: il pulsante appare se hai voci dello stesso giorno negli anni precedenti. Apre la timeline con le voci di quel giorno.</li>
+        </ul>
+
+        <h2 id="views">Presentazione, Libro e Libreria dipendono dai filtri</h2>
+        <p>È la cosa meno ovvia. I pulsanti <kbd>Presentazione</kbd>, <kbd>Libro</kbd> e <kbd>Libreria multimediale</kbd> della timeline usano <strong>esattamente ciò che la timeline mostra ora</strong>: filtri, ricerca, date e ordine compresi.</p>
+        <div class="note">
+          <span class="note-title">Esempio</span>
+          <p>Vuoi una presentazione delle vacanze estive? Scegli da giugno ad agosto nel calendario, seleziona il tag <code>#vacanze</code> e tocca <kbd>Presentazione</kbd>. Solo quelle voci entrano nel film.</p>
+        </div>
+        <p>Se la presentazione o il libro sembrano mostrare «non tutto», controlla se è rimasto attivo un filtro.</p>
+
+        <h2 id="faq">Domande frequenti</h2>
+        <details>
+          <summary>Alcune voci sono sparite dalla timeline</summary>
+          <div>
+            <p>Probabilmente per uno di questi motivi:</p>
+            <ul>
+              <li>è attivo un filtro o è selezionato un periodo nel calendario;</li>
+              <li>le voci sono in una <a href="private-pin.html">categoria privata</a>: la timeline generale non le mostra mai;</li>
+              <li>l'app è stata aperta con un <a href="fake-pin.html">PIN falso</a>.</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>Perché la mia categoria privata non è nel filtro categorie?</summary>
+          <div><p>Le categorie private non compaiono nei filtri né nella timeline generale. Apri una tale categoria dalla schermata Home toccando la sua scheda. Se è impostato un PIN, l'app lo chiede prima.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

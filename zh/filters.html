@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hans" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>筛选与搜索 — Kadu 使用指南</title>
+  <meta name="description" content="如何在 Kadu 时间线中搜索和筛选记录：文字、分类、收藏、标签、日期和顺序。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>筛选与搜索</h1>
+        <p class="lead">时间线按从新到旧显示所有记录。筛选可以只留下你需要的：某几天、一个分类、一个标签或正文中的某个词。</p>
+
+        <h2 id="filters">筛选面板</h2>
+        <p>打开 <kbd>时间线</kbd> 标签页，点按顶部的 <kbd>筛选</kbd>。选择条件并应用。</p>
+        <table>
+          <thead>
+            <tr><th>筛选</th><th>作用</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>文本</kbd></td><td>保留正文中包含这些词的记录。不区分大小写。</td></tr>
+            <tr><td><kbd>分类</kbd></td><td>只显示一个分类的记录。<kbd>全部</kbd> 取消限制。</td></tr>
+            <tr><td><kbd>收藏</kbd></td><td><kbd>仅显示收藏</kbd> 开关只保留加了星标的记录。</td></tr>
+            <tr><td><kbd>顺序</kbd></td><td><kbd>反转顺序</kbd> 先显示最早的记录。</td></tr>
+            <tr><td><kbd>标签</kbd></td><td>包含所选标签中至少一个的记录。详见<a href="tags.html">标签</a>。</td></tr>
+          </tbody>
+        </table>
+        <p>筛选可以组合使用。选择“旅行”分类和 <code>#海边</code> 标签，就只剩下该分类中关于海边的记录。</p>
+
+        <h2 id="calendar">日历：某一天或某段时间</h2>
+        <p>时间线顶部筛选按钮旁边有一个日历按钮。未选择日期时，它显示 <kbd>所有时间</kbd>。</p>
+        <ul>
+          <li><kbd>日期</kbd>：选择一天，只看这一天的记录。</li>
+          <li><kbd>时间段</kbd>：选择时间段的第一天和最后一天。</li>
+        </ul>
+        <p>点按 <kbd>应用</kbd> 使用所选日期，或点按 <kbd>重置</kbd> 重新查看全部时间。</p>
+
+        <h2 id="shortcuts">主页上的快捷入口</h2>
+        <p>有些筛选可以直接从主页开启：</p>
+        <ul>
+          <li><strong><kbd>本周</kbd>、<kbd>本月</kbd>、<kbd>今年</kbd> 卡片</strong>显示你本周（周一到周日）、本月和今年写了多少条记录。点按卡片会打开已按该时间段筛选的时间线。</li>
+          <li><strong>分类卡片</strong>会打开只包含该分类记录的时间线。</li>
+          <li><strong><kbd>历史上的今天</kbd></strong>：如果往年的同一天有记录，就会出现这个按钮。它会打开那一天记录的时间线。</li>
+        </ul>
+
+        <h2 id="views">幻灯片、书和媒体库取决于筛选</h2>
+        <p>这是最不容易察觉的一点。时间线中的 <kbd>幻灯片</kbd>、<kbd>书</kbd> 和 <kbd>媒体库</kbd> 按钮使用的<strong>正是时间线此刻显示的内容</strong>——包括筛选、搜索、日期和顺序。</p>
+        <div class="note">
+          <span class="note-title">示例</span>
+          <p>想做一个暑假的幻灯片？在日历中选择 6 月到 8 月，勾选 <code>#旅行</code> 标签，再点按 <kbd>幻灯片</kbd>。只有这些记录会进入影片。</p>
+        </div>
+        <p>如果幻灯片或书看起来“不全”，请检查是否还有筛选处于开启状态。</p>
+
+        <h2 id="faq">常见问题</h2>
+        <details>
+          <summary>时间线里的记录不见了</summary>
+          <div>
+            <p>多半是以下原因之一：</p>
+            <ul>
+              <li>开启了筛选，或在日历中选了时间段；</li>
+              <li>这些记录在<a href="private-pin.html">私人分类</a>中：总时间线永远不会显示它们；</li>
+              <li>App 是用<a href="fake-pin.html">伪装 PIN 码</a>打开的。</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>为什么分类筛选里没有我的私人分类？</summary>
+          <div><p>私人分类不会出现在筛选和总时间线中。请在主页点按该分类的卡片打开它。如果设置了 PIN 码，App 会先要求输入。</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="sv" data-lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bildspel — Kadu-guide</title>
+  <meta name="description" content="Så startar du ett bildspel i Kadu, ställer in hastighet, musik och effekter och sparar det som video.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Bildspel</h1>
+        <p class="lead">Bildspelet gör foton och videor från dina anteckningar till en film med musik och mjuka effekter.</p>
+
+        <h2 id="start">Så startar du</h2>
+        <p>Öppna fliken <kbd>Tidslinje</kbd> och tryck på <kbd>Bildspel</kbd>.</p>
+        <div class="note">
+          <span class="note-title">Viktigt: bildspelet byggs av det som tidslinjen visar nu</span>
+          <p>Om <a href="filters.html">filter</a> är på i tidslinjen – kategori, tagg, period eller sökning – kommer bara de anteckningarna med i bildspelet. Så gör du en film om en resa eller ett år. Vill du se allt? Återställ filtren först.</p>
+        </div>
+        <p>Om de filtrerade anteckningarna saknar foton och videor meddelar Kadu att det inte finns något att spela upp.</p>
+
+        <h2 id="settings">Inställningar</h2>
+        <p>Öppna <kbd>Inställningar för bildspel</kbd> under uppspelningen. Ändringar gäller direkt och filmen börjar om.</p>
+        <table>
+          <thead>
+            <tr><th>Inställning</th><th>Vad den gör</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>Hastighet</kbd></td><td>Hur länge varje foto visas: <em>Långsam</em> — 5 s, <em>Normal</em> — 3 s, <em>Snabb</em> — 1,2 s, <em>Mycket snabb</em> — 0,6 s.</td></tr>
+            <tr><td><kbd>Videoljud</kbd></td><td>Videor spelas med originalljud.</td></tr>
+            <tr><td><kbd>Snabba upp videor</kbd></td><td>Videotempot följer bildspelets hastighet: lite långsammare på långsam, oförändrat på normal, snabbare på de snabba. En video spelas alltid till slutet.</td></tr>
+            <tr><td><kbd>Visa datum</kbd></td><td>Visar minnets datum på skärmen.</td></tr>
+            <tr><td><kbd>Rörelseeffekter</kbd></td><td>Mjuk zoomning och panorering av foton. Fungerar på hastigheterna <em>Långsam</em> och <em>Normal</em>: på snabbare byts fotot innan effekten hinner synas.</td></tr>
+            <tr><td><kbd>Omvänd ordning</kbd></td><td>Visar de äldsta minnena först i stället för de nyaste.</td></tr>
+            <tr><td><kbd>Bakgrundsmusik</kbd></td><td>Musik spelas under bildspelet. Under <kbd>Spår</kbd> kan du låta <em>Auto</em> stå kvar så väljer Kadu, eller välja själv: <em>Vinter</em>, <em>Lugnt</em> eller <em>Energiskt</em>.</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="free-limit">Gräns i gratisversionen</h2>
+        <p>Utan prenumeration kan du titta på bildspel i <strong>3 minuter per dag</strong>. När tiden är slut erbjuder Kadu Premium. Gränsen återställs nästa dag.</p>
+        <p>Med <span class="premium">Premium</span> är bildspelen obegränsade.</p>
+
+        <h2 id="export">Spara som video <span class="premium">Premium</span></h2>
+        <p>Ett bildspel kan bli en vanlig video att dela med nära och kära.</p>
+        <ol class="steps">
+          <li>Ställ in bildspelet som du vill att videon ska se ut.</li>
+          <li>Öppna <kbd>Inställningar för bildspel</kbd> och tryck på <kbd>Dela som video</kbd>.</li>
+          <li>Vänta tills den är klar (<em>”Din video skapas…”</em>).</li>
+          <li>Välj <kbd>Spara i Bilder</kbd> eller <kbd>Dela</kbd>.</li>
+        </ol>
+        <div class="note warning">
+          <span class="note-title">En video får vara upp till 15 minuter</span>
+          <p>Är bildspelet längre startar inte exporten. Öka hastigheten eller begränsa urvalet med filter – välj till exempel en månad.</p>
+        </div>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

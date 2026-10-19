@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dışa ve içe aktarma — Kadu Kılavuzu</title>
+  <meta name="description" content="Kadu yedekleri, yeni telefona geçiş ve Day One ile Apple Journal'dan kayıt aktarma.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Dışa ve içe aktarma</h1>
+        <p class="lead">Dışa aktarma, günlüğünüzün yedeğini tek bir zip dosyası olarak oluşturur. İçe aktarma onu geri yükler ya da Day One ve Apple Journal'dan kayıt taşır. Hepsi <span class="path">Ayarlar → İçe / Dışa aktar</span> bölümündedir.</p>
+
+        <h2 id="export">Dışa aktarma: yedek</h2>
+        <ol class="steps">
+          <li><span class="path">Ayarlar → İçe / Dışa aktar → Dışa aktar</span> bölümünü açın.</li>
+          <li><kbd>Tüm verileri dışa aktar</kbd> seçeneğine dokunun. <a href="private-pin.html">PIN</a> ayarlıysa Kadu önce onu ister.</li>
+          <li>Bitmesini bekleyin. Çok sayıda fotoğraf ve video varsa birkaç dakika sürebilir.</li>
+          <li>Açılan pencerede dosyanın nereye kaydedileceğini seçin: <kbd>Dosyalar'a Kaydet</kbd> (örneğin iCloud Drive), bilgisayara ya da bulut depolamaya gönderin.</li>
+        </ol>
+        <p>Dosyanın adı aşağı yukarı <code>kadu-export-10-19-2026.zip</code> olur. Tüm kayıtları, kategorileri, etiketleri, fotoğrafları, videoları ve sesli notları içerir.</p>
+
+        <h3 id="export-category">Tek kategoriyi dışa aktarma <span class="premium">Premium</span></h3>
+        <p>Aynı ekrandaki <kbd>Kategoriye göre dışa aktar</kbd> bölümünde yalnızca bir kategorinin kayıtlarını dışa aktarabilirsiniz — örneğin bir gezi günlüğünü paylaşmak için.</p>
+
+        <h2 id="import">Kadu yedeğini içe aktarma</h2>
+        <ol class="steps">
+          <li><span class="path">Ayarlar → İçe / Dışa aktar</span> bölümünü açın.</li>
+          <li><kbd>İçe aktar</kbd> seçeneğine dokunun ve Kadu dışa aktarmasıyla oluşturulan zip dosyasını seçin.</li>
+          <li>"İçe aktarma başarılı" mesajını bekleyin.</li>
+        </ol>
+        <div class="note">
+          <span class="note-title">İçe aktarma hiçbir şeyi silmez</span>
+          <p>Yedekteki kayıtlar uygulamada zaten olanlara <strong>eklenir</strong>. Kadu'da zaten bulunan kayıtlar iki kez eklenmez; yani aynı dosyayı gönül rahatlığıyla yeniden içe aktarabilirsiniz.</p>
+        </div>
+
+        <h2 id="new-phone">Yeni telefona geçiş</h2>
+        <ol class="steps">
+          <li>Eski telefonda <a href="#export">dışa aktarın</a> ve dosyayı yeni telefonun erişebileceği bir yere kaydedin: iCloud Drive, Google Drive veya Dosyalar.</li>
+          <li>Kadu'yu yeni telefona yükleyin.</li>
+          <li>O dosyayı <a href="#import">içe aktarın</a>.</li>
+        </ol>
+        <p>PIN yedeğe dahil değildir. Yeni telefonda yeniden ayarlayın.</p>
+
+        <h2 id="day-one">Day One'dan içe aktarma</h2>
+        <ol class="steps">
+          <li>Day One'da günlüğünüzü <strong>JSON</strong> biçiminde dışa aktarın. Bir zip arşivi elde edersiniz.</li>
+          <li>Kadu'da <span class="path">Ayarlar → İçe / Dışa aktar</span> bölümünü açın ve <kbd>Day One'dan içe aktar (zip)</kbd> seçeneğine dokunun.</li>
+          <li>Arşivi seçin.</li>
+        </ol>
+        <p>Veriler şöyle taşınır:</p>
+        <ul>
+          <li>Day One'ın ana günlüğü ("Journal") varsayılan kategoriye gider;</li>
+          <li>diğer her günlük aynı adlı bir kategori alır. Zaten varsa kayıtlar ona eklenir;</li>
+          <li>fotoğraflar ve hashtag'ler kayıtlarla birlikte taşınır.</li>
+        </ul>
+
+        <h2 id="apple-journal">Apple Journal'dan içe aktarma</h2>
+        <ol class="steps">
+          <li>Günlük (Journal) uygulamasından kayıtlarınızı dışa aktarın. İçinde <code>index.html</code> dosyası ile <code>Entries</code> ve <code>Resources</code> klasörleri olan bir klasör elde edersiniz.</li>
+          <li>Bu klasörü zip olarak sıkıştırın. Dosyalar uygulamasında klasöre basılı tutup <kbd>Sıkıştır</kbd> seçeneğini seçin.</li>
+          <li>Kadu'da <kbd>Apple Journal'dan içe aktar (zip)</kbd> seçeneğine dokunun ve arşivi seçin.</li>
+        </ol>
+        <p>Bir kaydın tarihi tanınamazsa bugünün tarihi verilir. Kadu bunun kaç kayıt için olduğunu söyler. Tarihi düzenleyicide elle düzeltebilirsiniz.</p>
+
+        <h2 id="faq">Sık sorulan sorular</h2>
+        <details>
+          <summary>İçe aktarma, dosyanın başka bir uygulamanın dışa aktarması gibi göründüğünü söylüyor</summary>
+          <div><p>Normal <kbd>İçe aktar</kbd> seçeneğinde bir Day One ya da Apple Journal arşivi seçtiniz. Bu arşivlerin kendi düğmeleri var: <kbd>Day One'dan içe aktar (zip)</kbd> ve <kbd>Apple Journal'dan içe aktar (zip)</kbd>. Kadu hangisini kullanmanız gerektiğini söyler.</p></div>
+        </details>
+        <details>
+          <summary>"Arşivde data.json bulunamadı."</summary>
+          <div><p>Dosya bir Kadu yedeği değil ya da dışa aktarmadan sonra değiştirilmiş. <kbd>Tüm verileri dışa aktar</kbd> ile oluşturulan orijinal zip dosyasını seçin.</p></div>
+        </details>
+        <details>
+          <summary>Dışa aktarma çok uzun sürüyor</summary>
+          <div><p>Kadu tüm fotoğraf ve videoları arşive kopyalar; büyük bir günlükte bu birkaç dakika sürer. Bitene kadar uygulamayı açık tutun.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

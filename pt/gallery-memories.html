@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt" data-lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memórias da galeria — Guia do Kadu</title>
+  <meta name="description" content="Como o Kadu encontra memórias entre as fotos da galeria, o que entra nelas e como salvá-las.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Memórias da galeria</h1>
+        <p class="lead">Sua galeria tem milhares de fotos, mas uma história é feita de momentos. O Kadu encontra esses momentos sozinho, agrupa as fotos em memórias e oferece salvá-las na linha do tempo. Você decide o que guardar.</p>
+
+        <h2 id="how">Como o Kadu encontra memórias</h2>
+        <p>Tudo acontece no seu aparelho. As fotos nunca são enviadas — o Kadu só olha quando e onde cada uma foi tirada:</p>
+        <ol class="steps">
+          <li><strong>Horário.</strong> As fotos são ordenadas pelo horário em que foram tiradas. Se passarem mais de 2 horas entre duas delas, começa uma nova memória.</li>
+          <li><strong>Lugar.</strong> Se as fotos têm localização e duas vizinhas estão a mais de um quilômetro uma da outra, a memória é dividida em duas.</li>
+          <li><strong>Duplicatas.</strong> De uma sequência de fotos com menos de 5 segundos de intervalo, só uma fica. A preferência é de uma foto favoritada na galeria, depois de um vídeo.</li>
+          <li><strong>Capturas de tela</strong> são sempre ignoradas.</li>
+        </ol>
+        <p>Uma memória precisa de <strong>2 ou mais</strong> fotos. Uma foto avulsa, tirada longe das outras, não aparece na varredura completa.</p>
+
+        <h2 id="run">Como iniciar a varredura</h2>
+        <p>O Kadu oferece isso na primeira vez que você abre o app. Depois, dá para rodar quando quiser:</p>
+        <ol class="steps">
+          <li>Abra <span class="path">Configurações → Importar / Exportar</span>.</li>
+          <li>Escolha <kbd>Gerar memórias da galeria</kbd>.</li>
+          <li>Toque em <kbd>Analisar galeria</kbd> e permita o acesso às fotos, se pedido.</li>
+        </ol>
+
+        <h2 id="choose">Escolher e salvar</h2>
+        <p>As memórias encontradas aparecem numa lista. Toque num cartão para marcar ou desmarcar uma memória.</p>
+        <p>Antes de salvar, você pode abrir uma memória no editor pelo botão de edição do cartão — adicionar texto, tirar fotos sobrando ou mudar a data.</p>
+        <p>Toque em <kbd>Salvar</kbd>. Cada memória vira um registro separado na categoria padrão, com a data da primeira foto. Enquanto salva, <strong>não feche o app</strong>.</p>
+
+        <div class="note">
+          <span class="note-title">As fotos são copiadas para o Kadu</span>
+          <p>Fotos e vídeos salvos são copiados para dentro do app. Pode apagá-los da galeria sem medo — no Kadu eles continuam. Mais em <a href="storage.html">Onde ficam os dados</a>.</p>
+        </div>
+
+        <h2 id="suggestions">Sugestões de novas memórias</h2>
+        <p>Quando você volta ao Kadu, ele verifica em silêncio se surgiram fotos novas na galeria desde a última vez. Se elas formarem uma memória, a tela inicial oferece adicioná-la com um toque. Até uma única foto nova basta para uma sugestão.</p>
+        <ul>
+          <li>A verificação só funciona se você já tiver liberado o acesso às fotos. Ela nunca pede permissão por conta própria.</li>
+          <li>Uma memória que você fechou ou já salvou não será sugerida de novo.</li>
+        </ul>
+
+        <h2 id="faq">Perguntas frequentes</h2>
+        <details>
+          <summary>“Nenhum momento memorável encontrado. Toque em Próximo para continuar.”</summary>
+          <div><p>O Kadu procura duas ou mais fotos tiradas mais ou menos no mesmo horário e lugar. Se sua galeria tem mais fotos avulsas ou capturas de tela, pode não haver memórias. Você sempre pode adicionar registros à mão.</p></div>
+        </details>
+        <details>
+          <summary>O Kadu não vê todas as minhas fotos</summary>
+          <div><p>Provavelmente você deu ao Kadu acesso só a algumas fotos. Libere o acesso a toda a biblioteca nos ajustes do celular (<span class="path">Ajustes → Kadu → Fotos</span>) e rode a varredura de novo.</p></div>
+        </details>
+        <details>
+          <summary>Alguns arquivos não foram copiados</summary>
+          <div><p>Isso acontece com fotos cujos originais estão só no iCloud e não foram baixados no celular. Elas continuam na galeria. Abra-as no app Fotos para baixá-las e rode a varredura de novo.</p></div>
+        </details>
+        <details>
+          <summary>Eu neguei o acesso às fotos</summary>
+          <div><p>Sem problemas — você pode adicionar registros à mão. Libere o acesso depois nos ajustes do celular e rode a varredura em <span class="path">Configurações → Importar / Exportar</span>.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

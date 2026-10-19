@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="id" data-lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tag — Panduan Kadu</title>
+  <meta name="description" content="Cara menambahkan tag ke catatan Kadu dan menemukan catatan berdasarkan tag.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Tag</h1>
+        <p class="lead">Tag menghubungkan catatan dengan tema yang sama: perjalanan, seseorang, proyek. Kadu tidak punya kolom khusus untuk tag — tag ditulis langsung di teks catatan.</p>
+
+        <h2 id="add">Cara menambahkan tag</h2>
+        <ol class="steps">
+          <li>Ketik <code>#</code> di teks lalu langsung, tanpa spasi, sebuah kata: <code>#liburan</code>.</li>
+          <li><strong>Ketik spasi setelah kata itu.</strong> Baru saat itulah ia menjadi tag sungguhan.</li>
+          <li>Pastikan tag <span class="tag-demo">#liburan</span> <strong>tersorot dengan warna aksen</strong>.</li>
+          <li>Simpan catatan.</li>
+        </ol>
+        <blockquote>Akhirnya sampai di pantai <span class="tag-demo">#liburan</span> <span class="tag-demo">#pantai2025</span> sambil ngopi</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">Aturan utama: tag harus tersorot</span>
+          <p>Jika kata dengan <code>#</code> tetap berupa teks biasa dan tidak berwarna, itu bukan tag. Tag itu tidak akan muncul di filter dan catatan tidak bisa ditemukan lewat tag itu. Biasanya ini terjadi karena tidak ada spasi setelah tag — misalnya saat tag menjadi kata terakhir di teks.</p>
+        </div>
+        <p>Satu catatan boleh punya tag sebanyak apa pun, di mana saja dalam teks: di awal, tengah, atau akhir. Cukup beri spasi setelah setiap tag.</p>
+
+        <h3 id="not-highlighted">Tag tidak tersorot — apa yang harus dilakukan</h3>
+        <p>Letakkan kursor tepat setelah kata dan tekan spasi. Jika tidak berhasil, hapus tag lalu ketik ulang: <code>#</code>, kata, spasi.</p>
+
+        <h2 id="rules">Aturan penulisan</h2>
+        <table>
+          <thead>
+            <tr><th>Contoh</th><th>Hasil</th><th>Alasan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Liburan</code> dan <code>#liburan</code></td><td>satu tag <code>liburan</code></td><td>huruf besar/kecil tidak berpengaruh</td></tr>
+            <tr><td><code>#salju pertama</code></td><td>hanya <code>salju</code></td><td>spasi mengakhiri tag</td></tr>
+            <tr><td><code>#約會</code>, <code>#ความทรงจำ</code></td><td>berfungsi</td><td>huruf dari bahasa apa pun bisa dipakai</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">Tips</span>
+          <p>Untuk tag yang terdiri dari beberapa kata, gabungkan dengan garis bawah atau tanda hubung: <code>#salju_pertama</code>, <code>#ulang-tahun</code>.</p>
+        </div>
+
+        <h2 id="find">Cara menemukan catatan berdasarkan tag</h2>
+        <ol class="steps">
+          <li>Buka tab <kbd>Linimasa</kbd>.</li>
+          <li>Ketuk <kbd>Filter</kbd> di bagian atas layar.</li>
+          <li>Di blok <kbd>Tag</kbd>, pilih tag yang Anda perlukan. Jika banyak, mulai ketik di kolom <kbd>Cari tag…</kbd>.</li>
+          <li>Terapkan filter.</li>
+        </ol>
+        <p>Tag yang paling sering dipakai ada di urutan teratas.</p>
+
+        <h3 id="several">Jika beberapa tag dipilih</h3>
+        <p>Linimasa menampilkan catatan yang memiliki <strong>setidaknya satu</strong> tag yang dipilih. Misalnya, dengan <code>#pantai</code> dan <code>#gunung</code>, Anda akan melihat perjalanan ke pantai maupun ke gunung.</p>
+        <p>Untuk membatalkan semua pilihan, ketuk <kbd>Hapus</kbd> di samping judul blok.</p>
+        <p>Filter tag juga berlaku untuk <a href="slideshow.html">tayangan slide</a> dan buku. Misalnya, pilih <code>#liburan</code> lalu tonton film khusus liburan itu. Selengkapnya di <a href="filters.html">Filter dan pencarian</a>.</p>
+
+        <h2 id="edit">Cara mengubah atau menghapus tag</h2>
+        <p>Buka catatan, ubah atau hapus kata ber-<code>#</code>, lalu simpan. Daftar tag diperbarui otomatis. Tag hilang dari filter saat tidak ada lagi catatan yang memakainya.</p>
+
+        <h2 id="faq">Pertanyaan umum</h2>
+        <details>
+          <summary>Filter bilang belum ada tag</summary>
+          <div><p>Tag baru muncul setelah Anda memakainya di setidaknya satu catatan yang tersimpan. Pastikan tag tersorot warna — teks biasa dengan <code>#</code> tidak dihitung sebagai tag.</p></div>
+        </details>
+        <details>
+          <summary>Apakah tag dari Day One atau Apple Journal tetap ada?</summary>
+          <div><p>Ya. Saat <a href="export-import.html">impor</a>, Kadu mencari hashtag di teks catatan yang diimpor dan menambahkannya ke daftar.</p></div>
+        </details>
+        <details>
+          <summary>Tag tidak ditemukan padahal catatannya ada</summary>
+          <div>
+            <p>Periksa tiga hal:</p>
+            <ul>
+              <li>tag di catatan <strong>tersorot warna aksen</strong>. Jika tidak, tambahkan spasi setelahnya dan simpan ulang catatan;</li>
+              <li>filter mencari persis kata setelah <code>#</code>: spasi di tengah mengakhiri tag;</li>
+              <li>catatan tidak berada di <a href="private-pin.html">kategori pribadi</a>: linimasa umum tidak menampilkannya.</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

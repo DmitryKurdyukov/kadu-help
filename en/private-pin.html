@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Private categories &amp; PIN — Kadu Guide</title>
+  <meta name="description" content="How private categories work in Kadu and how to protect the app with a PIN.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Private categories & PIN</h1>
+        <p class="lead">Kadu has two levels of protection. A private category hides entries from the main timeline, and a PIN locks the app itself and private categories.</p>
+
+        <h2 id="private">Private category</h2>
+        <p>Entries from a private category <strong>never appear in the main timeline</strong>, filters or general slideshows. The only way to see them is to open the category itself from the home screen.</p>
+        <h3 id="make-private">How to make a category private</h3>
+        <ol class="steps">
+          <li>On the home screen, <strong>press and hold</strong> a category card. For a new category, tap <kbd>Add category</kbd>.</li>
+          <li>Turn on the <kbd>Private</kbd> switch (labeled “Hidden in the general timeline”).</li>
+          <li>Tap <kbd>Save</kbd> (for a new category — <kbd>Create</kbd>).</li>
+        </ol>
+        <p>On first launch Kadu already creates a “Private” category.</p>
+        <div class="note warning">
+          <span class="note-title">Without a PIN, privacy is only visual</span>
+          <p>Until a PIN is set, a private category is simply hidden from the timeline. Anyone holding your phone can open it from the home screen. To truly lock it, set a PIN.</p>
+        </div>
+
+        <h2 id="pin">PIN</h2>
+        <h3 id="set-pin">How to set it</h3>
+        <ol class="steps">
+          <li>Open <span class="path">Settings → PIN code</span>.</li>
+          <li>Tap <kbd>Set PIN code</kbd>.</li>
+          <li>Enter 4 digits and repeat them to confirm.</li>
+        </ol>
+
+        <h3 id="when-asked">When Kadu asks for the PIN</h3>
+        <ul>
+          <li>every time the app starts;</li>
+          <li>when opening a private category from the home screen;</li>
+          <li>before <a href="export-import.html">exporting data</a>, since the backup contains private entries too.</li>
+        </ul>
+
+        <h3 id="reset-pin">How to change or turn it off</h3>
+        <p>Open <span class="path">Settings → PIN code → Reset PIN code</span> and enter the current code. After that the app stops asking for it. To set a new code, tap <kbd>Set PIN code</kbd> again.</p>
+
+        <h2 id="fake">Fake PIN</h2>
+        <p>If someone might ask you to unlock your journal, set a second, fake code. It opens the app but hides all private categories. More in <a href="fake-pin.html">Fake PIN</a>.</p>
+
+        <h2 id="faq">FAQ</h2>
+        <details>
+          <summary>I forgot my PIN</summary>
+          <div>
+            <p>The PIN is stored only on your device and in encrypted form, so it can't be recovered or looked up — not even by us. Try to remember it. If that doesn't work, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOXHvjs9uuML3YGRTeUfUd7fSP4M1xSJOZY02tCTL1_VHlbA/viewform" target="_blank" rel="noopener">write to us</a>.</p>
+            <p>To avoid this, choose a code you won't forget and <a href="export-import.html">make backups</a> regularly.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Can I open Kadu with Face ID?</summary>
+          <div><p>Not yet — Kadu is protected by a PIN only.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

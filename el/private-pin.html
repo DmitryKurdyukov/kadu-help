@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="el" data-lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ιδιωτικές κατηγορίες και PIN — Οδηγός Kadu</title>
+  <meta name="description" content="Πώς λειτουργούν οι ιδιωτικές κατηγορίες στο Kadu και πώς προστατεύετε την εφαρμογή με PIN.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Ιδιωτικές κατηγορίες και PIN</h1>
+        <p class="lead">Το Kadu έχει δύο επίπεδα προστασίας. Μια ιδιωτική κατηγορία κρύβει καταχωρίσεις από το γενικό χρονολόγιο και ένα PIN κλειδώνει την ίδια την εφαρμογή και τις ιδιωτικές κατηγορίες.</p>
+
+        <h2 id="private">Ιδιωτική κατηγορία</h2>
+        <p>Οι καταχωρίσεις μιας ιδιωτικής κατηγορίας <strong>δεν εμφανίζονται ποτέ στο γενικό χρονολόγιο</strong>, στα φίλτρα ή στις γενικές προβολές. Ο μόνος τρόπος να τις δείτε είναι να ανοίξετε την ίδια την κατηγορία από την αρχική οθόνη.</p>
+        <h3 id="make-private">Πώς κάνετε μια κατηγορία ιδιωτική</h3>
+        <ol class="steps">
+          <li>Στην αρχική οθόνη <strong>πατήστε παρατεταμένα</strong> μια κάρτα κατηγορίας. Για νέα κατηγορία πατήστε <kbd>Προσθήκη κατηγορίας</kbd>.</li>
+          <li>Ενεργοποιήστε τον διακόπτη <kbd>Ιδιωτική</kbd> (με την ένδειξη «Κρυφή στο γενικό χρονολόγιο»).</li>
+          <li>Πατήστε <kbd>Αποθήκευση</kbd> (για νέα κατηγορία — <kbd>Δημιουργία</kbd>).</li>
+        </ol>
+        <p>Με την πρώτη εκκίνηση το Kadu δημιουργεί ήδη την κατηγορία «Ιδιωτικά».</p>
+        <div class="note warning">
+          <span class="note-title">Χωρίς PIN το απόρρητο είναι μόνο οπτικό</span>
+          <p>Όσο δεν έχει οριστεί PIN, μια ιδιωτική κατηγορία απλώς κρύβεται από το χρονολόγιο. Όποιος κρατά το κινητό σας μπορεί να την ανοίξει από την αρχική οθόνη. Για να την κλειδώσετε πραγματικά, ορίστε PIN.</p>
+        </div>
+
+        <h2 id="pin">PIN</h2>
+        <h3 id="set-pin">Πώς το ορίζετε</h3>
+        <ol class="steps">
+          <li>Ανοίξτε <span class="path">Ρυθμίσεις → Κωδικός PIN</span>.</li>
+          <li>Πατήστε <kbd>Ορισμός PIN</kbd>.</li>
+          <li>Πληκτρολογήστε 4 ψηφία και επαναλάβετέ τα για επιβεβαίωση.</li>
+        </ol>
+
+        <h3 id="when-asked">Πότε ζητά το Kadu το PIN</h3>
+        <ul>
+          <li>σε κάθε εκκίνηση της εφαρμογής·</li>
+          <li>όταν ανοίγετε ιδιωτική κατηγορία από την αρχική οθόνη·</li>
+          <li>πριν από την <a href="export-import.html">εξαγωγή δεδομένων</a>, επειδή το αντίγραφο ασφαλείας περιέχει και τις ιδιωτικές καταχωρίσεις.</li>
+        </ul>
+
+        <h3 id="reset-pin">Πώς το αλλάζετε ή το απενεργοποιείτε</h3>
+        <p>Ανοίξτε <span class="path">Ρυθμίσεις → Κωδικός PIN → Επαναφορά PIN</span> και πληκτρολογήστε τον τρέχοντα κωδικό. Μετά η εφαρμογή σταματά να τον ζητά. Για νέο κωδικό, πατήστε ξανά <kbd>Ορισμός PIN</kbd>.</p>
+
+        <h2 id="fake">Ψεύτικο PIN</h2>
+        <p>Αν κάποιος μπορεί να σας ζητήσει να ξεκλειδώσετε το ημερολόγιο, ορίστε έναν δεύτερο, ψεύτικο κωδικό. Ανοίγει την εφαρμογή αλλά κρύβει όλες τις ιδιωτικές κατηγορίες. Περισσότερα στο <a href="fake-pin.html">Ψεύτικο PIN</a>.</p>
+
+        <h2 id="faq">Συχνές ερωτήσεις</h2>
+        <details>
+          <summary>Ξέχασα το PIN μου</summary>
+          <div>
+            <p>Το PIN αποθηκεύεται μόνο στη συσκευή σας και κρυπτογραφημένο, οπότε κανείς δεν μπορεί να το ανακτήσει ή να το δει — ούτε εμείς. Προσπαθήστε να το θυμηθείτε. Αν δεν τα καταφέρετε, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOXHvjs9uuML3YGRTeUfUd7fSP4M1xSJOZY02tCTL1_VHlbA/viewform" target="_blank" rel="noopener">γράψτε μας</a>.</p>
+            <p>Για να το αποφύγετε, διαλέξτε κωδικό που δεν θα ξεχάσετε και <a href="export-import.html">κρατάτε αντίγραφα ασφαλείας</a> τακτικά.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Μπορώ να ανοίγω το Kadu με Face ID;</summary>
+          <div><p>Όχι ακόμα — το Kadu προστατεύεται μόνο με PIN.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

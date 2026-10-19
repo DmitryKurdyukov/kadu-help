@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="hi" data-lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>एक्सपोर्ट और इंपोर्ट — Kadu गाइड</title>
+  <meta name="description" content="Kadu बैकअप, नए फ़ोन पर जाना और Day One व Apple Journal से एंट्री इंपोर्ट करना।">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>एक्सपोर्ट और इंपोर्ट</h1>
+        <p class="lead">एक्सपोर्ट आपकी डायरी का बैकअप एक zip फ़ाइल में बनाता है। इंपोर्ट उसे वापस लाता है या Day One और Apple Journal से एंट्री लाता है। यह सब <span class="path">सेटिंग्स → इम्पोर्ट / एक्सपोर्ट</span> में है।</p>
+
+        <h2 id="export">एक्सपोर्ट: बैकअप</h2>
+        <ol class="steps">
+          <li><span class="path">सेटिंग्स → इम्पोर्ट / एक्सपोर्ट → एक्सपोर्ट</span> खोलें।</li>
+          <li><kbd>सारा डेटा एक्सपोर्ट करें</kbd> पर टैप करें। अगर <a href="private-pin.html">PIN</a> सेट है, तो Kadu पहले वह माँगेगा।</li>
+          <li>पूरा होने तक इंतज़ार करें। बहुत सारी फ़ोटो और वीडियो हों तो कुछ मिनट लग सकते हैं।</li>
+          <li>खुलने वाली विंडो में चुनें कि फ़ाइल कहाँ सहेजनी है: <kbd>फ़ाइलें में सहेजें</kbd> (जैसे iCloud Drive), कंप्यूटर या क्लाउड स्टोरेज पर भेजें।</li>
+        </ol>
+        <p>फ़ाइल का नाम कुछ ऐसा होता है: <code>kadu-export-10-19-2026.zip</code>। इसमें सारी एंट्री, श्रेणियाँ, टैग, फ़ोटो, वीडियो और वॉइस नोट होते हैं।</p>
+
+        <h3 id="export-category">एक श्रेणी एक्सपोर्ट करें <span class="premium">Premium</span></h3>
+        <p>उसी स्क्रीन पर <kbd>श्रेणी के अनुसार एक्सपोर्ट करें</kbd> ब्लॉक से सिर्फ़ एक श्रेणी की एंट्री एक्सपोर्ट कर सकते हैं — जैसे किसी यात्रा की डायरी शेयर करने के लिए।</p>
+
+        <h2 id="import">Kadu बैकअप इंपोर्ट करें</h2>
+        <ol class="steps">
+          <li><span class="path">सेटिंग्स → इम्पोर्ट / एक्सपोर्ट</span> खोलें।</li>
+          <li><kbd>इम्पोर्ट</kbd> पर टैप करें और Kadu एक्सपोर्ट से बनी zip फ़ाइल चुनें।</li>
+          <li>"इम्पोर्ट सफल रहा" संदेश का इंतज़ार करें।</li>
+        </ol>
+        <div class="note">
+          <span class="note-title">इंपोर्ट कुछ नहीं मिटाता</span>
+          <p>बैकअप की एंट्री ऐप में पहले से मौजूद एंट्री में <strong>जुड़ जाती हैं</strong>। जो एंट्री Kadu में पहले से हैं, वे दोबारा नहीं जुड़तीं, इसलिए आप वही फ़ाइल बेझिझक फिर से इंपोर्ट कर सकते हैं।</p>
+        </div>
+
+        <h2 id="new-phone">नए फ़ोन पर जाना</h2>
+        <ol class="steps">
+          <li>पुराने फ़ोन पर <a href="#export">एक्सपोर्ट</a> करें और फ़ाइल ऐसी जगह सहेजें जहाँ नया फ़ोन पहुँच सके: iCloud Drive, Google Drive या फ़ाइलें।</li>
+          <li>नए फ़ोन पर Kadu इंस्टॉल करें।</li>
+          <li>उस फ़ाइल को <a href="#import">इंपोर्ट</a> करें।</li>
+        </ol>
+        <p>PIN बैकअप में शामिल नहीं होता। नए फ़ोन पर उसे फिर से सेट करें।</p>
+
+        <h2 id="day-one">Day One से इंपोर्ट</h2>
+        <ol class="steps">
+          <li>Day One में अपना जर्नल <strong>JSON</strong> फ़ॉर्मेट में एक्सपोर्ट करें। आपको एक zip आर्काइव मिलेगा।</li>
+          <li>Kadu में <span class="path">सेटिंग्स → इम्पोर्ट / एक्सपोर्ट</span> खोलें और <kbd>Day One से इम्पोर्ट करें (zip)</kbd> पर टैप करें।</li>
+          <li>आर्काइव चुनें।</li>
+        </ol>
+        <p>डेटा कैसे आता है:</p>
+        <ul>
+          <li>Day One का मुख्य जर्नल ("Journal") डिफ़ॉल्ट श्रेणी में जाता है;</li>
+          <li>हर दूसरे जर्नल के लिए उसी नाम की श्रेणी बनती है। अगर वह पहले से है, तो एंट्री उसी में जुड़ती हैं;</li>
+          <li>फ़ोटो और हैशटैग एंट्री के साथ आते हैं।</li>
+        </ul>
+
+        <h2 id="apple-journal">Apple Journal से इंपोर्ट</h2>
+        <ol class="steps">
+          <li>Journal ऐप से अपनी एंट्री एक्सपोर्ट करें। आपको एक फ़ोल्डर मिलेगा जिसमें <code>index.html</code> फ़ाइल और <code>Entries</code> व <code>Resources</code> फ़ोल्डर होंगे।</li>
+          <li>उस फ़ोल्डर को zip में कंप्रेस करें। फ़ाइलें ऐप में फ़ोल्डर को दबाकर रखें और <kbd>कंप्रेस करें</kbd> चुनें।</li>
+          <li>Kadu में <kbd>Apple Journal से इम्पोर्ट करें (zip)</kbd> पर टैप करें और आर्काइव चुनें।</li>
+        </ol>
+        <p>अगर किसी एंट्री की तारीख़ पहचानी नहीं जाती, तो उसे आज की तारीख़ मिलती है। Kadu बताता है कि ऐसी कितनी एंट्री हैं। आप एडिटर में तारीख़ खुद ठीक कर सकते हैं।</p>
+
+        <h2 id="faq">अक्सर पूछे जाने वाले सवाल</h2>
+        <details>
+          <summary>इंपोर्ट कहता है कि फ़ाइल किसी दूसरे ऐप का एक्सपोर्ट लगती है</summary>
+          <div><p>आपने सामान्य <kbd>इम्पोर्ट</kbd> में Day One या Apple Journal का आर्काइव चुना है। ऐसे आर्काइव के अपने बटन हैं: <kbd>Day One से इम्पोर्ट करें (zip)</kbd> और <kbd>Apple Journal से इम्पोर्ट करें (zip)</kbd>। Kadu बताएगा कि कौन-सा इस्तेमाल करना है।</p></div>
+        </details>
+        <details>
+          <summary>"आर्काइव में data.json नहीं मिली।"</summary>
+          <div><p>फ़ाइल Kadu बैकअप नहीं है या एक्सपोर्ट के बाद बदली गई है। <kbd>सारा डेटा एक्सपोर्ट करें</kbd> से बनी मूल zip फ़ाइल चुनें।</p></div>
+        </details>
+        <details>
+          <summary>एक्सपोर्ट में बहुत समय लग रहा है</summary>
+          <div><p>Kadu सारी फ़ोटो और वीडियो आर्काइव में कॉपी करता है, और बड़ी डायरी में इसमें कुछ मिनट लगते हैं। पूरा होने तक ऐप खुला रखें।</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

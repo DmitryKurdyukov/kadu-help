@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-Hant" data-lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>私人分類與 PIN 碼 — Kadu 使用指南</title>
+  <meta name="description" content="Kadu 私人分類的工作方式，以及如何用 PIN 碼保護 App。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>私人分類與 PIN 碼</h1>
+        <p class="lead">Kadu 有兩層保護。私人分類會把記錄從總時間線中隱藏，PIN 碼則鎖定 App 本身和私人分類。</p>
+
+        <h2 id="private">私人分類</h2>
+        <p>私人分類中的記錄<strong>永遠不會出現在總時間線</strong>、篩選或總投影片中。檢視它們的唯一方式，是從主頁開啟這個分類本身。</p>
+        <h3 id="make-private">如何把分類設為私人</h3>
+        <ol class="steps">
+          <li>在主頁<strong>長按</strong>分類卡片。如果是新分類，點按 <kbd>新增分類</kbd>。</li>
+          <li>開啟 <kbd>私密</kbd> 開關（說明文字：「在公共時間線中隱藏」）。</li>
+          <li>點按 <kbd>儲存</kbd>（新分類為 <kbd>建立</kbd>）。</li>
+        </ol>
+        <p>首次啟動時，Kadu 已經建立好「私密」分類。</p>
+        <div class="note warning">
+          <span class="note-title">沒有 PIN 碼時，隱私只是視覺上的</span>
+          <p>在設定 PIN 碼之前，私人分類只是從時間線中隱藏。任何拿著你手機的人都能從主頁開啟它。要真正鎖住它，請設定 PIN 碼。</p>
+        </div>
+
+        <h2 id="pin">PIN 碼</h2>
+        <h3 id="set-pin">如何設定</h3>
+        <ol class="steps">
+          <li>開啟 <span class="path">設定 → PIN 碼</span>。</li>
+          <li>點按 <kbd>設定 PIN 碼</kbd>。</li>
+          <li>輸入 4 位數字，再輸入一次確認。</li>
+        </ol>
+
+        <h3 id="when-asked">Kadu 何時要求輸入 PIN 碼</h3>
+        <ul>
+          <li>每次啟動 App 時；</li>
+          <li>從主頁開啟私人分類時；</li>
+          <li><a href="export-import.html">匯出資料</a>之前，因為備份中也包含私人記錄。</li>
+        </ul>
+
+        <h3 id="reset-pin">如何更改或關閉</h3>
+        <p>開啟 <span class="path">設定 → PIN 碼 → 重置 PIN 碼</span> 並輸入當前密碼。之後 App 不再要求輸入。要設定新密碼，請再次點按 <kbd>設定 PIN 碼</kbd>。</p>
+
+        <h2 id="fake">偽裝 PIN 碼</h2>
+        <p>如果有人可能讓你解鎖日記，可以設定第二個偽裝密碼。它能開啟 App，但會隱藏所有私人分類。詳見<a href="fake-pin.html">偽裝 PIN 碼</a>。</p>
+
+        <h2 id="faq">常見問題</h2>
+        <details>
+          <summary>我忘了 PIN 碼</summary>
+          <div>
+            <p>PIN 碼只以加密形式儲存在你的裝置上，因此任何人都無法恢復或檢視——包括我們。請儘量回想。如果實在想不起來，請<a href="https://docs.google.com/forms/d/e/1FAIpQLSdOXHvjs9uuML3YGRTeUfUd7fSP4M1xSJOZY02tCTL1_VHlbA/viewform" target="_blank" rel="noopener">給我們留言</a>。</p>
+            <p>為避免這種情況，請選擇一個不會忘記的密碼，並定期<a href="export-import.html">備份</a>。</p>
+          </div>
+        </details>
+        <details>
+          <summary>可以用Face ID 開啟 Kadu 嗎？</summary>
+          <div><p>暫時不行——Kadu 只用 PIN 碼保護。</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

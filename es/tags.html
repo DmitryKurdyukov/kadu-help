@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Etiquetas — Guía de Kadu</title>
+  <meta name="description" content="Cómo añadir etiquetas a las entradas de Kadu y encontrar entradas por etiqueta.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Etiquetas</h1>
+        <p class="lead">Las etiquetas unen entradas con un tema común: un viaje, una persona, un proyecto. Kadu no tiene un campo aparte para ellas: se escriben directamente en el texto de la entrada.</p>
+
+        <h2 id="add">Cómo añadir una etiqueta</h2>
+        <ol class="steps">
+          <li>Escribe <code>#</code> en el texto seguido de una palabra, sin espacio: <code>#vacaciones</code>.</li>
+          <li><strong>Escribe un espacio después de la palabra.</strong> Solo entonces se convierte en una etiqueta real.</li>
+          <li>Comprueba que la etiqueta <span class="tag-demo">#vacaciones</span> se ha <strong>resaltado con el color de acento</strong>.</li>
+          <li>Guarda la entrada.</li>
+        </ol>
+        <blockquote>Por fin llegamos al mar <span class="tag-demo">#vacaciones</span> <span class="tag-demo">#mar2025</span> y tomamos un café</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">La regla clave: la etiqueta debe resaltarse</span>
+          <p>Si una palabra con <code>#</code> se queda como texto normal en lugar de colorearse, no es una etiqueta. No aparecerá en los filtros y la entrada no se encontrará por ella. Suele pasar cuando falta el espacio después de la etiqueta, por ejemplo si es la última palabra del texto.</p>
+        </div>
+        <p>Una entrada puede tener tantas etiquetas como quieras, en cualquier parte del texto: al principio, en medio o al final. Solo pon un espacio después de cada una.</p>
+
+        <h3 id="not-highlighted">La etiqueta no se resalta: qué hacer</h3>
+        <p>Coloca el cursor justo después de la palabra y pulsa espacio. Si no funciona, borra la etiqueta y escríbela de nuevo: <code>#</code>, la palabra, un espacio.</p>
+
+        <h2 id="rules">Reglas de escritura</h2>
+        <table>
+          <thead>
+            <tr><th>Ejemplo</th><th>Resultado</th><th>Por qué</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Vacaciones</code> y <code>#vacaciones</code></td><td>una etiqueta <code>vacaciones</code></td><td>no importan mayúsculas ni minúsculas</td></tr>
+            <tr><td><code>#fiesta cumpleaños</code></td><td>solo <code>fiesta</code></td><td>un espacio termina la etiqueta</td></tr>
+            <tr><td><code>#約會</code>, <code>#ความทรงจำ</code></td><td>funcionan</td><td>sirven letras de cualquier idioma</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">Consejo</span>
+          <p>Para etiquetas de varias palabras, únelas con guion bajo o guion: <code>#fiesta_cumpleaños</code>, <code>#primera-nieve</code>.</p>
+        </div>
+
+        <h2 id="find">Cómo encontrar entradas por etiqueta</h2>
+        <ol class="steps">
+          <li>Abre la pestaña <kbd>Línea de tiempo</kbd>.</li>
+          <li>Toca <kbd>Filtros</kbd> en la parte superior de la pantalla.</li>
+          <li>En el bloque <kbd>Etiquetas</kbd>, marca las etiquetas que necesitas. Si hay muchas, empieza a escribir en el campo <kbd>Buscar etiquetas…</kbd>.</li>
+          <li>Aplica el filtro.</li>
+        </ol>
+        <p>Las etiquetas más usadas aparecen primero.</p>
+
+        <h3 id="several">Si eliges varias etiquetas</h3>
+        <p>La línea de tiempo muestra las entradas que tienen <strong>al menos una</strong> de las etiquetas elegidas. Por ejemplo, con <code>#mar</code> y <code>#montaña</code> verás tanto los viajes al mar como a la montaña.</p>
+        <p>Para desmarcar todas, toca <kbd>Limpiar</kbd> junto al título del bloque.</p>
+        <p>El filtro por etiqueta también se aplica a la <a href="slideshow.html">presentación</a> y al libro. Por ejemplo, marca <code>#vacaciones</code> y mira una película solo de esas vacaciones. Más en <a href="filters.html">Filtros y búsqueda</a>.</p>
+
+        <h2 id="edit">Cómo cambiar o quitar una etiqueta</h2>
+        <p>Abre la entrada, edita o borra la palabra con <code>#</code> y guarda. La lista de etiquetas se actualiza sola. Una etiqueta desaparece de los filtros cuando ya no la usa ninguna entrada.</p>
+
+        <h2 id="faq">Preguntas frecuentes</h2>
+        <details>
+          <summary>Los filtros dicen que aún no hay etiquetas</summary>
+          <div><p>Las etiquetas aparecen solo después de usarlas en al menos una entrada guardada. Asegúrate de que la etiqueta esté resaltada en color: el texto normal con <code>#</code> no cuenta como etiqueta.</p></div>
+        </details>
+        <details>
+          <summary>¿Se conservan las etiquetas de Day One o Apple Journal?</summary>
+          <div><p>Sí. Al <a href="export-import.html">importar</a>, Kadu encuentra los hashtags en el texto de las entradas importadas y los añade a la lista.</p></div>
+        </details>
+        <details>
+          <summary>No encuentro una etiqueta aunque la entrada existe</summary>
+          <div>
+            <p>Comprueba tres cosas:</p>
+            <ul>
+              <li>la etiqueta está <strong>resaltada con el color de acento</strong> en la entrada. Si no, añade un espacio después y guarda la entrada de nuevo;</li>
+              <li>los filtros buscan exactamente la palabra tras <code>#</code>: un espacio dentro termina la etiqueta;</li>
+              <li>la entrada no está en una <a href="private-pin.html">categoría privada</a>: la línea de tiempo general no las muestra.</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

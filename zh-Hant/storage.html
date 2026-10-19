@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-Hant" data-lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>資料存在哪裡 — Kadu 使用指南</title>
+  <meta name="description" content="Kadu 只把記錄儲存在你的裝置上：這意味著什麼，以及如何避免丟失日記。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>資料存在哪裡</h1>
+        <p class="lead">沒有賬號，沒有云端。所有記錄、照片、影片和語音備忘都只儲存在你裝置上的 Kadu 裡。</p>
+
+        <h2 id="means">這對你意味著什麼</h2>
+        <ul>
+          <li><strong>除了你，沒人能看到你的記錄。</strong>我們從不接收你的文字或照片——它們不在任何伺服器上。</li>
+          <li><strong>無需註冊。</strong>App 開啟即用，離線也可以。</li>
+          <li><strong>裝置之間不同步。</strong>日記只存在於一部手機上；用<a href="export-import.html">匯出與匯入</a>來遷移。</li>
+        </ul>
+
+        <h2 id="copies">照片會被複制到 Kadu</h2>
+        <p>當你給記錄附上照片或影片時，Kadu 會儲存檔案的<strong>獨立副本</strong>。因此：</p>
+        <ul>
+          <li>你可以從相簿刪除照片——它仍會留在 Kadu 中；</li>
+          <li>Kadu 中的照片和影片會在相簿之外額外佔用手機空間。</li>
+        </ul>
+        <p>還有一個反向選項：<span class="path">設定 → 其他 → 將照片和影片儲存到相簿</span>。開啟後，在 Kadu 內用相機拍攝的照片和影片也會儲存到手機相簿。</p>
+
+        <h2 id="risk">如何避免丟失日記</h2>
+        <div class="note warning">
+          <span class="note-title">刪除 App 會刪除所有記錄</span>
+          <p>由於資料只存在於 Kadu 中，刪除 App、重置或丟失手機都會讓它們消失。我們無法恢復——因為我們根本沒有這些資料。</p>
+        </div>
+        <p>唯一可靠的保障是<strong>備份</strong>。請定期<a href="export-import.html#export">匯出</a>，並把檔案儲存在手機之外：iCloud 雲碟、Google Drive、電腦或郵箱。</p>
+        <div class="note">
+          <span class="note-title">提示</span>
+          <p>每月備份一次，並且在換手機、重置設定或重灌 Kadu 之前一定要備份。</p>
+        </div>
+
+        <h2 id="delete-all">刪除所有資料</h2>
+        <p><span class="path">設定 → 匯入 / 匯出 → 刪除所有資料</span> 會永久清除所有記錄、分類和媒體。如果之後可能還需要這些資料，請先匯出。</p>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

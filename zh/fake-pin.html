@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-Hans" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>伪装 PIN 码 — Kadu 使用指南</title>
+  <meta name="description" content="Kadu 的伪装 PIN 码：打开 App 时不显示私人分类的第二个密码。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>伪装 PIN 码 <span class="premium">Premium</span></h1>
+        <p class="lead">伪装 PIN 码是 Kadu 的第二个密码。它像平常一样打开 App，只是没有私人分类。在旁人看来，这些分类好像从未存在过。</p>
+
+        <h2 id="why">它有什么用</h2>
+        <p>有时别人要看你的日记，而拒绝又很尴尬。这时输入伪装密码：对方只会看到普通记录，私人内容依然隐藏。屏幕上不会出现任何“模式”或提示。</p>
+
+        <h2 id="what-hidden">输入伪装密码后会怎样</h2>
+        <ul>
+          <li>私人分类从主页消失；</li>
+          <li>其中的记录不会出现在时间线、筛选、幻灯片、书或导出中；</li>
+          <li>其他一切照常运行。</li>
+        </ul>
+        <p>不会删除任何数据。输入真正的 PIN 码后，一切都会回来。</p>
+
+        <h2 id="set">如何设置</h2>
+        <ol class="steps">
+          <li>先设置主 PIN 码：<span class="path">设置 → PIN 码 → 设置 PIN 码</span>。没有主密码，App 启动时不会要求输入，伪装密码也就没有用。</li>
+          <li>点按 <kbd>设置假 PIN</kbd>。</li>
+          <li>输入 4 位数字并再输入一次。</li>
+        </ol>
+        <div class="note warning">
+          <span class="note-title">两个密码必须不同</span>
+          <p>如果伪装密码与主密码相同，Kadu 将总是以正常模式打开，伪装密码不起作用。</p>
+        </div>
+
+        <h2 id="reset">如何关闭</h2>
+        <p>打开 <span class="path">设置 → PIN 码 → 重置假 PIN</span>，输入<strong>主</strong> PIN 码。伪装密码不能关闭它自己——否则知道它的人就能关掉保护。</p>
+
+        <h2 id="faq">常见问题</h2>
+        <details>
+          <summary>用了伪装密码后，如何回到完整的日记？</summary>
+          <div><p>完全关闭 App，重新打开，然后输入主 PIN 码。</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

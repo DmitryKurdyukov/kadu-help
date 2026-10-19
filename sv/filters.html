@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="sv" data-lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filter och sökning — Kadu-guide</title>
+  <meta name="description" content="Så söker och filtrerar du anteckningar i Kadus tidslinje: text, kategorier, favoriter, taggar, datum och ordning.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Filter och sökning</h1>
+        <p class="lead">Tidslinjen visar alla anteckningar från nyast till äldst. Filter lämnar bara kvar det du behöver: vissa dagar, en kategori, en tagg eller ett ord i texten.</p>
+
+        <h2 id="filters">Filterpanelen</h2>
+        <p>Öppna fliken <kbd>Tidslinje</kbd> och tryck på <kbd>Filter</kbd> högst upp. Välj villkor och använd dem.</p>
+        <table>
+          <thead>
+            <tr><th>Filter</th><th>Vad det gör</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>Text</kbd></td><td>Behåller anteckningar vars text innehåller orden. Versaler och gemener spelar ingen roll.</td></tr>
+            <tr><td><kbd>Kategori</kbd></td><td>Visar anteckningar från en enda kategori. <kbd>Alla</kbd> tar bort begränsningen.</td></tr>
+            <tr><td><kbd>Favoriter</kbd></td><td>Reglaget <kbd>Endast favoriter</kbd> behåller anteckningar med stjärna.</td></tr>
+            <tr><td><kbd>Ordning</kbd></td><td><kbd>Omvänd ordning</kbd> visar de äldsta anteckningarna först.</td></tr>
+            <tr><td><kbd>Taggar</kbd></td><td>Anteckningar med minst en av de valda taggarna. Mer i <a href="tags.html">Taggar</a>.</td></tr>
+          </tbody>
+        </table>
+        <p>Filter kan kombineras. Väljer du kategorin ”Resor” och taggen <code>#hav</code> blir bara havsanteckningar från den kategorin kvar.</p>
+
+        <h2 id="calendar">Kalender: en dag eller en period</h2>
+        <p>Bredvid filtren högst upp i tidslinjen finns en kalenderknapp. Så länge inget datum är valt står det <kbd>All tid</kbd>.</p>
+        <ul>
+          <li><kbd>Datum</kbd>: välj en dag för att se bara dess anteckningar.</li>
+          <li><kbd>Period</kbd>: markera första och sista dagen i ett intervall.</li>
+        </ul>
+        <p>Tryck på <kbd>Tillämpa</kbd> för att använda valet, eller <kbd>Återställ</kbd> för att se allt igen.</p>
+
+        <h2 id="shortcuts">Genvägar från hemskärmen</h2>
+        <p>Vissa filter slås på direkt från hemskärmen:</p>
+        <ul>
+          <li><strong>Korten <kbd>Vecka</kbd>, <kbd>Månad</kbd>, <kbd>År</kbd></strong> visar hur många anteckningar du gjort den här veckan (måndag–söndag), månaden och året. Ett tryck på ett kort öppnar tidslinjen redan filtrerad på den perioden.</li>
+          <li><strong>Ett kategorikort</strong> öppnar tidslinjen med bara den kategorins anteckningar.</li>
+          <li><strong><kbd>På denna dag</kbd></strong>: knappen visas om du har anteckningar från samma dag tidigare år. Den öppnar tidslinjen med den dagens anteckningar.</li>
+        </ul>
+
+        <h2 id="views">Bildspel, Bok och Mediebibliotek beror på filtren</h2>
+        <p>Det här är det minst uppenbara. Knapparna <kbd>Bildspel</kbd>, <kbd>Bok</kbd> och <kbd>Mediebibliotek</kbd> i tidslinjen använder <strong>exakt det som tidslinjen visar just nu</strong> – inklusive filter, sökning, datum och ordning.</p>
+        <div class="note">
+          <span class="note-title">Exempel</span>
+          <p>Vill du ha ett bildspel från sommarsemestern? Välj juni–augusti i kalendern, markera taggen <code>#semester</code> och tryck på <kbd>Bildspel</kbd>. Bara de anteckningarna kommer med i filmen.</p>
+        </div>
+        <p>Om bildspelet eller boken verkar visa ”inte allt”, kontrollera om något filter fortfarande är på.</p>
+
+        <h2 id="faq">Vanliga frågor</h2>
+        <details>
+          <summary>Anteckningar har försvunnit från tidslinjen</summary>
+          <div>
+            <p>Troligen beror det på något av detta:</p>
+            <ul>
+              <li>ett filter är på eller en period är vald i kalendern;</li>
+              <li>anteckningarna ligger i en <a href="private-pin.html">privat kategori</a>: den allmänna tidslinjen visar dem aldrig;</li>
+              <li>appen öppnades med en <a href="fake-pin.html">falsk PIN</a>.</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>Varför finns inte min privata kategori i kategorifiltret?</summary>
+          <div><p>Privata kategorier visas varken i filter eller i den allmänna tidslinjen. Öppna en sådan kategori från hemskärmen genom att trycka på dess kort. Om en PIN är inställd frågar appen efter den först.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

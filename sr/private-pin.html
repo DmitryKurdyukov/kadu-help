@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="sr" data-lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Приватне категорије и PIN — Kadu водич</title>
+  <meta name="description" content="Како раде приватне категорије у Kadu и како заштитити апликацију PIN кодом.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Приватне категорије и PIN</h1>
+        <p class="lead">Kadu има два нивоа заштите. Приватна категорија скрива уносе из опште хронике, а PIN код закључава саму апликацију и приватне категорије.</p>
+
+        <h2 id="private">Приватна категорија</h2>
+        <p>Уноси из приватне категорије <strong>никад се не појављују у општој хроници</strong>, филтерима ни општим пројекцијама. Видети их можете само ако отворите саму категорију са почетног екрана.</p>
+        <h3 id="make-private">Како категорију учинити приватном</h3>
+        <ol class="steps">
+          <li>На почетном екрану <strong>задржите прст</strong> на картици категорије. За нову категорију додирните <kbd>Додај категорију</kbd>.</li>
+          <li>Укључите прекидач <kbd>Приватно</kbd> (опис: „Скривено у општој хроници”).</li>
+          <li>Додирните <kbd>Сачувај</kbd> (за нову категорију — <kbd>Направи</kbd>).</li>
+        </ol>
+        <p>При првом покретању Kadu већ прави категорију „Приватно”.</p>
+        <div class="note warning">
+          <span class="note-title">Без PIN-а приватност је само визуелна</span>
+          <p>Док PIN није постављен, приватна категорија је само скривена из хронике. Свако ко држи ваш телефон може је отворити са почетног екрана. Да бисте је стварно закључали, поставите PIN.</p>
+        </div>
+
+        <h2 id="pin">PIN код</h2>
+        <h3 id="set-pin">Како поставити</h3>
+        <ol class="steps">
+          <li>Отворите <span class="path">Подешавања → PIN код</span>.</li>
+          <li>Додирните <kbd>Подеси PIN код</kbd>.</li>
+          <li>Унесите 4 цифре и поновите их ради потврде.</li>
+        </ol>
+
+        <h3 id="when-asked">Када Kadu тражи PIN</h3>
+        <ul>
+          <li>при сваком покретању апликације;</li>
+          <li>при отварању приватне категорије са почетног екрана;</li>
+          <li>пре <a href="export-import.html">извоза података</a>, јер резервна копија садржи и приватне уносе.</li>
+        </ul>
+
+        <h3 id="reset-pin">Како променити или искључити</h3>
+        <p>Отворите <span class="path">Подешавања → PIN код → Ресетуј PIN код</span> и унесите тренутни код. Након тога апликација престаје да га тражи. За нови код поново додирните <kbd>Подеси PIN код</kbd>.</p>
+
+        <h2 id="fake">Лажни PIN</h2>
+        <p>Ако вас неко може замолити да откључате дневник, поставите други, лажни код. Он отвара апликацију, али скрива све приватне категорије. Више у одељку <a href="fake-pin.html">Лажни PIN</a>.</p>
+
+        <h2 id="faq">Честа питања</h2>
+        <details>
+          <summary>Заборавио сам PIN</summary>
+          <div>
+            <p>PIN се чува само на вашем уређају и у шифрованом облику, па га нико не може повратити ни видети — ни ми. Покушајте да се сетите. Ако не успете, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOXHvjs9uuML3YGRTeUfUd7fSP4M1xSJOZY02tCTL1_VHlbA/viewform" target="_blank" rel="noopener">пишите нам</a>.</p>
+            <p>Да се то не би десило, изаберите код који нећете заборавити и редовно <a href="export-import.html">правите резервне копије</a>.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Могу ли да отварам Kadu помоћу Face ID-ја?</summary>
+          <div><p>Још не — Kadu се штити само PIN кодом.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

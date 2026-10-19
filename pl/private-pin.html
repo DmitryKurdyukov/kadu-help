@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pl" data-lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prywatne kategorie i PIN — Przewodnik po Kadu</title>
+  <meta name="description" content="Jak działają prywatne kategorie w Kadu i jak chronić aplikację PIN-em.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Prywatne kategorie i PIN</h1>
+        <p class="lead">Kadu ma dwa poziomy ochrony. Prywatna kategoria ukrywa wpisy na ogólnej osi czasu, a PIN blokuje samą aplikację i prywatne kategorie.</p>
+
+        <h2 id="private">Prywatna kategoria</h2>
+        <p>Wpisy z prywatnej kategorii <strong>nigdy nie pojawiają się na ogólnej osi czasu</strong>, w filtrach ani w ogólnych pokazach slajdów. Zobaczysz je tylko, otwierając samą kategorię z ekranu głównego.</p>
+        <h3 id="make-private">Jak ustawić kategorię jako prywatną</h3>
+        <ol class="steps">
+          <li>Na ekranie głównym <strong>przytrzymaj</strong> kartę kategorii. Dla nowej kategorii stuknij <kbd>Dodaj kategorię</kbd>.</li>
+          <li>Włącz przełącznik <kbd>Prywatna</kbd> (podpis: „Ukryta na ogólnej osi czasu”).</li>
+          <li>Stuknij <kbd>Zapisz</kbd> (dla nowej kategorii — <kbd>Utwórz</kbd>).</li>
+        </ol>
+        <p>Przy pierwszym uruchomieniu Kadu od razu tworzy kategorię „Prywatne”.</p>
+        <div class="note warning">
+          <span class="note-title">Bez PIN-u prywatność jest tylko wizualna</span>
+          <p>Dopóki nie ustawisz PIN-u, prywatna kategoria jest tylko ukryta na osi czasu. Każdy, kto ma w ręku Twój telefon, otworzy ją z ekranu głównego. Aby naprawdę ją zablokować, ustaw PIN.</p>
+        </div>
+
+        <h2 id="pin">PIN</h2>
+        <h3 id="set-pin">Jak ustawić</h3>
+        <ol class="steps">
+          <li>Otwórz <span class="path">Ustawienia → Kod PIN</span>.</li>
+          <li>Stuknij <kbd>Ustaw kod PIN</kbd>.</li>
+          <li>Wpisz 4 cyfry i powtórz je, aby potwierdzić.</li>
+        </ol>
+
+        <h3 id="when-asked">Kiedy Kadu prosi o PIN</h3>
+        <ul>
+          <li>przy każdym uruchomieniu aplikacji;</li>
+          <li>przy otwieraniu prywatnej kategorii z ekranu głównego;</li>
+          <li>przed <a href="export-import.html">eksportem danych</a>, bo kopia zapasowa zawiera też prywatne wpisy.</li>
+        </ul>
+
+        <h3 id="reset-pin">Jak zmienić lub wyłączyć</h3>
+        <p>Otwórz <span class="path">Ustawienia → Kod PIN → Zresetuj kod PIN</span> i wpisz obecny kod. Potem aplikacja przestanie o niego prosić. Aby ustawić nowy, ponownie stuknij <kbd>Ustaw kod PIN</kbd>.</p>
+
+        <h2 id="fake">Fałszywy PIN</h2>
+        <p>Jeśli ktoś może poprosić Cię o odblokowanie dziennika, ustaw drugi, fałszywy kod. Otwiera on aplikację, ale ukrywa wszystkie prywatne kategorie. Więcej w sekcji <a href="fake-pin.html">Fałszywy PIN</a>.</p>
+
+        <h2 id="faq">Częste pytania</h2>
+        <details>
+          <summary>Zapomniałem PIN-u</summary>
+          <div>
+            <p>PIN jest przechowywany tylko na Twoim urządzeniu i w postaci zaszyfrowanej, więc nikt nie może go odzyskać ani podejrzeć — także my. Spróbuj go sobie przypomnieć. Jeśli się nie uda, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOXHvjs9uuML3YGRTeUfUd7fSP4M1xSJOZY02tCTL1_VHlbA/viewform" target="_blank" rel="noopener">napisz do nas</a>.</p>
+            <p>Aby tego uniknąć, wybierz kod, którego nie zapomnisz, i regularnie <a href="export-import.html">rób kopie zapasowe</a>.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Czy mogę otwierać Kadu przez Face ID?</summary>
+          <div><p>Jeszcze nie — Kadu chroni tylko PIN.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

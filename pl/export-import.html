@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pl" data-lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eksport i import — Przewodnik po Kadu</title>
+  <meta name="description" content="Kopie zapasowe Kadu, przenosiny na nowy telefon oraz import wpisów z Day One i Apple Journal.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Eksport i import</h1>
+        <p class="lead">Eksport tworzy kopię zapasową dziennika w jednym pliku zip. Import ją przywraca albo przenosi wpisy z Day One i Apple Journal. Wszystko znajdziesz w <span class="path">Ustawienia → Import / Eksport</span>.</p>
+
+        <h2 id="export">Eksport: kopia zapasowa</h2>
+        <ol class="steps">
+          <li>Otwórz <span class="path">Ustawienia → Import / Eksport → Eksport</span>.</li>
+          <li>Stuknij <kbd>Eksportuj wszystkie dane</kbd>. Jeśli ustawiono <a href="private-pin.html">PIN</a>, Kadu najpierw o niego poprosi.</li>
+          <li>Poczekaj na zakończenie. Przy wielu zdjęciach i filmach może to potrwać kilka minut.</li>
+          <li>W oknie, które się otworzy, wybierz, gdzie zapisać plik: <kbd>Zachowaj w Plikach</kbd> (np. iCloud Drive), wyślij na komputer lub do chmury.</li>
+        </ol>
+        <p>Plik nazywa się mniej więcej <code>kadu-export-10-19-2026.zip</code>. Zawiera wszystkie wpisy, kategorie, tagi, zdjęcia, filmy i notatki głosowe.</p>
+
+        <h3 id="export-category">Eksport jednej kategorii <span class="premium">Premium</span></h3>
+        <p>Na tym samym ekranie, w bloku <kbd>Eksportuj według kategorii</kbd>, możesz wyeksportować wpisy tylko z jednej kategorii — na przykład by udostępnić dziennik z podróży.</p>
+
+        <h2 id="import">Import kopii zapasowej Kadu</h2>
+        <ol class="steps">
+          <li>Otwórz <span class="path">Ustawienia → Import / Eksport</span>.</li>
+          <li>Stuknij <kbd>Import</kbd> i wybierz plik zip utworzony eksportem Kadu.</li>
+          <li>Poczekaj na komunikat „Import zakończony”.</li>
+        </ol>
+        <div class="note">
+          <span class="note-title">Import niczego nie usuwa</span>
+          <p>Wpisy z kopii są <strong>dodawane</strong> do tych, które już są w aplikacji. Wpisy, które już istnieją w Kadu, nie zostaną zdublowane, więc ten sam plik możesz bezpiecznie zaimportować ponownie.</p>
+        </div>
+
+        <h2 id="new-phone">Przenosiny na nowy telefon</h2>
+        <ol class="steps">
+          <li>Na starym telefonie zrób <a href="#export">eksport</a> i zapisz plik tam, gdzie nowy telefon go znajdzie: iCloud Drive, Dysk Google lub Pliki.</li>
+          <li>Zainstaluj Kadu na nowym telefonie.</li>
+          <li><a href="#import">Zaimportuj</a> ten plik.</li>
+        </ol>
+        <p>PIN nie jest częścią kopii zapasowej. Ustaw go ponownie na nowym telefonie.</p>
+
+        <h2 id="day-one">Import z Day One</h2>
+        <ol class="steps">
+          <li>W Day One wyeksportuj dziennik w formacie <strong>JSON</strong>. Otrzymasz archiwum zip.</li>
+          <li>W Kadu otwórz <span class="path">Ustawienia → Import / Eksport</span> i stuknij <kbd>Importuj z Day One (zip)</kbd>.</li>
+          <li>Wybierz archiwum.</li>
+        </ol>
+        <p>Jak przenoszone są dane:</p>
+        <ul>
+          <li>główny dziennik Day One („Journal”) trafia do kategorii domyślnej;</li>
+          <li>każdy inny dziennik dostaje kategorię o tej samej nazwie. Jeśli już istnieje, wpisy są do niej dodawane;</li>
+          <li>zdjęcia i hashtagi przenoszą się razem z wpisami.</li>
+        </ul>
+
+        <h2 id="apple-journal">Import z Apple Journal</h2>
+        <ol class="steps">
+          <li>Wyeksportuj wpisy z aplikacji Dziennik. Otrzymasz folder z plikiem <code>index.html</code> oraz folderami <code>Entries</code> i <code>Resources</code>.</li>
+          <li>Skompresuj ten folder do zip. W aplikacji Pliki przytrzymaj folder i wybierz <kbd>Kompresuj</kbd>.</li>
+          <li>W Kadu stuknij <kbd>Importuj z Apple Journal (zip)</kbd> i wybierz archiwum.</li>
+        </ol>
+        <p>Jeśli nie da się rozpoznać daty wpisu, otrzyma on dzisiejszą datę. Kadu poinformuje, ilu wpisów to dotyczy. Datę możesz poprawić ręcznie w edytorze.</p>
+
+        <h2 id="faq">Częste pytania</h2>
+        <details>
+          <summary>Import informuje, że plik wygląda na eksport z innej aplikacji</summary>
+          <div><p>Wybrałeś archiwum z Day One lub Apple Journal w zwykłej pozycji <kbd>Import</kbd>. Takie archiwa mają własne przyciski: <kbd>Importuj z Day One (zip)</kbd> i <kbd>Importuj z Apple Journal (zip)</kbd>. Kadu podpowie, którego użyć.</p></div>
+        </details>
+        <details>
+          <summary>„W archiwum nie znaleziono pliku data.json.”</summary>
+          <div><p>Plik nie jest kopią zapasową Kadu lub został zmieniony po eksporcie. Wybierz oryginalny plik zip utworzony przez <kbd>Eksportuj wszystkie dane</kbd>.</p></div>
+        </details>
+        <details>
+          <summary>Eksport trwa bardzo długo</summary>
+          <div><p>Kadu kopiuje do archiwum wszystkie zdjęcia i filmy, a przy dużym dzienniku zajmuje to kilka minut. Nie zamykaj aplikacji do końca.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

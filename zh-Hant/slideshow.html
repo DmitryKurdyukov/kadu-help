@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-Hant" data-lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>投影片 — Kadu 使用指南</title>
+  <meta name="description" content="如何在 Kadu 中開始投影片、設定速度、音樂和效果，並儲存為影片。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>投影片</h1>
+        <p class="lead">投影片會把記錄中的照片和影片變成一部帶音樂和柔和效果的影片。</p>
+
+        <h2 id="start">如何開始</h2>
+        <p>開啟 <kbd>時間線</kbd> 標籤頁，點按 <kbd>投影片</kbd>。</p>
+        <div class="note">
+          <span class="note-title">重要：投影片由時間線當前顯示的內容生成</span>
+          <p>如果時間線開啟了<a href="filters.html">篩選</a>——分類、標籤、時間段或搜尋——只有這些記錄會進入投影片。這樣就能做出一次旅行或一整年的影片。想看全部？先重置篩選。</p>
+        </div>
+        <p>如果篩選後的記錄裡沒有照片或影片，Kadu 會提示沒有可播放的內容。</p>
+
+        <h2 id="settings">設定</h2>
+        <p>播放時開啟 <kbd>投影片設定</kbd>。更改會立即生效，影片從頭開始。</p>
+        <table>
+          <thead>
+            <tr><th>設定</th><th>作用</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>速度</kbd></td><td>每張照片停留的時間：<em>慢速</em> — 5 秒，<em>正常</em> — 3 秒，<em>快速</em> — 1.2 秒，<em>極快</em> — 0.6 秒。</td></tr>
+            <tr><td><kbd>影片聲音</kbd></td><td>影片播放原聲。</td></tr>
+            <tr><td><kbd>加速影片</kbd></td><td>影片節奏跟隨投影片速度：慢速時稍慢，正常時不變，快速時更快。影片總會完整播放。</td></tr>
+            <tr><td><kbd>顯示日期</kbd></td><td>在螢幕上顯示回憶的日期。</td></tr>
+            <tr><td><kbd>動態效果</kbd></td><td>照片平滑縮放和平移。在 <em>慢速</em> 和 <em>正常</em> 速度下生效：更快的速度下，效果還沒顯現照片就切換了。</td></tr>
+            <tr><td><kbd>反轉順序</kbd></td><td>先顯示最早的回憶，而不是最新的。</td></tr>
+            <tr><td><kbd>背景音樂</kbd></td><td>播放時伴有音樂。在 <kbd>曲目</kbd> 中保留 <em>自動</em> 讓 Kadu 選曲，或自己選擇：<em>冬日</em>、<em>舒緩</em> 或 <em>活力</em>。</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="free-limit">免費版限制</h2>
+        <p>不訂閱時，每天可觀看投影片 <strong>3 分鐘</strong>。時間用完後，Kadu 會推薦 Premium。限制次日重置。</p>
+        <p>開通 <span class="premium">Premium</span> 後，投影片不限時長。</p>
+
+        <h2 id="export">儲存為影片 <span class="premium">Premium</span></h2>
+        <p>投影片可以變成普通影片，分享給親朋好友。</p>
+        <ol class="steps">
+          <li>把投影片設定成你想要的影片效果。</li>
+          <li>開啟 <kbd>投影片設定</kbd>，點按 <kbd>以影片分享</kbd>。</li>
+          <li>等待生成完成（<em>「正在製作影片…」</em>）。</li>
+          <li>選擇 <kbd>儲存到照片</kbd> 或 <kbd>分享</kbd>。</li>
+        </ol>
+        <div class="note warning">
+          <span class="note-title">影片最長 15 分鐘</span>
+          <p>如果投影片更長，匯出不會開始。請提高速度，或用篩選縮小範圍——例如只選一個月。</p>
+        </div>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

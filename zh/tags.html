@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-Hans" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>标签 — Kadu 使用指南</title>
+  <meta name="description" content="如何给 Kadu 记录添加标签，以及按标签查找记录。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>标签</h1>
+        <p class="lead">标签用一个共同主题把记录串起来：一次旅行、一个人、一个项目。Kadu 没有单独的标签输入框——标签直接写在记录正文里。</p>
+
+        <h2 id="add">如何添加标签</h2>
+        <ol class="steps">
+          <li>在正文中输入 <code>#</code>，紧接着输入一个词，中间不要空格：<code>#旅行</code>。</li>
+          <li><strong>在词后面输入一个空格。</strong>只有这样它才会变成真正的标签。</li>
+          <li>确认标签 <span class="tag-demo">#旅行</span> <strong>以强调色高亮显示</strong>。</li>
+          <li>保存记录。</li>
+        </ol>
+        <blockquote>终于到海边了 <span class="tag-demo">#旅行</span> <span class="tag-demo">#海边2025</span> 喝杯咖啡</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">最重要的规则：标签必须高亮</span>
+          <p>如果带 <code>#</code> 的词仍是普通文字、没有变色，它就不是标签。它不会出现在筛选里，也无法通过它找到记录。最常见的原因是标签后面少了空格——比如它是正文的最后一个词。</p>
+        </div>
+        <p>一条记录可以有任意多个标签，放在正文的开头、中间或结尾都可以。只要每个标签后面都有空格。</p>
+
+        <h3 id="not-highlighted">标签没有高亮怎么办</h3>
+        <p>把光标放在词的后面，按一下空格。如果还不行，删掉标签重新输入：<code>#</code>、词、空格。</p>
+
+        <h2 id="rules">书写规则</h2>
+        <table>
+          <thead>
+            <tr><th>示例</th><th>结果</th><th>原因</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Travel</code> 和 <code>#travel</code></td><td>同一个标签 <code>travel</code></td><td>不区分大小写</td></tr>
+            <tr><td><code>#初雪 那天</code></td><td>只有 <code>初雪</code></td><td>空格会结束标签</td></tr>
+            <tr><td><code>#約會</code>、<code>#ความทรงจำ</code></td><td>可以使用</td><td>任何语言的文字都行</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">提示</span>
+          <p>由多个词组成的标签，可以用下划线或连字符连接：<code>#生日_派对</code>、<code>#first-snow</code>。</p>
+        </div>
+
+        <h2 id="find">按标签查找记录</h2>
+        <ol class="steps">
+          <li>打开 <kbd>时间线</kbd> 标签页。</li>
+          <li>点按屏幕顶部的 <kbd>筛选</kbd>。</li>
+          <li>在 <kbd>标签</kbd> 区域勾选需要的标签。标签很多时，在 <kbd>搜索标签…</kbd> 框中输入名称。</li>
+          <li>应用筛选。</li>
+        </ol>
+        <p>最常用的标签排在最前面。</p>
+
+        <h3 id="several">选择了多个标签时</h3>
+        <p>时间线会显示包含所选标签中<strong>至少一个</strong>的记录。例如选择 <code>#海边</code> 和 <code>#山</code>，海边和山里的旅行都会显示。</p>
+        <p>要取消全部选择，点按区域标题旁的 <kbd>清除</kbd>。</p>
+        <p>标签筛选同样作用于<a href="slideshow.html">幻灯片</a>和书。例如勾选 <code>#旅行</code>，就能看一部只关于这次旅行的影片。详见<a href="filters.html">筛选与搜索</a>。</p>
+
+        <h2 id="edit">修改或删除标签</h2>
+        <p>打开记录，修改或删除带 <code>#</code> 的词并保存。标签列表会自动更新。当没有任何记录再使用某个标签时，它会从筛选中消失。</p>
+
+        <h2 id="faq">常见问题</h2>
+        <details>
+          <summary>筛选里显示还没有标签</summary>
+          <div><p>标签只有在至少一条已保存的记录中使用过之后才会出现。请确认标签已高亮——带 <code>#</code> 的普通文字不算标签。</p></div>
+        </details>
+        <details>
+          <summary>Day One 或 Apple Journal 的标签会保留吗？</summary>
+          <div><p>会。<a href="export-import.html">导入</a>时，Kadu 会在导入记录的正文中找出话题标签并加入列表。</p></div>
+        </details>
+        <details>
+          <summary>记录明明存在，却按标签找不到</summary>
+          <div>
+            <p>检查三点：</p>
+            <ul>
+              <li>记录中的标签是否<strong>以强调色高亮</strong>。如果没有，在它后面加一个空格并重新保存记录；</li>
+              <li>筛选会精确查找 <code>#</code> 后面的词：中间有空格会结束标签；</li>
+              <li>记录不在<a href="private-pin.html">私人分类</a>中：总时间线不会显示它们。</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

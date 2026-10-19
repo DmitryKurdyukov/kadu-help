@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-Hans" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>相册中的回忆 — Kadu 使用指南</title>
+  <meta name="description" content="Kadu 如何从相册照片中找到回忆、包含哪些内容以及如何保存。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>相册中的回忆</h1>
+        <p class="lead">相册里有成千上万张照片，但故事是由一个个瞬间组成的。Kadu 会自己找出这些瞬间，把照片归成回忆，并建议你保存到时间线。保留什么由你决定。</p>
+
+        <h2 id="how">Kadu 如何找到回忆</h2>
+        <p>一切都在你的设备上完成。照片永远不会被上传——Kadu 只看每张照片的拍摄时间和地点：</p>
+        <ol class="steps">
+          <li><strong>时间。</strong>照片按拍摄时间排序。如果两张之间相隔超过 2 小时，就开始一个新的回忆。</li>
+          <li><strong>地点。</strong>如果照片带有位置信息，且相邻两张相距超过 1 公里，回忆会被分成两个。</li>
+          <li><strong>重复。</strong>间隔不到 5 秒的连拍只保留一张。优先选择在相册中被收藏的照片，其次是视频。</li>
+          <li><strong>截图</strong>总是被跳过。</li>
+        </ol>
+        <p>一个回忆至少需要 <strong>2 张</strong>照片。与其他照片分开拍摄的单张照片不会出现在完整扫描中。</p>
+
+        <h2 id="run">如何开始扫描</h2>
+        <p>第一次打开 App 时，Kadu 会提供这个选项。之后你可以随时运行：</p>
+        <ol class="steps">
+          <li>打开 <span class="path">设置 → 导入 / 导出</span>。</li>
+          <li>选择 <kbd>从相册生成回忆</kbd>。</li>
+          <li>点按 <kbd>分析相册</kbd>，如有提示请允许访问照片。</li>
+        </ol>
+
+        <h2 id="choose">选择与保存</h2>
+        <p>找到的回忆会以列表显示。点按卡片可选中或取消选中一个回忆。</p>
+        <p>保存前，可以用卡片上的编辑按钮在编辑器中打开回忆——添加文字、移除多余的照片或修改日期。</p>
+        <p>点按 <kbd>保存</kbd>。每个回忆都会以第一张照片的日期，作为单独的记录保存到默认分类。保存期间<strong>请不要关闭 App</strong>。</p>
+
+        <div class="note">
+          <span class="note-title">照片会被复制到 Kadu</span>
+          <p>保存的照片和视频会被复制到 App 内。你可以放心地从相册删除它们——它们会留在 Kadu 中。详见<a href="storage.html">数据存在哪里</a>。</p>
+        </div>
+
+        <h2 id="suggestions">新回忆推荐</h2>
+        <p>当你回到 Kadu 时，它会悄悄检查自上次以来相册里是否有新照片。如果能组成一个回忆，主页会建议你一键添加。哪怕只有一张新照片也会推荐。</p>
+        <ul>
+          <li>只有在你已经允许访问照片时，这项检查才会运行。它从不主动请求权限。</li>
+          <li>你关闭过或已保存的回忆不会再次推荐。</li>
+        </ul>
+
+        <h2 id="faq">常见问题</h2>
+        <details>
+          <summary>“未找到难忘的时刻。点击下一步继续。”</summary>
+          <div><p>Kadu 寻找在差不多同一时间、同一地点拍摄的两张或以上照片。如果你的相册主要是单张照片或截图，可能找不到回忆。你随时可以手动添加记录。</p></div>
+        </details>
+        <details>
+          <summary>Kadu 看不到我所有的照片</summary>
+          <div><p>你可能只允许 Kadu 访问部分照片。请在手机设置（<span class="path">设置 → Kadu → 照片</span>）中允许访问整个图库，然后重新扫描。</p></div>
+        </details>
+        <details>
+          <summary>部分文件没有被复制</summary>
+          <div><p>原件只存储在 iCloud、尚未下载到手机的照片会出现这种情况。它们仍在你的相册里。在“照片”App 中打开它们以便下载，然后重新扫描。</p></div>
+        </details>
+        <details>
+          <summary>我拒绝了照片访问权限</summary>
+          <div><p>没关系——你可以手动添加记录。之后在手机设置中允许访问，再从 <span class="path">设置 → 导入 / 导出</span> 开始扫描。</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

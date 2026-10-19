@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filters &amp; search — Kadu Guide</title>
+  <meta name="description" content="How to search and filter entries in the Kadu timeline: text, categories, favorites, tags, dates and order.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Filters & search</h1>
+        <p class="lead">The timeline shows all entries from newest to oldest. Filters leave only what you need: certain days, one category, a tag or a word in the text.</p>
+
+        <h2 id="filters">Filter panel</h2>
+        <p>Open the <kbd>Timeline</kbd> tab and tap <kbd>Filters</kbd> at the top. Choose your conditions and apply them.</p>
+        <table>
+          <thead>
+            <tr><th>Filter</th><th>What it does</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>Text</kbd></td><td>Keeps entries whose text contains these words. Letter case doesn't matter.</td></tr>
+            <tr><td><kbd>Category</kbd></td><td>Shows entries from one category only. <kbd>All</kbd> removes the limit.</td></tr>
+            <tr><td><kbd>Favorites</kbd></td><td>The <kbd>Favorites only</kbd> switch keeps entries marked with a star.</td></tr>
+            <tr><td><kbd>Order</kbd></td><td><kbd>Reverse order</kbd> shows the oldest entries first.</td></tr>
+            <tr><td><kbd>Tags</kbd></td><td>Entries with at least one of the selected tags. More in <a href="tags.html">Tags</a>.</td></tr>
+          </tbody>
+        </table>
+        <p>Filters combine. If you pick the “Travel” category and the <code>#sea</code> tag, only sea entries from that category remain.</p>
+
+        <h2 id="calendar">Calendar: a day or a period</h2>
+        <p>Next to the filters at the top of the timeline there's a calendar button. While no dates are selected it reads <kbd>All time</kbd>.</p>
+        <ul>
+          <li><kbd>Date</kbd>: pick one day to see entries for that day only.</li>
+          <li><kbd>Period</kbd>: mark the first and last day of a range.</li>
+        </ul>
+        <p>Tap <kbd>Apply</kbd> to use the selection, or <kbd>Reset</kbd> to see all time again.</p>
+
+        <h2 id="shortcuts">Shortcuts from the home screen</h2>
+        <p>Some filters turn on right from the home screen:</p>
+        <ul>
+          <li><strong>The <kbd>Week</kbd>, <kbd>Month</kbd>, <kbd>Year</kbd> cards</strong> show how many entries you made this week (Monday to Sunday), month and year. Tapping a card opens the timeline already filtered to that period.</li>
+          <li><strong>A category card</strong> opens the timeline with entries from that category only.</li>
+          <li><strong><kbd>On This Day</kbd></strong>: the button appears if you have entries from this same day in previous years. It opens the timeline with that day's entries.</li>
+        </ul>
+
+        <h2 id="views">Slideshow, Book and Media Library depend on filters</h2>
+        <p>This is the least obvious part. The <kbd>Slideshow</kbd>, <kbd>Book</kbd> and <kbd>Media library</kbd> buttons in the timeline use <strong>exactly what the timeline shows right now</strong> — including filters, search, dates and order.</p>
+        <div class="note">
+          <span class="note-title">Example</span>
+          <p>Want a slideshow of your summer vacation? Choose June to August in the calendar, select the <code>#vacation</code> tag and tap <kbd>Slideshow</kbd>. Only those entries make it into the film.</p>
+        </div>
+        <p>If the slideshow or book seems to show “not everything”, check whether a filter is still on.</p>
+
+        <h2 id="faq">FAQ</h2>
+        <details>
+          <summary>Entries disappeared from the timeline</summary>
+          <div>
+            <p>Most likely one of these:</p>
+            <ul>
+              <li>a filter is on or a period is selected in the calendar;</li>
+              <li>the entries are in a <a href="private-pin.html">private category</a>: the main timeline never shows them;</li>
+              <li>the app was opened with a <a href="fake-pin.html">fake PIN</a>.</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>Why isn't my private category in the category filter?</summary>
+          <div><p>Private categories don't appear in filters or the main timeline. Open such a category from the home screen by tapping its card. If a PIN is set, the app asks for it first.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

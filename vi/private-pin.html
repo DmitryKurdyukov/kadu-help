@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="vi" data-lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Danh mục riêng tư và PIN — Hướng dẫn Kadu</title>
+  <meta name="description" content="Cách danh mục riêng tư hoạt động trong Kadu và cách bảo vệ ứng dụng bằng PIN.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Danh mục riêng tư và PIN</h1>
+        <p class="lead">Kadu có hai lớp bảo vệ. Danh mục riêng tư ẩn ghi chép khỏi dòng thời gian chung, còn PIN khóa chính ứng dụng và các danh mục riêng tư.</p>
+
+        <h2 id="private">Danh mục riêng tư</h2>
+        <p>Ghi chép trong danh mục riêng tư <strong>không bao giờ xuất hiện trên dòng thời gian chung</strong>, trong bộ lọc hay trình chiếu chung. Cách duy nhất để xem chúng là mở chính danh mục đó từ màn hình chính.</p>
+        <h3 id="make-private">Cách đặt danh mục thành riêng tư</h3>
+        <ol class="steps">
+          <li>Trên màn hình chính, <strong>nhấn giữ</strong> thẻ danh mục. Với danh mục mới, chạm <kbd>Thêm danh mục</kbd>.</li>
+          <li>Bật công tắc <kbd>Riêng tư</kbd> (dòng mô tả: "Ẩn khỏi dòng thời gian chung").</li>
+          <li>Chạm <kbd>Lưu</kbd> (với danh mục mới là <kbd>Tạo</kbd>).</li>
+        </ol>
+        <p>Ở lần mở đầu tiên, Kadu đã tạo sẵn danh mục "Riêng tư".</p>
+        <div class="note warning">
+          <span class="note-title">Không có PIN, quyền riêng tư chỉ là bề ngoài</span>
+          <p>Khi chưa đặt PIN, danh mục riêng tư chỉ bị ẩn khỏi dòng thời gian. Ai cầm điện thoại của bạn cũng có thể mở nó từ màn hình chính. Để thật sự khóa lại, hãy đặt PIN.</p>
+        </div>
+
+        <h2 id="pin">PIN</h2>
+        <h3 id="set-pin">Cách đặt</h3>
+        <ol class="steps">
+          <li>Mở <span class="path">Cài đặt → Mã PIN</span>.</li>
+          <li>Chạm <kbd>Đặt mã PIN</kbd>.</li>
+          <li>Nhập 4 chữ số và nhập lại để xác nhận.</li>
+        </ol>
+
+        <h3 id="when-asked">Khi nào Kadu hỏi PIN</h3>
+        <ul>
+          <li>mỗi lần mở ứng dụng;</li>
+          <li>khi mở danh mục riêng tư từ màn hình chính;</li>
+          <li>trước khi <a href="export-import.html">xuất dữ liệu</a>, vì bản sao lưu cũng chứa ghi chép riêng tư.</li>
+        </ul>
+
+        <h3 id="reset-pin">Cách đổi hoặc tắt</h3>
+        <p>Mở <span class="path">Cài đặt → Mã PIN → Đặt lại mã PIN</span> và nhập mã hiện tại. Sau đó ứng dụng không hỏi mã nữa. Để đặt mã mới, chạm lại <kbd>Đặt mã PIN</kbd>.</p>
+
+        <h2 id="fake">PIN giả</h2>
+        <p>Nếu ai đó có thể bắt bạn mở khóa nhật ký, hãy đặt một mã thứ hai, mã giả. Mã này mở ứng dụng nhưng ẩn mọi danh mục riêng tư. Xem thêm ở <a href="fake-pin.html">PIN giả</a>.</p>
+
+        <h2 id="faq">Câu hỏi thường gặp</h2>
+        <details>
+          <summary>Tôi quên PIN</summary>
+          <div>
+            <p>PIN chỉ được lưu trên thiết bị của bạn và được mã hóa, nên không ai có thể khôi phục hay xem được — kể cả chúng tôi. Hãy cố nhớ lại. Nếu không được, hãy <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOXHvjs9uuML3YGRTeUfUd7fSP4M1xSJOZY02tCTL1_VHlbA/viewform" target="_blank" rel="noopener">viết cho chúng tôi</a>.</p>
+            <p>Để tránh điều này, hãy chọn mã bạn sẽ không quên và <a href="export-import.html">sao lưu</a> thường xuyên.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Có thể mở Kadu bằng Face ID không?</summary>
+          <div><p>Chưa — Kadu hiện chỉ được bảo vệ bằng PIN.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

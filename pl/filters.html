@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pl" data-lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filtry i wyszukiwanie — Przewodnik po Kadu</title>
+  <meta name="description" content="Jak wyszukiwać i filtrować wpisy na osi czasu Kadu: tekst, kategorie, ulubione, tagi, daty i kolejność.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Filtry i wyszukiwanie</h1>
+        <p class="lead">Oś czasu pokazuje wszystkie wpisy od najnowszych do najstarszych. Filtry zostawiają tylko to, czego potrzebujesz: wybrane dni, jedną kategorię, tag albo słowo w tekście.</p>
+
+        <h2 id="filters">Panel filtrów</h2>
+        <p>Otwórz kartę <kbd>Oś czasu</kbd> i stuknij <kbd>Filtry</kbd> u góry. Wybierz warunki i zastosuj je.</p>
+        <table>
+          <thead>
+            <tr><th>Filtr</th><th>Co robi</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>Tekst</kbd></td><td>Zostawia wpisy, których tekst zawiera te słowa. Wielkość liter nie ma znaczenia.</td></tr>
+            <tr><td><kbd>Kategoria</kbd></td><td>Pokazuje wpisy tylko z jednej kategorii. <kbd>Wszystko</kbd> znosi ograniczenie.</td></tr>
+            <tr><td><kbd>Ulubione</kbd></td><td>Przełącznik <kbd>Tylko ulubione</kbd> zostawia wpisy oznaczone gwiazdką.</td></tr>
+            <tr><td><kbd>Kolejność</kbd></td><td><kbd>Odwrotna kolejność</kbd> pokazuje najpierw najstarsze wpisy.</td></tr>
+            <tr><td><kbd>Tagi</kbd></td><td>Wpisy z co najmniej jednym z zaznaczonych tagów. Więcej w sekcji <a href="tags.html">Tagi</a>.</td></tr>
+          </tbody>
+        </table>
+        <p>Filtry można łączyć. Jeśli wybierzesz kategorię „Podróże” i tag <code>#morze</code>, zostaną tylko morskie wpisy z tej kategorii.</p>
+
+        <h2 id="calendar">Kalendarz: dzień lub okres</h2>
+        <p>Obok filtrów u góry osi czasu jest przycisk kalendarza. Dopóki nie wybierzesz dat, widnieje na nim <kbd>Cały czas</kbd>.</p>
+        <ul>
+          <li><kbd>Data</kbd>: wybierz jeden dzień, by zobaczyć tylko wpisy z niego.</li>
+          <li><kbd>Okres</kbd>: zaznacz pierwszy i ostatni dzień zakresu.</li>
+        </ul>
+        <p>Stuknij <kbd>Zastosuj</kbd>, aby użyć wyboru, albo <kbd>Resetuj</kbd>, aby znów widzieć cały czas.</p>
+
+        <h2 id="shortcuts">Skróty z ekranu głównego</h2>
+        <p>Niektóre filtry włączysz prosto z ekranu głównego:</p>
+        <ul>
+          <li><strong>Karty <kbd>Tydzień</kbd>, <kbd>Miesiąc</kbd>, <kbd>Rok</kbd></strong> pokazują, ile wpisów dodałeś w tym tygodniu (od poniedziałku do niedzieli), miesiącu i roku. Stuknięcie karty otwiera oś czasu już przefiltrowaną do tego okresu.</li>
+          <li><strong>Karta kategorii</strong> otwiera oś czasu tylko z wpisami tej kategorii.</li>
+          <li><strong><kbd>Tego dnia</kbd></strong>: przycisk pojawia się, gdy masz wpisy z tego samego dnia w poprzednich latach. Otwiera oś czasu z wpisami z tamtego dnia.</li>
+        </ul>
+
+        <h2 id="views">Pokaz slajdów, Książka i Biblioteka zależą od filtrów</h2>
+        <p>To najmniej oczywista rzecz. Przyciski <kbd>Pokaz slajdów</kbd>, <kbd>Książka</kbd> i <kbd>Biblioteka multimediów</kbd> na osi czasu korzystają <strong>dokładnie z tego, co oś czasu pokazuje w tej chwili</strong> — razem z filtrami, wyszukiwaniem, datami i kolejnością.</p>
+        <div class="note">
+          <span class="note-title">Przykład</span>
+          <p>Chcesz pokaz slajdów z letnich wakacji? Wybierz w kalendarzu okres od czerwca do sierpnia, zaznacz tag <code>#wakacje</code> i stuknij <kbd>Pokaz slajdów</kbd>. Do filmu trafią tylko te wpisy.</p>
+        </div>
+        <p>Jeśli pokaz slajdów lub książka pokazują „nie wszystko”, sprawdź, czy nie został włączony jakiś filtr.</p>
+
+        <h2 id="faq">Częste pytania</h2>
+        <details>
+          <summary>Wpisy zniknęły z osi czasu</summary>
+          <div>
+            <p>Najpewniej powodem jest jedno z poniższych:</p>
+            <ul>
+              <li>włączony jest filtr albo w kalendarzu wybrano okres;</li>
+              <li>wpisy są w <a href="private-pin.html">prywatnej kategorii</a>: ogólna oś czasu nigdy ich nie pokazuje;</li>
+              <li>aplikację otwarto <a href="fake-pin.html">fałszywym PIN-em</a>.</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>Dlaczego mojej prywatnej kategorii nie ma w filtrze kategorii?</summary>
+          <div><p>Prywatne kategorie nie pojawiają się w filtrach ani na ogólnej osi czasu. Otwórz taką kategorię z ekranu głównego, stukając jej kartę. Jeśli ustawiono PIN, aplikacja najpierw o niego poprosi.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

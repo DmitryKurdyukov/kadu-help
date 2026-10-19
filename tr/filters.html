@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filtreler ve arama — Kadu Kılavuzu</title>
+  <meta name="description" content="Kadu zaman tünelinde kayıtlar nasıl aranır ve filtrelenir: metin, kategoriler, favoriler, etiketler, tarihler ve sıralama.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Filtreler ve arama</h1>
+        <p class="lead">Zaman tüneli tüm kayıtları en yeniden en eskiye doğru gösterir. Filtreler yalnızca ihtiyacınız olanı bırakır: belirli günler, tek bir kategori, bir etiket ya da metindeki bir kelime.</p>
+
+        <h2 id="filters">Filtre paneli</h2>
+        <p><kbd>Zaman tüneli</kbd> sekmesini açın ve üstteki <kbd>Filtreler</kbd> düğmesine dokunun. Koşulları seçip uygulayın.</p>
+        <table>
+          <thead>
+            <tr><th>Filtre</th><th>Ne yapar</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>Metin</kbd></td><td>Metninde bu kelimeler geçen kayıtları bırakır. Büyük/küçük harf fark etmez.</td></tr>
+            <tr><td><kbd>Kategori</kbd></td><td>Yalnızca bir kategorinin kayıtlarını gösterir. <kbd>Tümü</kbd> sınırı kaldırır.</td></tr>
+            <tr><td><kbd>Favoriler</kbd></td><td><kbd>Yalnızca favoriler</kbd> anahtarı yıldızlı kayıtları bırakır.</td></tr>
+            <tr><td><kbd>Sıralama</kbd></td><td><kbd>Ters sıra</kbd> önce en eski kayıtları gösterir.</td></tr>
+            <tr><td><kbd>Etiketler</kbd></td><td>Seçilen etiketlerden en az birini içeren kayıtlar. Ayrıntılar: <a href="tags.html">Etiketler</a>.</td></tr>
+          </tbody>
+        </table>
+        <p>Filtreler birleştirilebilir. "Seyahat" kategorisini ve <code>#deniz</code> etiketini seçerseniz yalnızca o kategorideki deniz kayıtları kalır.</p>
+
+        <h2 id="calendar">Takvim: bir gün ya da bir dönem</h2>
+        <p>Zaman tünelinin üstünde, filtrelerin yanında bir takvim düğmesi var. Tarih seçilmediği sürece üzerinde <kbd>Tüm zamanlar</kbd> yazar.</p>
+        <ul>
+          <li><kbd>Tarih</kbd>: yalnızca o günün kayıtlarını görmek için bir gün seçin.</li>
+          <li><kbd>Dönem</kbd>: bir aralığın ilk ve son gününü işaretleyin.</li>
+        </ul>
+        <p>Seçimi kullanmak için <kbd>Uygula</kbd>, tüm zamanı yeniden görmek için <kbd>Sıfırla</kbd> düğmesine dokunun.</p>
+
+        <h2 id="shortcuts">Ana ekrandan kısayollar</h2>
+        <p>Bazı filtreler doğrudan ana ekrandan açılır:</p>
+        <ul>
+          <li><strong><kbd>Hafta</kbd>, <kbd>Ay</kbd>, <kbd>Yıl</kbd> kartları</strong> bu hafta (pazartesiden pazara), bu ay ve bu yıl kaç kayıt yaptığınızı gösterir. Bir karta dokunmak zaman tünelini o döneme göre filtrelenmiş olarak açar.</li>
+          <li><strong>Bir kategori kartı</strong> zaman tünelini yalnızca o kategorinin kayıtlarıyla açar.</li>
+          <li><strong><kbd>Bugün geçmişte</kbd></strong>: önceki yıllarda aynı güne ait kayıtlarınız varsa bu düğme görünür. O günün kayıtlarıyla zaman tünelini açar.</li>
+        </ul>
+
+        <h2 id="views">Slayt gösterisi, Kitap ve Medya arşivi filtrelere bağlıdır</h2>
+        <p>En az fark edilen nokta budur. Zaman tünelindeki <kbd>Slayt gösterisi</kbd>, <kbd>Kitap</kbd> ve <kbd>Medya arşivi</kbd> düğmeleri <strong>zaman tünelinin o anda gösterdiğini aynen</strong> kullanır — filtreler, arama, tarihler ve sıralama dahil.</p>
+        <div class="note">
+          <span class="note-title">Örnek</span>
+          <p>Yaz tatilinin slayt gösterisini mi istiyorsunuz? Takvimde haziran–ağustos aralığını seçin, <code>#tatil</code> etiketini işaretleyin ve <kbd>Slayt gösterisi</kbd> düğmesine dokunun. Filme yalnızca o kayıtlar girer.</p>
+        </div>
+        <p>Slayt gösterisi ya da kitap "her şeyi" göstermiyor gibiyse açık kalmış bir filtre olup olmadığına bakın.</p>
+
+        <h2 id="faq">Sık sorulan sorular</h2>
+        <details>
+          <summary>Kayıtlar zaman tünelinden kayboldu</summary>
+          <div>
+            <p>Büyük olasılıkla şunlardan biri:</p>
+            <ul>
+              <li>bir filtre açık ya da takvimde bir dönem seçili;</li>
+              <li>kayıtlar bir <a href="private-pin.html">özel kategoride</a>: genel zaman tüneli onları asla göstermez;</li>
+              <li>uygulama bir <a href="fake-pin.html">sahte PIN</a> ile açıldı.</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>Özel kategorim neden kategori filtresinde yok?</summary>
+          <div><p>Özel kategoriler ne filtrelerde ne de genel zaman tünelinde görünür. Böyle bir kategoriyi ana ekranda kartına dokunarak açın. PIN ayarlıysa uygulama önce onu ister.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

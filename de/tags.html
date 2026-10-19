@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="de" data-lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tags — Kadu-Anleitung</title>
+  <meta name="description" content="So fügst du Einträgen in Kadu Tags hinzu und findest Einträge nach Tag.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Tags</h1>
+        <p class="lead">Tags verbinden Einträge über ein gemeinsames Thema: eine Reise, eine Person, ein Projekt. Kadu hat kein eigenes Feld dafür – Tags schreibst du direkt in den Eintragstext.</p>
+
+        <h2 id="add">So fügst du einen Tag hinzu</h2>
+        <ol class="steps">
+          <li>Tippe im Text <code>#</code> und direkt danach ohne Leerzeichen ein Wort: <code>#urlaub</code>.</li>
+          <li><strong>Tippe nach dem Wort ein Leerzeichen.</strong> Erst dann wird daraus ein echter Tag.</li>
+          <li>Prüfe, ob der Tag <span class="tag-demo">#urlaub</span> <strong>in der Akzentfarbe hervorgehoben</strong> ist.</li>
+          <li>Speichere den Eintrag.</li>
+        </ol>
+        <blockquote>Endlich am Meer angekommen <span class="tag-demo">#urlaub</span> <span class="tag-demo">#meer2025</span> und trinken Kaffee</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">Die wichtigste Regel: Der Tag muss hervorgehoben sein</span>
+          <p>Bleibt ein Wort mit <code>#</code> normaler Text, statt sich einzufärben, ist es kein Tag. Er erscheint nicht in den Filtern, und der Eintrag wird darüber nicht gefunden. Meist fehlt dann das Leerzeichen nach dem Tag – zum Beispiel, wenn er das letzte Wort im Text ist.</p>
+        </div>
+        <p>Ein Eintrag kann beliebig viele Tags haben, an jeder Stelle im Text – am Anfang, in der Mitte oder am Ende. Setze nur nach jedem ein Leerzeichen.</p>
+
+        <h3 id="not-highlighted">Der Tag ist nicht hervorgehoben – was tun</h3>
+        <p>Setze den Cursor direkt hinter das Wort und drücke die Leertaste. Hilft das nicht, lösche den Tag und tippe ihn neu: <code>#</code>, das Wort, ein Leerzeichen.</p>
+
+        <h2 id="rules">Schreibregeln</h2>
+        <table>
+          <thead>
+            <tr><th>Beispiel</th><th>Ergebnis</th><th>Warum</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Urlaub</code> und <code>#urlaub</code></td><td>ein Tag <code>urlaub</code></td><td>Groß- und Kleinschreibung spielen keine Rolle</td></tr>
+            <tr><td><code>#erster schnee</code></td><td>nur <code>erster</code></td><td>ein Leerzeichen beendet den Tag</td></tr>
+            <tr><td><code>#約會</code>, <code>#ความทรงจำ</code></td><td>funktionieren</td><td>Buchstaben jeder Sprache sind erlaubt</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">Tipp</span>
+          <p>Verbinde mehrere Wörter mit Unterstrich oder Bindestrich: <code>#erster_schnee</code>, <code>#geburtstags-party</code>.</p>
+        </div>
+
+        <h2 id="find">So findest du Einträge nach Tag</h2>
+        <ol class="steps">
+          <li>Öffne den Tab <kbd>Zeitleiste</kbd>.</li>
+          <li>Tippe oben auf <kbd>Filter</kbd>.</li>
+          <li>Markiere im Block <kbd>Tags</kbd> die gewünschten Tags. Bei vielen Tags tippe den Namen ins Feld <kbd>Tags suchen…</kbd>.</li>
+          <li>Wende den Filter an.</li>
+        </ol>
+        <p>Die meistgenutzten Tags stehen oben.</p>
+
+        <h3 id="several">Wenn mehrere Tags ausgewählt sind</h3>
+        <p>Die Zeitleiste zeigt Einträge mit <strong>mindestens einem</strong> der gewählten Tags. Mit <code>#meer</code> und <code>#berge</code> siehst du also Meer- und Bergreisen.</p>
+        <p>Um alle Tags abzuwählen, tippe neben der Blocküberschrift auf <kbd>Löschen</kbd>.</p>
+        <p>Der Tag-Filter gilt auch für die <a href="slideshow.html">Diashow</a> und das Buch. Markiere zum Beispiel <code>#urlaub</code> und sieh dir einen Film nur über diesen Urlaub an. Mehr unter <a href="filters.html">Filter & Suche</a>.</p>
+
+        <h2 id="edit">Tag ändern oder entfernen</h2>
+        <p>Öffne den Eintrag, ändere oder lösche das Wort mit <code>#</code> und speichere. Die Tag-Liste aktualisiert sich von selbst. Ein Tag verschwindet aus den Filtern, sobald ihn kein Eintrag mehr nutzt.</p>
+
+        <h2 id="faq">Häufige Fragen</h2>
+        <details>
+          <summary>Die Filter zeigen noch keine Tags</summary>
+          <div><p>Tags erscheinen erst, wenn du sie in mindestens einem gespeicherten Eintrag verwendet hast. Achte darauf, dass der Tag farbig hervorgehoben ist – normaler Text mit <code>#</code> zählt nicht als Tag.</p></div>
+        </details>
+        <details>
+          <summary>Bleiben Tags aus Day One oder Apple Journal erhalten?</summary>
+          <div><p>Ja. Beim <a href="export-import.html">Import</a> findet Kadu Hashtags im Text der importierten Einträge und fügt sie der Liste hinzu.</p></div>
+        </details>
+        <details>
+          <summary>Ein Tag wird nicht gefunden, obwohl der Eintrag existiert</summary>
+          <div>
+            <p>Prüfe drei Dinge:</p>
+            <ul>
+              <li>der Tag ist im Eintrag <strong>in der Akzentfarbe hervorgehoben</strong>. Wenn nicht, setze ein Leerzeichen dahinter und speichere den Eintrag erneut;</li>
+              <li>Filter suchen genau das Wort nach <code>#</code>: ein Leerzeichen darin beendet den Tag;</li>
+              <li>der Eintrag liegt nicht in einer <a href="private-pin.html">privaten Kategorie</a>: Die allgemeine Zeitleiste zeigt diese nicht.</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

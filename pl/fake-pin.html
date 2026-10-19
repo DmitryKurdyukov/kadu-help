@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pl" data-lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fałszywy PIN — Przewodnik po Kadu</title>
+  <meta name="description" content="Fałszywy PIN w Kadu: drugi kod, który otwiera aplikację bez prywatnych kategorii.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Fałszywy PIN <span class="premium">Premium</span></h1>
+        <p class="lead">Fałszywy PIN to drugi kod do Kadu. Otwiera aplikację jak zwykle, tylko bez prywatnych kategorii. Dla patrzącego wygląda to tak, jakby nigdy ich nie było.</p>
+
+        <h2 id="why">Do czego służy</h2>
+        <p>Czasem ktoś prosi o pokazanie dziennika, a odmówić jest niezręcznie. Wpisz wtedy fałszywy kod: druga osoba zobaczy zwykłe wpisy, a Twoje osobiste pozostaną ukryte. Na ekranie nie pojawi się żaden „tryb” ani podpowiedź.</p>
+
+        <h2 id="what-hidden">Co się dzieje po wpisaniu fałszywego kodu</h2>
+        <ul>
+          <li>prywatne kategorie znikają z ekranu głównego;</li>
+          <li>ich wpisy nie pojawiają się na osi czasu, w filtrach, pokazie slajdów, książce ani eksporcie;</li>
+          <li>wszystko inne działa normalnie.</li>
+        </ul>
+        <p>Żadne dane nie są usuwane. Gdy wpiszesz prawdziwy PIN, wszystko wróci na miejsce.</p>
+
+        <h2 id="set">Jak ustawić</h2>
+        <ol class="steps">
+          <li>Najpierw ustaw główny PIN: <span class="path">Ustawienia → Kod PIN → Ustaw kod PIN</span>. Bez niego aplikacja nie pyta o kod przy uruchomieniu, więc fałszywy PIN nic nie da.</li>
+          <li>Stuknij <kbd>Ustaw fałszywy kod PIN</kbd>.</li>
+          <li>Wpisz 4 cyfry i powtórz je.</li>
+        </ol>
+        <div class="note warning">
+          <span class="note-title">Kody muszą się różnić</span>
+          <p>Jeśli fałszywy kod jest taki sam jak główny, Kadu zawsze otworzy się w zwykłym trybie, a fałszywy kod nie zadziała.</p>
+        </div>
+
+        <h2 id="reset">Jak wyłączyć</h2>
+        <p>Otwórz <span class="path">Ustawienia → Kod PIN → Zresetuj fałszywy kod PIN</span> i wpisz <strong>główny</strong> PIN. Fałszywy kod nie może wyłączyć sam siebie — inaczej każdy, kto go zna, mógłby wyłączyć ochronę.</p>
+
+        <h2 id="faq">Częste pytania</h2>
+        <details>
+          <summary>Jak wrócić do pełnego dziennika po fałszywym kodzie?</summary>
+          <div><p>Zamknij aplikację całkowicie, otwórz ją ponownie i wpisz główny PIN.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

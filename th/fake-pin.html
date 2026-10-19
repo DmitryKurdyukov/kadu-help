@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="th" data-lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PIN ปลอม — คู่มือ Kadu</title>
+  <meta name="description" content="PIN ปลอมใน Kadu: รหัสที่สองที่เปิดแอปโดยไม่มีหมวดหมู่ส่วนตัว">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>PIN ปลอม <span class="premium">Premium</span></h1>
+        <p class="lead">PIN ปลอมคือรหัสที่สองของ Kadu รหัสนี้เปิดแอปตามปกติ เพียงแต่ไม่มีหมวดหมู่ส่วนตัว สำหรับคนที่มองอยู่ จะดูเหมือนหมวดหมู่เหล่านั้นไม่เคยมีอยู่</p>
+
+        <h2 id="why">มีไว้ทำอะไร</h2>
+        <p>บางครั้งมีคนขอดูไดอารี่ของคุณและปฏิเสธได้ยาก ให้ใส่รหัสปลอม อีกฝ่ายจะเห็นแค่บันทึกทั่วไป ส่วนเรื่องส่วนตัวยังคงถูกซ่อน บนหน้าจอจะไม่มี "โหมด" หรือสัญญาณใด ๆ</p>
+
+        <h2 id="what-hidden">เกิดอะไรขึ้นหลังใส่รหัสปลอม</h2>
+        <ul>
+          <li>หมวดหมู่ส่วนตัวหายไปจากหน้าแรก</li>
+          <li>บันทึกในหมวดหมู่เหล่านั้นไม่ปรากฏในไทม์ไลน์ ตัวกรอง สไลด์โชว์ หนังสือ หรือการส่งออก</li>
+          <li>ส่วนอื่นทำงานตามปกติ</li>
+        </ul>
+        <p>ไม่มีข้อมูลใดถูกลบ เมื่อคุณใส่ PIN จริง ทุกอย่างจะกลับมา</p>
+
+        <h2 id="set">วิธีตั้ง</h2>
+        <ol class="steps">
+          <li>ตั้ง PIN หลักก่อน: <span class="path">การตั้งค่า → รหัส PIN → ตั้งรหัส PIN</span> หากไม่มี PIN หลัก แอปจะไม่ขอรหัสตอนเปิด PIN ปลอมก็ไม่มีประโยชน์</li>
+          <li>แตะ <kbd>ตั้งรหัส PIN ปลอม</kbd></li>
+          <li>ใส่ตัวเลข 4 หลัก แล้วใส่อีกครั้ง</li>
+        </ol>
+        <div class="note warning">
+          <span class="note-title">รหัสทั้งสองต้องไม่เหมือนกัน</span>
+          <p>หากรหัสปลอมตรงกับรหัสหลัก Kadu จะเปิดในโหมดปกติเสมอและรหัสปลอมจะใช้ไม่ได้</p>
+        </div>
+
+        <h2 id="reset">วิธีปิด</h2>
+        <p>เปิด <span class="path">การตั้งค่า → รหัส PIN → รีเซ็ตรหัส PIN ปลอม</span> แล้วใส่ PIN <strong>หลัก</strong> รหัสปลอมปิดตัวเองไม่ได้ ไม่เช่นนั้นใครที่รู้รหัสนี้ก็ปิดการป้องกันได้</p>
+
+        <h2 id="faq">คำถามที่พบบ่อย</h2>
+        <details>
+          <summary>หลังใช้รหัสปลอม จะกลับไปดูไดอารี่ทั้งหมดได้อย่างไร?</summary>
+          <div><p>ปิดแอปให้หมด เปิดใหม่ แล้วใส่ PIN หลัก</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

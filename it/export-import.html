@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="it" data-lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Esportazione e importazione — Guida di Kadu</title>
+  <meta name="description" content="Backup di Kadu, passaggio a un nuovo telefono e importazione da Day One e Apple Journal.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Esportazione e importazione</h1>
+        <p class="lead">L'esportazione crea un backup del diario in un unico file zip. L'importazione lo ripristina o porta voci da Day One e Apple Journal. Tutto si trova in <span class="path">Impostazioni → Importa / Esporta</span>.</p>
+
+        <h2 id="export">Esportazione: backup</h2>
+        <ol class="steps">
+          <li>Apri <span class="path">Impostazioni → Importa / Esporta → Esporta</span>.</li>
+          <li>Tocca <kbd>Esporta tutti i dati</kbd>. Se è impostato un <a href="private-pin.html">PIN</a>, Kadu lo chiede prima.</li>
+          <li>Attendi la fine. Con molte foto e video può richiedere qualche minuto.</li>
+          <li>Nella finestra che si apre, scegli dove salvare il file: <kbd>Salva su File</kbd> (per esempio iCloud Drive), inviarlo a un computer o a un archivio cloud.</li>
+        </ol>
+        <p>Il file si chiama più o meno <code>kadu-export-10-19-2026.zip</code>. Contiene tutte le voci, categorie, tag, foto, video e note vocali.</p>
+
+        <h3 id="export-category">Esportare una categoria <span class="premium">Premium</span></h3>
+        <p>Nella stessa schermata, il blocco <kbd>Esporta per categoria</kbd> permette di esportare le voci di una sola categoria, per esempio per condividere un diario di viaggio.</p>
+
+        <h2 id="import">Importare un backup di Kadu</h2>
+        <ol class="steps">
+          <li>Apri <span class="path">Impostazioni → Importa / Esporta</span>.</li>
+          <li>Tocca <kbd>Importa</kbd> e scegli lo zip creato dall'esportazione di Kadu.</li>
+          <li>Attendi il messaggio «Importazione riuscita».</li>
+        </ol>
+        <div class="note">
+          <span class="note-title">L'importazione non cancella nulla</span>
+          <p>Le voci del backup vengono <strong>aggiunte</strong> a quelle già presenti. Quelle che esistono già in Kadu non vengono duplicate, quindi puoi reimportare lo stesso file senza rischi.</p>
+        </div>
+
+        <h2 id="new-phone">Passare a un nuovo telefono</h2>
+        <ol class="steps">
+          <li>Sul vecchio telefono, fai un'<a href="#export">esportazione</a> e salva il file dove il nuovo potrà raggiungerlo: iCloud Drive, Google Drive o File.</li>
+          <li>Installa Kadu sul nuovo telefono.</li>
+          <li><a href="#import">Importa</a> quel file.</li>
+        </ol>
+        <p>Il PIN non fa parte del backup. Impostalo di nuovo sul nuovo telefono.</p>
+
+        <h2 id="day-one">Importare da Day One</h2>
+        <ol class="steps">
+          <li>In Day One, esporta il diario in formato <strong>JSON</strong>. Otterrai un archivio zip.</li>
+          <li>In Kadu, apri <span class="path">Impostazioni → Importa / Esporta</span> e tocca <kbd>Importa da Day One (zip)</kbd>.</li>
+          <li>Scegli l'archivio.</li>
+        </ol>
+        <p>Come vengono trasferiti i dati:</p>
+        <ul>
+          <li>il diario principale di Day One («Journal») va nella categoria predefinita;</li>
+          <li>ogni altro diario riceve una categoria con lo stesso nome. Se esiste già, le voci vengono aggiunte lì;</li>
+          <li>foto e hashtag si spostano insieme alle voci.</li>
+        </ul>
+
+        <h2 id="apple-journal">Importare da Apple Journal</h2>
+        <ol class="steps">
+          <li>Esporta le voci dall'app Diario. Otterrai una cartella con un file <code>index.html</code> e le cartelle <code>Entries</code> e <code>Resources</code>.</li>
+          <li>Comprimi la cartella in zip. Nell'app File, tieni premuta la cartella e scegli <kbd>Comprimi</kbd>.</li>
+          <li>In Kadu, tocca <kbd>Importa da Apple Journal (zip)</kbd> e scegli l'archivio.</li>
+        </ol>
+        <p>Se la data di una voce non viene riconosciuta, riceve la data di oggi. Kadu ti dice quante sono. Puoi correggere la data a mano nell'editor.</p>
+
+        <h2 id="faq">Domande frequenti</h2>
+        <details>
+          <summary>L'importazione dice che il file sembra un'esportazione di un'altra app</summary>
+          <div><p>Hai scelto un archivio Day One o Apple Journal nella voce normale <kbd>Importa</kbd>. Questi archivi hanno pulsanti propri: <kbd>Importa da Day One (zip)</kbd> e <kbd>Importa da Apple Journal (zip)</kbd>. Kadu ti indicherà quale usare.</p></div>
+        </details>
+        <details>
+          <summary>«Nessun file data.json trovato nell'archivio.»</summary>
+          <div><p>Il file non è un backup di Kadu o è stato modificato dopo l'esportazione. Scegli lo zip originale creato con <kbd>Esporta tutti i dati</kbd>.</p></div>
+        </details>
+        <details>
+          <summary>L'esportazione richiede molto tempo</summary>
+          <div><p>Kadu copia tutte le foto e i video nell'archivio, e per un diario grande servono alcuni minuti. Tieni l'app aperta fino alla fine.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

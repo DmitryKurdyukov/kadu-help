@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="uk" data-lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Приватні категорії та PIN-код — Посібник Kadu</title>
+  <meta name="description" content="Як працюють приватні категорії в Kadu і як захистити застосунок PIN-кодом.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Приватні категорії та PIN-код</h1>
+        <p class="lead">У Kadu є два рівні захисту. Приватна категорія ховає записи із загальної стрічки, а PIN-код закриває сам застосунок і приватні категорії.</p>
+
+        <h2 id="private">Приватна категорія</h2>
+        <p>Записи з приватної категорії <strong>ніколи не показуються в загальній стрічці</strong>, у фільтрах і в загальних слайд-шоу. Побачити їх можна лише одним способом: відкрити саму категорію з головного екрана.</p>
+        <h3 id="make-private">Як зробити категорію приватною</h3>
+        <ol class="steps">
+          <li>На головному екрані <strong>натисніть і утримуйте</strong> картку категорії. Для нової категорії натисніть <kbd>Додати категорію</kbd>.</li>
+          <li>Увімкніть перемикач <kbd>Приватна</kbd> (підпис під ним: «Прихована в загальній стрічці»).</li>
+          <li>Натисніть <kbd>Зберегти</kbd> (для нової категорії — <kbd>Створити</kbd>).</li>
+        </ol>
+        <p>Під час першого запуску Kadu вже створює категорію «Приватне».</p>
+        <div class="note warning">
+          <span class="note-title">Без PIN-коду приватність лише візуальна</span>
+          <p>Поки PIN-код не задано, приватна категорія просто прихована зі стрічки. Будь-хто, у кого в руках ваш телефон, відкриє її з головного екрана. Щоб закрити її по-справжньому, задайте PIN-код.</p>
+        </div>
+
+        <h2 id="pin">PIN-код</h2>
+        <h3 id="set-pin">Як встановити</h3>
+        <ol class="steps">
+          <li>Відкрийте <span class="path">Налаштування → PIN-код</span>.</li>
+          <li>Натисніть <kbd>Установити PIN-код</kbd>.</li>
+          <li>Введіть 4 цифри й повторіть їх для підтвердження.</li>
+        </ol>
+
+        <h3 id="when-asked">Коли Kadu запитує PIN</h3>
+        <ul>
+          <li>під час кожного запуску застосунку;</li>
+          <li>під час відкриття приватної категорії з головного екрана;</li>
+          <li>перед <a href="export-import.html">експортом даних</a>: у резервній копії є й приватні записи.</li>
+        </ul>
+
+        <h3 id="reset-pin">Як змінити або вимкнути</h3>
+        <p>Відкрийте <span class="path">Налаштування → PIN-код → Скинути PIN-код</span> і введіть поточний код. Після скидання застосунок перестане його запитувати. Щоб задати новий код, знову натисніть <kbd>Установити PIN-код</kbd>.</p>
+
+        <h2 id="fake">Підробний PIN</h2>
+        <p>Якщо вас можуть попросити розблокувати щоденник, задайте другий, підробний код. Він відкриє застосунок, але сховає всі приватні категорії. Докладніше в розділі <a href="fake-pin.html">«Підробний PIN»</a>.</p>
+
+        <h2 id="faq">Часті запитання</h2>
+        <details>
+          <summary>Я забув PIN-код</summary>
+          <div>
+            <p>PIN-код зберігається лише на вашому пристрої й у зашифрованому вигляді, тому відновити чи підглянути його неможливо, зокрема й нам. Спробуйте пригадати код. Якщо не виходить, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOXHvjs9uuML3YGRTeUfUd7fSP4M1xSJOZY02tCTL1_VHlbA/viewform" target="_blank" rel="noopener">напишіть нам</a>.</p>
+            <p>Щоб не потрапити в таку ситуацію, вибирайте код, який точно не забудете, і регулярно <a href="export-import.html">робіть резервну копію</a>.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Чи можна відкривати Kadu за Face ID?</summary>
+          <div><p>Поки ні, Kadu захищається лише PIN-кодом.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

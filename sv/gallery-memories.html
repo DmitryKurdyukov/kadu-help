@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="sv" data-lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minnen från galleriet — Kadu-guide</title>
+  <meta name="description" content="Hur Kadu hittar minnen bland galleriets foton, vad som ingår och hur du sparar dem.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Minnen från galleriet</h1>
+        <p class="lead">Ditt galleri rymmer tusentals foton, men en berättelse består av ögonblick. Kadu hittar de ögonblicken själv, grupperar bilderna till minnen och föreslår att du sparar dem i tidslinjen. Vad du behåller bestämmer du.</p>
+
+        <h2 id="how">Så hittar Kadu minnen</h2>
+        <p>Allt sker på din enhet. Foton laddas aldrig upp – Kadu tittar bara på när och var varje bild togs:</p>
+        <ol class="steps">
+          <li><strong>Tid.</strong> Bilderna sorteras efter tagningstid. Går det mer än 2 timmar mellan två bilder börjar ett nytt minne.</li>
+          <li><strong>Plats.</strong> Om foton har plats och två intilliggande bilder är tagna mer än en kilometer från varandra delas minnet i två.</li>
+          <li><strong>Dubbletter.</strong> Av en bildserie tagen med mindre än 5 sekunders mellanrum behålls bara en. Företräde får ett foto som är favorit i galleriet, sedan en video.</li>
+          <li><strong>Skärmbilder</strong> hoppas alltid över.</li>
+        </ol>
+        <p>Ett minne kräver <strong>2 eller fler</strong> bilder. Ett enstaka foto taget avskilt från de andra visas inte i den fullständiga genomsökningen.</p>
+
+        <h2 id="run">Så startar du en genomsökning</h2>
+        <p>Kadu föreslår det första gången du öppnar appen. Sedan kan du starta den när du vill:</p>
+        <ol class="steps">
+          <li>Öppna <span class="path">Inställningar → Import / Export</span>.</li>
+          <li>Välj <kbd>Skapa minnen från galleriet</kbd>.</li>
+          <li>Tryck på <kbd>Analysera galleriet</kbd> och ge åtkomst till bilder om du blir tillfrågad.</li>
+        </ol>
+
+        <h2 id="choose">Välja och spara</h2>
+        <p>Hittade minnen visas i en lista. Tryck på ett kort för att markera eller avmarkera ett minne.</p>
+        <p>Innan du sparar kan du öppna ett minne i redigeraren med redigeringsknappen på kortet – lägga till text, ta bort överflödiga foton eller ändra datum.</p>
+        <p>Tryck på <kbd>Spara</kbd>. Varje minne blir en egen anteckning i standardkategorin, daterad efter sin första bild. <strong>Håll appen öppen</strong> medan den sparar.</p>
+
+        <div class="note">
+          <span class="note-title">Foton kopieras till Kadu</span>
+          <p>Sparade foton och videor kopieras in i appen. Du kan tryggt radera dem från galleriet – i Kadu finns de kvar. Mer i <a href="storage.html">Var data sparas</a>.</p>
+        </div>
+
+        <h2 id="suggestions">Förslag på nya minnen</h2>
+        <p>När du kommer tillbaka till Kadu kontrollerar appen tyst om nya foton har dykt upp i galleriet sedan sist. Om de bildar ett minne föreslår hemskärmen att du lägger till det med ett tryck. Redan ett enda nytt foto räcker för ett förslag.</p>
+        <ul>
+          <li>Kontrollen fungerar bara om du redan har gett åtkomst till bilder. Den ber aldrig om behörighet på egen hand.</li>
+          <li>Ett minne du har stängt eller redan sparat föreslås inte igen.</li>
+        </ul>
+
+        <h2 id="faq">Vanliga frågor</h2>
+        <details>
+          <summary>”Inga minnesvärda ögonblick hittades. Tryck på Nästa för att fortsätta.”</summary>
+          <div><p>Kadu letar efter två eller fler bilder tagna ungefär samtidigt på samma plats. Om ditt galleri mest består av enstaka bilder eller skärmbilder kanske det inte finns några minnen. Du kan alltid lägga till anteckningar manuellt.</p></div>
+        </details>
+        <details>
+          <summary>Kadu ser inte alla mina foton</summary>
+          <div><p>Troligen har du bara gett Kadu åtkomst till valda bilder. Ge åtkomst till hela biblioteket i telefonens inställningar (<span class="path">Inställningar → Kadu → Bilder</span>) och kör genomsökningen igen.</p></div>
+        </details>
+        <details>
+          <summary>Vissa filer kopierades inte</summary>
+          <div><p>Det händer med foton vars original bara finns i iCloud och inte har laddats ned till telefonen. De ligger kvar i galleriet. Öppna dem i Bilder så att de laddas ned och kör genomsökningen igen.</p></div>
+        </details>
+        <details>
+          <summary>Jag nekade åtkomst till bilder</summary>
+          <div><p>Inga problem – du kan lägga till anteckningar manuellt. Ge åtkomst senare i telefonens inställningar och starta genomsökningen via <span class="path">Inställningar → Import / Export</span>.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

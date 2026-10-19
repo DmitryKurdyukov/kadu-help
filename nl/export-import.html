@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="nl" data-lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exporteren en importeren — Kadu-handleiding</title>
+  <meta name="description" content="Kadu-back-ups, overstappen naar een nieuwe telefoon en notities importeren uit Day One en Apple Journal.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Exporteren en importeren</h1>
+        <p class="lead">Exporteren maakt een back-up van je dagboek in één zip-bestand. Importeren zet die terug of haalt notities over uit Day One en Apple Journal. Alles vind je in <span class="path">Instellingen → Importeren / Exporteren</span>.</p>
+
+        <h2 id="export">Exporteren: back-up</h2>
+        <ol class="steps">
+          <li>Open <span class="path">Instellingen → Importeren / Exporteren → Exporteren</span>.</li>
+          <li>Tik op <kbd>Alle gegevens exporteren</kbd>. Is er een <a href="private-pin.html">pincode</a> ingesteld, dan vraagt Kadu die eerst.</li>
+          <li>Wacht tot het klaar is. Met veel foto's en video's kan dat enkele minuten duren.</li>
+          <li>Kies in het venster dat opent waar je het bestand bewaart: <kbd>Bewaar in Bestanden</kbd> (bijvoorbeeld iCloud Drive), naar een computer of naar cloudopslag sturen.</li>
+        </ol>
+        <p>Het bestand heet ongeveer <code>kadu-export-10-19-2026.zip</code>. Het bevat alle notities, categorieën, tags, foto's, video's en spraakmemo's.</p>
+
+        <h3 id="export-category">Eén categorie exporteren <span class="premium">Premium</span></h3>
+        <p>Op hetzelfde scherm kun je in het blok <kbd>Exporteren per categorie</kbd> alleen de notities uit één categorie exporteren — bijvoorbeeld om een reisdagboek te delen.</p>
+
+        <h2 id="import">Een Kadu-back-up importeren</h2>
+        <ol class="steps">
+          <li>Open <span class="path">Instellingen → Importeren / Exporteren</span>.</li>
+          <li>Tik op <kbd>Importeren</kbd> en kies het zip-bestand dat met Kadu is geëxporteerd.</li>
+          <li>Wacht op de melding 'Importeren gelukt'.</li>
+        </ol>
+        <div class="note">
+          <span class="note-title">Importeren wist niets</span>
+          <p>Notities uit de back-up worden <strong>toegevoegd</strong> aan wat al in de app staat. Notities die al in Kadu staan, worden niet dubbel toegevoegd — je kunt hetzelfde bestand dus veilig nog eens importeren.</p>
+        </div>
+
+        <h2 id="new-phone">Overstappen naar een nieuwe telefoon</h2>
+        <ol class="steps">
+          <li>Maak op de oude telefoon een <a href="#export">export</a> en bewaar het bestand op een plek waar de nieuwe telefoon bij kan: iCloud Drive, Google Drive of Bestanden.</li>
+          <li>Installeer Kadu op de nieuwe telefoon.</li>
+          <li><a href="#import">Importeer</a> dat bestand.</li>
+        </ol>
+        <p>De pincode zit niet in de back-up. Stel die op de nieuwe telefoon opnieuw in.</p>
+
+        <h2 id="day-one">Importeren uit Day One</h2>
+        <ol class="steps">
+          <li>Exporteer je journaal in Day One in <strong>JSON</strong>-formaat. Je krijgt een zip-archief.</li>
+          <li>Open in Kadu <span class="path">Instellingen → Importeren / Exporteren</span> en tik op <kbd>Importeren uit Day One (zip)</kbd>.</li>
+          <li>Kies het archief.</li>
+        </ol>
+        <p>Zo worden de gegevens overgezet:</p>
+        <ul>
+          <li>het hoofdjournaal van Day One ('Journal') gaat naar de standaardcategorie;</li>
+          <li>elk ander journaal krijgt een categorie met dezelfde naam. Bestaat die al, dan komen de notities daarin;</li>
+          <li>foto's en hashtags gaan mee met de notities.</li>
+        </ul>
+
+        <h2 id="apple-journal">Importeren uit Apple Journal</h2>
+        <ol class="steps">
+          <li>Exporteer je notities uit de app Journaal. Je krijgt een map met een bestand <code>index.html</code> en de mappen <code>Entries</code> en <code>Resources</code>.</li>
+          <li>Comprimeer die map tot een zip. Houd in de app Bestanden de map ingedrukt en kies <kbd>Comprimeer</kbd>.</li>
+          <li>Tik in Kadu op <kbd>Importeren uit Apple Journal (zip)</kbd> en kies het archief.</li>
+        </ol>
+        <p>Kan de datum van een notitie niet worden herkend, dan krijgt die de datum van vandaag. Kadu vertelt hoeveel het er zijn. Je kunt de datum zelf aanpassen in de editor.</p>
+
+        <h2 id="faq">Veelgestelde vragen</h2>
+        <details>
+          <summary>Bij importeren staat dat het bestand op een export uit een andere app lijkt</summary>
+          <div><p>Je hebt een Day One- of Apple Journal-archief gekozen bij het gewone onderdeel <kbd>Importeren</kbd>. Zulke archieven hebben eigen knoppen: <kbd>Importeren uit Day One (zip)</kbd> en <kbd>Importeren uit Apple Journal (zip)</kbd>. Kadu vertelt welke je moet gebruiken.</p></div>
+        </details>
+        <details>
+          <summary>'Geen data.json gevonden in het archief.'</summary>
+          <div><p>Het bestand is geen Kadu-back-up of is na het exporteren gewijzigd. Kies het originele zip-bestand dat met <kbd>Alle gegevens exporteren</kbd> is gemaakt.</p></div>
+        </details>
+        <details>
+          <summary>Exporteren duurt erg lang</summary>
+          <div><p>Kadu kopieert alle foto's en video's naar het archief, en bij een groot dagboek duurt dat enkele minuten. Houd de app open tot het klaar is.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

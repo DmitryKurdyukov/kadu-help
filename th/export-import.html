@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="th" data-lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ส่งออกและนำเข้า — คู่มือ Kadu</title>
+  <meta name="description" content="การสำรองข้อมูล Kadu การย้ายไปโทรศัพท์ใหม่ และการนำเข้าบันทึกจาก Day One และ Apple Journal">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>ส่งออกและนำเข้า</h1>
+        <p class="lead">การส่งออกจะสร้างข้อมูลสำรองของไดอารี่เป็นไฟล์ zip ไฟล์เดียว การนำเข้าจะกู้คืนข้อมูลนั้น หรือนำบันทึกจาก Day One และ Apple Journal เข้ามา ทั้งหมดอยู่ใน <span class="path">การตั้งค่า → นำเข้า / ส่งออก</span></p>
+
+        <h2 id="export">ส่งออก: สำรองข้อมูล</h2>
+        <ol class="steps">
+          <li>เปิด <span class="path">การตั้งค่า → นำเข้า / ส่งออก → ส่งออก</span></li>
+          <li>แตะ <kbd>ส่งออกข้อมูลทั้งหมด</kbd> หากตั้ง <a href="private-pin.html">PIN</a> ไว้ Kadu จะขอ PIN ก่อน</li>
+          <li>รอจนเสร็จ หากมีรูปภาพและวิดีโอจำนวนมาก อาจใช้เวลาหลายนาที</li>
+          <li>ในหน้าต่างที่เปิดขึ้น เลือกที่บันทึกไฟล์: <kbd>บันทึกไปยังไฟล์</kbd> (เช่น iCloud Drive) ส่งไปยังคอมพิวเตอร์ หรือที่เก็บข้อมูลบนคลาวด์</li>
+        </ol>
+        <p>ไฟล์มีชื่อประมาณ <code>kadu-export-10-19-2026.zip</code> ภายในมีบันทึก หมวดหมู่ แท็ก รูปภาพ วิดีโอ และบันทึกเสียงทั้งหมด</p>
+
+        <h3 id="export-category">ส่งออกหมวดหมู่เดียว <span class="premium">Premium</span></h3>
+        <p>ในหน้าจอเดียวกัน ส่วน <kbd>ส่งออกตามหมวดหมู่</kbd> ใช้ส่งออกบันทึกจากหมวดหมู่เดียวได้ เช่น เพื่อแชร์ไดอารี่การเดินทาง</p>
+
+        <h2 id="import">นำเข้าข้อมูลสำรอง Kadu</h2>
+        <ol class="steps">
+          <li>เปิด <span class="path">การตั้งค่า → นำเข้า / ส่งออก</span></li>
+          <li>แตะ <kbd>นำเข้า</kbd> แล้วเลือกไฟล์ zip ที่สร้างจากการส่งออกของ Kadu</li>
+          <li>รอข้อความ "นำเข้าสำเร็จ"</li>
+        </ol>
+        <div class="note">
+          <span class="note-title">การนำเข้าไม่ลบอะไรเลย</span>
+          <p>บันทึกจากข้อมูลสำรองจะถูก<strong>เพิ่ม</strong>เข้าไปในบันทึกที่มีอยู่ในแอป บันทึกที่มีอยู่แล้วใน Kadu จะไม่ถูกเพิ่มซ้ำ จึงนำเข้าไฟล์เดิมอีกครั้งได้อย่างปลอดภัย</p>
+        </div>
+
+        <h2 id="new-phone">ย้ายไปโทรศัพท์ใหม่</h2>
+        <ol class="steps">
+          <li>บนโทรศัพท์เครื่องเก่า <a href="#export">ส่งออก</a>แล้วบันทึกไฟล์ไว้ในที่ที่เครื่องใหม่เข้าถึงได้: iCloud Drive, Google Drive หรือไฟล์</li>
+          <li>ติดตั้ง Kadu บนโทรศัพท์เครื่องใหม่</li>
+          <li><a href="#import">นำเข้า</a>ไฟล์นั้น</li>
+        </ol>
+        <p>PIN ไม่ได้รวมอยู่ในข้อมูลสำรอง ให้ตั้งใหม่บนโทรศัพท์เครื่องใหม่</p>
+
+        <h2 id="day-one">นำเข้าจาก Day One</h2>
+        <ol class="steps">
+          <li>ใน Day One ส่งออกไดอารี่ในรูปแบบ <strong>JSON</strong> คุณจะได้ไฟล์ zip</li>
+          <li>ใน Kadu เปิด <span class="path">การตั้งค่า → นำเข้า / ส่งออก</span> แล้วแตะ <kbd>นำเข้าจาก Day One (zip)</kbd></li>
+          <li>เลือกไฟล์</li>
+        </ol>
+        <p>วิธีย้ายข้อมูล:</p>
+        <ul>
+          <li>ไดอารี่หลักของ Day One ("Journal") จะไปอยู่ในหมวดหมู่เริ่มต้น</li>
+          <li>ไดอารี่อื่น ๆ แต่ละเล่มจะได้หมวดหมู่ชื่อเดียวกัน หากมีอยู่แล้ว บันทึกจะถูกเพิ่มเข้าไปในหมวดหมู่นั้น</li>
+          <li>รูปภาพและแฮชแท็กย้ายมาพร้อมบันทึก</li>
+        </ul>
+
+        <h2 id="apple-journal">นำเข้าจาก Apple Journal</h2>
+        <ol class="steps">
+          <li>ส่งออกบันทึกจากแอปบันทึกประจำวัน (Journal) คุณจะได้โฟลเดอร์ที่มีไฟล์ <code>index.html</code> และโฟลเดอร์ <code>Entries</code> กับ <code>Resources</code></li>
+          <li>บีบอัดโฟลเดอร์นั้นเป็น zip ในแอปไฟล์ ให้กดค้างที่โฟลเดอร์แล้วเลือก <kbd>บีบอัด</kbd></li>
+          <li>ใน Kadu แตะ <kbd>นำเข้าจาก Apple Journal (zip)</kbd> แล้วเลือกไฟล์</li>
+        </ol>
+        <p>หากระบุวันที่ของบันทึกไม่ได้ บันทึกนั้นจะได้วันที่ของวันนี้ Kadu จะแจ้งว่ามีกี่รายการ คุณแก้วันที่เองได้ในตัวแก้ไข</p>
+
+        <h2 id="faq">คำถามที่พบบ่อย</h2>
+        <details>
+          <summary>การนำเข้าแจ้งว่าไฟล์ดูเหมือนเป็นการส่งออกจากแอปอื่น</summary>
+          <div><p>คุณเลือกไฟล์ของ Day One หรือ Apple Journal ในรายการ <kbd>นำเข้า</kbd> ปกติ ไฟล์เหล่านี้มีปุ่มของตัวเอง: <kbd>นำเข้าจาก Day One (zip)</kbd> และ <kbd>นำเข้าจาก Apple Journal (zip)</kbd> Kadu จะบอกว่าควรใช้ปุ่มไหน</p></div>
+        </details>
+        <details>
+          <summary>"ไม่พบ data.json ในไฟล์บีบอัด"</summary>
+          <div><p>ไฟล์นี้ไม่ใช่ข้อมูลสำรองของ Kadu หรือถูกแก้ไขหลังการส่งออก ให้เลือกไฟล์ zip ต้นฉบับที่สร้างด้วย <kbd>ส่งออกข้อมูลทั้งหมด</kbd></p></div>
+        </details>
+        <details>
+          <summary>การส่งออกใช้เวลานานมาก</summary>
+          <div><p>Kadu คัดลอกรูปภาพและวิดีโอทั้งหมดลงในไฟล์ หากไดอารี่ใหญ่จะใช้เวลาหลายนาที เปิดแอปไว้จนกว่าจะเสร็จ</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

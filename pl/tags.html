@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pl" data-lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tagi — Przewodnik po Kadu</title>
+  <meta name="description" content="Jak dodawać tagi do wpisów w Kadu i znajdować wpisy po tagu.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Tagi</h1>
+        <p class="lead">Tagi łączą wpisy wspólnym tematem: podróżą, osobą, projektem. Kadu nie ma na nie osobnego pola — tagi wpisuje się prosto w tekst wpisu.</p>
+
+        <h2 id="add">Jak dodać tag</h2>
+        <ol class="steps">
+          <li>Wpisz w tekście <code>#</code>, a zaraz po nim, bez spacji, słowo: <code>#wakacje</code>.</li>
+          <li><strong>Wpisz spację po słowie.</strong> Dopiero wtedy staje się ono prawdziwym tagiem.</li>
+          <li>Sprawdź, czy tag <span class="tag-demo">#wakacje</span> został <strong>wyróżniony kolorem akcentu</strong>.</li>
+          <li>Zapisz wpis.</li>
+        </ol>
+        <blockquote>W końcu dotarliśmy nad morze <span class="tag-demo">#wakacje</span> <span class="tag-demo">#morze2025</span> i pijemy kawę</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">Najważniejsza zasada: tag musi być wyróżniony</span>
+          <p>Jeśli słowo z <code>#</code> zostaje zwykłym tekstem i nie zmienia koloru, to nie jest tag. Nie pojawi się w filtrach i nie da się po nim znaleźć wpisu. Najczęściej brakuje wtedy spacji po tagu — na przykład gdy to ostatnie słowo tekstu.</p>
+        </div>
+        <p>Wpis może mieć dowolnie wiele tagów, w dowolnym miejscu tekstu: na początku, w środku lub na końcu. Wystarczy spacja po każdym z nich.</p>
+
+        <h3 id="not-highlighted">Tag nie jest wyróżniony — co zrobić</h3>
+        <p>Ustaw kursor tuż za słowem i naciśnij spację. Jeśli to nie pomoże, usuń tag i wpisz go ponownie: <code>#</code>, słowo, spacja.</p>
+
+        <h2 id="rules">Zasady zapisu</h2>
+        <table>
+          <thead>
+            <tr><th>Przykład</th><th>Wynik</th><th>Dlaczego</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Wakacje</code> i <code>#wakacje</code></td><td>jeden tag <code>wakacje</code></td><td>wielkość liter nie ma znaczenia</td></tr>
+            <tr><td><code>#pierwszy śnieg</code></td><td>tylko <code>pierwszy</code></td><td>spacja kończy tag</td></tr>
+            <tr><td><code>#約會</code>, <code>#ความทรงจำ</code></td><td>działają</td><td>pasują litery z każdego języka</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">Wskazówka</span>
+          <p>Tagi z kilku słów połącz podkreślnikiem lub łącznikiem: <code>#pierwszy_śnieg</code>, <code>#urodziny-mamy</code>.</p>
+        </div>
+
+        <h2 id="find">Jak znaleźć wpisy po tagu</h2>
+        <ol class="steps">
+          <li>Otwórz kartę <kbd>Oś czasu</kbd>.</li>
+          <li>Stuknij <kbd>Filtry</kbd> u góry ekranu.</li>
+          <li>W bloku <kbd>Tagi</kbd> zaznacz potrzebne tagi. Jeśli jest ich dużo, zacznij pisać w polu <kbd>Szukaj tagów…</kbd>.</li>
+          <li>Zastosuj filtr.</li>
+        </ol>
+        <p>Najczęściej używane tagi są na górze listy.</p>
+
+        <h3 id="several">Gdy zaznaczysz kilka tagów</h3>
+        <p>Oś czasu pokaże wpisy, które mają <strong>co najmniej jeden</strong> z zaznaczonych tagów. Na przykład po zaznaczeniu <code>#morze</code> i <code>#góry</code> zobaczysz i wyjazdy nad morze, i w góry.</p>
+        <p>Aby odznaczyć wszystkie, stuknij <kbd>Wyczyść</kbd> obok tytułu bloku.</p>
+        <p>Filtr tagów działa też dla <a href="slideshow.html">pokazu slajdów</a> i książki. Zaznacz na przykład <code>#wakacje</code> i obejrzyj film tylko o tych wakacjach. Więcej w sekcji <a href="filters.html">Filtry i wyszukiwanie</a>.</p>
+
+        <h2 id="edit">Jak zmienić lub usunąć tag</h2>
+        <p>Otwórz wpis, popraw lub usuń słowo z <code>#</code> i zapisz. Lista tagów zaktualizuje się sama. Tag znika z filtrów, gdy nie używa go już żaden wpis.</p>
+
+        <h2 id="faq">Częste pytania</h2>
+        <details>
+          <summary>Filtry pokazują, że nie ma jeszcze tagów</summary>
+          <div><p>Tagi pojawiają się dopiero po użyciu ich w co najmniej jednym zapisanym wpisie. Sprawdź, czy tag jest wyróżniony kolorem — zwykły tekst z <code>#</code> nie jest tagiem.</p></div>
+        </details>
+        <details>
+          <summary>Czy tagi z Day One lub Apple Journal zostaną zachowane?</summary>
+          <div><p>Tak. Podczas <a href="export-import.html">importu</a> Kadu znajduje hashtagi w tekście importowanych wpisów i dodaje je do listy.</p></div>
+        </details>
+        <details>
+          <summary>Nie mogę znaleźć tagu, choć wpis istnieje</summary>
+          <div>
+            <p>Sprawdź trzy rzeczy:</p>
+            <ul>
+              <li>tag we wpisie jest <strong>wyróżniony kolorem akcentu</strong>. Jeśli nie, dodaj po nim spację i zapisz wpis ponownie;</li>
+              <li>filtry szukają dokładnie słowa po <code>#</code>: spacja w środku kończy tag;</li>
+              <li>wpis nie jest w <a href="private-pin.html">prywatnej kategorii</a>: ogólna oś czasu ich nie pokazuje.</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

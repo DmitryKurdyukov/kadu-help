@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko" data-lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>태그 — Kadu 가이드</title>
+  <meta name="description" content="Kadu 기록에 태그를 추가하고 태그로 기록을 찾는 방법.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>태그</h1>
+        <p class="lead">태그는 여행, 사람, 프로젝트처럼 공통 주제로 기록을 묶어 줍니다. Kadu에는 태그 전용 입력란이 없고, 태그는 기록 본문에 바로 씁니다.</p>
+
+        <h2 id="add">태그 추가 방법</h2>
+        <ol class="steps">
+          <li>본문에 <code>#</code>를 입력하고 띄어쓰기 없이 바로 단어를 씁니다: <code>#여행</code></li>
+          <li><strong>단어 뒤에 공백을 입력합니다.</strong> 그래야 진짜 태그가 됩니다.</li>
+          <li>태그 <span class="tag-demo">#여행</span>이 <strong>강조 색상으로 표시</strong>되었는지 확인합니다.</li>
+          <li>기록을 저장합니다.</li>
+        </ol>
+        <blockquote>드디어 바다에 도착 <span class="tag-demo">#여행</span> <span class="tag-demo">#바다2025</span> 커피 한 잔</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">가장 중요한 규칙: 태그에 색이 들어와야 합니다</span>
+          <p><code>#</code>가 붙은 단어가 색이 바뀌지 않고 일반 글자로 남아 있다면 태그가 아닙니다. 필터에 나타나지 않고 그 태그로 기록을 찾을 수도 없습니다. 대부분 태그 뒤에 공백이 없을 때 생깁니다. 예를 들어 본문의 마지막 단어인 경우입니다.</p>
+        </div>
+        <p>한 기록에 태그를 원하는 만큼 넣을 수 있고, 본문의 처음·중간·끝 어디에 두어도 됩니다. 각 태그 뒤에 공백만 넣으세요.</p>
+
+        <h3 id="not-highlighted">태그에 색이 들어오지 않을 때</h3>
+        <p>단어 바로 뒤에 커서를 두고 스페이스를 누르세요. 그래도 안 되면 태그를 지우고 <code>#</code>, 단어, 공백 순서로 다시 입력합니다.</p>
+
+        <h2 id="rules">작성 규칙</h2>
+        <table>
+          <thead>
+            <tr><th>예시</th><th>결과</th><th>이유</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Travel</code>과 <code>#travel</code></td><td>태그 하나 <code>travel</code></td><td>대소문자를 구분하지 않습니다</td></tr>
+            <tr><td><code>#첫 눈</code></td><td><code>첫</code>만</td><td>공백에서 태그가 끝납니다</td></tr>
+            <tr><td><code>#約會</code>, <code>#ความทรงจำ</code></td><td>사용 가능</td><td>모든 언어의 문자를 쓸 수 있습니다</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">팁</span>
+          <p>여러 단어로 된 태그는 밑줄이나 하이픈으로 이어 주세요: <code>#첫_눈</code>, <code>#생일-파티</code></p>
+        </div>
+
+        <h2 id="find">태그로 기록 찾기</h2>
+        <ol class="steps">
+          <li><kbd>타임라인</kbd> 탭을 엽니다.</li>
+          <li>화면 위쪽의 <kbd>필터</kbd>를 탭합니다.</li>
+          <li><kbd>태그</kbd> 블록에서 원하는 태그를 선택합니다. 태그가 많으면 <kbd>태그 검색…</kbd> 칸에 이름을 입력하세요.</li>
+          <li>필터를 적용합니다.</li>
+        </ol>
+        <p>많이 쓴 태그일수록 위에 표시됩니다.</p>
+
+        <h3 id="several">여러 태그를 선택한 경우</h3>
+        <p>선택한 태그 중 <strong>하나라도</strong> 있는 기록이 표시됩니다. 예를 들어 <code>#바다</code>와 <code>#산</code>을 고르면 바다 여행과 산 여행이 모두 보입니다.</p>
+        <p>선택을 모두 해제하려면 블록 제목 옆의 <kbd>지우기</kbd>를 탭하세요.</p>
+        <p>태그 필터는 <a href="slideshow.html">슬라이드쇼</a>와 책에도 적용됩니다. 예를 들어 <code>#여행</code>을 선택하면 그 여행만 담은 영상을 볼 수 있습니다. 자세한 내용은 <a href="filters.html">필터와 검색</a>을 참고하세요.</p>
+
+        <h2 id="edit">태그 수정 또는 삭제</h2>
+        <p>기록을 열고 <code>#</code>가 붙은 단어를 고치거나 지운 뒤 저장합니다. 태그 목록은 자동으로 갱신됩니다. 어떤 기록에서도 쓰이지 않는 태그는 필터에서 사라집니다.</p>
+
+        <h2 id="faq">자주 묻는 질문</h2>
+        <details>
+          <summary>필터에 아직 태그가 없다고 나와요</summary>
+          <div><p>태그는 저장된 기록에서 한 번 이상 써야 나타납니다. 태그에 색이 들어왔는지 확인하세요. <code>#</code>가 붙은 일반 글자는 태그로 인식되지 않습니다.</p></div>
+        </details>
+        <details>
+          <summary>Day One이나 Apple Journal의 태그도 유지되나요?</summary>
+          <div><p>네. <a href="export-import.html">가져오기</a> 중에 Kadu가 가져온 기록 본문에서 해시태그를 찾아 목록에 추가합니다.</p></div>
+        </details>
+        <details>
+          <summary>기록은 있는데 태그로 찾을 수 없어요</summary>
+          <div>
+            <p>세 가지를 확인하세요:</p>
+            <ul>
+              <li>기록 속 태그가 <strong>강조 색상으로 표시</strong>되어 있는지. 아니라면 뒤에 공백을 넣고 기록을 다시 저장하세요.</li>
+              <li>필터는 <code>#</code> 뒤의 단어를 그대로 찾습니다. 중간에 공백이 있으면 태그가 끝납니다.</li>
+              <li>기록이 <a href="private-pin.html">비공개 카테고리</a>에 있지 않은지. 전체 타임라인에는 표시되지 않습니다.</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

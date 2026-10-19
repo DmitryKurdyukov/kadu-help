@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de" data-lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Export &amp; Import — Kadu-Anleitung</title>
+  <meta name="description" content="Kadu-Backups, Umzug aufs neue Handy und Import von Einträgen aus Day One und Apple Journal.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Export & Import</h1>
+        <p class="lead">Der Export erstellt ein Backup deines Tagebuchs als eine einzige ZIP-Datei. Der Import stellt es wieder her oder übernimmt Einträge aus Day One und Apple Journal. Alles findest du unter <span class="path">Einstellungen → Importieren / Exportieren</span>.</p>
+
+        <h2 id="export">Export: Backup</h2>
+        <ol class="steps">
+          <li>Öffne <span class="path">Einstellungen → Importieren / Exportieren → Exportieren</span>.</li>
+          <li>Tippe auf <kbd>Alle Daten exportieren</kbd>. Ist eine <a href="private-pin.html">PIN</a> gesetzt, fragt Kadu zuerst danach.</li>
+          <li>Warte, bis es fertig ist. Bei vielen Fotos und Videos kann das einige Minuten dauern.</li>
+          <li>Wähle im geöffneten Fenster, wo die Datei gespeichert wird: <kbd>In „Dateien“ sichern</kbd> (z. B. iCloud Drive), an einen Computer oder in einen Cloudspeicher senden.</li>
+        </ol>
+        <p>Die Datei heißt etwa <code>kadu-export-10-19-2026.zip</code>. Sie enthält alle Einträge, Kategorien, Tags, Fotos, Videos und Sprachnotizen.</p>
+
+        <h3 id="export-category">Eine Kategorie exportieren <span class="premium">Premium</span></h3>
+        <p>Auf demselben Bildschirm kannst du im Block <kbd>Nach Kategorie exportieren</kbd> nur die Einträge einer Kategorie exportieren – etwa um ein Reisetagebuch zu teilen.</p>
+
+        <h2 id="import">Ein Kadu-Backup importieren</h2>
+        <ol class="steps">
+          <li>Öffne <span class="path">Einstellungen → Importieren / Exportieren</span>.</li>
+          <li>Tippe auf <kbd>Importieren</kbd> und wähle die von Kadu exportierte ZIP-Datei.</li>
+          <li>Warte auf die Meldung „Import erfolgreich“.</li>
+        </ol>
+        <div class="note">
+          <span class="note-title">Der Import löscht nichts</span>
+          <p>Einträge aus dem Backup werden zu den vorhandenen <strong>hinzugefügt</strong>. Einträge, die schon in Kadu sind, werden nicht doppelt angelegt – du kannst dieselbe Datei also gefahrlos erneut importieren.</p>
+        </div>
+
+        <h2 id="new-phone">Umzug auf ein neues Handy</h2>
+        <ol class="steps">
+          <li>Mach auf dem alten Handy einen <a href="#export">Export</a> und speichere die Datei dort, wo das neue Handy herankommt: iCloud Drive, Google Drive oder Dateien.</li>
+          <li>Installiere Kadu auf dem neuen Handy.</li>
+          <li><a href="#import">Importiere</a> diese Datei.</li>
+        </ol>
+        <p>Die PIN ist nicht Teil des Backups. Lege sie auf dem neuen Handy neu fest.</p>
+
+        <h2 id="day-one">Import aus Day One</h2>
+        <ol class="steps">
+          <li>Exportiere dein Journal in Day One im Format <strong>JSON</strong>. Du erhältst ein ZIP-Archiv.</li>
+          <li>Öffne in Kadu <span class="path">Einstellungen → Importieren / Exportieren</span> und tippe auf <kbd>Von Day One importieren (zip)</kbd>.</li>
+          <li>Wähle das Archiv.</li>
+        </ol>
+        <p>So werden die Daten übernommen:</p>
+        <ul>
+          <li>das Haupt-Journal von Day One („Journal“) kommt in die Standardkategorie;</li>
+          <li>jedes weitere Journal erhält eine Kategorie mit gleichem Namen. Gibt es sie schon, kommen die Einträge dort hinein;</li>
+          <li>Fotos und Hashtags werden mit den Einträgen übernommen.</li>
+        </ul>
+
+        <h2 id="apple-journal">Import aus Apple Journal</h2>
+        <ol class="steps">
+          <li>Exportiere deine Einträge aus der App Journal. Du erhältst einen Ordner mit einer Datei <code>index.html</code> und den Ordnern <code>Entries</code> und <code>Resources</code>.</li>
+          <li>Komprimiere diesen Ordner als ZIP. Halte ihn in der App Dateien gedrückt und wähle <kbd>Komprimieren</kbd>.</li>
+          <li>Tippe in Kadu auf <kbd>Von Apple Journal importieren (zip)</kbd> und wähle das Archiv.</li>
+        </ol>
+        <p>Kann das Datum eines Eintrags nicht erkannt werden, erhält er das heutige Datum. Kadu sagt dir, wie viele es sind. Du kannst das Datum im Editor von Hand korrigieren.</p>
+
+        <h2 id="faq">Häufige Fragen</h2>
+        <details>
+          <summary>Der Import meldet, die Datei sehe wie ein Export aus einer anderen App aus</summary>
+          <div><p>Du hast ein Day-One- oder Apple-Journal-Archiv im normalen Punkt <kbd>Importieren</kbd> gewählt. Für solche Archive gibt es eigene Tasten: <kbd>Von Day One importieren (zip)</kbd> und <kbd>Von Apple Journal importieren (zip)</kbd>. Kadu sagt dir, welche du nehmen musst.</p></div>
+        </details>
+        <details>
+          <summary>„Keine data.json im Archiv gefunden.“</summary>
+          <div><p>Die Datei ist kein Kadu-Backup oder wurde nach dem Export verändert. Wähle die originale ZIP-Datei, die mit <kbd>Alle Daten exportieren</kbd> erstellt wurde.</p></div>
+        </details>
+        <details>
+          <summary>Der Export dauert sehr lange</summary>
+          <div><p>Kadu kopiert alle Fotos und Videos ins Archiv, und bei einem großen Tagebuch dauert das einige Minuten. Lass die App bis zum Ende geöffnet.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

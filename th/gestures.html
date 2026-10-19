@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="th" data-lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ท่าทางและปุ่มที่ซ่อนอยู่ — คู่มือ Kadu</title>
+  <meta name="description" content="การกดค้าง ปุ่มบนการ์ด และการกระทำอื่น ๆ ใน Kadu ที่มักมองข้าม">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>ท่าทางและปุ่มที่ซ่อนอยู่</h1>
+        <p class="lead">การกระทำบางอย่างใน Kadu ซ่อนอยู่หลังการกดค้างหรือปุ่มเล็ก ๆ บนการ์ด นี่คือรายการทั้งหมด</p>
+
+        <h2 id="home">หน้าแรก</h2>
+        <table>
+          <thead>
+            <tr><th>การกระทำ</th><th>ผลลัพธ์</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>แตะการ์ดหมวดหมู่</td><td>เปิดไทม์ไลน์ที่มีบันทึกของหมวดหมู่นั้น</td></tr>
+            <tr><td><strong>กดค้าง</strong>ที่การ์ดหมวดหมู่</td><td>เปิดการแก้ไขหมวดหมู่: ชื่อ ไอคอน ความเป็นส่วนตัว การลบ</td></tr>
+            <tr><td>ปุ่ม <kbd>+</kbd> บนการ์ดหมวดหมู่</td><td>สร้างบันทึกใหม่ในหมวดหมู่นั้นทันที</td></tr>
+            <tr><td><kbd>เพิ่มหมวดหมู่</kbd> ใต้รายการ</td><td>สร้างหมวดหมู่ใหม่ หากไม่มี Premium สร้างได้สูงสุด 6 หมวดหมู่</td></tr>
+            <tr><td>การ์ด <kbd>สัปดาห์</kbd>, <kbd>เดือน</kbd>, <kbd>ปี</kbd></td><td>เปิดไทม์ไลน์ที่กรองตามช่วงเวลานั้น</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="timeline">การ์ดบันทึกในไทม์ไลน์</h2>
+        <table>
+          <thead>
+            <tr><th>การกระทำ</th><th>ผลลัพธ์</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>แตะการ์ด</td><td>เปิดบันทึกเพื่ออ่าน</td></tr>
+            <tr><td>แตะรูปภาพหรือวิดีโอ</td><td>เปิดแบบเต็มหน้าจอ ปัดเพื่อดูรายการอื่น</td></tr>
+            <tr><td>ดาว</td><td>เพิ่มบันทึกลงในรายการโปรด แสดงแยกได้ด้วย<a href="filters.html">ตัวกรอง <kbd>รายการโปรด</kbd></a></td></tr>
+            <tr><td>ปุ่ม <kbd>⋯</kbd></td><td>เมนู: <kbd>ดู</kbd>, <kbd>แก้ไข</kbd>, <kbd>ลบ</kbd></td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="media-library">คลังสื่อ</h2>
+        <p><kbd>คลังสื่อ</kbd> ในไทม์ไลน์รวบรวมรูปภาพและวิดีโอทั้งหมดจากบันทึกไว้ในตารางเดียว กรองตามประเภทได้: <kbd>รูปภาพ</kbd> หรือ <kbd>วิดีโอ</kbd></p>
+        <p><strong>กดค้าง</strong>ที่รายการเพื่อเปิดเมนู:</p>
+        <ul>
+          <li><kbd>แก้ไขบันทึก</kbd> เปิดบันทึกที่รายการนั้นอยู่</li>
+          <li><kbd>แสดงในไทม์ไลน์</kbd> ไปยังบันทึกนั้นในไทม์ไลน์</li>
+        </ul>
+
+        <h2 id="book">หนังสือ</h2>
+        <p><kbd>หนังสือ</kbd> ในไทม์ไลน์แสดงบันทึกของคุณเหมือนสมุดบันทึก ปัดซ้ายและขวาเพื่อพลิกหน้า หากไม่มี Premium จะดูได้ 20 หน้าแรก</p>
+
+        <h2 id="sheets">แผงที่เลื่อนขึ้นจากด้านล่าง</h2>
+        <p>ตัวกรอง ปฏิทิน การตั้งค่าสไลด์โชว์ และแผงอื่น ๆ ที่เลื่อนขึ้นจากด้านล่าง ปิดได้ด้วยการปัดลงหรือแตะพื้นที่มืดด้านบน</p>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

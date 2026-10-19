@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr" data-lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Souvenirs de la galerie — Guide Kadu</title>
+  <meta name="description" content="Comment Kadu trouve des souvenirs parmi les photos de la galerie, ce qu'ils contiennent et comment les enregistrer.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Souvenirs de la galerie</h1>
+        <p class="lead">Votre galerie contient des milliers de photos, mais une histoire est faite de moments. Kadu trouve ces moments de lui-même, regroupe les photos en souvenirs et propose de les enregistrer dans votre frise. À vous de choisir ce que vous gardez.</p>
+
+        <h2 id="how">Comment Kadu trouve les souvenirs</h2>
+        <p>Tout se passe sur votre appareil. Les photos ne sont jamais envoyées : Kadu regarde seulement quand et où chacune a été prise :</p>
+        <ol class="steps">
+          <li><strong>Heure.</strong> Les photos sont triées par heure de prise de vue. S'il s'écoule plus de 2 heures entre deux d'entre elles, un nouveau souvenir commence.</li>
+          <li><strong>Lieu.</strong> Si les photos ont une position et que deux photos voisines sont à plus d'un kilomètre, le souvenir est coupé en deux.</li>
+          <li><strong>Doublons.</strong> D'une rafale de photos prises à moins de 5 secondes d'intervalle, une seule est gardée. La préférence va à une photo favorite de la galerie, puis à une vidéo.</li>
+          <li><strong>Les captures d'écran</strong> sont toujours ignorées.</li>
+        </ol>
+        <p>Un souvenir demande <strong>2 photos ou plus</strong>. Une photo isolée, prise à l'écart des autres, n'apparaîtra pas dans l'analyse complète.</p>
+
+        <h2 id="run">Lancer l'analyse</h2>
+        <p>Kadu le propose à la première ouverture de l'app. Ensuite, vous pouvez la lancer quand vous voulez :</p>
+        <ol class="steps">
+          <li>Ouvrez <span class="path">Réglages → Importer / Exporter</span>.</li>
+          <li>Choisissez <kbd>Générer des souvenirs depuis la galerie</kbd>.</li>
+          <li>Touchez <kbd>Analyser la galerie</kbd> et autorisez l'accès aux photos si demandé.</li>
+        </ol>
+
+        <h2 id="choose">Choisir et enregistrer</h2>
+        <p>Les souvenirs trouvés s'affichent en liste. Touchez une carte pour sélectionner ou désélectionner un souvenir.</p>
+        <p>Avant d'enregistrer, vous pouvez ouvrir un souvenir dans l'éditeur avec le bouton de modification de sa carte : ajouter du texte, retirer des photos en trop ou changer la date.</p>
+        <p>Touchez <kbd>Enregistrer</kbd>. Chaque souvenir devient une entrée distincte dans la catégorie par défaut, datée de sa première photo. Pendant l'enregistrement, <strong>ne fermez pas l'app</strong>.</p>
+
+        <div class="note">
+          <span class="note-title">Les photos sont copiées dans Kadu</span>
+          <p>Les photos et vidéos enregistrées sont copiées dans l'app. Vous pouvez les supprimer de la galerie sans crainte : elles restent dans Kadu. Plus d'infos dans <a href="storage.html">Où sont les données</a>.</p>
+        </div>
+
+        <h2 id="suggestions">Suggestions de nouveaux souvenirs</h2>
+        <p>Quand vous revenez dans Kadu, l'app vérifie discrètement si de nouvelles photos sont apparues dans votre galerie depuis la dernière fois. Si elles forment un souvenir, l'écran d'accueil propose de l'ajouter d'un toucher. Une seule nouvelle photo suffit pour une suggestion.</p>
+        <ul>
+          <li>La vérification ne fonctionne que si vous avez déjà autorisé l'accès aux photos. Elle ne demande jamais l'autorisation d'elle-même.</li>
+          <li>Un souvenir que vous avez fermé ou déjà enregistré ne sera plus proposé.</li>
+        </ul>
+
+        <h2 id="faq">Questions fréquentes</h2>
+        <details>
+          <summary>« Aucun moment mémorable trouvé. Appuyez sur Suivant pour continuer. »</summary>
+          <div><p>Kadu cherche deux photos ou plus prises à peu près au même moment et au même endroit. Si votre galerie contient surtout des photos isolées ou des captures d'écran, il peut n'y avoir aucun souvenir. Vous pouvez toujours ajouter des entrées à la main.</p></div>
+        </details>
+        <details>
+          <summary>Kadu ne voit pas toutes mes photos</summary>
+          <div><p>Vous avez sans doute donné à Kadu l'accès à certaines photos seulement. Autorisez l'accès à toute la photothèque dans les réglages du téléphone (<span class="path">Réglages → Kadu → Photos</span>) et relancez l'analyse.</p></div>
+        </details>
+        <details>
+          <summary>Certains fichiers n'ont pas été copiés</summary>
+          <div><p>Cela arrive avec des photos dont les originaux sont uniquement dans iCloud et pas téléchargés sur le téléphone. Elles restent dans votre galerie. Ouvrez-les dans Photos pour qu'elles se téléchargent, puis relancez l'analyse.</p></div>
+        </details>
+        <details>
+          <summary>J'ai refusé l'accès aux photos</summary>
+          <div><p>Pas de souci : vous pouvez ajouter des entrées à la main. Autorisez l'accès plus tard dans les réglages du téléphone et lancez l'analyse depuis <span class="path">Réglages → Importer / Exporter</span>.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

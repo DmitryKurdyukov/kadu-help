@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-Hant" data-lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>匯出與匯入 — Kadu 使用指南</title>
+  <meta name="description" content="Kadu 備份、換新手機，以及從 Day One 和 Apple Journal 匯入記錄。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>匯出與匯入</h1>
+        <p class="lead">匯出會把日記備份成一個 zip 檔案。匯入可以恢復備份，或從 Day One 和 Apple Journal 遷入記錄。這些都在 <span class="path">設定 → 匯入 / 匯出</span> 中。</p>
+
+        <h2 id="export">匯出：備份</h2>
+        <ol class="steps">
+          <li>開啟 <span class="path">設定 → 匯入 / 匯出 → 匯出</span>。</li>
+          <li>點按 <kbd>匯出所有資料</kbd>。如果設定了 <a href="private-pin.html">PIN 碼</a>，Kadu 會先要求輸入。</li>
+          <li>等待完成。照片和影片很多時，可能需要幾分鐘。</li>
+          <li>在彈出的視窗中選擇儲存位置：<kbd>儲存到「檔案」</kbd>（例如 iCloud 雲碟）、傳送到電腦或雲端儲存。</li>
+        </ol>
+        <p>檔名類似 <code>kadu-export-10-19-2026.zip</code>。其中包含所有記錄、分類、標籤、照片、影片和語音備忘。</p>
+
+        <h3 id="export-category">匯出單個分類 <span class="premium">Premium</span></h3>
+        <p>在同一頁面的 <kbd>按分類匯出</kbd> 區域，可以只匯出一個分類的記錄——比如分享一本旅行日記。</p>
+
+        <h2 id="import">匯入 Kadu 備份</h2>
+        <ol class="steps">
+          <li>開啟 <span class="path">設定 → 匯入 / 匯出</span>。</li>
+          <li>點按 <kbd>匯入</kbd>，選擇 Kadu 匯出的 zip 檔案。</li>
+          <li>等待出現「匯入成功」提示。</li>
+        </ol>
+        <div class="note">
+          <span class="note-title">匯入不會刪除任何內容</span>
+          <p>備份中的記錄會<strong>新增</strong>到 App 中已有的記錄裡。Kadu 中已存在的記錄不會重複，所以同一個檔案再匯入一次也沒關係。</p>
+        </div>
+
+        <h2 id="new-phone">換新手機</h2>
+        <ol class="steps">
+          <li>在舊手機上<a href="#export">匯出</a>，把檔案儲存到新手機能訪問的地方：iCloud 雲碟、Google Drive 或「檔案」。</li>
+          <li>在新手機上安裝 Kadu。</li>
+          <li><a href="#import">匯入</a>這個檔案。</li>
+        </ol>
+        <p>PIN 碼不包含在備份中。請在新手機上重新設定。</p>
+
+        <h2 id="day-one">從 Day One 匯入</h2>
+        <ol class="steps">
+          <li>在 Day One 中以 <strong>JSON</strong> 格式匯出日記。你會得到一個 zip 壓縮包。</li>
+          <li>在 Kadu 中開啟 <span class="path">設定 → 匯入 / 匯出</span>，點按 <kbd>從 Day One 匯入（zip）</kbd>。</li>
+          <li>選擇該壓縮包。</li>
+        </ol>
+        <p>資料遷移方式：</p>
+        <ul>
+          <li>Day One 的主日記（「Journal」）進入預設分類；</li>
+          <li>其他每本日記都會得到一個同名分類。如果已存在，記錄會加入該分類；</li>
+          <li>照片和話題標籤會隨記錄一起遷移。</li>
+        </ul>
+
+        <h2 id="apple-journal">從 Apple Journal 匯入</h2>
+        <ol class="steps">
+          <li>從「日記」App 匯出記錄。你會得到一個資料夾，其中有 <code>index.html</code> 檔案以及 <code>Entries</code> 和 <code>Resources</code> 資料夾。</li>
+          <li>把該資料夾壓縮為 zip。在「檔案」App 中長按資料夾，選擇 <kbd>壓縮</kbd>。</li>
+          <li>在 Kadu 中點按 <kbd>從 Apple Journal 匯入（zip）</kbd> 並選擇該壓縮包。</li>
+        </ol>
+        <p>無法識別日期的記錄會被設為今天的日期。Kadu 會告訴你有多少條。你可以在編輯器中手動修改日期。</p>
+
+        <h2 id="faq">常見問題</h2>
+        <details>
+          <summary>匯入提示檔案看起來像其他 App 的匯出檔案</summary>
+          <div><p>你在普通的 <kbd>匯入</kbd> 中選擇了 Day One 或 Apple Journal 的壓縮包。這類壓縮包有專門的按鈕：<kbd>從 Day One 匯入（zip）</kbd> 和 <kbd>從 Apple Journal 匯入（zip）</kbd>。Kadu 會告訴你該用哪一個。</p></div>
+        </details>
+        <details>
+          <summary>「壓縮包中未找到 data.json。」</summary>
+          <div><p>該檔案不是 Kadu 備份，或者匯出後被修改過。請選擇用 <kbd>匯出所有資料</kbd> 生成的原始 zip 檔案。</p></div>
+        </details>
+        <details>
+          <summary>匯出需要很長時間</summary>
+          <div><p>Kadu 會把所有照片和影片複製進壓縮包，日記較大時需要幾分鐘。請保持 App 開啟直到完成。</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

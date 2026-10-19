@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="it" data-lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Categorie private e PIN — Guida di Kadu</title>
+  <meta name="description" content="Come funzionano le categorie private in Kadu e come proteggere l'app con un PIN.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Categorie private e PIN</h1>
+        <p class="lead">Kadu ha due livelli di protezione. Una categoria privata nasconde le voci dalla timeline generale, e un PIN blocca l'app stessa e le categorie private.</p>
+
+        <h2 id="private">Categoria privata</h2>
+        <p>Le voci di una categoria privata <strong>non compaiono mai nella timeline generale</strong>, nei filtri o nelle presentazioni generali. L'unico modo per vederle è aprire la categoria stessa dalla schermata Home.</p>
+        <h3 id="make-private">Come rendere privata una categoria</h3>
+        <ol class="steps">
+          <li>Nella schermata Home, <strong>tieni premuta</strong> la scheda di una categoria. Per una nuova categoria, tocca <kbd>Aggiungi categoria</kbd>.</li>
+          <li>Attiva l'interruttore <kbd>Privata</kbd> (didascalia: «Nascosta nella timeline generale»).</li>
+          <li>Tocca <kbd>Salva</kbd> (per una nuova categoria, <kbd>Crea</kbd>).</li>
+        </ol>
+        <p>Al primo avvio Kadu crea già la categoria «Privato».</p>
+        <div class="note warning">
+          <span class="note-title">Senza PIN la privacy è solo visiva</span>
+          <p>Finché non imposti un PIN, una categoria privata è solo nascosta dalla timeline. Chiunque abbia in mano il tuo telefono può aprirla dalla schermata Home. Per bloccarla davvero, imposta un PIN.</p>
+        </div>
+
+        <h2 id="pin">PIN</h2>
+        <h3 id="set-pin">Come impostarlo</h3>
+        <ol class="steps">
+          <li>Apri <span class="path">Impostazioni → Codice PIN</span>.</li>
+          <li>Tocca <kbd>Imposta codice PIN</kbd>.</li>
+          <li>Inserisci 4 cifre e ripetile per confermare.</li>
+        </ol>
+
+        <h3 id="when-asked">Quando Kadu chiede il PIN</h3>
+        <ul>
+          <li>a ogni avvio dell'app;</li>
+          <li>quando apri una categoria privata dalla schermata Home;</li>
+          <li>prima dell'<a href="export-import.html">esportazione dei dati</a>, perché il backup contiene anche le voci private.</li>
+        </ul>
+
+        <h3 id="reset-pin">Come cambiarlo o disattivarlo</h3>
+        <p>Apri <span class="path">Impostazioni → Codice PIN → Reimposta codice PIN</span> e inserisci il codice attuale. Dopo, l'app smette di chiederlo. Per impostarne uno nuovo, tocca di nuovo <kbd>Imposta codice PIN</kbd>.</p>
+
+        <h2 id="fake">PIN falso</h2>
+        <p>Se qualcuno potrebbe chiederti di sbloccare il diario, imposta un secondo codice, falso. Apre l'app ma nasconde tutte le categorie private. Di più in <a href="fake-pin.html">PIN falso</a>.</p>
+
+        <h2 id="faq">Domande frequenti</h2>
+        <details>
+          <summary>Ho dimenticato il PIN</summary>
+          <div>
+            <p>Il PIN è salvato solo sul tuo dispositivo e in forma cifrata, quindi non può essere recuperato né letto, nemmeno da noi. Prova a ricordarlo. Se non ci riesci, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOXHvjs9uuML3YGRTeUfUd7fSP4M1xSJOZY02tCTL1_VHlbA/viewform" target="_blank" rel="noopener">scrivici</a>.</p>
+            <p>Per evitarlo, scegli un codice che non dimenticherai e <a href="export-import.html">fai backup</a> regolarmente.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Posso aprire Kadu con Face ID?</summary>
+          <div><p>Non ancora: Kadu è protetto solo da PIN.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

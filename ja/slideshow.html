@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja" data-lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>スライドショー — Kadu ガイド</title>
+  <meta name="description" content="Kadu でスライドショーを始め、速度・音楽・エフェクトを設定し、ビデオとして保存する方法。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>スライドショー</h1>
+        <p class="lead">スライドショーは、記録の写真とビデオを、音楽と柔らかなエフェクト付きのムービーにします。</p>
+
+        <h2 id="start">始め方</h2>
+        <p><kbd>タイムライン</kbd> タブを開き、<kbd>スライドショー</kbd> をタップします。</p>
+        <div class="note">
+          <span class="note-title">重要：スライドショーはいまタイムラインに表示されている内容から作られます</span>
+          <p>タイムラインで<a href="filters.html">フィルター</a>（カテゴリ、タグ、期間、検索）がオンになっていると、その記録だけがスライドショーに入ります。こうして 1 回の旅行や 1 年間のムービーを作れます。すべて見たいときは、先にフィルターをリセットしてください。</p>
+        </div>
+        <p>絞り込んだ記録に写真もビデオもないときは、再生するものがないと Kadu が知らせます。</p>
+
+        <h2 id="settings">設定</h2>
+        <p>再生中に <kbd>スライドショー設定</kbd> を開きます。変更はすぐに反映され、ムービーは最初から始まります。</p>
+        <table>
+          <thead>
+            <tr><th>設定</th><th>働き</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>速度</kbd></td><td>写真 1 枚の表示時間：<em>遅い</em> — 5 秒、<em>普通</em> — 3 秒、<em>速い</em> — 1.2 秒、<em>とても速い</em> — 0.6 秒。</td></tr>
+            <tr><td><kbd>動画の音声</kbd></td><td>ビデオを元の音声付きで再生します。</td></tr>
+            <tr><td><kbd>動画を早送り</kbd></td><td>ビデオの速さをスライドショーの速度に合わせます。遅いときは少し遅く、普通ならそのまま、速いときは速くなります。ビデオは必ず最後まで再生されます。</td></tr>
+            <tr><td><kbd>日付を表示</kbd></td><td>思い出の日付を画面に表示します。</td></tr>
+            <tr><td><kbd>モーションエフェクト</kbd></td><td>写真をゆっくりズーム・パンします。<em>遅い</em> と <em>普通</em> の速度で有効です。速い設定ではエフェクトが出る前に写真が切り替わります。</td></tr>
+            <tr><td><kbd>順序を逆にする</kbd></td><td>新しい思い出ではなく古い思い出から表示します。</td></tr>
+            <tr><td><kbd>BGM</kbd></td><td>再生中に音楽が流れます。<kbd>曲</kbd> を <em>自動</em> のままにすると Kadu が曲を選びます。自分で選ぶこともできます：<em>冬</em>、<em>穏やか</em>、<em>エネルギッシュ</em>。</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="free-limit">無料版の制限</h2>
+        <p>サブスクリプションなしでは、スライドショーを<strong>1 日 3 分</strong>まで見られます。時間がなくなると Kadu が Premium を案内します。制限は翌日にリセットされます。</p>
+        <p><span class="premium">Premium</span> ならスライドショーは無制限です。</p>
+
+        <h2 id="export">ビデオとして保存 <span class="premium">Premium</span></h2>
+        <p>スライドショーを普通のビデオにして、大切な人と共有できます。</p>
+        <ol class="steps">
+          <li>ビデオにしたい見た目にスライドショーを設定します。</li>
+          <li><kbd>スライドショー設定</kbd> を開き、<kbd>動画として共有</kbd> をタップします。</li>
+          <li>作成が終わるまで待ちます（<em>「動画を作成中…」</em>）。</li>
+          <li><kbd>写真に保存</kbd> または <kbd>共有</kbd> を選びます。</li>
+        </ol>
+        <div class="note warning">
+          <span class="note-title">ビデオの長さは最大 15 分です</span>
+          <p>スライドショーがそれより長いと書き出しは始まりません。速度を上げるか、フィルターで範囲を絞ってください（たとえば 1 か月だけにする）。</p>
+        </div>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

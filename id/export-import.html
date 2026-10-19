@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="id" data-lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ekspor dan impor — Panduan Kadu</title>
+  <meta name="description" content="Cadangan Kadu, pindah ke ponsel baru, dan impor catatan dari Day One serta Apple Journal.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Ekspor dan impor</h1>
+        <p class="lead">Ekspor membuat cadangan jurnal Anda dalam satu file zip. Impor memulihkannya atau memindahkan catatan dari Day One dan Apple Journal. Semuanya ada di <span class="path">Pengaturan → Impor / Ekspor</span>.</p>
+
+        <h2 id="export">Ekspor: cadangan</h2>
+        <ol class="steps">
+          <li>Buka <span class="path">Pengaturan → Impor / Ekspor → Ekspor</span>.</li>
+          <li>Ketuk <kbd>Ekspor semua data</kbd>. Jika <a href="private-pin.html">PIN</a> diatur, Kadu memintanya lebih dulu.</li>
+          <li>Tunggu sampai selesai. Dengan banyak foto dan video, ini bisa memakan beberapa menit.</li>
+          <li>Di jendela yang terbuka, pilih tempat menyimpan file: <kbd>Simpan ke File</kbd> (misalnya iCloud Drive), kirim ke komputer, atau ke penyimpanan cloud.</li>
+        </ol>
+        <p>Nama filenya kira-kira <code>kadu-export-10-19-2026.zip</code>. Isinya semua catatan, kategori, tag, foto, video, dan catatan suara.</p>
+
+        <h3 id="export-category">Ekspor satu kategori <span class="premium">Premium</span></h3>
+        <p>Di layar yang sama, blok <kbd>Ekspor per kategori</kbd> memungkinkan Anda mengekspor catatan dari satu kategori saja — misalnya untuk berbagi jurnal perjalanan.</p>
+
+        <h2 id="import">Impor cadangan Kadu</h2>
+        <ol class="steps">
+          <li>Buka <span class="path">Pengaturan → Impor / Ekspor</span>.</li>
+          <li>Ketuk <kbd>Impor</kbd> lalu pilih file zip hasil ekspor Kadu.</li>
+          <li>Tunggu pesan "Impor berhasil".</li>
+        </ol>
+        <div class="note">
+          <span class="note-title">Impor tidak menghapus apa pun</span>
+          <p>Catatan dari cadangan <strong>ditambahkan</strong> ke catatan yang sudah ada di aplikasi. Catatan yang sudah ada di Kadu tidak ditambahkan dua kali, jadi Anda bisa mengimpor file yang sama lagi dengan aman.</p>
+        </div>
+
+        <h2 id="new-phone">Pindah ke ponsel baru</h2>
+        <ol class="steps">
+          <li>Di ponsel lama, lakukan <a href="#export">ekspor</a> dan simpan file di tempat yang bisa dijangkau ponsel baru: iCloud Drive, Google Drive, atau File.</li>
+          <li>Pasang Kadu di ponsel baru.</li>
+          <li><a href="#import">Impor</a> file tersebut.</li>
+        </ol>
+        <p>PIN tidak termasuk dalam cadangan. Atur lagi di ponsel baru.</p>
+
+        <h2 id="day-one">Impor dari Day One</h2>
+        <ol class="steps">
+          <li>Di Day One, ekspor jurnal Anda dalam format <strong>JSON</strong>. Anda akan mendapat arsip zip.</li>
+          <li>Di Kadu, buka <span class="path">Pengaturan → Impor / Ekspor</span> lalu ketuk <kbd>Impor dari Day One (zip)</kbd>.</li>
+          <li>Pilih arsipnya.</li>
+        </ol>
+        <p>Cara data dipindahkan:</p>
+        <ul>
+          <li>jurnal utama Day One ("Journal") masuk ke kategori bawaan;</li>
+          <li>setiap jurnal lain mendapat kategori dengan nama yang sama. Jika sudah ada, catatan ditambahkan ke sana;</li>
+          <li>foto dan hashtag ikut pindah bersama catatan.</li>
+        </ul>
+
+        <h2 id="apple-journal">Impor dari Apple Journal</h2>
+        <ol class="steps">
+          <li>Ekspor catatan Anda dari app Jurnal. Anda akan mendapat folder berisi file <code>index.html</code> serta folder <code>Entries</code> dan <code>Resources</code>.</li>
+          <li>Kompres folder itu menjadi zip. Di app File, tekan lama folder lalu pilih <kbd>Kompres</kbd>.</li>
+          <li>Di Kadu, ketuk <kbd>Impor dari Apple Journal (zip)</kbd> lalu pilih arsipnya.</li>
+        </ol>
+        <p>Jika tanggal sebuah catatan tidak dikenali, catatan itu diberi tanggal hari ini. Kadu memberi tahu berapa banyak catatan seperti itu. Anda bisa memperbaiki tanggal secara manual di editor.</p>
+
+        <h2 id="faq">Pertanyaan umum</h2>
+        <details>
+          <summary>Impor bilang file tampak seperti ekspor dari aplikasi lain</summary>
+          <div><p>Anda memilih arsip Day One atau Apple Journal di item <kbd>Impor</kbd> biasa. Arsip seperti itu punya tombol sendiri: <kbd>Impor dari Day One (zip)</kbd> dan <kbd>Impor dari Apple Journal (zip)</kbd>. Kadu akan memberi tahu mana yang harus dipakai.</p></div>
+        </details>
+        <details>
+          <summary>"data.json tidak ditemukan di arsip."</summary>
+          <div><p>File itu bukan cadangan Kadu atau telah diubah setelah ekspor. Pilih file zip asli yang dibuat dengan <kbd>Ekspor semua data</kbd>.</p></div>
+        </details>
+        <details>
+          <summary>Ekspor memakan waktu sangat lama</summary>
+          <div><p>Kadu menyalin semua foto dan video ke dalam arsip, dan untuk jurnal besar ini butuh beberapa menit. Biarkan aplikasi tetap terbuka sampai selesai.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="uk" data-lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Експорт та імпорт — Посібник Kadu</title>
+  <meta name="description" content="Резервна копія Kadu, перенесення на новий телефон та імпорт записів з Day One і Apple Journal.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Експорт та імпорт</h1>
+        <p class="lead">Експорт створює резервну копію щоденника в одному zip-файлі. Імпорт повертає її назад або переносить записи з Day One та Apple Journal. Усе це є в <span class="path">Налаштування → Імпорт / Експорт</span>.</p>
+
+        <h2 id="export">Експорт: резервна копія</h2>
+        <ol class="steps">
+          <li>Відкрийте <span class="path">Налаштування → Імпорт / Експорт → Експорт</span>.</li>
+          <li>Натисніть <kbd>Експортувати всі дані</kbd>. Якщо задано <a href="private-pin.html">PIN-код</a>, Kadu спершу його запитає.</li>
+          <li>Дочекайтеся завершення. Якщо фото й відео багато, це може тривати кілька хвилин.</li>
+          <li>У вікні, що відкриється, виберіть, куди зберегти файл: <kbd>Зберегти у Файли</kbd> (наприклад, в iCloud Drive), надіслати на комп'ютер чи в хмарне сховище.</li>
+        </ol>
+        <p>Файл називається приблизно так: <code>kadu-export-10-19-2026.zip</code>. Усередині всі записи, категорії, теги, фото, відео й голосові нотатки.</p>
+
+        <h3 id="export-category">Експорт однієї категорії <span class="premium">Premium</span></h3>
+        <p>На тому самому екрані, у блоці <kbd>Експорт за категоріями</kbd>, можна вивантажити записи лише з однієї категорії. Наприклад, щоб поділитися щоденником подорожі.</p>
+
+        <h2 id="import">Імпорт резервної копії Kadu</h2>
+        <ol class="steps">
+          <li>Відкрийте <span class="path">Налаштування → Імпорт / Експорт</span>.</li>
+          <li>Натисніть <kbd>Імпорт</kbd> і виберіть zip-файл, створений експортом Kadu.</li>
+          <li>Дочекайтеся повідомлення «Імпорт завершено».</li>
+        </ol>
+        <div class="note">
+          <span class="note-title">Імпорт нічого не стирає</span>
+          <p>Записи з копії <strong>додаються</strong> до тих, що вже є в застосунку. Якщо копія містить записи, які вже є в Kadu, повторно вони не додадуться. Тому той самий файл можна спокійно імпортувати ще раз.</p>
+        </div>
+
+        <h2 id="new-phone">Перенесення на новий телефон</h2>
+        <ol class="steps">
+          <li>На старому телефоні зробіть <a href="#export">експорт</a> і збережіть файл туди, де він буде доступний з нового: в iCloud Drive, на Google Диск або у «Файли».</li>
+          <li>Встановіть Kadu на новий телефон.</li>
+          <li>Зробіть <a href="#import">імпорт</a> цього файлу.</li>
+        </ol>
+        <p>PIN-код до резервної копії не входить. На новому телефоні задайте його заново.</p>
+
+        <h2 id="day-one">Імпорт з Day One</h2>
+        <ol class="steps">
+          <li>У Day One зробіть експорт журналу у форматі <strong>JSON</strong>. Вийде zip-архів.</li>
+          <li>У Kadu відкрийте <span class="path">Налаштування → Імпорт / Експорт</span> і натисніть <kbd>Імпорт із Day One (zip)</kbd>.</li>
+          <li>Виберіть архів.</li>
+        </ol>
+        <p>Як переносяться дані:</p>
+        <ul>
+          <li>основний журнал Day One («Journal») потрапляє в категорію за замовчуванням;</li>
+          <li>для кожного іншого журналу створюється категорія з такою самою назвою. Якщо вона вже є, записи додадуться в неї;</li>
+          <li>фото й хештеги переносяться разом із записами.</li>
+        </ul>
+
+        <h2 id="apple-journal">Імпорт з Apple Journal</h2>
+        <ol class="steps">
+          <li>Експортуйте записи із застосунку «Щоденник» (Apple Journal). Вийде папка, усередині якої є файл <code>index.html</code> і папки <code>Entries</code> та <code>Resources</code>.</li>
+          <li>Стисніть цю папку в zip. У застосунку «Файли» це робиться довгим натисканням на папку й пунктом <kbd>Стиснути</kbd>.</li>
+          <li>У Kadu натисніть <kbd>Імпорт з Apple Journal (zip)</kbd> і виберіть архів.</li>
+        </ol>
+        <p>Якщо в якогось запису не вдалося розпізнати дату, йому буде поставлено сьогоднішню. Kadu повідомить, скільки таких записів. Дату можна виправити вручну в редакторі.</p>
+
+        <h2 id="faq">Часті запитання</h2>
+        <details>
+          <summary>Імпорт каже, що файл схожий на експорт з іншого застосунку</summary>
+          <div><p>Ви вибрали архів Day One або Apple Journal у звичайному пункті <kbd>Імпорт</kbd>. Для таких архівів є окремі кнопки: <kbd>Імпорт із Day One (zip)</kbd> і <kbd>Імпорт з Apple Journal (zip)</kbd>. Kadu підкаже, яку вибрати.</p></div>
+        </details>
+        <details>
+          <summary>«В архіві не знайдено data.json.»</summary>
+          <div><p>Файл не є резервною копією Kadu або був змінений після експорту. Перевірте, що вибираєте початковий zip, створений через <kbd>Експортувати всі дані</kbd>.</p></div>
+        </details>
+        <details>
+          <summary>Експорт триває дуже довго</summary>
+          <div><p>Kadu копіює в архів усі фото й відео, а за великого щоденника це займає кілька хвилин. Не закривайте застосунок до завершення.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PIN falso — Guía de Kadu</title>
+  <meta name="description" content="PIN falso en Kadu: un segundo código que abre la app sin las categorías privadas.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>PIN falso <span class="premium">Premium</span></h1>
+        <p class="lead">Un PIN falso es un segundo código para Kadu. Abre la app como siempre, pero sin las categorías privadas. Para quien mira, parece que nunca existieron.</p>
+
+        <h2 id="why">Para qué sirve</h2>
+        <p>A veces te piden enseñar tu diario y es incómodo negarse. Introduce el código falso: la otra persona verá entradas normales y lo personal seguirá oculto. No aparece ningún «modo» ni aviso en pantalla.</p>
+
+        <h2 id="what-hidden">Qué pasa al introducir el código falso</h2>
+        <ul>
+          <li>las categorías privadas desaparecen de la pantalla de inicio;</li>
+          <li>sus entradas no aparecen en la línea de tiempo, los filtros, la presentación, el libro ni la exportación;</li>
+          <li>todo lo demás funciona como siempre.</li>
+        </ul>
+        <p>No se borra ningún dato. Cuando introduces tu PIN real, todo vuelve a estar en su sitio.</p>
+
+        <h2 id="set">Cómo establecerlo</h2>
+        <ol class="steps">
+          <li>Primero establece tu PIN principal: <span class="path">Ajustes → Código PIN → Establecer código PIN</span>. Sin él la app no pide código al abrirse, así que uno falso no sirve.</li>
+          <li>Toca <kbd>Establecer PIN falso</kbd>.</li>
+          <li>Introduce 4 dígitos y repítelos.</li>
+        </ol>
+        <div class="note warning">
+          <span class="note-title">Los códigos deben ser distintos</span>
+          <p>Si el código falso coincide con el principal, Kadu siempre se abrirá en modo normal y el falso no funcionará.</p>
+        </div>
+
+        <h2 id="reset">Cómo desactivarlo</h2>
+        <p>Abre <span class="path">Ajustes → Código PIN → Restablecer PIN falso</span> e introduce tu PIN <strong>principal</strong>. El código falso no puede desactivarse a sí mismo: si no, cualquiera que lo conozca podría quitar la protección.</p>
+
+        <h2 id="faq">Preguntas frecuentes</h2>
+        <details>
+          <summary>¿Cómo vuelvo al diario completo después de usar el código falso?</summary>
+          <div><p>Cierra la app por completo, vuelve a abrirla e introduce tu PIN principal.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

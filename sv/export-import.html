@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="sv" data-lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Export och import — Kadu-guide</title>
+  <meta name="description" content="Kadu-säkerhetskopior, byte till ny telefon och import av anteckningar från Day One och Apple Journal.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Export och import</h1>
+        <p class="lead">Export skapar en säkerhetskopia av din dagbok i en enda zip-fil. Import återställer den eller hämtar anteckningar från Day One och Apple Journal. Allt finns i <span class="path">Inställningar → Import / Export</span>.</p>
+
+        <h2 id="export">Export: säkerhetskopia</h2>
+        <ol class="steps">
+          <li>Öppna <span class="path">Inställningar → Import / Export → Exportera</span>.</li>
+          <li>Tryck på <kbd>Exportera all data</kbd>. Om en <a href="private-pin.html">PIN</a> är inställd frågar Kadu efter den först.</li>
+          <li>Vänta tills det är klart. Med många foton och videor kan det ta några minuter.</li>
+          <li>Välj i fönstret som öppnas var filen ska sparas: <kbd>Spara i Filer</kbd> (till exempel iCloud Drive), skicka till en dator eller till molnlagring.</li>
+        </ol>
+        <p>Filen heter ungefär <code>kadu-export-10-19-2026.zip</code>. Den innehåller alla anteckningar, kategorier, taggar, foton, videor och röstmemon.</p>
+
+        <h3 id="export-category">Exportera en kategori <span class="premium">Premium</span></h3>
+        <p>På samma skärm kan du i blocket <kbd>Exportera per kategori</kbd> exportera anteckningar från bara en kategori – till exempel för att dela en resedagbok.</p>
+
+        <h2 id="import">Importera en Kadu-säkerhetskopia</h2>
+        <ol class="steps">
+          <li>Öppna <span class="path">Inställningar → Import / Export</span>.</li>
+          <li>Tryck på <kbd>Importera</kbd> och välj zip-filen som skapats med Kadus export.</li>
+          <li>Vänta på meddelandet ”Importen lyckades”.</li>
+        </ol>
+        <div class="note">
+          <span class="note-title">Import raderar ingenting</span>
+          <p>Anteckningar från säkerhetskopian <strong>läggs till</strong> det som redan finns i appen. Anteckningar som redan finns i Kadu läggs inte till två gånger, så du kan tryggt importera samma fil igen.</p>
+        </div>
+
+        <h2 id="new-phone">Byta till en ny telefon</h2>
+        <ol class="steps">
+          <li>Gör en <a href="#export">export</a> på den gamla telefonen och spara filen där den nya kan nå den: iCloud Drive, Google Drive eller Filer.</li>
+          <li>Installera Kadu på den nya telefonen.</li>
+          <li><a href="#import">Importera</a> filen.</li>
+        </ol>
+        <p>PIN-koden ingår inte i säkerhetskopian. Ställ in den igen på den nya telefonen.</p>
+
+        <h2 id="day-one">Import från Day One</h2>
+        <ol class="steps">
+          <li>Exportera din dagbok i Day One i <strong>JSON</strong>-format. Du får ett zip-arkiv.</li>
+          <li>Öppna <span class="path">Inställningar → Import / Export</span> i Kadu och tryck på <kbd>Importera från Day One (zip)</kbd>.</li>
+          <li>Välj arkivet.</li>
+        </ol>
+        <p>Så flyttas data:</p>
+        <ul>
+          <li>Day Ones huvuddagbok (”Journal”) hamnar i standardkategorin;</li>
+          <li>varje annan dagbok får en kategori med samma namn. Finns den redan läggs anteckningarna där;</li>
+          <li>foton och hashtaggar följer med anteckningarna.</li>
+        </ul>
+
+        <h2 id="apple-journal">Import från Apple Journal</h2>
+        <ol class="steps">
+          <li>Exportera dina anteckningar från appen Journal. Du får en mapp med filen <code>index.html</code> och mapparna <code>Entries</code> och <code>Resources</code>.</li>
+          <li>Komprimera mappen till zip. Håll fingret på mappen i appen Filer och välj <kbd>Komprimera</kbd>.</li>
+          <li>Tryck på <kbd>Importera från Apple Journal (zip)</kbd> i Kadu och välj arkivet.</li>
+        </ol>
+        <p>Om datumet för en anteckning inte kan kännas igen får den dagens datum. Kadu talar om hur många det gäller. Du kan rätta datumet manuellt i redigeraren.</p>
+
+        <h2 id="faq">Vanliga frågor</h2>
+        <details>
+          <summary>Importen säger att filen ser ut som en export från en annan app</summary>
+          <div><p>Du valde ett arkiv från Day One eller Apple Journal i det vanliga valet <kbd>Importera</kbd>. Sådana arkiv har egna knappar: <kbd>Importera från Day One (zip)</kbd> och <kbd>Importera från Apple Journal (zip)</kbd>. Kadu talar om vilken du ska använda.</p></div>
+        </details>
+        <details>
+          <summary>”Ingen data.json hittades i arkivet.”</summary>
+          <div><p>Filen är ingen Kadu-säkerhetskopia eller har ändrats efter exporten. Välj den ursprungliga zip-filen som skapades med <kbd>Exportera all data</kbd>.</p></div>
+        </details>
+        <details>
+          <summary>Exporten tar väldigt lång tid</summary>
+          <div><p>Kadu kopierar alla foton och videor till arkivet, och för en stor dagbok tar det några minuter. Håll appen öppen tills den är klar.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

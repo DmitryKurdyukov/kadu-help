@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr" data-lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diaporama — Guide Kadu</title>
+  <meta name="description" content="Comment lancer un diaporama dans Kadu, régler la vitesse, la musique et les effets, et l'enregistrer en vidéo.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Diaporama</h1>
+        <p class="lead">Le diaporama transforme les photos et vidéos de vos entrées en un film avec musique et effets doux.</p>
+
+        <h2 id="start">Le lancer</h2>
+        <p>Ouvrez l'onglet <kbd>Frise</kbd> et touchez <kbd>Diaporama</kbd>.</p>
+        <div class="note">
+          <span class="note-title">Important : le diaporama reprend ce que la frise affiche maintenant</span>
+          <p>Si des <a href="filters.html">filtres</a> sont actifs dans la frise (catégorie, étiquette, période ou recherche), seules ces entrées entrent dans le diaporama. C'est ainsi qu'on fait un film sur un voyage ou une année. Envie de tout voir ? Réinitialisez d'abord les filtres.</p>
+        </div>
+        <p>Si les entrées filtrées n'ont ni photo ni vidéo, Kadu vous indique qu'il n'y a rien à lire.</p>
+
+        <h2 id="settings">Réglages</h2>
+        <p>Pendant la lecture, ouvrez <kbd>Paramètres du diaporama</kbd>. Les changements s'appliquent tout de suite et le film reprend depuis le début.</p>
+        <table>
+          <thead>
+            <tr><th>Réglage</th><th>Ce qu'il fait</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>Vitesse</kbd></td><td>Durée d'affichage de chaque photo : <em>Lente</em> — 5 s, <em>Normale</em> — 3 s, <em>Rapide</em> — 1,2 s, <em>Très rapide</em> — 0,6 s.</td></tr>
+            <tr><td><kbd>Son des vidéos</kbd></td><td>Les vidéos sont lues avec leur son d'origine.</td></tr>
+            <tr><td><kbd>Accélérer les vidéos</kbd></td><td>Le rythme des vidéos suit la vitesse du diaporama : un peu plus lent en lent, inchangé en normal, plus rapide en rapide. Une vidéo est toujours lue jusqu'au bout.</td></tr>
+            <tr><td><kbd>Afficher les dates</kbd></td><td>Affiche la date du souvenir à l'écran.</td></tr>
+            <tr><td><kbd>Effets de mouvement</kbd></td><td>Zoom et panoramique doux sur les photos. Fonctionne aux vitesses <em>Lente</em> et <em>Normale</em> : aux vitesses rapides, la photo change avant que l'effet ait le temps de jouer.</td></tr>
+            <tr><td><kbd>Ordre inversé</kbd></td><td>Affiche d'abord les souvenirs les plus anciens au lieu des plus récents.</td></tr>
+            <tr><td><kbd>Musique de fond</kbd></td><td>De la musique accompagne le diaporama. Dans <kbd>Morceau</kbd>, laissez <em>Auto</em> pour que Kadu choisisse, ou choisissez vous-même : <em>Hiver</em>, <em>Calme</em> ou <em>Énergique</em>.</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="free-limit">Limite de la version gratuite</h2>
+        <p>Sans abonnement, vous pouvez regarder des diaporamas <strong>3 minutes par jour</strong>. Une fois ce temps écoulé, Kadu propose Premium. La limite se renouvelle le lendemain.</p>
+        <p>Avec <span class="premium">Premium</span>, les diaporamas sont illimités.</p>
+
+        <h2 id="export">Enregistrer en vidéo <span class="premium">Premium</span></h2>
+        <p>Un diaporama peut devenir une vraie vidéo à partager avec vos proches.</p>
+        <ol class="steps">
+          <li>Réglez le diaporama tel que vous voulez voir la vidéo.</li>
+          <li>Ouvrez <kbd>Paramètres du diaporama</kbd> et touchez <kbd>Partager en vidéo</kbd>.</li>
+          <li>Attendez la fin de la création (<em>« Création de votre vidéo… »</em>).</li>
+          <li>Choisissez <kbd>Enregistrer dans Photos</kbd> ou <kbd>Partager</kbd>.</li>
+        </ol>
+        <div class="note warning">
+          <span class="note-title">La vidéo peut durer jusqu'à 15 minutes</span>
+          <p>Si le diaporama est plus long, l'export ne démarre pas. Augmentez la vitesse ou réduisez la sélection avec des filtres, par exemple en choisissant un seul mois.</p>
+        </div>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

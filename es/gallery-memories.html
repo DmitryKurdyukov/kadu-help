@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recuerdos de la galería — Guía de Kadu</title>
+  <meta name="description" content="Cómo Kadu encuentra recuerdos entre las fotos de la galería, qué incluye y cómo guardarlos.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Recuerdos de la galería</h1>
+        <p class="lead">Tu galería guarda miles de fotos, pero una historia está hecha de momentos. Kadu encuentra esos momentos por sí mismo, agrupa las fotos en recuerdos y te propone guardarlos en tu línea de tiempo. Tú decides qué conservar.</p>
+
+        <h2 id="how">Cómo encuentra Kadu los recuerdos</h2>
+        <p>Todo ocurre en tu dispositivo. Las fotos nunca se suben: Kadu solo mira cuándo y dónde se hizo cada una:</p>
+        <ol class="steps">
+          <li><strong>Hora.</strong> Las fotos se ordenan por hora de captura. Si pasan más de 2 horas entre dos de ellas, empieza un recuerdo nuevo.</li>
+          <li><strong>Lugar.</strong> Si las fotos tienen ubicación y dos seguidas están a más de un kilómetro, el recuerdo se divide en dos.</li>
+          <li><strong>Duplicados.</strong> De una ráfaga de fotos tomadas con menos de 5 segundos de diferencia se queda solo una. Se prefiere una foto marcada como favorita en tu galería y luego un vídeo.</li>
+          <li><strong>Las capturas de pantalla</strong> siempre se omiten.</li>
+        </ol>
+        <p>Un recuerdo necesita <strong>2 o más</strong> fotos. Una foto suelta hecha aparte de las demás no aparecerá en el análisis completo.</p>
+
+        <h2 id="run">Cómo iniciar el análisis</h2>
+        <p>Kadu lo propone la primera vez que abres la app. Después puedes lanzarlo cuando quieras:</p>
+        <ol class="steps">
+          <li>Abre <span class="path">Ajustes → Importar / Exportar</span>.</li>
+          <li>Elige <kbd>Generar recuerdos de la galería</kbd>.</li>
+          <li>Toca <kbd>Analizar galería</kbd> y permite el acceso a las fotos si se pide.</li>
+        </ol>
+
+        <h2 id="choose">Elegir y guardar</h2>
+        <p>Los recuerdos encontrados aparecen en una lista. Toca una tarjeta para marcar o desmarcar un recuerdo.</p>
+        <p>Antes de guardar, puedes abrir un recuerdo en el editor con el botón de edición de su tarjeta: añadir texto, quitar fotos sobrantes o cambiar la fecha.</p>
+        <p>Toca <kbd>Guardar</kbd>. Cada recuerdo se convierte en una entrada aparte en la categoría predeterminada, con la fecha de su primera foto. Mientras se guarda, <strong>no cierres la app</strong>.</p>
+
+        <div class="note">
+          <span class="note-title">Las fotos se copian en Kadu</span>
+          <p>Las fotos y vídeos guardados se copian dentro de la app. Puedes borrarlos de la galería sin problema: en Kadu se quedan. Más en <a href="storage.html">Dónde se guardan los datos</a>.</p>
+        </div>
+
+        <h2 id="suggestions">Sugerencias de recuerdos nuevos</h2>
+        <p>Cuando vuelves a Kadu, comprueba en silencio si han aparecido fotos nuevas en tu galería desde la última vez. Si forman un recuerdo, la pantalla de inicio te propone añadirlo con un toque. Para una sugerencia basta incluso una sola foto nueva.</p>
+        <ul>
+          <li>La comprobación solo funciona si ya diste acceso a las fotos. Nunca pide permiso por su cuenta.</li>
+          <li>Un recuerdo que cerraste o ya guardaste no se volverá a sugerir.</li>
+        </ul>
+
+        <h2 id="faq">Preguntas frecuentes</h2>
+        <details>
+          <summary>«No se encontraron momentos memorables. Toca Siguiente para continuar.»</summary>
+          <div><p>Kadu busca dos o más fotos hechas más o menos a la misma hora y en el mismo lugar. Si tu galería tiene sobre todo fotos sueltas o capturas, puede que no haya recuerdos. Siempre puedes añadir entradas a mano.</p></div>
+        </details>
+        <details>
+          <summary>Kadu no ve todas mis fotos</summary>
+          <div><p>Lo más probable es que diste acceso solo a fotos seleccionadas. Permite el acceso a toda la fototeca en los ajustes del teléfono (<span class="path">Ajustes → Kadu → Fotos</span>) y vuelve a lanzar el análisis.</p></div>
+        </details>
+        <details>
+          <summary>Algunos archivos no se copiaron</summary>
+          <div><p>Pasa con fotos cuyos originales están solo en iCloud y no se han descargado al teléfono. Se quedan en tu galería. Ábrelas en Fotos para que se descarguen y vuelve a lanzar el análisis.</p></div>
+        </details>
+        <details>
+          <summary>Denegué el acceso a las fotos</summary>
+          <div><p>No pasa nada: puedes añadir entradas a mano. Permite el acceso más tarde en los ajustes del teléfono y lanza el análisis desde <span class="path">Ajustes → Importar / Exportar</span>.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

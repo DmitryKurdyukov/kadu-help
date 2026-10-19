@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="th" data-lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>หมวดหมู่ส่วนตัวและ PIN — คู่มือ Kadu</title>
+  <meta name="description" content="หมวดหมู่ส่วนตัวใน Kadu ทำงานอย่างไร และวิธีป้องกันแอปด้วย PIN">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>หมวดหมู่ส่วนตัวและ PIN</h1>
+        <p class="lead">Kadu มีการป้องกันสองระดับ หมวดหมู่ส่วนตัวซ่อนบันทึกจากไทม์ไลน์รวม และ PIN ล็อกตัวแอปรวมถึงหมวดหมู่ส่วนตัว</p>
+
+        <h2 id="private">หมวดหมู่ส่วนตัว</h2>
+        <p>บันทึกในหมวดหมู่ส่วนตัว<strong>จะไม่ปรากฏในไทม์ไลน์รวมเลย</strong> รวมถึงในตัวกรองและสไลด์โชว์รวม วิธีเดียวที่จะเห็นคือเปิดหมวดหมู่นั้นจากหน้าแรก</p>
+        <h3 id="make-private">วิธีตั้งหมวดหมู่เป็นส่วนตัว</h3>
+        <ol class="steps">
+          <li>ที่หน้าแรก <strong>กดค้าง</strong>ที่การ์ดหมวดหมู่ สำหรับหมวดหมู่ใหม่ ให้แตะ <kbd>เพิ่มหมวดหมู่</kbd></li>
+          <li>เปิดสวิตช์ <kbd>ส่วนตัว</kbd> (มีคำอธิบายว่า "ซ่อนจากไทม์ไลน์ทั่วไป")</li>
+          <li>แตะ <kbd>บันทึก</kbd> (สำหรับหมวดหมู่ใหม่คือ <kbd>สร้าง</kbd>)</li>
+        </ol>
+        <p>เมื่อเปิดครั้งแรก Kadu สร้างหมวดหมู่ "ส่วนตัว" ไว้ให้แล้ว</p>
+        <div class="note warning">
+          <span class="note-title">หากไม่มี PIN ความเป็นส่วนตัวมีแค่ภายนอก</span>
+          <p>ตราบใดที่ยังไม่ได้ตั้ง PIN หมวดหมู่ส่วนตัวแค่ถูกซ่อนจากไทม์ไลน์ ใครก็ตามที่ถือโทรศัพท์ของคุณเปิดได้จากหน้าแรก หากต้องการล็อกจริง ให้ตั้ง PIN</p>
+        </div>
+
+        <h2 id="pin">PIN</h2>
+        <h3 id="set-pin">วิธีตั้ง</h3>
+        <ol class="steps">
+          <li>เปิด <span class="path">การตั้งค่า → รหัส PIN</span></li>
+          <li>แตะ <kbd>ตั้งรหัส PIN</kbd></li>
+          <li>ใส่ตัวเลข 4 หลัก แล้วใส่อีกครั้งเพื่อยืนยัน</li>
+        </ol>
+
+        <h3 id="when-asked">Kadu ขอ PIN เมื่อไร</h3>
+        <ul>
+          <li>ทุกครั้งที่เปิดแอป</li>
+          <li>เมื่อเปิดหมวดหมู่ส่วนตัวจากหน้าแรก</li>
+          <li>ก่อน<a href="export-import.html">ส่งออกข้อมูล</a> เพราะข้อมูลสำรองมีบันทึกส่วนตัวด้วย</li>
+        </ul>
+
+        <h3 id="reset-pin">วิธีเปลี่ยนหรือปิด</h3>
+        <p>เปิด <span class="path">การตั้งค่า → รหัส PIN → รีเซ็ตรหัส PIN</span> แล้วใส่รหัสปัจจุบัน หลังจากนั้นแอปจะไม่ขอรหัสอีก หากต้องการตั้งรหัสใหม่ ให้แตะ <kbd>ตั้งรหัส PIN</kbd> อีกครั้ง</p>
+
+        <h2 id="fake">PIN ปลอม</h2>
+        <p>หากมีคนอาจขอให้คุณปลดล็อกไดอารี่ ให้ตั้งรหัสที่สองซึ่งเป็นรหัสปลอม รหัสนี้เปิดแอปได้แต่ซ่อนหมวดหมู่ส่วนตัวทั้งหมด ดูเพิ่มเติมที่<a href="fake-pin.html">PIN ปลอม</a></p>
+
+        <h2 id="faq">คำถามที่พบบ่อย</h2>
+        <details>
+          <summary>ฉันลืม PIN</summary>
+          <div>
+            <p>PIN ถูกเก็บไว้บนอุปกรณ์ของคุณเท่านั้นและเข้ารหัสไว้ จึงไม่มีใครกู้คืนหรือดูได้ รวมถึงเราด้วย ลองนึกดูอีกครั้ง หากยังนึกไม่ออก <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOXHvjs9uuML3YGRTeUfUd7fSP4M1xSJOZY02tCTL1_VHlbA/viewform" target="_blank" rel="noopener">เขียนถึงเรา</a></p>
+            <p>เพื่อป้องกันปัญหานี้ ให้เลือกรหัสที่คุณจะไม่ลืม และ<a href="export-import.html">สำรองข้อมูล</a>สม่ำเสมอ</p>
+          </div>
+        </details>
+        <details>
+          <summary>เปิด Kadu ด้วย Face ID ได้ไหม?</summary>
+          <div><p>ยังไม่ได้ ตอนนี้ Kadu ป้องกันด้วย PIN เท่านั้น</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id" data-lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kategori pribadi dan PIN — Panduan Kadu</title>
+  <meta name="description" content="Cara kerja kategori pribadi di Kadu dan cara melindungi aplikasi dengan PIN.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Kategori pribadi dan PIN</h1>
+        <p class="lead">Kadu punya dua tingkat perlindungan. Kategori pribadi menyembunyikan catatan dari linimasa umum, dan PIN mengunci aplikasi itu sendiri serta kategori pribadi.</p>
+
+        <h2 id="private">Kategori pribadi</h2>
+        <p>Catatan dari kategori pribadi <strong>tidak pernah muncul di linimasa umum</strong>, di filter, maupun di tayangan slide umum. Satu-satunya cara melihatnya adalah membuka kategori itu sendiri dari layar beranda.</p>
+        <h3 id="make-private">Cara menjadikan kategori pribadi</h3>
+        <ol class="steps">
+          <li>Di layar beranda, <strong>tekan lama</strong> kartu kategori. Untuk kategori baru, ketuk <kbd>Tambah kategori</kbd>.</li>
+          <li>Nyalakan sakelar <kbd>Pribadi</kbd> (keterangan: "Disembunyikan dari linimasa umum").</li>
+          <li>Ketuk <kbd>Simpan</kbd> (untuk kategori baru: <kbd>Buat</kbd>).</li>
+        </ol>
+        <p>Saat pertama kali dijalankan, Kadu sudah membuat kategori "Pribadi".</p>
+        <div class="note warning">
+          <span class="note-title">Tanpa PIN, privasi hanya tampilan</span>
+          <p>Selama PIN belum diatur, kategori pribadi hanya disembunyikan dari linimasa. Siapa pun yang memegang ponsel Anda bisa membukanya dari layar beranda. Untuk benar-benar menguncinya, atur PIN.</p>
+        </div>
+
+        <h2 id="pin">PIN</h2>
+        <h3 id="set-pin">Cara mengatur</h3>
+        <ol class="steps">
+          <li>Buka <span class="path">Pengaturan → Kode PIN</span>.</li>
+          <li>Ketuk <kbd>Atur kode PIN</kbd>.</li>
+          <li>Masukkan 4 angka lalu ulangi untuk konfirmasi.</li>
+        </ol>
+
+        <h3 id="when-asked">Kapan Kadu meminta PIN</h3>
+        <ul>
+          <li>setiap kali aplikasi dibuka;</li>
+          <li>saat membuka kategori pribadi dari layar beranda;</li>
+          <li>sebelum <a href="export-import.html">mengekspor data</a>, karena cadangan juga berisi catatan pribadi.</li>
+        </ul>
+
+        <h3 id="reset-pin">Cara mengubah atau mematikan</h3>
+        <p>Buka <span class="path">Pengaturan → Kode PIN → Atur ulang kode PIN</span> lalu masukkan kode saat ini. Setelah itu aplikasi tidak lagi memintanya. Untuk mengatur kode baru, ketuk <kbd>Atur kode PIN</kbd> lagi.</p>
+
+        <h2 id="fake">PIN palsu</h2>
+        <p>Jika ada yang mungkin meminta Anda membuka kunci jurnal, atur kode kedua yang palsu. Kode ini membuka aplikasi tetapi menyembunyikan semua kategori pribadi. Selengkapnya di <a href="fake-pin.html">PIN palsu</a>.</p>
+
+        <h2 id="faq">Pertanyaan umum</h2>
+        <details>
+          <summary>Saya lupa PIN</summary>
+          <div>
+            <p>PIN hanya disimpan di perangkat Anda dalam bentuk terenkripsi, jadi tidak ada yang bisa memulihkan atau melihatnya — termasuk kami. Coba ingat kembali. Jika tetap tidak bisa, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOXHvjs9uuML3YGRTeUfUd7fSP4M1xSJOZY02tCTL1_VHlbA/viewform" target="_blank" rel="noopener">tulis kepada kami</a>.</p>
+            <p>Untuk menghindarinya, pilih kode yang tidak akan Anda lupakan dan <a href="export-import.html">buat cadangan</a> secara rutin.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Bisakah Kadu dibuka dengan Face ID?</summary>
+          <div><p>Belum — Kadu hanya dilindungi PIN.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

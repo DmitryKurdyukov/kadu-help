@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="sv" data-lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privata kategorier och PIN — Kadu-guide</title>
+  <meta name="description" content="Hur privata kategorier fungerar i Kadu och hur du skyddar appen med en PIN-kod.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Privata kategorier och PIN</h1>
+        <p class="lead">Kadu har två skyddsnivåer. En privat kategori döljer anteckningar i den allmänna tidslinjen, och en PIN-kod låser själva appen och de privata kategorierna.</p>
+
+        <h2 id="private">Privat kategori</h2>
+        <p>Anteckningar i en privat kategori visas <strong>aldrig i den allmänna tidslinjen</strong>, i filter eller i allmänna bildspel. Det enda sättet att se dem är att öppna själva kategorin från hemskärmen.</p>
+        <h3 id="make-private">Så gör du en kategori privat</h3>
+        <ol class="steps">
+          <li><strong>Håll fingret</strong> på ett kategorikort på hemskärmen. För en ny kategori, tryck på <kbd>Lägg till kategori</kbd>.</li>
+          <li>Slå på reglaget <kbd>Privat</kbd> (med texten ”Dold i den allmänna tidslinjen”).</li>
+          <li>Tryck på <kbd>Spara</kbd> (för en ny kategori: <kbd>Skapa</kbd>).</li>
+        </ol>
+        <p>Vid första start skapar Kadu redan kategorin ”Privat”.</p>
+        <div class="note warning">
+          <span class="note-title">Utan PIN är integriteten bara visuell</span>
+          <p>Så länge ingen PIN är inställd är en privat kategori bara dold i tidslinjen. Den som har din telefon i handen kan öppna den från hemskärmen. Ställ in en PIN för att verkligen låsa den.</p>
+        </div>
+
+        <h2 id="pin">PIN-kod</h2>
+        <h3 id="set-pin">Så ställer du in den</h3>
+        <ol class="steps">
+          <li>Öppna <span class="path">Inställningar → PIN-kod</span>.</li>
+          <li>Tryck på <kbd>Ställ in PIN-kod</kbd>.</li>
+          <li>Ange 4 siffror och upprepa dem för att bekräfta.</li>
+        </ol>
+
+        <h3 id="when-asked">När Kadu frågar efter PIN</h3>
+        <ul>
+          <li>varje gång appen startar;</li>
+          <li>när du öppnar en privat kategori från hemskärmen;</li>
+          <li>före <a href="export-import.html">export av data</a>, eftersom säkerhetskopian även innehåller privata anteckningar.</li>
+        </ul>
+
+        <h3 id="reset-pin">Så ändrar eller stänger du av den</h3>
+        <p>Öppna <span class="path">Inställningar → PIN-kod → Återställ PIN-kod</span> och ange den nuvarande koden. Sedan slutar appen fråga efter den. För en ny kod, tryck på <kbd>Ställ in PIN-kod</kbd> igen.</p>
+
+        <h2 id="fake">Falsk PIN</h2>
+        <p>Om någon kan be dig låsa upp dagboken, ställ in en andra, falsk kod. Den öppnar appen men döljer alla privata kategorier. Mer i <a href="fake-pin.html">Falsk PIN</a>.</p>
+
+        <h2 id="faq">Vanliga frågor</h2>
+        <details>
+          <summary>Jag har glömt min PIN</summary>
+          <div>
+            <p>PIN-koden sparas bara på din enhet och i krypterad form, så ingen kan återställa eller se den – inte heller vi. Försök komma ihåg den. Om det inte går, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOXHvjs9uuML3YGRTeUfUd7fSP4M1xSJOZY02tCTL1_VHlbA/viewform" target="_blank" rel="noopener">skriv till oss</a>.</p>
+            <p>Undvik det genom att välja en kod du inte glömmer och <a href="export-import.html">göra säkerhetskopior</a> regelbundet.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Kan jag öppna Kadu med Face ID?</summary>
+          <div><p>Inte än – Kadu skyddas bara med PIN.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

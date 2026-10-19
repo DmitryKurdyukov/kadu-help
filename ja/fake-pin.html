@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja" data-lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ダミー PIN — Kadu ガイド</title>
+  <meta name="description" content="Kadu のダミー PIN：プライベートカテゴリなしでアプリを開く 2 つ目のコード。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>ダミー PIN <span class="premium">Premium</span></h1>
+        <p class="lead">ダミー PIN は Kadu の 2 つ目のコードです。いつもどおりアプリを開きますが、プライベートカテゴリは表示されません。見ている人には、最初から存在しなかったように見えます。</p>
+
+        <h2 id="why">何のためにある？</h2>
+        <p>日記を見せてと頼まれ、断りにくいことがあります。そんなときはダミーコードを入力してください。相手には普通の記録だけが見え、個人的な記録は隠れたままです。画面に「モード」や手がかりは一切表示されません。</p>
+
+        <h2 id="what-hidden">ダミーコードを入力するとどうなる？</h2>
+        <ul>
+          <li>プライベートカテゴリがホーム画面から消えます。</li>
+          <li>その記録はタイムライン、フィルター、スライドショー、ブック、書き出しのどれにも出てきません。</li>
+          <li>それ以外はすべて通常どおり動きます。</li>
+        </ul>
+        <p>データは削除されません。本当の PIN を入力すれば、すべて元どおりです。</p>
+
+        <h2 id="set">設定方法</h2>
+        <ol class="steps">
+          <li>まずメインの PIN を設定します：<span class="path">設定 → PINコード → PINコードを設定</span>。メイン PIN がないとアプリは起動時にコードを求めないため、ダミー PIN は役に立ちません。</li>
+          <li><kbd>偽のPINを設定</kbd> をタップします。</li>
+          <li>4 桁の数字を入力し、もう一度入力します。</li>
+        </ol>
+        <div class="note warning">
+          <span class="note-title">コードは別々にしてください</span>
+          <p>ダミーコードがメインのコードと同じだと、Kadu は常に通常モードで開き、ダミーコードは機能しません。</p>
+        </div>
+
+        <h2 id="reset">解除の方法</h2>
+        <p><span class="path">設定 → PINコード → 偽のPINをリセット</span> を開き、<strong>メインの</strong> PIN を入力します。ダミーコード自身では解除できません。そうでないと、ダミーコードを知っている人が保護を外せてしまうからです。</p>
+
+        <h2 id="faq">よくある質問</h2>
+        <details>
+          <summary>ダミーコードのあと、完全な日記に戻るには？</summary>
+          <div><p>アプリを完全に終了してから開き直し、メインの PIN を入力します。</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

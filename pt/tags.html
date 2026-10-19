@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt" data-lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tags — Guia do Kadu</title>
+  <meta name="description" content="Como adicionar tags aos registros do Kadu e encontrar registros por tag.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Tags</h1>
+        <p class="lead">As tags ligam registros por um tema comum: uma viagem, uma pessoa, um projeto. O Kadu não tem um campo separado para elas — as tags são escritas direto no texto do registro.</p>
+
+        <h2 id="add">Como adicionar uma tag</h2>
+        <ol class="steps">
+          <li>Digite <code>#</code> no texto seguido de uma palavra, sem espaço: <code>#ferias</code>.</li>
+          <li><strong>Digite um espaço depois da palavra.</strong> Só então ela vira uma tag de verdade.</li>
+          <li>Confira se a tag <span class="tag-demo">#ferias</span> ficou <strong>destacada na cor de destaque</strong>.</li>
+          <li>Salve o registro.</li>
+        </ol>
+        <blockquote>Finalmente chegamos à praia <span class="tag-demo">#ferias</span> <span class="tag-demo">#praia2025</span> e tomando um café</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">A regra principal: a tag precisa ficar destacada</span>
+          <p>Se uma palavra com <code>#</code> continua como texto comum em vez de ganhar cor, ela não é uma tag. Não aparecerá nos filtros e o registro não será encontrado por ela. Isso costuma acontecer quando falta o espaço depois da tag — por exemplo, se ela for a última palavra do texto.</p>
+        </div>
+        <p>Um registro pode ter quantas tags você quiser, em qualquer lugar do texto: no início, no meio ou no fim. Só coloque um espaço depois de cada uma.</p>
+
+        <h3 id="not-highlighted">A tag não ficou destacada — o que fazer</h3>
+        <p>Coloque o cursor logo depois da palavra e aperte espaço. Se não resolver, apague a tag e digite de novo: <code>#</code>, a palavra, um espaço.</p>
+
+        <h2 id="rules">Regras de escrita</h2>
+        <table>
+          <thead>
+            <tr><th>Exemplo</th><th>Resultado</th><th>Por quê</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Ferias</code> e <code>#ferias</code></td><td>uma tag <code>ferias</code></td><td>maiúsculas e minúsculas não importam</td></tr>
+            <tr><td><code>#primeira neve</code></td><td>só <code>primeira</code></td><td>o espaço encerra a tag</td></tr>
+            <tr><td><code>#約會</code>, <code>#ความทรงจำ</code></td><td>funcionam</td><td>letras de qualquer idioma servem</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">Dica</span>
+          <p>Para tags com várias palavras, junte-as com sublinhado ou hífen: <code>#primeira_neve</code>, <code>#festa-aniversario</code>.</p>
+        </div>
+
+        <h2 id="find">Como encontrar registros por tag</h2>
+        <ol class="steps">
+          <li>Abra a aba <kbd>Linha do tempo</kbd>.</li>
+          <li>Toque em <kbd>Filtros</kbd> no topo da tela.</li>
+          <li>No bloco <kbd>Tags</kbd>, marque as tags desejadas. Se forem muitas, comece a digitar no campo <kbd>Buscar tags…</kbd>.</li>
+          <li>Aplique o filtro.</li>
+        </ol>
+        <p>As tags mais usadas aparecem primeiro.</p>
+
+        <h3 id="several">Se várias tags estiverem marcadas</h3>
+        <p>A linha do tempo mostra os registros com <strong>pelo menos uma</strong> das tags marcadas. Por exemplo, com <code>#praia</code> e <code>#montanha</code> você verá viagens à praia e à montanha.</p>
+        <p>Para desmarcar todas, toque em <kbd>Limpar</kbd> ao lado do título do bloco.</p>
+        <p>O filtro por tag também vale para a <a href="slideshow.html">apresentação</a> e o livro. Por exemplo, marque <code>#ferias</code> e assista a um filme só dessas férias. Mais em <a href="filters.html">Filtros e busca</a>.</p>
+
+        <h2 id="edit">Como mudar ou remover uma tag</h2>
+        <p>Abra o registro, edite ou apague a palavra com <code>#</code> e salve. A lista de tags se atualiza sozinha. Uma tag some dos filtros quando nenhum registro a usa mais.</p>
+
+        <h2 id="faq">Perguntas frequentes</h2>
+        <details>
+          <summary>Os filtros dizem que ainda não há tags</summary>
+          <div><p>As tags só aparecem depois de usadas em pelo menos um registro salvo. Confira se a tag está destacada em cor — texto comum com <code>#</code> não conta como tag.</p></div>
+        </details>
+        <details>
+          <summary>As tags do Day One ou do Apple Journal são mantidas?</summary>
+          <div><p>Sim. Na <a href="export-import.html">importação</a>, o Kadu encontra as hashtags no texto dos registros importados e as adiciona à lista.</p></div>
+        </details>
+        <details>
+          <summary>Não encontro uma tag, mas o registro existe</summary>
+          <div>
+            <p>Confira três coisas:</p>
+            <ul>
+              <li>a tag está <strong>destacada na cor de destaque</strong> no registro. Se não, adicione um espaço depois dela e salve o registro de novo;</li>
+              <li>os filtros buscam exatamente a palavra depois do <code>#</code>: um espaço no meio encerra a tag;</li>
+              <li>o registro não está numa <a href="private-pin.html">categoria privada</a>: a linha do tempo geral não as mostra.</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

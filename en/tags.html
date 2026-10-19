@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tags — Kadu Guide</title>
+  <meta name="description" content="How to add tags to Kadu entries and find entries by tag.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Tags</h1>
+        <p class="lead">Tags connect entries by a common theme: a trip, a person, a project. Kadu has no separate field for them — tags are written right in the entry text.</p>
+
+        <h2 id="add">How to add a tag</h2>
+        <ol class="steps">
+          <li>Type <code>#</code> in the text followed immediately by a word, with no space: <code>#vacation</code>.</li>
+          <li><strong>Type a space after the word.</strong> Only then does it become a real tag.</li>
+          <li>Check that the tag <span class="tag-demo">#vacation</span> is <strong>highlighted in the accent color</strong>.</li>
+          <li>Save the entry.</li>
+        </ol>
+        <blockquote>Finally made it to the sea <span class="tag-demo">#vacation</span> <span class="tag-demo">#sea2025</span> and having coffee</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">The key rule: a tag must be highlighted</span>
+          <p>If a word with <code>#</code> stays plain text instead of turning colored, it's not a tag. It won't appear in filters and the entry won't be found by it. This usually happens when there's no space after the tag — for example, when it's the very last word of the text.</p>
+        </div>
+        <p>An entry can have as many tags as you like, anywhere in the text — at the beginning, middle or end. Just put a space after each one.</p>
+
+        <h3 id="not-highlighted">The tag isn't highlighted — what to do</h3>
+        <p>Place the cursor right after the word and press space. If that doesn't help, delete the tag and type it again: <code>#</code>, the word, a space.</p>
+
+        <h2 id="rules">Writing rules</h2>
+        <table>
+          <thead>
+            <tr><th>Example</th><th>Result</th><th>Why</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Vacation</code> and <code>#vacation</code></td><td>one tag <code>vacation</code></td><td>letter case doesn't matter</td></tr>
+            <tr><td><code>#birthday party</code></td><td>only <code>birthday</code></td><td>a space ends the tag</td></tr>
+            <tr><td><code>#約會</code>, <code>#ความทรงจำ</code></td><td>work</td><td>letters of any language are fine</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">Tip</span>
+          <p>For tags made of several words, join them with an underscore or a hyphen: <code>#birthday_party</code>, <code>#first-snow</code>.</p>
+        </div>
+
+        <h2 id="find">How to find entries by tag</h2>
+        <ol class="steps">
+          <li>Open the <kbd>Timeline</kbd> tab.</li>
+          <li>Tap <kbd>Filters</kbd> at the top of the screen.</li>
+          <li>In the <kbd>Tags</kbd> block, select the tags you need. If there are many, start typing in the <kbd>Search tags…</kbd> field.</li>
+          <li>Apply the filter.</li>
+        </ol>
+        <p>The most used tags are listed first.</p>
+
+        <h3 id="several">If several tags are selected</h3>
+        <p>The timeline keeps entries that have <strong>at least one</strong> of the selected tags. For example, selecting <code>#sea</code> and <code>#mountains</code> shows both sea and mountain trips.</p>
+        <p>To deselect all tags, tap <kbd>Clear</kbd> next to the block title.</p>
+        <p>The tag filter also applies to the <a href="slideshow.html">slideshow</a> and the book. For example, select <code>#vacation</code> and watch a film about that vacation only. More in <a href="filters.html">Filters & search</a>.</p>
+
+        <h2 id="edit">How to change or remove a tag</h2>
+        <p>Open the entry, edit or delete the word with <code>#</code> and save. The tag list updates automatically. A tag disappears from filters once no entry uses it.</p>
+
+        <h2 id="faq">FAQ</h2>
+        <details>
+          <summary>Filters say there are no tags yet</summary>
+          <div><p>Tags appear only after you've used them in at least one saved entry. Make sure the tag is highlighted in color — plain text with <code>#</code> doesn't count as a tag.</p></div>
+        </details>
+        <details>
+          <summary>Are tags from Day One or Apple Journal kept?</summary>
+          <div><p>Yes. During <a href="export-import.html">import</a> Kadu finds hashtags in the text of imported entries and adds them to the list.</p></div>
+        </details>
+        <details>
+          <summary>A tag can't be found even though the entry exists</summary>
+          <div>
+            <p>Check three things:</p>
+            <ul>
+              <li>the tag in the entry is <strong>highlighted in the accent color</strong>. If not, add a space after it and save the entry again;</li>
+              <li>filters look for exactly the word after <code>#</code>: a space inside ends the tag;</li>
+              <li>the entry isn't in a <a href="private-pin.html">private category</a>: the main timeline doesn't show those.</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="nl" data-lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privécategorieën en pincode — Kadu-handleiding</title>
+  <meta name="description" content="Hoe privécategorieën in Kadu werken en hoe je de app beveiligt met een pincode.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Privécategorieën en pincode</h1>
+        <p class="lead">Kadu heeft twee beveiligingsniveaus. Een privécategorie verbergt notities in de algemene tijdlijn, en een pincode vergrendelt de app zelf en de privécategorieën.</p>
+
+        <h2 id="private">Privécategorie</h2>
+        <p>Notities uit een privécategorie verschijnen <strong>nooit in de algemene tijdlijn</strong>, in filters of algemene diavoorstellingen. Je kunt ze alleen zien door de categorie zelf te openen vanaf het startscherm.</p>
+        <h3 id="make-private">Een categorie privé maken</h3>
+        <ol class="steps">
+          <li><strong>Houd</strong> op het startscherm een categoriekaart <strong>ingedrukt</strong>. Voor een nieuwe categorie tik je op <kbd>Categorie toevoegen</kbd>.</li>
+          <li>Zet de schakelaar <kbd>Privé</kbd> aan (onderschrift: 'Verborgen in de algemene tijdlijn').</li>
+          <li>Tik op <kbd>Opslaan</kbd> (bij een nieuwe categorie op <kbd>Maken</kbd>).</li>
+        </ol>
+        <p>Bij de eerste start maakt Kadu al de categorie 'Privé' aan.</p>
+        <div class="note warning">
+          <span class="note-title">Zonder pincode is privacy alleen visueel</span>
+          <p>Zolang er geen pincode is, is een privécategorie alleen verborgen in de tijdlijn. Wie je telefoon in handen heeft, kan haar openen vanaf het startscherm. Stel een pincode in om haar echt te vergrendelen.</p>
+        </div>
+
+        <h2 id="pin">Pincode</h2>
+        <h3 id="set-pin">Instellen</h3>
+        <ol class="steps">
+          <li>Open <span class="path">Instellingen → Pincode</span>.</li>
+          <li>Tik op <kbd>Pincode instellen</kbd>.</li>
+          <li>Voer 4 cijfers in en herhaal ze ter bevestiging.</li>
+        </ol>
+
+        <h3 id="when-asked">Wanneer Kadu om de pincode vraagt</h3>
+        <ul>
+          <li>bij elke start van de app;</li>
+          <li>bij het openen van een privécategorie vanaf het startscherm;</li>
+          <li>vóór het <a href="export-import.html">exporteren van gegevens</a>, omdat de back-up ook privénotities bevat.</li>
+        </ul>
+
+        <h3 id="reset-pin">Wijzigen of uitzetten</h3>
+        <p>Open <span class="path">Instellingen → Pincode → Pincode resetten</span> en voer de huidige code in. Daarna vraagt de app er niet meer om. Voor een nieuwe code tik je opnieuw op <kbd>Pincode instellen</kbd>.</p>
+
+        <h2 id="fake">Nep-pincode</h2>
+        <p>Kan iemand je vragen je dagboek te ontgrendelen? Stel dan een tweede, nep-code in. Die opent de app maar verbergt alle privécategorieën. Meer in <a href="fake-pin.html">Nep-pincode</a>.</p>
+
+        <h2 id="faq">Veelgestelde vragen</h2>
+        <details>
+          <summary>Ik ben mijn pincode vergeten</summary>
+          <div>
+            <p>De pincode wordt alleen op je toestel en versleuteld bewaard, dus niemand kan hem herstellen of opzoeken — wij ook niet. Probeer hem te herinneren. Lukt dat niet, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOXHvjs9uuML3YGRTeUfUd7fSP4M1xSJOZY02tCTL1_VHlbA/viewform" target="_blank" rel="noopener">schrijf ons</a>.</p>
+            <p>Voorkom dit door een code te kiezen die je niet vergeet en regelmatig <a href="export-import.html">back-ups te maken</a>.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Kan ik Kadu openen met Face ID?</summary>
+          <div><p>Nog niet — Kadu wordt alleen met een pincode beveiligd.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

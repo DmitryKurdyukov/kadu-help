@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memories from your gallery — Kadu Guide</title>
+  <meta name="description" content="How Kadu finds memories among gallery photos, what gets into them and how to save them.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Memories from your gallery</h1>
+        <p class="lead">Your gallery holds thousands of photos, but a story is made of moments. Kadu finds those moments on its own, groups shots into memories and offers to save them to your timeline. What to keep is up to you.</p>
+
+        <h2 id="how">How Kadu finds memories</h2>
+        <p>Everything happens on your device. Photos are never uploaded — Kadu only looks at when and where each shot was taken:</p>
+        <ol class="steps">
+          <li><strong>Time.</strong> Shots are ordered by capture time. If more than 2 hours pass between two of them, a new memory begins.</li>
+          <li><strong>Place.</strong> If photos have a location and neighboring shots are more than a kilometer apart, the memory is split in two.</li>
+          <li><strong>Duplicates.</strong> From a burst of shots taken less than 5 seconds apart, only one is kept. Preference goes to a shot marked as favorite in your gallery, then to a video.</li>
+          <li><strong>Screenshots</strong> are always skipped.</li>
+        </ol>
+        <p>A memory needs <strong>2 or more</strong> shots. A single photo taken apart from the others won't show up in the full scan.</p>
+
+        <h2 id="run">How to start a scan</h2>
+        <p>Kadu offers this the first time you open the app. Later you can run it at any time:</p>
+        <ol class="steps">
+          <li>Open <span class="path">Settings → Import / Export</span>.</li>
+          <li>Choose <kbd>Generate memories from gallery</kbd>.</li>
+          <li>Tap <kbd>Analyze gallery</kbd> and allow photo access if asked.</li>
+        </ol>
+
+        <h2 id="choose">Choosing and saving</h2>
+        <p>Found memories appear as a list. Tap a card to select or deselect a memory.</p>
+        <p>Before saving, you can open a memory in the editor with the edit button on its card — add text, remove extra photos or change the date.</p>
+        <p>Tap <kbd>Save</kbd>. Each memory becomes a separate entry in the default category, dated by its first shot. While saving, <strong>keep the app open</strong>.</p>
+
+        <div class="note">
+          <span class="note-title">Photos are copied into Kadu</span>
+          <p>Saved photos and videos are copied inside the app. You can safely delete them from your gallery — they stay in Kadu. More in <a href="storage.html">Where data is stored</a>.</p>
+        </div>
+
+        <h2 id="suggestions">New memory suggestions</h2>
+        <p>When you come back to Kadu, it quietly checks whether new photos have appeared in your gallery since last time. If they form a memory, the home screen offers to add it with one tap. Even a single new photo is enough for a suggestion.</p>
+        <ul>
+          <li>The check only works if you've already granted photo access. It never asks for permission on its own.</li>
+          <li>A memory you dismissed or already saved won't be suggested again.</li>
+        </ul>
+
+        <h2 id="faq">FAQ</h2>
+        <details>
+          <summary>“No memorable moments found. Tap Next to continue.”</summary>
+          <div><p>Kadu looks for two or more shots taken around the same time and place. If your gallery is mostly single shots or screenshots, there may be no memories. You can always add entries manually.</p></div>
+        </details>
+        <details>
+          <summary>Kadu doesn't see all my photos</summary>
+          <div><p>Most likely you gave Kadu access to selected photos only. Allow access to the whole library in your phone settings (<span class="path">Settings → Kadu → Photos</span>) and run the scan again.</p></div>
+        </details>
+        <details>
+          <summary>Some files weren't copied</summary>
+          <div><p>This happens with photos whose originals are stored only in iCloud and aren't downloaded to the phone. They stay in your gallery. Open them in Photos so they download, then run the scan again.</p></div>
+        </details>
+        <details>
+          <summary>I denied photo access</summary>
+          <div><p>No problem — you can add entries manually. Allow access later in your phone settings and run the scan from <span class="path">Settings → Import / Export</span>.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

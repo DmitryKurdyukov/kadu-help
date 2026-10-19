@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja" data-lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>フィルターと検索 — Kadu ガイド</title>
+  <meta name="description" content="Kadu のタイムラインで記録を検索・絞り込む方法：テキスト、カテゴリ、お気に入り、タグ、日付、並び順。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>フィルターと検索</h1>
+        <p class="lead">タイムラインにはすべての記録が新しい順に表示されます。フィルターを使えば、特定の日、1 つのカテゴリ、タグ、本文中の言葉など、必要なものだけに絞り込めます。</p>
+
+        <h2 id="filters">フィルターパネル</h2>
+        <p><kbd>タイムライン</kbd> タブを開き、上部の <kbd>フィルター</kbd> をタップします。条件を選んで適用します。</p>
+        <table>
+          <thead>
+            <tr><th>フィルター</th><th>働き</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>テキスト</kbd></td><td>本文にその言葉を含む記録だけを残します。大文字・小文字は区別しません。</td></tr>
+            <tr><td><kbd>カテゴリ</kbd></td><td>1 つのカテゴリの記録だけを表示します。<kbd>すべて</kbd> で制限を解除します。</td></tr>
+            <tr><td><kbd>お気に入り</kbd></td><td><kbd>お気に入りのみ</kbd> スイッチで、星印の付いた記録だけを残します。</td></tr>
+            <tr><td><kbd>並び順</kbd></td><td><kbd>順序を逆にする</kbd> で古い記録から表示します。</td></tr>
+            <tr><td><kbd>タグ</kbd></td><td>選んだタグのどれかを含む記録。詳しくは<a href="tags.html">タグ</a>をご覧ください。</td></tr>
+          </tbody>
+        </table>
+        <p>フィルターは組み合わせられます。カテゴリ「旅行」とタグ <code>#海</code> を選ぶと、そのカテゴリの海の記録だけが残ります。</p>
+
+        <h2 id="calendar">カレンダー：1 日または期間</h2>
+        <p>タイムライン上部のフィルターの隣にカレンダーボタンがあります。日付を選んでいないときは <kbd>全期間</kbd> と表示されます。</p>
+        <ul>
+          <li><kbd>日付</kbd>：1 日を選ぶと、その日の記録だけが表示されます。</li>
+          <li><kbd>期間</kbd>：期間の最初の日と最後の日を選びます。</li>
+        </ul>
+        <p><kbd>適用</kbd> で選択を反映し、<kbd>リセット</kbd> ですべての期間に戻します。</p>
+
+        <h2 id="shortcuts">ホーム画面からのショートカット</h2>
+        <p>一部のフィルターはホーム画面から直接オンにできます：</p>
+        <ul>
+          <li><strong><kbd>週</kbd>・<kbd>月</kbd>・<kbd>年</kbd> カード</strong>は、今週（月曜〜日曜）、今月、今年に書いた記録の数を表示します。カードをタップすると、その期間で絞り込まれたタイムラインが開きます。</li>
+          <li><strong>カテゴリカード</strong>は、そのカテゴリの記録だけのタイムラインを開きます。</li>
+          <li><strong><kbd>今日の出来事</kbd></strong>：過去の同じ日の記録があると表示されるボタンです。その日の記録を表示したタイムラインを開きます。</li>
+        </ul>
+
+        <h2 id="views">スライドショー・ブック・メディアライブラリはフィルターに連動します</h2>
+        <p>ここがいちばんわかりにくいポイントです。タイムラインの <kbd>スライドショー</kbd>、<kbd>ブック</kbd>、<kbd>メディアライブラリ</kbd> ボタンは、<strong>いまタイムラインに表示されている内容そのもの</strong>（フィルター、検索、日付、並び順を含む）を使います。</p>
+        <div class="note">
+          <span class="note-title">例</span>
+          <p>夏休みのスライドショーを作りたいときは、カレンダーで 6 月〜8 月を選び、タグ <code>#旅行</code> を選んで <kbd>スライドショー</kbd> をタップします。その記録だけがムービーになります。</p>
+        </div>
+        <p>スライドショーやブックで「全部が表示されない」と感じたら、フィルターが残っていないか確認してください。</p>
+
+        <h2 id="faq">よくある質問</h2>
+        <details>
+          <summary>タイムラインから記録が消えた</summary>
+          <div>
+            <p>次のどれかが原因のことがほとんどです：</p>
+            <ul>
+              <li>フィルターがオンになっている、またはカレンダーで期間が選ばれている</li>
+              <li>記録が<a href="private-pin.html">プライベートカテゴリ</a>にある（全体のタイムラインには決して表示されません）</li>
+              <li>アプリを<a href="fake-pin.html">ダミー PIN</a> で開いた</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>カテゴリのフィルターにプライベートカテゴリが出てこないのはなぜ？</summary>
+          <div><p>プライベートカテゴリはフィルターにも全体のタイムラインにも表示されません。ホーム画面でそのカテゴリのカードをタップして開いてください。PIN を設定している場合は、先に入力を求められます。</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

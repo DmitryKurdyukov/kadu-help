@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="nl" data-lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tags — Kadu-handleiding</title>
+  <meta name="description" content="Tags toevoegen aan notities in Kadu en notities vinden op tag.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Tags</h1>
+        <p class="lead">Tags verbinden notities met een gemeenschappelijk thema: een reis, een persoon, een project. Kadu heeft er geen apart veld voor — tags schrijf je direct in de tekst van de notitie.</p>
+
+        <h2 id="add">Een tag toevoegen</h2>
+        <ol class="steps">
+          <li>Typ <code>#</code> in de tekst, direct gevolgd door een woord, zonder spatie: <code>#vakantie</code>.</li>
+          <li><strong>Typ een spatie na het woord.</strong> Pas dan wordt het een echte tag.</li>
+          <li>Controleer of de tag <span class="tag-demo">#vakantie</span> <strong>in de accentkleur gemarkeerd</strong> is.</li>
+          <li>Bewaar de notitie.</li>
+        </ol>
+        <blockquote>Eindelijk aan zee <span class="tag-demo">#vakantie</span> <span class="tag-demo">#zee2025</span> en koffie drinken</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">De belangrijkste regel: een tag moet gemarkeerd zijn</span>
+          <p>Blijft een woord met <code>#</code> gewone tekst in plaats van te kleuren, dan is het geen tag. Het verschijnt niet in de filters en de notitie is er niet mee te vinden. Meestal ontbreekt dan de spatie na de tag, bijvoorbeeld als het het laatste woord van de tekst is.</p>
+        </div>
+        <p>Een notitie kan zoveel tags hebben als je wilt, overal in de tekst: aan het begin, in het midden of aan het eind. Zet alleen na elke tag een spatie.</p>
+
+        <h3 id="not-highlighted">De tag is niet gemarkeerd — wat nu</h3>
+        <p>Zet de cursor direct achter het woord en druk op de spatiebalk. Helpt dat niet, wis de tag dan en typ hem opnieuw: <code>#</code>, het woord, een spatie.</p>
+
+        <h2 id="rules">Schrijfregels</h2>
+        <table>
+          <thead>
+            <tr><th>Voorbeeld</th><th>Resultaat</th><th>Waarom</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Vakantie</code> en <code>#vakantie</code></td><td>één tag <code>vakantie</code></td><td>hoofdletters maken niet uit</td></tr>
+            <tr><td><code>#eerste sneeuw</code></td><td>alleen <code>eerste</code></td><td>een spatie beëindigt de tag</td></tr>
+            <tr><td><code>#約會</code>, <code>#ความทรงจำ</code></td><td>werken</td><td>letters uit elke taal zijn goed</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">Tip</span>
+          <p>Verbind meerdere woorden met een liggend streepje of een koppelteken: <code>#eerste_sneeuw</code>, <code>#verjaardags-feest</code>.</p>
+        </div>
+
+        <h2 id="find">Notities vinden op tag</h2>
+        <ol class="steps">
+          <li>Open het tabblad <kbd>Tijdlijn</kbd>.</li>
+          <li>Tik bovenaan op <kbd>Filters</kbd>.</li>
+          <li>Kies in het blok <kbd>Tags</kbd> de tags die je nodig hebt. Zijn het er veel, typ dan in het veld <kbd>Tags zoeken…</kbd>.</li>
+          <li>Pas het filter toe.</li>
+        </ol>
+        <p>De meestgebruikte tags staan bovenaan.</p>
+
+        <h3 id="several">Als je meerdere tags kiest</h3>
+        <p>De tijdlijn toont notities met <strong>ten minste één</strong> van de gekozen tags. Met <code>#zee</code> en <code>#bergen</code> zie je dus zowel zee- als bergreizen.</p>
+        <p>Om alles te deselecteren, tik je op <kbd>Wissen</kbd> naast de titel van het blok.</p>
+        <p>Het tagfilter geldt ook voor de <a href="slideshow.html">diavoorstelling</a> en het boek. Kies bijvoorbeeld <code>#vakantie</code> en bekijk een film over alleen die vakantie. Meer in <a href="filters.html">Filters en zoeken</a>.</p>
+
+        <h2 id="edit">Een tag wijzigen of verwijderen</h2>
+        <p>Open de notitie, pas het woord met <code>#</code> aan of wis het en bewaar. De taglijst werkt zichzelf bij. Een tag verdwijnt uit de filters zodra geen enkele notitie hem meer gebruikt.</p>
+
+        <h2 id="faq">Veelgestelde vragen</h2>
+        <details>
+          <summary>De filters zeggen dat er nog geen tags zijn</summary>
+          <div><p>Tags verschijnen pas nadat je ze in minstens één bewaarde notitie hebt gebruikt. Controleer of de tag gekleurd is — gewone tekst met <code>#</code> telt niet als tag.</p></div>
+        </details>
+        <details>
+          <summary>Blijven tags uit Day One of Apple Journal behouden?</summary>
+          <div><p>Ja. Bij het <a href="export-import.html">importeren</a> vindt Kadu hashtags in de tekst van geïmporteerde notities en zet ze in de lijst.</p></div>
+        </details>
+        <details>
+          <summary>Een tag wordt niet gevonden, terwijl de notitie bestaat</summary>
+          <div>
+            <p>Controleer drie dingen:</p>
+            <ul>
+              <li>de tag in de notitie is <strong>in de accentkleur gemarkeerd</strong>. Zo niet, zet er een spatie achter en bewaar de notitie opnieuw;</li>
+              <li>filters zoeken precies het woord na <code>#</code>: een spatie erin beëindigt de tag;</li>
+              <li>de notitie staat niet in een <a href="private-pin.html">privécategorie</a>: de algemene tijdlijn toont die niet.</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

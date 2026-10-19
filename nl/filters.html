@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="nl" data-lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filters en zoeken — Kadu-handleiding</title>
+  <meta name="description" content="Notities zoeken en filteren in de Kadu-tijdlijn: tekst, categorieën, favorieten, tags, datums en volgorde.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Filters en zoeken</h1>
+        <p class="lead">De tijdlijn toont alle notities van nieuw naar oud. Filters laten alleen over wat je nodig hebt: bepaalde dagen, één categorie, een tag of een woord in de tekst.</p>
+
+        <h2 id="filters">Filterpaneel</h2>
+        <p>Open het tabblad <kbd>Tijdlijn</kbd> en tik bovenaan op <kbd>Filters</kbd>. Kies je voorwaarden en pas ze toe.</p>
+        <table>
+          <thead>
+            <tr><th>Filter</th><th>Wat het doet</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>Tekst</kbd></td><td>Houdt notities over waarvan de tekst deze woorden bevat. Hoofdletters maken niet uit.</td></tr>
+            <tr><td><kbd>Categorie</kbd></td><td>Toont alleen notities uit één categorie. <kbd>Alles</kbd> heft de beperking op.</td></tr>
+            <tr><td><kbd>Favorieten</kbd></td><td>De schakelaar <kbd>Alleen favorieten</kbd> houdt notities met een ster over.</td></tr>
+            <tr><td><kbd>Volgorde</kbd></td><td><kbd>Omgekeerde volgorde</kbd> toont de oudste notities eerst.</td></tr>
+            <tr><td><kbd>Tags</kbd></td><td>Notities met ten minste één van de gekozen tags. Meer in <a href="tags.html">Tags</a>.</td></tr>
+          </tbody>
+        </table>
+        <p>Filters zijn te combineren. Kies je de categorie 'Reizen' en de tag <code>#zee</code>, dan blijven alleen zeenotities uit die categorie over.</p>
+
+        <h2 id="calendar">Kalender: een dag of een periode</h2>
+        <p>Naast de filters bovenaan de tijdlijn staat een kalenderknop. Zolang er geen datum gekozen is, staat er <kbd>Altijd</kbd>.</p>
+        <ul>
+          <li><kbd>Datum</kbd>: kies één dag om alleen de notities van die dag te zien.</li>
+          <li><kbd>Periode</kbd>: markeer de eerste en laatste dag van een periode.</li>
+        </ul>
+        <p>Tik op <kbd>Toepassen</kbd> om de keuze te gebruiken, of op <kbd>Resetten</kbd> om weer alles te zien.</p>
+
+        <h2 id="shortcuts">Snelkoppelingen vanaf het startscherm</h2>
+        <p>Sommige filters zet je direct aan vanaf het startscherm:</p>
+        <ul>
+          <li><strong>De kaarten <kbd>Week</kbd>, <kbd>Maand</kbd>, <kbd>Jaar</kbd></strong> tonen hoeveel notities je deze week (maandag t/m zondag), deze maand en dit jaar hebt gemaakt. Een tik op een kaart opent de tijdlijn al gefilterd op die periode.</li>
+          <li><strong>Een categoriekaart</strong> opent de tijdlijn met alleen de notities uit die categorie.</li>
+          <li><strong><kbd>Op deze dag</kbd></strong>: de knop verschijnt als je notities hebt van dezelfde dag in eerdere jaren. Hij opent de tijdlijn met de notities van die dag.</li>
+        </ul>
+
+        <h2 id="views">Diavoorstelling, Boek en Mediabibliotheek hangen af van filters</h2>
+        <p>Dit is het minst voor de hand liggende deel. De knoppen <kbd>Diavoorstelling</kbd>, <kbd>Boek</kbd> en <kbd>Mediabibliotheek</kbd> in de tijdlijn gebruiken <strong>precies wat de tijdlijn nu toont</strong> — inclusief filters, zoekopdracht, datums en volgorde.</p>
+        <div class="note">
+          <span class="note-title">Voorbeeld</span>
+          <p>Zin in een diavoorstelling van je zomervakantie? Kies juni tot en met augustus in de kalender, selecteer de tag <code>#vakantie</code> en tik op <kbd>Diavoorstelling</kbd>. Alleen die notities komen in de film.</p>
+        </div>
+        <p>Lijkt de diavoorstelling of het boek 'niet alles' te tonen, kijk dan of er nog een filter aanstaat.</p>
+
+        <h2 id="faq">Veelgestelde vragen</h2>
+        <details>
+          <summary>Notities zijn uit de tijdlijn verdwenen</summary>
+          <div>
+            <p>Waarschijnlijk is het een van deze oorzaken:</p>
+            <ul>
+              <li>er staat een filter aan of er is een periode gekozen in de kalender;</li>
+              <li>de notities staan in een <a href="private-pin.html">privécategorie</a>: de algemene tijdlijn toont ze nooit;</li>
+              <li>de app is geopend met een <a href="fake-pin.html">nep-pincode</a>.</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>Waarom staat mijn privécategorie niet in het categoriefilter?</summary>
+          <div><p>Privécategorieën verschijnen niet in filters en niet in de algemene tijdlijn. Open zo'n categorie vanaf het startscherm door op de kaart te tikken. Is er een pincode ingesteld, dan vraagt de app die eerst.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Özel kategoriler ve PIN — Kadu Kılavuzu</title>
+  <meta name="description" content="Kadu'da özel kategorilerin nasıl çalıştığı ve uygulamanın PIN ile nasıl korunacağı.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Özel kategoriler ve PIN</h1>
+        <p class="lead">Kadu'da iki koruma düzeyi vardır. Özel kategori, kayıtları genel zaman tünelinden gizler; PIN ise uygulamanın kendisini ve özel kategorileri kilitler.</p>
+
+        <h2 id="private">Özel kategori</h2>
+        <p>Özel bir kategorideki kayıtlar <strong>genel zaman tünelinde</strong>, filtrelerde ve genel slayt gösterilerinde <strong>asla görünmez</strong>. Onları görmenin tek yolu, kategorinin kendisini ana ekrandan açmaktır.</p>
+        <h3 id="make-private">Bir kategori nasıl özel yapılır</h3>
+        <ol class="steps">
+          <li>Ana ekranda bir kategori kartına <strong>basılı tutun</strong>. Yeni kategori için <kbd>Kategori ekle</kbd> düğmesine dokunun.</li>
+          <li><kbd>Gizli</kbd> anahtarını açın (açıklaması: "Genel zaman tünelinde gizli").</li>
+          <li><kbd>Kaydet</kbd> düğmesine dokunun (yeni kategori için <kbd>Oluştur</kbd>).</li>
+        </ol>
+        <p>Kadu ilk açılışta "Gizli" kategorisini zaten oluşturur.</p>
+        <div class="note warning">
+          <span class="note-title">PIN olmadan gizlilik yalnızca görseldir</span>
+          <p>PIN ayarlanana kadar özel kategori yalnızca zaman tünelinden gizlenir. Telefonunuzu eline alan herkes onu ana ekrandan açabilir. Gerçekten kilitlemek için PIN ayarlayın.</p>
+        </div>
+
+        <h2 id="pin">PIN</h2>
+        <h3 id="set-pin">Nasıl ayarlanır</h3>
+        <ol class="steps">
+          <li><span class="path">Ayarlar → PIN kodu</span> bölümünü açın.</li>
+          <li><kbd>PIN kodu belirle</kbd> seçeneğine dokunun.</li>
+          <li>4 rakam girin ve onaylamak için tekrarlayın.</li>
+        </ol>
+
+        <h3 id="when-asked">Kadu PIN'i ne zaman ister</h3>
+        <ul>
+          <li>uygulama her açıldığında;</li>
+          <li>ana ekrandan özel bir kategori açılırken;</li>
+          <li><a href="export-import.html">veriler dışa aktarılmadan</a> önce, çünkü yedek özel kayıtları da içerir.</li>
+        </ul>
+
+        <h3 id="reset-pin">Nasıl değiştirilir veya kapatılır</h3>
+        <p><span class="path">Ayarlar → PIN kodu → PIN kodunu sıfırla</span> bölümünü açın ve mevcut kodu girin. Bundan sonra uygulama kodu istemez. Yeni kod için yeniden <kbd>PIN kodu belirle</kbd> seçeneğine dokunun.</p>
+
+        <h2 id="fake">Sahte PIN</h2>
+        <p>Biri günlüğünüzün kilidini açmanızı isteyebilirse ikinci, sahte bir kod ayarlayın. Uygulamayı açar ama tüm özel kategorileri gizler. Ayrıntılar: <a href="fake-pin.html">Sahte PIN</a>.</p>
+
+        <h2 id="faq">Sık sorulan sorular</h2>
+        <details>
+          <summary>PIN'imi unuttum</summary>
+          <div>
+            <p>PIN yalnızca cihazınızda ve şifrelenmiş olarak saklanır; bu yüzden kimse — biz de dahil — onu kurtaramaz ya da göremez. Hatırlamaya çalışın. Olmazsa <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOXHvjs9uuML3YGRTeUfUd7fSP4M1xSJOZY02tCTL1_VHlbA/viewform" target="_blank" rel="noopener">bize yazın</a>.</p>
+            <p>Bunu önlemek için unutmayacağınız bir kod seçin ve düzenli olarak <a href="export-import.html">yedek alın</a>.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Kadu'yu Face ID ile açabilir miyim?</summary>
+          <div><p>Henüz değil — Kadu yalnızca PIN ile korunur.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

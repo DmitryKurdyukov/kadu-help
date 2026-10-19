@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr" data-lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filtres et recherche — Guide Kadu</title>
+  <meta name="description" content="Comment chercher et filtrer les entrées dans la frise Kadu : texte, catégories, favoris, étiquettes, dates et ordre.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Filtres et recherche</h1>
+        <p class="lead">La frise affiche toutes les entrées, des plus récentes aux plus anciennes. Les filtres ne gardent que ce dont vous avez besoin : certains jours, une catégorie, une étiquette ou un mot du texte.</p>
+
+        <h2 id="filters">Panneau des filtres</h2>
+        <p>Ouvrez l'onglet <kbd>Frise</kbd> et touchez <kbd>Filtres</kbd> en haut. Choisissez vos critères et appliquez-les.</p>
+        <table>
+          <thead>
+            <tr><th>Filtre</th><th>Ce qu'il fait</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>Texte</kbd></td><td>Garde les entrées dont le texte contient ces mots. La casse n'a pas d'importance.</td></tr>
+            <tr><td><kbd>Catégorie</kbd></td><td>Affiche les entrées d'une seule catégorie. <kbd>Tout</kbd> lève la limite.</td></tr>
+            <tr><td><kbd>Favoris</kbd></td><td>L'interrupteur <kbd>Favoris uniquement</kbd> garde les entrées marquées d'une étoile.</td></tr>
+            <tr><td><kbd>Ordre</kbd></td><td><kbd>Ordre inversé</kbd> affiche d'abord les entrées les plus anciennes.</td></tr>
+            <tr><td><kbd>Étiquettes</kbd></td><td>Entrées avec au moins une des étiquettes cochées. Plus d'infos dans <a href="tags.html">Étiquettes</a>.</td></tr>
+          </tbody>
+        </table>
+        <p>Les filtres se combinent. Si vous choisissez la catégorie « Voyages » et l'étiquette <code>#mer</code>, il ne reste que les entrées « mer » de cette catégorie.</p>
+
+        <h2 id="calendar">Calendrier : un jour ou une période</h2>
+        <p>À côté des filtres, en haut de la frise, se trouve un bouton calendrier. Tant qu'aucune date n'est choisie, il affiche <kbd>Toujours</kbd>.</p>
+        <ul>
+          <li><kbd>Date</kbd> : choisissez un jour pour ne voir que ses entrées.</li>
+          <li><kbd>Période</kbd> : marquez le premier et le dernier jour d'une plage.</li>
+        </ul>
+        <p>Touchez <kbd>Appliquer</kbd> pour utiliser la sélection, ou <kbd>Réinitialiser</kbd> pour tout revoir.</p>
+
+        <h2 id="shortcuts">Raccourcis depuis l'écran d'accueil</h2>
+        <p>Certains filtres s'activent directement depuis l'écran d'accueil :</p>
+        <ul>
+          <li><strong>Les cartes <kbd>Semaine</kbd>, <kbd>Mois</kbd>, <kbd>Année</kbd></strong> indiquent combien d'entrées vous avez faites cette semaine (du lundi au dimanche), ce mois-ci et cette année. Toucher une carte ouvre la frise déjà filtrée sur cette période.</li>
+          <li><strong>Une carte de catégorie</strong> ouvre la frise avec les seules entrées de cette catégorie.</li>
+          <li><strong><kbd>En ce jour</kbd></strong> : le bouton apparaît si vous avez des entrées de ce même jour les années précédentes. Il ouvre la frise avec les entrées de ce jour-là.</li>
+        </ul>
+
+        <h2 id="views">Le diaporama, le livre et la médiathèque dépendent des filtres</h2>
+        <p>C'est le point le moins évident. Les boutons <kbd>Diaporama</kbd>, <kbd>Livre</kbd> et <kbd>Médiathèque</kbd> de la frise utilisent <strong>exactement ce que la frise affiche à l'instant</strong> : filtres, recherche, dates et ordre compris.</p>
+        <div class="note">
+          <span class="note-title">Exemple</span>
+          <p>Envie d'un diaporama de vos vacances d'été ? Choisissez juin à août dans le calendrier, cochez l'étiquette <code>#vacances</code> et touchez <kbd>Diaporama</kbd>. Seules ces entrées entreront dans le film.</p>
+        </div>
+        <p>Si le diaporama ou le livre semblent montrer « pas tout », vérifiez qu'aucun filtre n'est resté actif.</p>
+
+        <h2 id="faq">Questions fréquentes</h2>
+        <details>
+          <summary>Des entrées ont disparu de la frise</summary>
+          <div>
+            <p>Le plus probable :</p>
+            <ul>
+              <li>un filtre est actif ou une période est choisie dans le calendrier ;</li>
+              <li>les entrées sont dans une <a href="private-pin.html">catégorie privée</a> : la frise générale ne les affiche jamais ;</li>
+              <li>l'app a été ouverte avec un <a href="fake-pin.html">faux PIN</a>.</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>Pourquoi ma catégorie privée n'est-elle pas dans le filtre de catégories ?</summary>
+          <div><p>Les catégories privées n'apparaissent ni dans les filtres ni dans la frise générale. Ouvrez une telle catégorie depuis l'écran d'accueil en touchant sa carte. Si un PIN est défini, l'app le demande d'abord.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

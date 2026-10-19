@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kadu Guide</title>
+  <script>
+    // GitHub Pages serves this file for any missing path, so asset paths here
+    // can't be relative. Old links without a language (/kadu-help/tags.html)
+    // and unknown pages are sent to the root router, which picks a language.
+    (function () {
+      var LANGS = ["en", "ru", "es", "de", "fr", "it", "pt", "ja", "ko", "zh", "zh-Hant", "nl", "sv", "pl", "el", "tr", "uk", "sr", "hi", "id", "vi", "th"];
+      var parts = location.pathname.split("/").filter(Boolean);
+      // Project site: https://<user>.github.io/<repo>/…
+      var base = location.hostname.endsWith("github.io") && parts.length ? "/" + parts.shift() + "/" : "/";
+      var params = new URLSearchParams(location.search);
+
+      var last = parts.length ? parts[parts.length - 1] : "";
+      var name = last.replace(/\.html$/, "");
+      var known = /^[a-z0-9-]+$/.test(name);
+
+      if (parts.length && LANGS.indexOf(parts[0]) !== -1) {
+        // "/ru/tags" → "/ru/tags.html"; a truly missing page → that language's home.
+        var target = known && !/\.html$/.test(last) && parts.length === 2 ? name + ".html" : "";
+        location.replace(base + parts[0] + "/" + target + location.search + location.hash);
+        return;
+      }
+      if (known) params.set("page", name + ".html");
+      var query = params.toString();
+      location.replace(base + (query ? "?" + query : "") + location.hash);
+    })();
+  </script>
+</head>
+<body></body>
+</html>

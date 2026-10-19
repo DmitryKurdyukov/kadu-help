@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-Hans" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>幻灯片 — Kadu 使用指南</title>
+  <meta name="description" content="如何在 Kadu 中开始幻灯片、设置速度、音乐和效果，并保存为视频。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>幻灯片</h1>
+        <p class="lead">幻灯片会把记录中的照片和视频变成一部带音乐和柔和效果的影片。</p>
+
+        <h2 id="start">如何开始</h2>
+        <p>打开 <kbd>时间线</kbd> 标签页，点按 <kbd>幻灯片</kbd>。</p>
+        <div class="note">
+          <span class="note-title">重要：幻灯片由时间线当前显示的内容生成</span>
+          <p>如果时间线开启了<a href="filters.html">筛选</a>——分类、标签、时间段或搜索——只有这些记录会进入幻灯片。这样就能做出一次旅行或一整年的影片。想看全部？先重置筛选。</p>
+        </div>
+        <p>如果筛选后的记录里没有照片或视频，Kadu 会提示没有可播放的内容。</p>
+
+        <h2 id="settings">设置</h2>
+        <p>播放时打开 <kbd>幻灯片设置</kbd>。更改会立即生效，影片从头开始。</p>
+        <table>
+          <thead>
+            <tr><th>设置</th><th>作用</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>速度</kbd></td><td>每张照片停留的时间：<em>慢速</em> — 5 秒，<em>正常</em> — 3 秒，<em>快速</em> — 1.2 秒，<em>极快</em> — 0.6 秒。</td></tr>
+            <tr><td><kbd>视频声音</kbd></td><td>视频播放原声。</td></tr>
+            <tr><td><kbd>加速视频</kbd></td><td>视频节奏跟随幻灯片速度：慢速时稍慢，正常时不变，快速时更快。视频总会完整播放。</td></tr>
+            <tr><td><kbd>显示日期</kbd></td><td>在屏幕上显示回忆的日期。</td></tr>
+            <tr><td><kbd>动态效果</kbd></td><td>照片平滑缩放和平移。在 <em>慢速</em> 和 <em>正常</em> 速度下生效：更快的速度下，效果还没显现照片就切换了。</td></tr>
+            <tr><td><kbd>反转顺序</kbd></td><td>先显示最早的回忆，而不是最新的。</td></tr>
+            <tr><td><kbd>背景音乐</kbd></td><td>播放时伴有音乐。在 <kbd>曲目</kbd> 中保留 <em>自动</em> 让 Kadu 选曲，或自己选择：<em>冬日</em>、<em>舒缓</em> 或 <em>活力</em>。</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="free-limit">免费版限制</h2>
+        <p>不订阅时，每天可观看幻灯片 <strong>3 分钟</strong>。时间用完后，Kadu 会推荐 Premium。限制次日重置。</p>
+        <p>开通 <span class="premium">Premium</span> 后，幻灯片不限时长。</p>
+
+        <h2 id="export">保存为视频 <span class="premium">Premium</span></h2>
+        <p>幻灯片可以变成普通视频，分享给亲朋好友。</p>
+        <ol class="steps">
+          <li>把幻灯片设置成你想要的视频效果。</li>
+          <li>打开 <kbd>幻灯片设置</kbd>，点按 <kbd>以视频分享</kbd>。</li>
+          <li>等待生成完成（<em>“正在生成视频…”</em>）。</li>
+          <li>选择 <kbd>存储到照片</kbd> 或 <kbd>分享</kbd>。</li>
+        </ol>
+        <div class="note warning">
+          <span class="note-title">视频最长 15 分钟</span>
+          <p>如果幻灯片更长，导出不会开始。请提高速度，或用筛选缩小范围——例如只选一个月。</p>
+        </div>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

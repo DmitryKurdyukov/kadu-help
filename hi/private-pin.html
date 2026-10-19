@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="hi" data-lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>निजी श्रेणियाँ और PIN — Kadu गाइड</title>
+  <meta name="description" content="Kadu में निजी श्रेणियाँ कैसे काम करती हैं और PIN से ऐप को कैसे सुरक्षित करें।">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>निजी श्रेणियाँ और PIN</h1>
+        <p class="lead">Kadu में सुरक्षा के दो स्तर हैं। निजी श्रेणी एंट्री को सामान्य टाइमलाइन से छिपाती है, और PIN पूरे ऐप और निजी श्रेणियों को लॉक करता है।</p>
+
+        <h2 id="private">निजी श्रेणी</h2>
+        <p>निजी श्रेणी की एंट्री <strong>सामान्य टाइमलाइन में कभी नहीं दिखतीं</strong>, न फ़िल्टर में, न सामान्य स्लाइडशो में। उन्हें देखने का एक ही तरीका है: होम स्क्रीन से उस श्रेणी को खोलना।</p>
+        <h3 id="make-private">श्रेणी को निजी कैसे बनाएँ</h3>
+        <ol class="steps">
+          <li>होम स्क्रीन पर किसी श्रेणी कार्ड को <strong>दबाकर रखें</strong>। नई श्रेणी के लिए <kbd>श्रेणी जोड़ें</kbd> पर टैप करें।</li>
+          <li><kbd>निजी</kbd> स्विच चालू करें (नीचे लिखा होगा: "सामान्य टाइमलाइन में छिपी हुई")।</li>
+          <li><kbd>सहेजें</kbd> पर टैप करें (नई श्रेणी के लिए <kbd>बनाएँ</kbd>)।</li>
+        </ol>
+        <p>पहली बार खुलने पर Kadu पहले से "निजी" श्रेणी बना देता है।</p>
+        <div class="note warning">
+          <span class="note-title">PIN के बिना निजता सिर्फ़ दिखावटी है</span>
+          <p>जब तक PIN सेट नहीं है, निजी श्रेणी सिर्फ़ टाइमलाइन से छिपी रहती है। जिसके हाथ में आपका फ़ोन है, वह उसे होम स्क्रीन से खोल सकता है। उसे सचमुच लॉक करने के लिए PIN सेट करें।</p>
+        </div>
+
+        <h2 id="pin">PIN</h2>
+        <h3 id="set-pin">कैसे सेट करें</h3>
+        <ol class="steps">
+          <li><span class="path">सेटिंग्स → PIN कोड</span> खोलें।</li>
+          <li><kbd>PIN कोड सेट करें</kbd> पर टैप करें।</li>
+          <li>4 अंक डालें और पुष्टि के लिए दोबारा डालें।</li>
+        </ol>
+
+        <h3 id="when-asked">Kadu PIN कब माँगता है</h3>
+        <ul>
+          <li>हर बार ऐप खुलने पर;</li>
+          <li>होम स्क्रीन से निजी श्रेणी खोलते समय;</li>
+          <li><a href="export-import.html">डेटा एक्सपोर्ट</a> से पहले, क्योंकि बैकअप में निजी एंट्री भी होती हैं।</li>
+        </ul>
+
+        <h3 id="reset-pin">कैसे बदलें या बंद करें</h3>
+        <p><span class="path">सेटिंग्स → PIN कोड → PIN कोड रीसेट करें</span> खोलें और मौजूदा कोड डालें। इसके बाद ऐप कोड नहीं माँगेगा। नया कोड सेट करने के लिए फिर से <kbd>PIN कोड सेट करें</kbd> पर टैप करें।</p>
+
+        <h2 id="fake">नकली PIN</h2>
+        <p>अगर कोई आपसे डायरी अनलॉक करने को कह सकता है, तो दूसरा, नकली कोड सेट करें। यह ऐप खोलता है लेकिन सारी निजी श्रेणियाँ छिपा देता है। ज़्यादा जानकारी <a href="fake-pin.html">नकली PIN</a> में।</p>
+
+        <h2 id="faq">अक्सर पूछे जाने वाले सवाल</h2>
+        <details>
+          <summary>मैं PIN भूल गया</summary>
+          <div>
+            <p>PIN सिर्फ़ आपके डिवाइस पर और एन्क्रिप्टेड रूप में रखा जाता है, इसलिए कोई भी — हम भी — उसे वापस नहीं ला सकता या देख नहीं सकता। याद करने की कोशिश करें। अगर न हो पाए, तो <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOXHvjs9uuML3YGRTeUfUd7fSP4M1xSJOZY02tCTL1_VHlbA/viewform" target="_blank" rel="noopener">हमें लिखें</a>।</p>
+            <p>इससे बचने के लिए ऐसा कोड चुनें जो आप न भूलें और नियमित रूप से <a href="export-import.html">बैकअप लें</a>।</p>
+          </div>
+        </details>
+        <details>
+          <summary>क्या मैं Kadu को Face ID से खोल सकता हूँ?</summary>
+          <div><p>अभी नहीं — Kadu सिर्फ़ PIN से सुरक्षित होता है।</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

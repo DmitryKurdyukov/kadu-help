@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja" data-lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プライベートカテゴリと PIN — Kadu ガイド</title>
+  <meta name="description" content="Kadu のプライベートカテゴリの仕組みと、PIN でアプリを守る方法。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>プライベートカテゴリと PIN</h1>
+        <p class="lead">Kadu には 2 段階の保護があります。プライベートカテゴリは記録を全体のタイムラインから隠し、PIN はアプリ自体とプライベートカテゴリをロックします。</p>
+
+        <h2 id="private">プライベートカテゴリ</h2>
+        <p>プライベートカテゴリの記録は、全体のタイムライン、フィルター、全体のスライドショーに<strong>決して表示されません</strong>。見るにはホーム画面からそのカテゴリ自体を開くしかありません。</p>
+        <h3 id="make-private">カテゴリをプライベートにする</h3>
+        <ol class="steps">
+          <li>ホーム画面でカテゴリカードを<strong>長押し</strong>します。新しいカテゴリなら <kbd>カテゴリを追加</kbd> をタップします。</li>
+          <li><kbd>プライベート</kbd> スイッチをオンにします（説明：「一般タイムラインで非表示」）。</li>
+          <li><kbd>保存</kbd> をタップします（新しいカテゴリは <kbd>作成</kbd>）。</li>
+        </ol>
+        <p>初回起動時に、Kadu はすでに「プライベート」カテゴリを作成しています。</p>
+        <div class="note warning">
+          <span class="note-title">PIN なしでは見た目だけのプライバシーです</span>
+          <p>PIN を設定するまで、プライベートカテゴリはタイムラインから隠れているだけです。あなたの端末を手にした人なら誰でもホーム画面から開けます。本当にロックするには PIN を設定してください。</p>
+        </div>
+
+        <h2 id="pin">PIN</h2>
+        <h3 id="set-pin">設定方法</h3>
+        <ol class="steps">
+          <li><span class="path">設定 → PINコード</span> を開きます。</li>
+          <li><kbd>PINコードを設定</kbd> をタップします。</li>
+          <li>4 桁の数字を入力し、確認のためもう一度入力します。</li>
+        </ol>
+
+        <h3 id="when-asked">Kadu が PIN を求めるとき</h3>
+        <ul>
+          <li>アプリを起動するたび</li>
+          <li>ホーム画面からプライベートカテゴリを開くとき</li>
+          <li><a href="export-import.html">データの書き出し</a>の前（バックアップにはプライベートな記録も含まれるため）</li>
+        </ul>
+
+        <h3 id="reset-pin">変更・解除の方法</h3>
+        <p><span class="path">設定 → PINコード → PINコードをリセット</span> を開き、現在のコードを入力します。以後、アプリはコードを求めなくなります。新しいコードを設定するには、もう一度 <kbd>PINコードを設定</kbd> をタップします。</p>
+
+        <h2 id="fake">ダミー PIN</h2>
+        <p>日記のロック解除を頼まれるかもしれないなら、2 つ目のダミーコードを設定しましょう。アプリは開きますが、プライベートカテゴリはすべて隠れます。詳しくは<a href="fake-pin.html">ダミー PIN</a>をご覧ください。</p>
+
+        <h2 id="faq">よくある質問</h2>
+        <details>
+          <summary>PIN を忘れてしまった</summary>
+          <div>
+            <p>PIN はあなたの端末にだけ暗号化して保存されているため、私たちを含め誰も復元・確認できません。思い出してみてください。どうしても無理なら<a href="https://docs.google.com/forms/d/e/1FAIpQLSdOXHvjs9uuML3YGRTeUfUd7fSP4M1xSJOZY02tCTL1_VHlbA/viewform" target="_blank" rel="noopener">お問い合わせください</a>。</p>
+            <p>こうならないよう、忘れないコードを選び、定期的に<a href="export-import.html">バックアップ</a>を作りましょう。</p>
+          </div>
+        </details>
+        <details>
+          <summary>Face ID で Kadu を開けますか？</summary>
+          <div><p>まだできません。Kadu は PIN でのみ保護されます。</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

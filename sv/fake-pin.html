@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="sv" data-lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Falsk PIN — Kadu-guide</title>
+  <meta name="description" content="Falsk PIN i Kadu: en andra kod som öppnar appen utan privata kategorier.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Falsk PIN <span class="premium">Premium</span></h1>
+        <p class="lead">En falsk PIN är en andra kod till Kadu. Den öppnar appen som vanligt, fast utan privata kategorier. För den som tittar ser det ut som om de aldrig funnits.</p>
+
+        <h2 id="why">Vad den är till för</h2>
+        <p>Ibland blir du ombedd att visa din dagbok och det känns obekvämt att säga nej. Ange den falska koden: den andra personen ser vanliga anteckningar, och dina personliga förblir dolda. Det syns inget ”läge” eller någon ledtråd på skärmen.</p>
+
+        <h2 id="what-hidden">Vad som händer efter den falska koden</h2>
+        <ul>
+          <li>privata kategorier försvinner från hemskärmen;</li>
+          <li>deras anteckningar visas inte i tidslinjen, filter, bildspel, bok eller export;</li>
+          <li>allt annat fungerar som vanligt.</li>
+        </ul>
+        <p>Inga data raderas. När du anger din riktiga PIN är allt tillbaka.</p>
+
+        <h2 id="set">Så ställer du in den</h2>
+        <ol class="steps">
+          <li>Ställ först in din huvud-PIN: <span class="path">Inställningar → PIN-kod → Ställ in PIN-kod</span>. Utan den frågar appen inte efter någon kod vid start, och en falsk PIN är meningslös.</li>
+          <li>Tryck på <kbd>Ställ in falsk PIN-kod</kbd>.</li>
+          <li>Ange 4 siffror och upprepa dem.</li>
+        </ol>
+        <div class="note warning">
+          <span class="note-title">Koderna måste vara olika</span>
+          <p>Om den falska koden är samma som huvudkoden öppnas Kadu alltid i normalläge och den falska koden fungerar inte.</p>
+        </div>
+
+        <h2 id="reset">Så stänger du av den</h2>
+        <p>Öppna <span class="path">Inställningar → PIN-kod → Återställ falsk PIN-kod</span> och ange din <strong>huvud</strong>-PIN. Den falska koden kan inte stänga av sig själv – annars kunde vem som helst som känner till den stänga av skyddet.</p>
+
+        <h2 id="faq">Vanliga frågor</h2>
+        <details>
+          <summary>Hur kommer jag tillbaka till hela dagboken efter den falska koden?</summary>
+          <div><p>Stäng appen helt, öppna den igen och ange din huvud-PIN.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id" data-lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filter dan pencarian — Panduan Kadu</title>
+  <meta name="description" content="Cara mencari dan memfilter catatan di linimasa Kadu: teks, kategori, favorit, tag, tanggal, dan urutan.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Filter dan pencarian</h1>
+        <p class="lead">Linimasa menampilkan semua catatan dari yang terbaru ke yang terlama. Filter hanya menyisakan yang Anda perlukan: hari tertentu, satu kategori, sebuah tag, atau kata di dalam teks.</p>
+
+        <h2 id="filters">Panel filter</h2>
+        <p>Buka tab <kbd>Linimasa</kbd> dan ketuk <kbd>Filter</kbd> di atas. Pilih syaratnya lalu terapkan.</p>
+        <table>
+          <thead>
+            <tr><th>Filter</th><th>Fungsinya</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>Teks</kbd></td><td>Menyisakan catatan yang teksnya mengandung kata-kata itu. Huruf besar/kecil tidak berpengaruh.</td></tr>
+            <tr><td><kbd>Kategori</kbd></td><td>Menampilkan catatan dari satu kategori saja. <kbd>Semua</kbd> menghapus batasan.</td></tr>
+            <tr><td><kbd>Favorit</kbd></td><td>Sakelar <kbd>Hanya favorit</kbd> menyisakan catatan berbintang.</td></tr>
+            <tr><td><kbd>Urutan</kbd></td><td><kbd>Urutan terbalik</kbd> menampilkan catatan terlama lebih dulu.</td></tr>
+            <tr><td><kbd>Tag</kbd></td><td>Catatan dengan setidaknya satu tag yang dipilih. Selengkapnya di <a href="tags.html">Tag</a>.</td></tr>
+          </tbody>
+        </table>
+        <p>Filter bisa digabung. Jika Anda memilih kategori "Perjalanan" dan tag <code>#pantai</code>, hanya catatan pantai dari kategori itu yang tersisa.</p>
+
+        <h2 id="calendar">Kalender: satu hari atau rentang waktu</h2>
+        <p>Di samping filter di bagian atas linimasa ada tombol kalender. Selama belum ada tanggal dipilih, tertulis <kbd>Sepanjang waktu</kbd>.</p>
+        <ul>
+          <li><kbd>Tanggal</kbd>: pilih satu hari untuk melihat catatan hari itu saja.</li>
+          <li><kbd>Periode</kbd>: tandai hari pertama dan terakhir dari sebuah rentang.</li>
+        </ul>
+        <p>Ketuk <kbd>Terapkan</kbd> untuk memakai pilihan, atau <kbd>Atur ulang</kbd> untuk melihat semua waktu lagi.</p>
+
+        <h2 id="shortcuts">Pintasan dari layar beranda</h2>
+        <p>Beberapa filter bisa langsung dinyalakan dari layar beranda:</p>
+        <ul>
+          <li><strong>Kartu <kbd>Minggu</kbd>, <kbd>Bulan</kbd>, <kbd>Tahun</kbd></strong> menunjukkan berapa catatan yang Anda buat minggu ini (Senin–Minggu), bulan ini, dan tahun ini. Ketuk kartu untuk membuka linimasa yang sudah difilter ke periode itu.</li>
+          <li><strong>Kartu kategori</strong> membuka linimasa yang hanya berisi catatan kategori tersebut.</li>
+          <li><strong><kbd>Hari ini dulu</kbd></strong>: tombol ini muncul jika Anda punya catatan dari tanggal yang sama di tahun-tahun sebelumnya. Tombol ini membuka linimasa berisi catatan hari itu.</li>
+        </ul>
+
+        <h2 id="views">Tayangan slide, Buku, dan Pustaka media bergantung pada filter</h2>
+        <p>Inilah bagian yang paling tidak terlihat. Tombol <kbd>Tayangan slide</kbd>, <kbd>Buku</kbd>, dan <kbd>Pustaka media</kbd> di linimasa memakai <strong>persis apa yang sedang ditampilkan linimasa</strong> — termasuk filter, pencarian, tanggal, dan urutan.</p>
+        <div class="note">
+          <span class="note-title">Contoh</span>
+          <p>Ingin tayangan slide liburan musim panas? Pilih Juni sampai Agustus di kalender, centang tag <code>#liburan</code>, lalu ketuk <kbd>Tayangan slide</kbd>. Hanya catatan itu yang masuk ke film.</p>
+        </div>
+        <p>Jika tayangan slide atau buku seolah tidak menampilkan "semuanya", periksa apakah masih ada filter yang aktif.</p>
+
+        <h2 id="faq">Pertanyaan umum</h2>
+        <details>
+          <summary>Catatan hilang dari linimasa</summary>
+          <div>
+            <p>Kemungkinan besar salah satu dari ini:</p>
+            <ul>
+              <li>ada filter yang aktif atau rentang waktu dipilih di kalender;</li>
+              <li>catatan ada di <a href="private-pin.html">kategori pribadi</a>: linimasa umum tidak pernah menampilkannya;</li>
+              <li>aplikasi dibuka dengan <a href="fake-pin.html">PIN palsu</a>.</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>Kenapa kategori pribadi saya tidak ada di filter kategori?</summary>
+          <div><p>Kategori pribadi tidak muncul di filter maupun di linimasa umum. Buka kategori itu dari layar beranda dengan mengetuk kartunya. Jika PIN sudah diatur, aplikasi akan memintanya lebih dulu.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

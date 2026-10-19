@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-Hans" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>数据存在哪里 — Kadu 使用指南</title>
+  <meta name="description" content="Kadu 只把记录保存在你的设备上：这意味着什么，以及如何避免丢失日记。">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>数据存在哪里</h1>
+        <p class="lead">没有账号，没有云端。所有记录、照片、视频和语音备忘都只保存在你设备上的 Kadu 里。</p>
+
+        <h2 id="means">这对你意味着什么</h2>
+        <ul>
+          <li><strong>除了你，没人能看到你的记录。</strong>我们从不接收你的文字或照片——它们不在任何服务器上。</li>
+          <li><strong>无需注册。</strong>App 打开即用，离线也可以。</li>
+          <li><strong>设备之间不同步。</strong>日记只存在于一部手机上；用<a href="export-import.html">导出与导入</a>来迁移。</li>
+        </ul>
+
+        <h2 id="copies">照片会被复制到 Kadu</h2>
+        <p>当你给记录附上照片或视频时，Kadu 会保存文件的<strong>独立副本</strong>。因此：</p>
+        <ul>
+          <li>你可以从相册删除照片——它仍会留在 Kadu 中；</li>
+          <li>Kadu 中的照片和视频会在相册之外额外占用手机空间。</li>
+        </ul>
+        <p>还有一个反向选项：<span class="path">设置 → 其他 → 将照片和视频保存到相册</span>。开启后，在 Kadu 内用相机拍摄的照片和视频也会保存到手机相册。</p>
+
+        <h2 id="risk">如何避免丢失日记</h2>
+        <div class="note warning">
+          <span class="note-title">删除 App 会删除所有记录</span>
+          <p>由于数据只存在于 Kadu 中，删除 App、重置或丢失手机都会让它们消失。我们无法恢复——因为我们根本没有这些数据。</p>
+        </div>
+        <p>唯一可靠的保障是<strong>备份</strong>。请定期<a href="export-import.html#export">导出</a>，并把文件保存在手机之外：iCloud 云盘、Google Drive、电脑或邮箱。</p>
+        <div class="note">
+          <span class="note-title">提示</span>
+          <p>每月备份一次，并且在换手机、重置设置或重装 Kadu 之前一定要备份。</p>
+        </div>
+
+        <h2 id="delete-all">删除所有数据</h2>
+        <p><span class="path">设置 → 导入 / 导出 → 删除所有数据</span> 会永久清除所有记录、分类和媒体。如果之后可能还需要这些数据，请先导出。</p>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

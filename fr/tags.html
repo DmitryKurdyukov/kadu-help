@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr" data-lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Étiquettes — Guide Kadu</title>
+  <meta name="description" content="Comment ajouter des étiquettes aux entrées Kadu et retrouver des entrées par étiquette.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Étiquettes</h1>
+        <p class="lead">Les étiquettes relient des entrées par un thème commun : un voyage, une personne, un projet. Kadu n'a pas de champ dédié : les étiquettes s'écrivent directement dans le texte de l'entrée.</p>
+
+        <h2 id="add">Ajouter une étiquette</h2>
+        <ol class="steps">
+          <li>Tapez <code>#</code> dans le texte, suivi directement d'un mot, sans espace : <code>#vacances</code>.</li>
+          <li><strong>Tapez une espace après le mot.</strong> C'est seulement alors qu'il devient une vraie étiquette.</li>
+          <li>Vérifiez que l'étiquette <span class="tag-demo">#vacances</span> est <strong>mise en évidence dans la couleur d'accent</strong>.</li>
+          <li>Enregistrez l'entrée.</li>
+        </ol>
+        <blockquote>Enfin arrivés à la mer <span class="tag-demo">#vacances</span> <span class="tag-demo">#mer2025</span> et on boit un café</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">La règle clé : l'étiquette doit être colorée</span>
+          <p>Si un mot avec <code>#</code> reste du texte normal au lieu de se colorer, ce n'est pas une étiquette. Elle n'apparaîtra pas dans les filtres et l'entrée ne sera pas retrouvée grâce à elle. Cela arrive surtout quand il manque l'espace après l'étiquette, par exemple si c'est le dernier mot du texte.</p>
+        </div>
+        <p>Une entrée peut avoir autant d'étiquettes que vous voulez, n'importe où dans le texte : au début, au milieu ou à la fin. Mettez simplement une espace après chacune.</p>
+
+        <h3 id="not-highlighted">L'étiquette n'est pas colorée : que faire</h3>
+        <p>Placez le curseur juste après le mot et appuyez sur espace. Si cela ne suffit pas, supprimez l'étiquette et retapez-la : <code>#</code>, le mot, une espace.</p>
+
+        <h2 id="rules">Règles d'écriture</h2>
+        <table>
+          <thead>
+            <tr><th>Exemple</th><th>Résultat</th><th>Pourquoi</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Vacances</code> et <code>#vacances</code></td><td>une étiquette <code>vacances</code></td><td>la casse n'a pas d'importance</td></tr>
+            <tr><td><code>#première neige</code></td><td>seulement <code>première</code></td><td>une espace termine l'étiquette</td></tr>
+            <tr><td><code>#約會</code>, <code>#ความทรงจำ</code></td><td>fonctionnent</td><td>les lettres de toutes les langues conviennent</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">Astuce</span>
+          <p>Pour une étiquette de plusieurs mots, reliez-les par un tiret bas ou un tiret : <code>#première_neige</code>, <code>#fête-anniversaire</code>.</p>
+        </div>
+
+        <h2 id="find">Retrouver des entrées par étiquette</h2>
+        <ol class="steps">
+          <li>Ouvrez l'onglet <kbd>Frise</kbd>.</li>
+          <li>Touchez <kbd>Filtres</kbd> en haut de l'écran.</li>
+          <li>Dans le bloc <kbd>Étiquettes</kbd>, cochez les étiquettes voulues. S'il y en a beaucoup, commencez à taper dans le champ <kbd>Rechercher des étiquettes…</kbd>.</li>
+          <li>Appliquez le filtre.</li>
+        </ol>
+        <p>Les étiquettes les plus utilisées apparaissent en premier.</p>
+
+        <h3 id="several">Si plusieurs étiquettes sont cochées</h3>
+        <p>La frise garde les entrées qui ont <strong>au moins une</strong> des étiquettes cochées. Par exemple, avec <code>#mer</code> et <code>#montagne</code>, vous verrez les voyages à la mer comme à la montagne.</p>
+        <p>Pour tout décocher, touchez <kbd>Effacer</kbd> à côté du titre du bloc.</p>
+        <p>Le filtre par étiquette s'applique aussi au <a href="slideshow.html">diaporama</a> et au livre. Cochez par exemple <code>#vacances</code> et regardez un film sur ces vacances seulement. Plus d'infos dans <a href="filters.html">Filtres et recherche</a>.</p>
+
+        <h2 id="edit">Modifier ou supprimer une étiquette</h2>
+        <p>Ouvrez l'entrée, modifiez ou effacez le mot avec <code>#</code> et enregistrez. La liste des étiquettes se met à jour toute seule. Une étiquette disparaît des filtres quand plus aucune entrée ne l'utilise.</p>
+
+        <h2 id="faq">Questions fréquentes</h2>
+        <details>
+          <summary>Les filtres indiquent qu'il n'y a pas encore d'étiquettes</summary>
+          <div><p>Les étiquettes n'apparaissent qu'après avoir été utilisées dans au moins une entrée enregistrée. Vérifiez que l'étiquette est bien colorée : du texte normal avec <code>#</code> ne compte pas comme étiquette.</p></div>
+        </details>
+        <details>
+          <summary>Les étiquettes de Day One ou Apple Journal sont-elles conservées ?</summary>
+          <div><p>Oui. Lors de l'<a href="export-import.html">import</a>, Kadu trouve les hashtags dans le texte des entrées importées et les ajoute à la liste.</p></div>
+        </details>
+        <details>
+          <summary>Une étiquette est introuvable alors que l'entrée existe</summary>
+          <div>
+            <p>Vérifiez trois choses :</p>
+            <ul>
+              <li>l'étiquette est <strong>colorée dans la couleur d'accent</strong> dans l'entrée. Sinon, ajoutez une espace après et enregistrez à nouveau l'entrée ;</li>
+              <li>les filtres cherchent exactement le mot après <code>#</code> : une espace à l'intérieur termine l'étiquette ;</li>
+              <li>l'entrée n'est pas dans une <a href="private-pin.html">catégorie privée</a> : la frise générale ne les affiche pas.</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>

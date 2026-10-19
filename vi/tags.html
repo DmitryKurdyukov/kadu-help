@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="vi" data-lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thẻ — Hướng dẫn Kadu</title>
+  <meta name="description" content="Cách thêm thẻ vào ghi chép Kadu và tìm ghi chép theo thẻ.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/i18n.js"></script>
+  <script src="../assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content">
+<article class="article">
+        <h1>Thẻ</h1>
+        <p class="lead">Thẻ kết nối các ghi chép theo một chủ đề chung: một chuyến đi, một người, một dự án. Kadu không có ô riêng cho thẻ — thẻ được viết ngay trong nội dung ghi chép.</p>
+
+        <h2 id="add">Cách thêm thẻ</h2>
+        <ol class="steps">
+          <li>Gõ <code>#</code> trong nội dung và ngay sau đó, không có dấu cách, một từ: <code>#dulich</code>.</li>
+          <li><strong>Gõ một dấu cách sau từ đó.</strong> Chỉ khi đó nó mới trở thành thẻ thật.</li>
+          <li>Kiểm tra rằng thẻ <span class="tag-demo">#dulich</span> đã <strong>được tô bằng màu nhấn</strong>.</li>
+          <li>Lưu ghi chép.</li>
+        </ol>
+        <blockquote>Cuối cùng cũng tới biển <span class="tag-demo">#dulich</span> <span class="tag-demo">#bien2025</span> và uống cà phê</blockquote>
+
+        <div class="note warning">
+          <span class="note-title">Quy tắc quan trọng nhất: thẻ phải được tô màu</span>
+          <p>Nếu một từ có <code>#</code> vẫn là chữ thường mà không đổi màu, đó không phải là thẻ. Nó sẽ không xuất hiện trong bộ lọc và không thể tìm ghi chép bằng nó. Thường là do thiếu dấu cách sau thẻ — ví dụ khi thẻ là từ cuối cùng trong nội dung.</p>
+        </div>
+        <p>Một ghi chép có thể có bao nhiêu thẻ tùy ý, ở bất kỳ đâu trong nội dung: đầu, giữa hay cuối. Chỉ cần dấu cách sau mỗi thẻ.</p>
+
+        <h3 id="not-highlighted">Thẻ không được tô màu — phải làm sao</h3>
+        <p>Đặt con trỏ ngay sau từ và nhấn phím cách. Nếu không được, hãy xóa thẻ và gõ lại: <code>#</code>, từ, dấu cách.</p>
+
+        <h2 id="rules">Quy tắc viết</h2>
+        <table>
+          <thead>
+            <tr><th>Ví dụ</th><th>Kết quả</th><th>Lý do</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>#Dulich</code> và <code>#dulich</code></td><td>một thẻ <code>dulich</code></td><td>chữ hoa hay thường đều như nhau</td></tr>
+            <tr><td><code>#sinh nhật</code></td><td>chỉ <code>sinh</code></td><td>dấu cách kết thúc thẻ</td></tr>
+            <tr><td><code>#約會</code>, <code>#ความทรงจำ</code></td><td>dùng được</td><td>chữ của mọi ngôn ngữ đều được</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="note-title">Mẹo</span>
+          <p>Với thẻ nhiều từ, hãy nối bằng dấu gạch dưới hoặc gạch nối: <code>#sinh_nhật</code>, <code>#tuyết-đầu-mùa</code>.</p>
+        </div>
+
+        <h2 id="find">Cách tìm ghi chép theo thẻ</h2>
+        <ol class="steps">
+          <li>Mở tab <kbd>Dòng thời gian</kbd>.</li>
+          <li>Chạm <kbd>Bộ lọc</kbd> ở phía trên màn hình.</li>
+          <li>Trong khối <kbd>Thẻ</kbd>, chọn các thẻ bạn cần. Nếu có nhiều thẻ, hãy bắt đầu gõ vào ô <kbd>Tìm thẻ…</kbd>.</li>
+          <li>Áp dụng bộ lọc.</li>
+        </ol>
+        <p>Thẻ dùng nhiều nhất nằm ở đầu danh sách.</p>
+
+        <h3 id="several">Nếu chọn nhiều thẻ</h3>
+        <p>Dòng thời gian hiển thị các ghi chép có <strong>ít nhất một</strong> trong các thẻ đã chọn. Ví dụ, chọn <code>#bien</code> và <code>#nui</code> sẽ thấy cả chuyến đi biển lẫn đi núi.</p>
+        <p>Để bỏ chọn tất cả, chạm <kbd>Xóa</kbd> cạnh tiêu đề khối.</p>
+        <p>Bộ lọc thẻ cũng áp dụng cho <a href="slideshow.html">trình chiếu</a> và sách. Ví dụ, chọn <code>#dulich</code> và xem một bộ phim chỉ về chuyến đi đó. Xem thêm ở <a href="filters.html">Bộ lọc và tìm kiếm</a>.</p>
+
+        <h2 id="edit">Cách sửa hoặc xóa thẻ</h2>
+        <p>Mở ghi chép, sửa hoặc xóa từ có <code>#</code> rồi lưu. Danh sách thẻ tự cập nhật. Thẻ biến mất khỏi bộ lọc khi không còn ghi chép nào dùng nó.</p>
+
+        <h2 id="faq">Câu hỏi thường gặp</h2>
+        <details>
+          <summary>Bộ lọc báo chưa có thẻ nào</summary>
+          <div><p>Thẻ chỉ xuất hiện sau khi bạn dùng nó trong ít nhất một ghi chép đã lưu. Hãy chắc rằng thẻ đã được tô màu — chữ thường có <code>#</code> không được tính là thẻ.</p></div>
+        </details>
+        <details>
+          <summary>Thẻ từ Day One hoặc Apple Journal có được giữ lại không?</summary>
+          <div><p>Có. Khi <a href="export-import.html">nhập</a>, Kadu tìm hashtag trong nội dung các ghi chép được nhập và thêm vào danh sách.</p></div>
+        </details>
+        <details>
+          <summary>Ghi chép vẫn còn nhưng không tìm được theo thẻ</summary>
+          <div>
+            <p>Hãy kiểm tra ba điều:</p>
+            <ul>
+              <li>thẻ trong ghi chép <strong>được tô bằng màu nhấn</strong>. Nếu không, thêm dấu cách sau thẻ và lưu lại ghi chép;</li>
+              <li>bộ lọc tìm đúng từ sau <code>#</code>: dấu cách ở giữa sẽ kết thúc thẻ;</li>
+              <li>ghi chép không nằm trong <a href="private-pin.html">danh mục riêng tư</a>: dòng thời gian chung không hiển thị chúng.</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>
