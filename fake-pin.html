@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Поддельный PIN — Руководство Kadu</title>
+  <meta name="description" content="Поддельный PIN-код в Kadu: второй код, который открывает приложение без приватных категорий.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar" aria-label="Разделы"></nav>
+    <main class="content">
+      <article class="article">
+        <h1>Поддельный PIN <span class="premium">Premium</span></h1>
+        <p class="lead">Поддельный PIN — это второй код к Kadu. Он открывает приложение как обычно, только без приватных категорий. Со стороны всё выглядит так, будто их никогда не было.</p>
+
+        <h2 id="why">Зачем он нужен</h2>
+        <p>Бывает, что вас просят показать дневник и отказаться неудобно. Введите поддельный код: человек увидит обычные записи, а личное останется скрытым. Никакого «режима» или подсказки на экране при этом нет.</p>
+
+        <h2 id="what-hidden">Что происходит после ввода поддельного кода</h2>
+        <ul>
+          <li>приватные категории пропадают с главного экрана;</li>
+          <li>их записи не показываются ни в ленте, ни в фильтрах, ни в слайдшоу, ни в книге;</li>
+          <li>всё остальное работает как обычно.</li>
+        </ul>
+        <p>Данные при этом не удаляются. Когда вы введёте основной PIN, всё снова будет на месте.</p>
+
+        <h2 id="set">Как установить</h2>
+        <ol class="steps">
+          <li>Сначала задайте основной PIN-код: <span class="path">Настройки → PIN-код → Установить PIN-код</span>. Без него приложение не спрашивает код при входе, и поддельный не пригодится.</li>
+          <li>Нажмите <kbd>Установить поддельный PIN-код</kbd>.</li>
+          <li>Введите 4 цифры и повторите их.</li>
+        </ol>
+        <div class="note warning">
+          <span class="note-title">Коды должны отличаться</span>
+          <p>Если поддельный код совпадёт с основным, Kadu всегда будет открываться в обычном режиме, и поддельный код работать не будет.</p>
+        </div>
+
+        <h2 id="reset">Как отключить</h2>
+        <p>Откройте <span class="path">Настройки → PIN-код → Сбросить поддельный PIN-код</span> и введите <strong>основной</strong> PIN. Сбросить поддельный код самим поддельным кодом нельзя, иначе любой, кто его знает, смог бы отключить защиту.</p>
+
+        <h2 id="faq">Частые вопросы</h2>
+        <details>
+          <summary>Как вернуться к полному дневнику после поддельного кода?</summary>
+          <div><p>Закройте приложение полностью и откройте снова, затем введите основной PIN.</p></div>
+        </details>
+      </article>
+      <nav class="pager" id="pager"></nav>
+    </main>
+  </div>
+</body>
+</html>
